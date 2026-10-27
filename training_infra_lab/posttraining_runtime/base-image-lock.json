@@ -1,0 +1,6 @@
+{
+  "image": "docker.io/radixark/miles@sha256:cb2a5f35a7de0915cb05fbdb0d2e7a7be0b495eb35c71ef3f10192401bcf18b0",
+  "architecture": "amd64",
+  "source": "Docker registry manifest resolved through proxy",
+  "status": "digest_resolved_not_pulled"
+}

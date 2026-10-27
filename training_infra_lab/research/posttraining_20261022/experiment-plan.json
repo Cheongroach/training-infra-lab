@@ -1,0 +1,109 @@
+{
+  "schema_version": 1,
+  "status": "proposal_not_submitted",
+  "focus": "weight_update_stall_attribution_before_optimization",
+  "miles_commit": "2233d795dcf167be489d1859971c9233393f04c3",
+  "backend": "megatron",
+  "inference_engine": "sglang",
+  "algorithm": "grpo",
+  "execution": "synchronous_first",
+  "colocate": false,
+  "lora": false,
+  "quantization": null,
+  "transport_baselines": [
+    "broadcast",
+    "broadcast_packed",
+    "p2p"
+  ],
+  "buffer_bytes_candidates": [
+    67108864,
+    268435456,
+    1073741824
+  ],
+  "fixed_workload": {
+    "dataset": "dapo-math-17k",
+    "group_size": 8,
+    "prompt_groups_per_rollout": 32,
+    "global_batch_size": 256,
+    "max_response_tokens": 2048,
+    "temperature": 1.0,
+    "top_p": 1.0,
+    "top_k": -1,
+    "reward": "upstream_deepscaler_with_manual_termination_audit",
+    "learning_rate": 1e-06,
+    "update_weights_interval": 1,
+    "dynamic_reward_filter": false,
+    "kl_loss_coefficient": 0.0,
+    "note": "Candidate workload, not a validated learning recipe; archive final resolved args and loss reduction."
+  },
+  "phases": [
+    {
+      "id": "smoke",
+      "model": "Qwen/Qwen3-4B",
+      "learner_nodes": 1,
+      "learner_gpus_per_node": 2,
+      "learner_tp": 2,
+      "learner_pp": 1,
+      "learner_cp": 1,
+      "rollout_gpus": 2,
+      "rollout_tp": 1,
+      "total_gpus": 4,
+      "updates": 3,
+      "purpose": "real generation, reward, backward, optimizer and weight handoff"
+    },
+    {
+      "id": "cross_node_preflight",
+      "model": "Qwen/Qwen3-8B",
+      "learner_nodes": 1,
+      "learner_gpus_per_node": 8,
+      "learner_tp": 2,
+      "learner_pp": 1,
+      "learner_cp": 1,
+      "rollout_gpus": 8,
+      "rollout_tp": 2,
+      "total_gpus": 16,
+      "rollout_on_separate_nodes": true,
+      "updates": 10,
+      "purpose": "inter-node handoff and RDMA evidence"
+    },
+    {
+      "id": "main",
+      "model": "Qwen/Qwen3-8B",
+      "learner_nodes": 2,
+      "learner_gpus_per_node": 8,
+      "learner_tp": 2,
+      "learner_pp": 1,
+      "learner_cp": 1,
+      "rollout_gpus": 16,
+      "rollout_tp": 2,
+      "total_gpus": 32,
+      "rollout_on_separate_nodes": true,
+      "updates": 50,
+      "warmup_updates": 5,
+      "independent_paired_trials": 3,
+      "purpose": "fixed-work comparison with one selected change after profiling"
+    }
+  ],
+  "budget": {
+    "approved_gpu_hours": null,
+    "example_nights": 2,
+    "example_hours_per_night": 8,
+    "example_main_gpu_hours": 512,
+    "preflight_included_in_example": false
+  },
+  "launch_prerequisites": [
+    "resource count and walltime cap",
+    "container digest, SGLang and Megatron commit hashes",
+    "model and dataset revisions with content hashes",
+    "resolved arguments and reward audit",
+    "H20 driver, CUDA, kernels and cross-node network preflight",
+    "snapshot conversion and same-version probability check",
+    "actual engine placement and trainer rank topology"
+  ],
+  "extensions": [
+    "Qwen3.5-9B after independent model-loader and numeric validation",
+    "disk-delta staging reuse only if repeated allocation is a measured bottleneck",
+    "shared-storage peripheral workers after the stable 32-GPU baseline",
+    "fully async only with explicit behavior-policy and staleness semantics"
+  ]
+}
