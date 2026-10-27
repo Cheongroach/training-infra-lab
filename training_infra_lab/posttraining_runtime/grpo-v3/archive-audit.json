@@ -1,0 +1,15 @@
+{
+  "archive_sha256": "c8ca176eda0e61dd5c0e6f399b674c3619c183574bd636e548bbb7c027ac2f15",
+  "archive_bytes": 1877188,
+  "sources_verified": 6,
+  "runtime_patch_verified": true,
+  "event_counts": {
+    "env_report": 18,
+    "weight_update_result": 3,
+    "train_group_step_end": 2,
+    "metric": 8,
+    "train_engine_local_weight_checksum": 4,
+    "engine_env_report": 2,
+    "inference_engine_weight_checksum": 3
+  }
+}

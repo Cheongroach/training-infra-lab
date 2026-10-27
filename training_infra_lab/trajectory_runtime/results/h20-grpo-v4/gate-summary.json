@@ -1,0 +1,398 @@
+{
+  "measurements": [
+    {
+      "event": "device_gate_pass",
+      "gate": "fla_vs_torch_bf16",
+      "log_probs": {
+        "relative_l2": 9.830611102723053e-05,
+        "cosine": 0.9999999951830837,
+        "max_abs": 0.0020189285278320312
+      },
+      "gradient": {
+        "relative_l2": 0.004078333049156658,
+        "cosine": 0.9999916850407954,
+        "max_abs": 0.0001220703125
+      },
+      "cached_vs_full": [
+        {
+          "relative_l2": 0.00012773473726508907,
+          "cosine": 0.9999999918474426,
+          "max_abs": 0.001964569091796875
+        },
+        {
+          "relative_l2": 0.00010700560619132685,
+          "cosine": 0.9999999943035106,
+          "max_abs": 0.0018987655639648438
+        },
+        {
+          "relative_l2": 0.00012010115536699934,
+          "cosine": 0.9999999927880446,
+          "max_abs": 0.0019731521606445312
+        },
+        {
+          "relative_l2": 9.269391032993047e-05,
+          "cosine": 0.9999999957041898,
+          "max_abs": 0.0018796920776367188
+        },
+        {
+          "relative_l2": 0.00013144973936921235,
+          "cosine": 0.999999991377561,
+          "max_abs": 0.0019598007202148438
+        }
+      ],
+      "cross_row_isolation": "exact",
+      "scope": "tiny 4-layer Qwen3.5; lengths 17/65/129/257"
+    },
+    {
+      "event": "device_gate_pass",
+      "gate": "fsdp_vs_independent_global_batch",
+      "kernel": "torch",
+      "dtype": "None",
+      "strategy": "fixed",
+      "defer_sync": false,
+      "reduction": "sequence_mean",
+      "world": 4,
+      "errors": {
+        "parameters": {
+          "relative_l2": 4.135688760402801e-09,
+          "cosine": 0.9999999999999999,
+          "max_abs": 1.862645149230957e-08
+        },
+        "gradient": {
+          "relative_l2": 1.34082796343462e-07,
+          "cosine": 0.9999999999999909,
+          "max_abs": 1.1175870895385742e-08
+        },
+        "exp_avg": {
+          "relative_l2": 7.478077229015286e-08,
+          "cosine": 0.9999999999999974,
+          "max_abs": 1.1641532182693481e-09
+        },
+        "exp_avg_sq": {
+          "relative_l2": 9.171479509896218e-08,
+          "cosine": 0.9999999999999959,
+          "max_abs": 9.094947017729282e-13
+        }
+      },
+      "initial_parameters_and_adam": "byte_exact_full_tensor_checked",
+      "reference_state_owner": "rank0_broadcast_to_all_ranks",
+      "activation_checkpoint": false,
+      "loss": 0.001162007451057434,
+      "reference_loss": 0.001162014901638031
+    },
+    {
+      "event": "device_gate_pass",
+      "gate": "fsdp_vs_independent_global_batch",
+      "kernel": "torch",
+      "dtype": "None",
+      "strategy": "verl",
+      "defer_sync": false,
+      "reduction": "sequence_mean",
+      "world": 4,
+      "errors": {
+        "parameters": {
+          "relative_l2": 6.2446921506606304e-09,
+          "cosine": 0.9999999999999999,
+          "max_abs": 2.7008354663848877e-08
+        },
+        "gradient": {
+          "relative_l2": 2.9134217949660846e-07,
+          "cosine": 0.9999999999999576,
+          "max_abs": 2.2351741790771484e-08
+        },
+        "exp_avg": {
+          "relative_l2": 1.5550213973767333e-07,
+          "cosine": 0.9999999999999882,
+          "max_abs": 1.862645149230957e-09
+        },
+        "exp_avg_sq": {
+          "relative_l2": 2.1249244186325025e-07,
+          "cosine": 0.9999999999999784,
+          "max_abs": 1.8189894035458565e-12
+        }
+      },
+      "initial_parameters_and_adam": "byte_exact_full_tensor_checked",
+      "reference_state_owner": "rank0_broadcast_to_all_ranks",
+      "activation_checkpoint": false,
+      "loss": 0.0011619925498962402,
+      "reference_loss": 0.001162014901638031
+    },
+    {
+      "event": "device_gate_pass",
+      "gate": "fsdp_vs_independent_global_batch",
+      "kernel": "torch",
+      "dtype": "None",
+      "strategy": "slot_sorted",
+      "defer_sync": true,
+      "reduction": "sequence_mean",
+      "world": 4,
+      "errors": {
+        "parameters": {
+          "relative_l2": 4.007228156799659e-09,
+          "cosine": 1.0000000000000002,
+          "max_abs": 1.862645149230957e-08
+        },
+        "gradient": {
+          "relative_l2": 1.258933664788034e-07,
+          "cosine": 0.9999999999999919,
+          "max_abs": 1.30385160446167e-08
+        },
+        "exp_avg": {
+          "relative_l2": 7.04555581587305e-08,
+          "cosine": 0.9999999999999977,
+          "max_abs": 1.3969838619232178e-09
+        },
+        "exp_avg_sq": {
+          "relative_l2": 9.784987351113464e-08,
+          "cosine": 0.999999999999995,
+          "max_abs": 9.094947017729282e-13
+        }
+      },
+      "initial_parameters_and_adam": "byte_exact_full_tensor_checked",
+      "reference_state_owner": "rank0_broadcast_to_all_ranks",
+      "activation_checkpoint": true,
+      "loss": 0.0011619925498962402,
+      "reference_loss": 0.001162014901638031
+    },
+    {
+      "event": "device_gate_pass",
+      "gate": "fsdp_vs_independent_global_batch",
+      "kernel": "torch",
+      "dtype": "None",
+      "strategy": "empty",
+      "defer_sync": true,
+      "reduction": "sequence_mean",
+      "world": 4,
+      "errors": {
+        "parameters": {
+          "relative_l2": 6.190292425135835e-09,
+          "cosine": 0.9999999999999996,
+          "max_abs": 2.7008354663848877e-08
+        },
+        "gradient": {
+          "relative_l2": 2.914576803271716e-07,
+          "cosine": 0.9999999999999576,
+          "max_abs": 2.2351741790771484e-08
+        },
+        "exp_avg": {
+          "relative_l2": 1.558829530598857e-07,
+          "cosine": 0.9999999999999877,
+          "max_abs": 1.862645149230957e-09
+        },
+        "exp_avg_sq": {
+          "relative_l2": 2.1018663790911835e-07,
+          "cosine": 0.9999999999999792,
+          "max_abs": 1.8189894035458565e-12
+        }
+      },
+      "initial_parameters_and_adam": "byte_exact_full_tensor_checked",
+      "reference_state_owner": "rank0_broadcast_to_all_ranks",
+      "activation_checkpoint": false,
+      "loss": 0.001162007451057434,
+      "reference_loss": 0.001162014901638031
+    },
+    {
+      "event": "device_gate_pass",
+      "gate": "fsdp_vs_independent_global_batch",
+      "kernel": "torch",
+      "dtype": "None",
+      "strategy": "fixed",
+      "defer_sync": false,
+      "reduction": "token_mean",
+      "world": 4,
+      "errors": {
+        "parameters": {
+          "relative_l2": 2.482459764886411e-08,
+          "cosine": 0.9999999999999996,
+          "max_abs": 1.4528632164001465e-07
+        },
+        "gradient": {
+          "relative_l2": 1.7449404172595193e-07,
+          "cosine": 0.9999999999999843,
+          "max_abs": 7.450580596923828e-09
+        },
+        "exp_avg": {
+          "relative_l2": 9.726555382846691e-08,
+          "cosine": 0.9999999999999954,
+          "max_abs": 6.984919309616089e-10
+        },
+        "exp_avg_sq": {
+          "relative_l2": 1.2117398447738967e-07,
+          "cosine": 0.9999999999999925,
+          "max_abs": 2.2737367544323206e-13
+        }
+      },
+      "initial_parameters_and_adam": "byte_exact_full_tensor_checked",
+      "reference_state_owner": "rank0_broadcast_to_all_ranks",
+      "activation_checkpoint": false,
+      "loss": -0.08945361354894805,
+      "reference_loss": -0.08945361524820328
+    },
+    {
+      "event": "device_gate_pass",
+      "gate": "fsdp_vs_independent_global_batch",
+      "kernel": "torch",
+      "dtype": "None",
+      "strategy": "verl",
+      "defer_sync": false,
+      "reduction": "token_mean",
+      "world": 4,
+      "errors": {
+        "parameters": {
+          "relative_l2": 3.681644404403025e-08,
+          "cosine": 0.9999999999999999,
+          "max_abs": 2.384185791015625e-07
+        },
+        "gradient": {
+          "relative_l2": 2.9318104847198023e-07,
+          "cosine": 0.999999999999957,
+          "max_abs": 1.1175870895385742e-08
+        },
+        "exp_avg": {
+          "relative_l2": 1.5846409476505853e-07,
+          "cosine": 0.9999999999999875,
+          "max_abs": 9.313225746154785e-10
+        },
+        "exp_avg_sq": {
+          "relative_l2": 1.8901627845258864e-07,
+          "cosine": 0.9999999999999823,
+          "max_abs": 4.547473508864641e-13
+        }
+      },
+      "initial_parameters_and_adam": "byte_exact_full_tensor_checked",
+      "reference_state_owner": "rank0_broadcast_to_all_ranks",
+      "activation_checkpoint": false,
+      "loss": -0.08945363028007641,
+      "reference_loss": -0.08945361524820328
+    },
+    {
+      "event": "device_gate_pass",
+      "gate": "fsdp_vs_independent_global_batch",
+      "kernel": "torch",
+      "dtype": "None",
+      "strategy": "slot_sorted",
+      "defer_sync": true,
+      "reduction": "token_mean",
+      "world": 4,
+      "errors": {
+        "parameters": {
+          "relative_l2": 2.480852458717302e-08,
+          "cosine": 0.9999999999999993,
+          "max_abs": 1.4528632164001465e-07
+        },
+        "gradient": {
+          "relative_l2": 1.7321740814743602e-07,
+          "cosine": 0.9999999999999848,
+          "max_abs": 6.51925802230835e-09
+        },
+        "exp_avg": {
+          "relative_l2": 9.641902159829714e-08,
+          "cosine": 0.999999999999995,
+          "max_abs": 6.984919309616089e-10
+        },
+        "exp_avg_sq": {
+          "relative_l2": 1.2037217422845163e-07,
+          "cosine": 0.9999999999999925,
+          "max_abs": 2.2737367544323206e-13
+        }
+      },
+      "initial_parameters_and_adam": "byte_exact_full_tensor_checked",
+      "reference_state_owner": "rank0_broadcast_to_all_ranks",
+      "activation_checkpoint": true,
+      "loss": -0.08945364701120477,
+      "reference_loss": -0.08945361524820328
+    },
+    {
+      "event": "device_gate_pass",
+      "gate": "fsdp_vs_independent_global_batch",
+      "kernel": "torch",
+      "dtype": "None",
+      "strategy": "empty",
+      "defer_sync": true,
+      "reduction": "token_mean",
+      "world": 4,
+      "errors": {
+        "parameters": {
+          "relative_l2": 3.681839309349577e-08,
+          "cosine": 0.9999999999999996,
+          "max_abs": 2.384185791015625e-07
+        },
+        "gradient": {
+          "relative_l2": 2.9266512671666477e-07,
+          "cosine": 0.9999999999999575,
+          "max_abs": 1.1175870895385742e-08
+        },
+        "exp_avg": {
+          "relative_l2": 1.5820343480714091e-07,
+          "cosine": 0.9999999999999877,
+          "max_abs": 9.313225746154785e-10
+        },
+        "exp_avg_sq": {
+          "relative_l2": 1.868045996148061e-07,
+          "cosine": 0.9999999999999823,
+          "max_abs": 4.547473508864641e-13
+        }
+      },
+      "initial_parameters_and_adam": "byte_exact_full_tensor_checked",
+      "reference_state_owner": "rank0_broadcast_to_all_ranks",
+      "activation_checkpoint": false,
+      "loss": -0.08945361354894805,
+      "reference_loss": -0.08945361524820328
+    },
+    {
+      "event": "device_gate_measurement",
+      "gate": "fsdp_vs_independent_global_batch",
+      "kernel": "fla",
+      "dtype": "torch.bfloat16",
+      "strategy": "fixed",
+      "defer_sync": false,
+      "reduction": "sequence_mean",
+      "world": 4,
+      "errors": {
+        "parameters": {
+          "relative_l2": 0.0002659464796521083,
+          "cosine": 0.9999999646362349,
+          "max_abs": 0.00017389841377735138
+        },
+        "gradient": {
+          "relative_l2": 0.04085349358884995,
+          "cosine": 0.9991651543607307,
+          "max_abs": 0.0067234039306640625
+        },
+        "exp_avg": {
+          "relative_l2": 0.02144437912258377,
+          "cosine": 0.9997700455175,
+          "max_abs": 0.0006723404003423639
+        },
+        "exp_avg_sq": {
+          "relative_l2": 0.00928198098571826,
+          "cosine": 0.999957207515798,
+          "max_abs": 9.09529767056938e-08
+        }
+      },
+      "initial_parameters_and_adam": "byte_exact_full_tensor_checked",
+      "reference_state_owner": "rank0_broadcast_to_all_ranks",
+      "activation_checkpoint": false,
+      "loss": 0.0010728538036346436,
+      "reference_loss": 0.0011241883039474487
+    }
+  ],
+  "cpu_tests": 15,
+  "cpu_tests_passed": true,
+  "failure_probe": [
+    {
+      "event": "worker_failure_probe_pass",
+      "backend": "gloo",
+      "world": 2,
+      "seconds_including_process_start": 3.013052346999757,
+      "returncode": 1,
+      "original_exception_visible": true,
+      "scope": "CPU process lifecycle; not NCCL/HCCL recovery"
+    }
+  ],
+  "all_device_gates_complete": false,
+  "real_grpo_executed": false,
+  "failed_gate": "BF16 fixed/sequence_mean parameter max_abs 0.00017389841377735138 > 0.00003",
+  "initial_state": "exact reference parameters and Adam broadcast from rank0",
+  "next": "Diagnose precision contracts and individual parameter errors; do not relax tolerances."
+}

@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "run_sid": "70d36e11e929c5c3",
+  "precheck_sid": "8933396b-0823-40d3-b4de-eef06d92a897",
+  "success_checks": 14,
+  "warn_hint": [],
+  "precheck_to_create_seconds_upper_bound": 60,
+  "precheck_payload_identity": true,
+  "request_context_merged": true,
+  "entry_sha256": "75e039603227be92c126dc4eef879ac2cc59bd874857f550f1afce494dc618f5",
+  "auditor_files_verified": 15,
+  "cpu_tests": 125,
+  "training_auto_retry": false,
+  "create_response_reconciled_without_resubmission": true
+}

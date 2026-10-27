@@ -1,0 +1,648 @@
+[
+  {
+    "case": 0,
+    "fp32_head": false,
+    "strategy": "verl",
+    "micro_batch": 1,
+    "result": {
+      "update_id": 1,
+      "policy_version": 1,
+      "batch_sha256": "8ee0e2dc25b126aae262fd77a9bdf14dca36b69ddeba0429c6d5c283cca92e2a",
+      "plan_sha256": "3037c30e81b8f27e7dd4db2f1a47ce6fb20ff0bcbdd0271b703e473eed88685b",
+      "strategy": "verl",
+      "seconds": 2.3978142738342285,
+      "loss": 3.9443373680114746e-05,
+      "grad_norm": 2.3617732524871826,
+      "rank": 2,
+      "slot_seconds": [
+        0.6407069303095341,
+        0.5772562921047211,
+        0.5028470829129219,
+        0.5100629441440105
+      ],
+      "slots": 4,
+      "dummy_slots": 0,
+      "response_tokens": 4292,
+      "input_tokens": 5708,
+      "timing_scope": "resident-batch forward/backward/clip/Adam plus slot synchronization",
+      "planning_seconds": 0.02591027319431305,
+      "total_seconds": 2.4595580101013184,
+      "micro_batch": 1,
+      "peak_allocated_bytes": 50526382080,
+      "peak_reserved_bytes": 73006055424
+    },
+    "batch_sha256": "8ee0e2dc25b126aae262fd77a9bdf14dca36b69ddeba0429c6d5c283cca92e2a",
+    "scope": "frozen off-policy diagnostic; timings are not performance samples"
+  },
+  {
+    "case": 1,
+    "fp32_head": false,
+    "strategy": "verl",
+    "micro_batch": 1,
+    "result": {
+      "update_id": 1,
+      "policy_version": 1,
+      "batch_sha256": "8ee0e2dc25b126aae262fd77a9bdf14dca36b69ddeba0429c6d5c283cca92e2a",
+      "plan_sha256": "3037c30e81b8f27e7dd4db2f1a47ce6fb20ff0bcbdd0271b703e473eed88685b",
+      "strategy": "verl",
+      "seconds": 1.7953569889068604,
+      "loss": 3.9443373680114746e-05,
+      "grad_norm": 2.3654584884643555,
+      "rank": 2,
+      "slot_seconds": [
+        0.4334445036947727,
+        0.42296090722084045,
+        0.39462585747241974,
+        0.3761107437312603
+      ],
+      "slots": 4,
+      "dummy_slots": 0,
+      "response_tokens": 4292,
+      "input_tokens": 5708,
+      "timing_scope": "resident-batch forward/backward/clip/Adam plus slot synchronization",
+      "planning_seconds": 0.026183176785707474,
+      "total_seconds": 1.855421543121338,
+      "micro_batch": 1,
+      "peak_allocated_bytes": 50526382080,
+      "peak_reserved_bytes": 73006055424
+    },
+    "batch_sha256": "8ee0e2dc25b126aae262fd77a9bdf14dca36b69ddeba0429c6d5c283cca92e2a",
+    "scope": "frozen off-policy diagnostic; timings are not performance samples",
+    "probability_difference": {
+      "rms": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0
+    },
+    "errors": {
+      "parameter": {
+        "relative_l2": 2.605683754156484e-08,
+        "max_abs": 4.238099791109562e-07,
+        "difference_squared": 2.860098094075262e-10,
+        "reference_squared": 421247.676160616
+      },
+      "gradient": {
+        "relative_l2": 0.009422153324741922,
+        "max_abs": 0.0003008260391652584,
+        "difference_squared": 2.4596438075504037e-05,
+        "reference_squared": 0.2770587593623861
+      },
+      "step": {
+        "relative_l2": 0.0,
+        "max_abs": 0.0,
+        "difference_squared": 0.0,
+        "reference_squared": 1708.0
+      },
+      "exp_avg": {
+        "relative_l2": 0.009422153280587655,
+        "max_abs": 3.0082592274993658e-05,
+        "difference_squared": 2.459643869630677e-07,
+        "reference_squared": 0.002770587689519369
+      },
+      "exp_avg_sq": {
+        "relative_l2": 0.011212567750068694,
+        "max_abs": 1.4432089301408269e-08,
+        "difference_squared": 1.0391699073667828e-15,
+        "reference_squared": 8.265638385916105e-12
+      }
+    },
+    "accepted": true
+  },
+  {
+    "case": 2,
+    "fp32_head": false,
+    "strategy": "slot_sorted",
+    "micro_batch": 1,
+    "result": {
+      "update_id": 1,
+      "policy_version": 1,
+      "batch_sha256": "8ee0e2dc25b126aae262fd77a9bdf14dca36b69ddeba0429c6d5c283cca92e2a",
+      "plan_sha256": "7929fd50c1a4b72fc844a6a392fe7c2c124868612d02ed01cb0bef18388549ff",
+      "strategy": "slot_sorted",
+      "seconds": 2.1057634353637695,
+      "loss": 3.945082426071167e-05,
+      "grad_norm": 2.3618364334106445,
+      "rank": 2,
+      "slot_seconds": [
+        0.5332794934511185,
+        0.5216912887990475,
+        0.3918563984334469,
+        0.4861382506787777
+      ],
+      "slots": 4,
+      "dummy_slots": 0,
+      "response_tokens": 4292,
+      "input_tokens": 5708,
+      "timing_scope": "resident-batch forward/backward/clip/Adam plus slot synchronization",
+      "planning_seconds": 0.026282548904418945,
+      "total_seconds": 2.1638777256011963,
+      "micro_batch": 1,
+      "peak_allocated_bytes": 50012684288,
+      "peak_reserved_bytes": 73006055424
+    },
+    "batch_sha256": "8ee0e2dc25b126aae262fd77a9bdf14dca36b69ddeba0429c6d5c283cca92e2a",
+    "scope": "frozen off-policy diagnostic; timings are not performance samples",
+    "probability_difference": {
+      "rms": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0
+    },
+    "errors": {
+      "parameter": {
+        "relative_l2": 2.0558691690026066e-08,
+        "max_abs": 2.0489096641540527e-07,
+        "difference_squared": 1.7804446024383804e-10,
+        "reference_squared": 421247.676160616
+      },
+      "gradient": {
+        "relative_l2": 0.00572336500982275,
+        "max_abs": 0.00037676841020584106,
+        "difference_squared": 9.075588023849909e-06,
+        "reference_squared": 0.2770587593623861
+      },
+      "step": {
+        "relative_l2": 0.0,
+        "max_abs": 0.0,
+        "difference_squared": 0.0,
+        "reference_squared": 1708.0
+      },
+      "exp_avg": {
+        "relative_l2": 0.005723364597308528,
+        "max_abs": 3.767665475606918e-05,
+        "difference_squared": 9.075587029719394e-08,
+        "reference_squared": 0.002770587689519369
+      },
+      "exp_avg_sq": {
+        "relative_l2": 0.01247981774016779,
+        "max_abs": 3.330296749481931e-08,
+        "difference_squared": 1.2873388830494826e-15,
+        "reference_squared": 8.265638385916105e-12
+      }
+    },
+    "accepted": true
+  },
+  {
+    "case": 3,
+    "fp32_head": false,
+    "strategy": "verl",
+    "micro_batch": 2,
+    "result": {
+      "update_id": 1,
+      "policy_version": 1,
+      "batch_sha256": "8ee0e2dc25b126aae262fd77a9bdf14dca36b69ddeba0429c6d5c283cca92e2a",
+      "plan_sha256": "58d60c6a0183531e970e8ce445203f3e8dbd6930b0c28b5d0669e47bf518b002",
+      "strategy": "verl",
+      "seconds": 5.884929656982422,
+      "loss": 3.530457615852356e-05,
+      "grad_norm": 2.359971523284912,
+      "rank": 2,
+      "slot_seconds": [
+        5.099102403968573,
+        0.6214324533939362
+      ],
+      "slots": 2,
+      "dummy_slots": 0,
+      "response_tokens": 4292,
+      "input_tokens": 5708,
+      "timing_scope": "resident-batch forward/backward/clip/Adam plus slot synchronization",
+      "planning_seconds": 0.02583260089159012,
+      "total_seconds": 5.9460344314575195,
+      "micro_batch": 2,
+      "peak_allocated_bytes": 52386323456,
+      "peak_reserved_bytes": 73006055424
+    },
+    "batch_sha256": "8ee0e2dc25b126aae262fd77a9bdf14dca36b69ddeba0429c6d5c283cca92e2a",
+    "scope": "frozen off-policy diagnostic; timings are not performance samples",
+    "probability_difference": {
+      "rms": 0.012920842505991459,
+      "max_abs": 0.23488783836364746,
+      "p99_abs": 0.06909621506929398
+    },
+    "errors": {
+      "parameter": {
+        "relative_l2": 1.600182485147876e-07,
+        "max_abs": 1.1012889444828033e-06,
+        "difference_squared": 1.078640053621399e-08,
+        "reference_squared": 421247.676160616
+      },
+      "gradient": {
+        "relative_l2": 0.07546263789162112,
+        "max_abs": 0.002299100626260042,
+        "difference_squared": 0.0015777415034006967,
+        "reference_squared": 0.2770587593623861
+      },
+      "step": {
+        "relative_l2": 0.0,
+        "max_abs": 0.0,
+        "difference_squared": 0.0,
+        "reference_squared": 1708.0
+      },
+      "exp_avg": {
+        "relative_l2": 0.07546263765498491,
+        "max_abs": 0.0002299100742675364,
+        "difference_squared": 1.5777415481144625e-05,
+        "reference_squared": 0.002770587689519369
+      },
+      "exp_avg_sq": {
+        "relative_l2": 0.07892666579802751,
+        "max_abs": 8.65312017594988e-08,
+        "difference_squared": 5.149012128713966e-14,
+        "reference_squared": 8.265638385916105e-12
+      }
+    },
+    "accepted": false
+  },
+  {
+    "case": 4,
+    "fp32_head": false,
+    "strategy": "slot_sorted",
+    "micro_batch": 2,
+    "result": {
+      "update_id": 1,
+      "policy_version": 1,
+      "batch_sha256": "8ee0e2dc25b126aae262fd77a9bdf14dca36b69ddeba0429c6d5c283cca92e2a",
+      "plan_sha256": "fd01921c14b294ae903c152c3918e476ee54342f3abe05a6cce48e89892acd29",
+      "strategy": "slot_sorted",
+      "seconds": 1.3895596265792847,
+      "loss": 6.535649299621582e-05,
+      "grad_norm": 2.350071430206299,
+      "rank": 2,
+      "slot_seconds": [
+        0.7119760811328888,
+        0.513773150742054
+      ],
+      "slots": 2,
+      "dummy_slots": 0,
+      "response_tokens": 4292,
+      "input_tokens": 5708,
+      "timing_scope": "resident-batch forward/backward/clip/Adam plus slot synchronization",
+      "planning_seconds": 0.025778431445360184,
+      "total_seconds": 1.4476741552352905,
+      "micro_batch": 2,
+      "peak_allocated_bytes": 52386814976,
+      "peak_reserved_bytes": 73006055424
+    },
+    "batch_sha256": "8ee0e2dc25b126aae262fd77a9bdf14dca36b69ddeba0429c6d5c283cca92e2a",
+    "scope": "frozen off-policy diagnostic; timings are not performance samples",
+    "probability_difference": {
+      "rms": 0.013100283220410347,
+      "max_abs": 0.2406461238861084,
+      "p99_abs": 0.0691976472735405
+    },
+    "errors": {
+      "parameter": {
+        "relative_l2": 1.3091864784473526e-07,
+        "max_abs": 1.126900315284729e-06,
+        "difference_squared": 7.220055574017143e-09,
+        "reference_squared": 421247.676160616
+      },
+      "gradient": {
+        "relative_l2": 0.06603109228748039,
+        "max_abs": 0.002456848043948412,
+        "difference_squared": 0.00120800532318221,
+        "reference_squared": 0.2770587593623861
+      },
+      "step": {
+        "relative_l2": 0.0,
+        "max_abs": 0.0,
+        "difference_squared": 0.0,
+        "reference_squared": 1708.0
+      },
+      "exp_avg": {
+        "relative_l2": 0.06603109248971051,
+        "max_abs": 0.0002456848160363734,
+        "difference_squared": 1.2080053723930545e-05,
+        "reference_squared": 0.002770587689519369
+      },
+      "exp_avg_sq": {
+        "relative_l2": 0.07605448172993827,
+        "max_abs": 1.0237579317617929e-07,
+        "difference_squared": 4.781080144590905e-14,
+        "reference_squared": 8.265638385916105e-12
+      }
+    },
+    "accepted": false
+  },
+  {
+    "case": 0,
+    "fp32_head": true,
+    "strategy": "verl",
+    "micro_batch": 1,
+    "result": {
+      "update_id": 1,
+      "policy_version": 1,
+      "batch_sha256": "8ee0e2dc25b126aae262fd77a9bdf14dca36b69ddeba0429c6d5c283cca92e2a",
+      "plan_sha256": "3037c30e81b8f27e7dd4db2f1a47ce6fb20ff0bcbdd0271b703e473eed88685b",
+      "strategy": "verl",
+      "seconds": 2.2632973194122314,
+      "loss": -3.41758131980896e-05,
+      "grad_norm": 2.3320302963256836,
+      "rank": 2,
+      "slot_seconds": [
+        0.5716357193887234,
+        0.559628251940012,
+        0.4883221872150898,
+        0.4598829224705696
+      ],
+      "slots": 4,
+      "dummy_slots": 0,
+      "response_tokens": 4292,
+      "input_tokens": 5708,
+      "timing_scope": "resident-batch forward/backward/clip/Adam plus slot synchronization",
+      "planning_seconds": 0.027266304939985275,
+      "total_seconds": 2.3243699073791504,
+      "micro_batch": 1,
+      "peak_allocated_bytes": 54725143040,
+      "peak_reserved_bytes": 73006055424
+    },
+    "batch_sha256": "8ee0e2dc25b126aae262fd77a9bdf14dca36b69ddeba0429c6d5c283cca92e2a",
+    "scope": "frozen off-policy diagnostic; timings are not performance samples"
+  },
+  {
+    "case": 1,
+    "fp32_head": true,
+    "strategy": "verl",
+    "micro_batch": 1,
+    "result": {
+      "update_id": 1,
+      "policy_version": 1,
+      "batch_sha256": "8ee0e2dc25b126aae262fd77a9bdf14dca36b69ddeba0429c6d5c283cca92e2a",
+      "plan_sha256": "3037c30e81b8f27e7dd4db2f1a47ce6fb20ff0bcbdd0271b703e473eed88685b",
+      "strategy": "verl",
+      "seconds": 2.276106834411621,
+      "loss": -3.41758131980896e-05,
+      "grad_norm": 2.3320302963256836,
+      "rank": 2,
+      "slot_seconds": [
+        0.5741325803101063,
+        0.5728096701204777,
+        0.4787367545068264,
+        0.46270543336868286
+      ],
+      "slots": 4,
+      "dummy_slots": 0,
+      "response_tokens": 4292,
+      "input_tokens": 5708,
+      "timing_scope": "resident-batch forward/backward/clip/Adam plus slot synchronization",
+      "planning_seconds": 0.027511488646268845,
+      "total_seconds": 2.342621326446533,
+      "micro_batch": 1,
+      "peak_allocated_bytes": 54725143040,
+      "peak_reserved_bytes": 73006055424
+    },
+    "batch_sha256": "8ee0e2dc25b126aae262fd77a9bdf14dca36b69ddeba0429c6d5c283cca92e2a",
+    "scope": "frozen off-policy diagnostic; timings are not performance samples",
+    "probability_difference": {
+      "rms": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0
+    },
+    "errors": {
+      "parameter": {
+        "relative_l2": 0.0,
+        "max_abs": 0.0,
+        "difference_squared": 0.0,
+        "reference_squared": 421247.67616027093
+      },
+      "gradient": {
+        "relative_l2": 0.0,
+        "max_abs": 0.0,
+        "difference_squared": 0.0,
+        "reference_squared": 0.2774772532180727
+      },
+      "step": {
+        "relative_l2": 0.0,
+        "max_abs": 0.0,
+        "difference_squared": 0.0,
+        "reference_squared": 1708.0
+      },
+      "exp_avg": {
+        "relative_l2": 0.0,
+        "max_abs": 0.0,
+        "difference_squared": 0.0,
+        "reference_squared": 0.0027747726268972663
+      },
+      "exp_avg_sq": {
+        "relative_l2": 0.0,
+        "max_abs": 0.0,
+        "difference_squared": 0.0,
+        "reference_squared": 8.485099491508304e-12
+      }
+    },
+    "accepted": true
+  },
+  {
+    "case": 2,
+    "fp32_head": true,
+    "strategy": "slot_sorted",
+    "micro_batch": 1,
+    "result": {
+      "update_id": 1,
+      "policy_version": 1,
+      "batch_sha256": "8ee0e2dc25b126aae262fd77a9bdf14dca36b69ddeba0429c6d5c283cca92e2a",
+      "plan_sha256": "7929fd50c1a4b72fc844a6a392fe7c2c124868612d02ed01cb0bef18388549ff",
+      "strategy": "slot_sorted",
+      "seconds": 2.262450933456421,
+      "loss": -3.419071435928345e-05,
+      "grad_norm": 2.3321268558502197,
+      "rank": 2,
+      "slot_seconds": [
+        0.5741853229701519,
+        0.562840674072504,
+        0.4791308231651783,
+        0.4607614688575268
+      ],
+      "slots": 4,
+      "dummy_slots": 0,
+      "response_tokens": 4292,
+      "input_tokens": 5708,
+      "timing_scope": "resident-batch forward/backward/clip/Adam plus slot synchronization",
+      "planning_seconds": 0.026466239243745804,
+      "total_seconds": 2.3234543800354004,
+      "micro_batch": 1,
+      "peak_allocated_bytes": 54213314560,
+      "peak_reserved_bytes": 73006055424
+    },
+    "batch_sha256": "8ee0e2dc25b126aae262fd77a9bdf14dca36b69ddeba0429c6d5c283cca92e2a",
+    "scope": "frozen off-policy diagnostic; timings are not performance samples",
+    "probability_difference": {
+      "rms": 0.0,
+      "max_abs": 0.0,
+      "p99_abs": 0.0
+    },
+    "errors": {
+      "parameter": {
+        "relative_l2": 2.0584153424124395e-08,
+        "max_abs": 2.1781306713819504e-07,
+        "difference_squared": 1.7848574590612455e-10,
+        "reference_squared": 421247.67616027093
+      },
+      "gradient": {
+        "relative_l2": 0.005623479768210625,
+        "max_abs": 0.00020014913752675056,
+        "difference_squared": 8.774808771793897e-06,
+        "reference_squared": 0.2774772532180727
+      },
+      "step": {
+        "relative_l2": 0.0,
+        "max_abs": 0.0,
+        "difference_squared": 0.0,
+        "reference_squared": 1708.0
+      },
+      "exp_avg": {
+        "relative_l2": 0.005623479953044412,
+        "max_abs": 2.001487882807851e-05,
+        "difference_squared": 8.77480964814575e-08,
+        "reference_squared": 0.0027747726268972663
+      },
+      "exp_avg_sq": {
+        "relative_l2": 0.005189706777225748,
+        "max_abs": 7.487471975764493e-09,
+        "difference_squared": 2.2852966344935835e-16,
+        "reference_squared": 8.485099491508304e-12
+      }
+    },
+    "accepted": true
+  },
+  {
+    "case": 3,
+    "fp32_head": true,
+    "strategy": "verl",
+    "micro_batch": 2,
+    "result": {
+      "update_id": 1,
+      "policy_version": 1,
+      "batch_sha256": "8ee0e2dc25b126aae262fd77a9bdf14dca36b69ddeba0429c6d5c283cca92e2a",
+      "plan_sha256": "58d60c6a0183531e970e8ce445203f3e8dbd6930b0c28b5d0669e47bf518b002",
+      "strategy": "verl",
+      "seconds": 1.7234376668930054,
+      "loss": -2.26534903049469e-05,
+      "grad_norm": 2.3337910175323486,
+      "rank": 2,
+      "slot_seconds": [
+        0.8787983134388924,
+        0.6668760478496552
+      ],
+      "slots": 2,
+      "dummy_slots": 0,
+      "response_tokens": 4292,
+      "input_tokens": 5708,
+      "timing_scope": "resident-batch forward/backward/clip/Adam plus slot synchronization",
+      "planning_seconds": 0.026514779776334763,
+      "total_seconds": 1.7835279703140259,
+      "micro_batch": 2,
+      "peak_allocated_bytes": 56585116672,
+      "peak_reserved_bytes": 73006055424
+    },
+    "batch_sha256": "8ee0e2dc25b126aae262fd77a9bdf14dca36b69ddeba0429c6d5c283cca92e2a",
+    "scope": "frozen off-policy diagnostic; timings are not performance samples",
+    "probability_difference": {
+      "rms": 0.009315628558397293,
+      "max_abs": 0.19169974327087402,
+      "p99_abs": 0.043509237468242645
+    },
+    "errors": {
+      "parameter": {
+        "relative_l2": 1.2258744772489055e-07,
+        "max_abs": 1.125037670135498e-06,
+        "difference_squared": 6.330376263674535e-09,
+        "reference_squared": 421247.67616027093
+      },
+      "gradient": {
+        "relative_l2": 0.06270226499049061,
+        "max_abs": 0.002261172514408827,
+        "difference_squared": 0.0010909223640380094,
+        "reference_squared": 0.2774772532180727
+      },
+      "step": {
+        "relative_l2": 0.0,
+        "max_abs": 0.0,
+        "difference_squared": 0.0,
+        "reference_squared": 1708.0
+      },
+      "exp_avg": {
+        "relative_l2": 0.06270226511474186,
+        "max_abs": 0.00022611726308241487,
+        "difference_squared": 1.0909224056000768e-05,
+        "reference_squared": 0.0027747726268972663
+      },
+      "exp_avg_sq": {
+        "relative_l2": 0.07379678723764128,
+        "max_abs": 8.27844246487075e-08,
+        "difference_squared": 4.620956169633372e-14,
+        "reference_squared": 8.485099491508304e-12
+      }
+    },
+    "accepted": false
+  },
+  {
+    "case": 4,
+    "fp32_head": true,
+    "strategy": "slot_sorted",
+    "micro_batch": 2,
+    "result": {
+      "update_id": 1,
+      "policy_version": 1,
+      "batch_sha256": "8ee0e2dc25b126aae262fd77a9bdf14dca36b69ddeba0429c6d5c283cca92e2a",
+      "plan_sha256": "fd01921c14b294ae903c152c3918e476ee54342f3abe05a6cce48e89892acd29",
+      "strategy": "slot_sorted",
+      "seconds": 1.7404197454452515,
+      "loss": 2.6367604732513428e-05,
+      "grad_norm": 2.3330185413360596,
+      "rank": 2,
+      "slot_seconds": [
+        0.8797677345573902,
+        0.6827733851969242
+      ],
+      "slots": 2,
+      "dummy_slots": 0,
+      "response_tokens": 4292,
+      "input_tokens": 5708,
+      "timing_scope": "resident-batch forward/backward/clip/Adam plus slot synchronization",
+      "planning_seconds": 0.028652284294366837,
+      "total_seconds": 1.8020352125167847,
+      "micro_batch": 2,
+      "peak_allocated_bytes": 56585608192,
+      "peak_reserved_bytes": 73006055424
+    },
+    "batch_sha256": "8ee0e2dc25b126aae262fd77a9bdf14dca36b69ddeba0429c6d5c283cca92e2a",
+    "scope": "frozen off-policy diagnostic; timings are not performance samples",
+    "probability_difference": {
+      "rms": 0.009118928574025631,
+      "max_abs": 0.19169974327087402,
+      "p99_abs": 0.0442269928753376
+    },
+    "errors": {
+      "parameter": {
+        "relative_l2": 1.2540990387929646e-07,
+        "max_abs": 1.1355732567608356e-06,
+        "difference_squared": 6.625233482690856e-09,
+        "reference_squared": 421247.67616027093
+      },
+      "gradient": {
+        "relative_l2": 0.06471010005136746,
+        "max_abs": 0.0022582183592021465,
+        "difference_squared": 0.0011619074311950825,
+        "reference_squared": 0.2774772532180727
+      },
+      "step": {
+        "relative_l2": 0.0,
+        "max_abs": 0.0,
+        "difference_squared": 0.0,
+        "reference_squared": 1708.0
+      },
+      "exp_avg": {
+        "relative_l2": 0.06471010042616626,
+        "max_abs": 0.00022582185920327902,
+        "difference_squared": 1.161907484316119e-05,
+        "reference_squared": 0.0027747726268972663
+      },
+      "exp_avg_sq": {
+        "relative_l2": 0.07442808748347791,
+        "max_abs": 9.962241165339947e-08,
+        "difference_squared": 4.7003549788923774e-14,
+        "reference_squared": 8.485099491508304e-12
+      }
+    },
+    "accepted": false
+  }
+]

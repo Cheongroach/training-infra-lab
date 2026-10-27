@@ -1,0 +1,91 @@
+{
+  "observed_at": "2026-10-25T04:29:53.451005+00:00",
+  "run_sid": "0487f5d136d7b5b9",
+  "trial_sid": "439159056",
+  "status": "done",
+  "trial_status": "finished",
+  "pods": [
+    {
+      "sid": "5395221911",
+      "pod_name": "trial-439159056-trialrun-439159056-worker-3",
+      "status": 3,
+      "exit_status": 0,
+      "schedule_at": "2026-10-25T04:19:22.000Z",
+      "start_at": "2026-10-25T04:19:22.000Z",
+      "stop_at": "2026-10-25T04:26:26.000Z"
+    },
+    {
+      "sid": "5395221917",
+      "pod_name": "trial-439159056-trialrun-439159056-worker-1",
+      "status": 3,
+      "exit_status": 0,
+      "schedule_at": "2026-10-25T04:19:22.000Z",
+      "start_at": "2026-10-25T04:19:22.000Z",
+      "stop_at": "2026-10-25T04:26:26.000Z"
+    },
+    {
+      "sid": "5395221935",
+      "pod_name": "trial-439159056-trialrun-439159056-worker-2",
+      "status": 3,
+      "exit_status": 0,
+      "schedule_at": "2026-10-25T04:19:22.000Z",
+      "start_at": "2026-10-25T04:19:22.000Z",
+      "stop_at": "2026-10-25T04:26:25.000Z"
+    },
+    {
+      "sid": "5395221936",
+      "pod_name": "trial-439159056-trialrun-439159056-worker-0",
+      "status": 3,
+      "exit_status": 0,
+      "schedule_at": "2026-10-25T04:19:22.000Z",
+      "start_at": "2026-10-25T04:19:22.000Z",
+      "stop_at": "2026-10-25T04:26:25.000Z"
+    }
+  ],
+  "terminal": true,
+  "verified": true,
+  "errors": [],
+  "rank_count": 32,
+  "node_archives": {
+    "3": {
+      "members": 21,
+      "uncompressed_bytes": 650367,
+      "sha256": "ffb8cdec162a19f7a337c2dafdf3994ff1dbcacaa1aa7749824c069cc6a4b464"
+    },
+    "1": {
+      "members": 21,
+      "uncompressed_bytes": 728578,
+      "sha256": "5cbd97e130530ca86b15f709baefec91dbb4a380433c495c52898671468ae367"
+    },
+    "2": {
+      "members": 21,
+      "uncompressed_bytes": 673402,
+      "sha256": "76cbb3e051486d63ff4d265263fca88a0b6031c374e453738d332ff03074e672"
+    },
+    "0": {
+      "members": 21,
+      "uncompressed_bytes": 650948,
+      "sha256": "8561a831390aa4e979c436e2941502bb96391649cb76191e8b8bba9e08852236"
+    }
+  },
+  "gpu_hours": 3.7644444444444445,
+  "entry_log_matches": {
+    "3": [
+      "node-3-stdout.log"
+    ],
+    "1": [
+      "node-2-stdout.log"
+    ],
+    "2": [
+      "node-0-stdout.log"
+    ],
+    "0": [
+      "node-1-stdout.log"
+    ]
+  },
+  "gdrdma_channel_log_files": 32,
+  "cost_scope": "Sum of terminal Pod residence, including preparation",
+  "scope": "Environment, NCCL and BF16 preflight only; no model training",
+  "rdma_performance_claim": false,
+  "training_claim": false
+}

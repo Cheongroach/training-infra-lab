@@ -1,0 +1,13 @@
+{
+  "passed": false,
+  "performance_claim": false,
+  "errors": [
+    "phase driver did not complete: resume",
+    "missing restore fingerprints rank 0",
+    "missing restore fingerprints rank 1",
+    "missing resumed initial engine/publication evidence"
+  ],
+  "restored_ranks": [],
+  "sampler_restored_samples": 80,
+  "checkpoint_bytes": 56334419596
+}

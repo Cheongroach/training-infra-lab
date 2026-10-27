@@ -1,0 +1,11 @@
+{
+  "dataset": "openai/gsm8k",
+  "url": "https://raw.githubusercontent.com/openai/grade-school-math/master/grade_school_math/data/train.jsonl",
+  "source_local_reused_read_only": "/tmp/laya-stage-assets/data/train.jsonl",
+  "source_revision": "not recorded; pinned by exact file content SHA256",
+  "source_sha256": "17f347dc51477c50d4efb83959dbb7c56297aba886e5544ee2aaed3024813465",
+  "sha256": "33677560147f2b684ead8a7199d0c6041b21e59ae8c61b97bc294962a03cbab0",
+  "selection": "first 64 original train rows, ordered; no reward filtering",
+  "rows": 64,
+  "use": "bounded engineering validation; not held-out model quality evaluation"
+}

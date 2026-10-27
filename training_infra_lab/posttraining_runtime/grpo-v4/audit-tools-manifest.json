@@ -1,0 +1,11 @@
+{
+  "cpu_fixture_tests_passed": 33,
+  "sources": {
+    "verify_smoke.py": "407bf0f79b9f765c2b4e588bc942650c957b502ee39bbe2288459294bd698954",
+    "rollout_gate.py": "2162051bbfe05b7ea2a18e72bb9e5d4299656404e23212c66387e802b64ecafd",
+    "qualification.py": "14a40f301b049580c5c4fe69af7e7df2218129dc54417caeb1e3fc143a7b9b04",
+    "bounded_rollout.py": "5891258a3c604d1f37d9f5519899fc0c8096ec08d32f16d97ca05227c2191e61",
+    "test_verify_smoke.py": "7620a522435dd5d44680c4f2d487c9ab63ba281d9bfaafc5a19d81ddcc9551eb",
+    "test_qualification.py": "9478764e516844d232df680283b1f7da5ba681aee59436d47bda2e9a461c8487"
+  }
+}

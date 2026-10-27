@@ -1,0 +1,46 @@
+{
+  "verified": true,
+  "gpu_resources": 32,
+  "nodes": [
+    {
+      "arnold_id": 0,
+      "hostname": "n122-061-038",
+      "ray_node_id": "461bdf5855414f54663e201ba180106e0d1997d5f57b5b145f18e24f",
+      "gpu_ids": [
+        0
+      ],
+      "cuda_device": "NVIDIA H20",
+      "bf16_passed": true
+    },
+    {
+      "arnold_id": 1,
+      "hostname": "n122-060-221",
+      "ray_node_id": "47a3aed88c64854f593d10ebe3eb1a7e9cf3eb74c6308ae74077aea1",
+      "gpu_ids": [
+        0
+      ],
+      "cuda_device": "NVIDIA H20",
+      "bf16_passed": true
+    },
+    {
+      "arnold_id": 2,
+      "hostname": "n122-061-019",
+      "ray_node_id": "9077738416b4e4d5120c6da1c531ba1ba3442bdb672a9846211b08b3",
+      "gpu_ids": [
+        0
+      ],
+      "cuda_device": "NVIDIA H20",
+      "bf16_passed": true
+    },
+    {
+      "arnold_id": 3,
+      "hostname": "n122-061-251",
+      "ray_node_id": "905cabd4f6be798e99e6b69494d701e204c87a429b18a3a7fa282c3f",
+      "gpu_ids": [
+        0
+      ],
+      "cuda_device": "NVIDIA H20",
+      "bf16_passed": true
+    }
+  ]
+}

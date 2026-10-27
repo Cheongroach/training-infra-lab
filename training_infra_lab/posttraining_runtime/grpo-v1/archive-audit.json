@@ -1,0 +1,9 @@
+{
+  "archive_sha256": "a8ecd87d933576b8db8eb94f5a6336a9bb7ee9fcc1eaad4bd5a329f837bd725a",
+  "archived_sources_verified": 3,
+  "event_counts": {
+    "env_report": 16,
+    "engine_env_report": 2
+  },
+  "grpo_verified": false
+}

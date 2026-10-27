@@ -1,0 +1,134 @@
+{
+  "cpu_tests": 18,
+  "device_tests_per_rank": 18,
+  "device_ranks": 4,
+  "residency_gate": [
+    {
+      "gate": "fsdp_rollout_residency",
+      "exact_sampling_and_inference_state": true,
+      "post_generation_update_errors": {
+        "parameter": {
+          "relative_l2": 0.0,
+          "cosine": 1.0,
+          "max_abs": 0.0
+        },
+        "gradient": {
+          "relative_l2": 0.0,
+          "cosine": 1.0,
+          "max_abs": 0.0
+        },
+        "exp_avg": {
+          "relative_l2": 0.0,
+          "cosine": 1.0,
+          "max_abs": 0.0
+        },
+        "exp_avg_sq": {
+          "relative_l2": 0.0,
+          "cosine": 1.0,
+          "max_abs": 0.0
+        }
+      },
+      "collective_memory_rejection": true,
+      "phase_exception_then_training": "passed",
+      "scope": "tiny Qwen3.5 CUDA"
+    },
+    {
+      "gate": "fsdp_rollout_residency",
+      "exact_sampling_and_inference_state": true,
+      "post_generation_update_errors": {
+        "parameter": {
+          "relative_l2": 0.0,
+          "cosine": 1.0,
+          "max_abs": 0.0
+        },
+        "gradient": {
+          "relative_l2": 0.0,
+          "cosine": 1.0,
+          "max_abs": 0.0
+        },
+        "exp_avg": {
+          "relative_l2": 0.0,
+          "cosine": 1.0,
+          "max_abs": 0.0
+        },
+        "exp_avg_sq": {
+          "relative_l2": 0.0,
+          "cosine": 1.0,
+          "max_abs": 0.0
+        }
+      },
+      "collective_memory_rejection": true,
+      "phase_exception_then_training": "passed",
+      "scope": "tiny Qwen3.5 CUDA"
+    },
+    {
+      "gate": "fsdp_rollout_residency",
+      "exact_sampling_and_inference_state": true,
+      "post_generation_update_errors": {
+        "parameter": {
+          "relative_l2": 0.0,
+          "cosine": 1.0,
+          "max_abs": 0.0
+        },
+        "gradient": {
+          "relative_l2": 0.0,
+          "cosine": 1.0,
+          "max_abs": 0.0
+        },
+        "exp_avg": {
+          "relative_l2": 0.0,
+          "cosine": 1.0,
+          "max_abs": 0.0
+        },
+        "exp_avg_sq": {
+          "relative_l2": 0.0,
+          "cosine": 1.0,
+          "max_abs": 0.0
+        }
+      },
+      "collective_memory_rejection": true,
+      "phase_exception_then_training": "passed",
+      "scope": "tiny Qwen3.5 CUDA"
+    },
+    {
+      "gate": "fsdp_rollout_residency",
+      "exact_sampling_and_inference_state": true,
+      "post_generation_update_errors": {
+        "parameter": {
+          "relative_l2": 0.0,
+          "cosine": 1.0,
+          "max_abs": 0.0
+        },
+        "gradient": {
+          "relative_l2": 0.0,
+          "cosine": 1.0,
+          "max_abs": 0.0
+        },
+        "exp_avg": {
+          "relative_l2": 0.0,
+          "cosine": 1.0,
+          "max_abs": 0.0
+        },
+        "exp_avg_sq": {
+          "relative_l2": 0.0,
+          "cosine": 1.0,
+          "max_abs": 0.0
+        }
+      },
+      "collective_memory_rejection": true,
+      "phase_exception_then_training": "passed",
+      "scope": "tiny Qwen3.5 CUDA"
+    }
+  ],
+  "replay_errors_max_relative_l2": {
+    "gradient": 0.07194640710814974,
+    "exp_avg": 0.05355595971432988,
+    "exp_avg_sq": 0.06376027981995594
+  },
+  "replay_parameter_max_abs": 1.2408127076923847e-06,
+  "gate_limits": {
+    "gradient_and_moments_relative_l2": 0.08,
+    "parameter_max_abs": 3e-06
+  },
+  "scope": "v8 micro=1 only; not bitwise training equality"
+}

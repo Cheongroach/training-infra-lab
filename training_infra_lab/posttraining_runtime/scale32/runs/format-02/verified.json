@@ -1,0 +1,21 @@
+{
+  "observed_at": "2026-10-25T04:50:03.496249+00:00",
+  "run": "603b17dfdb13a1bf",
+  "status": "failed",
+  "trial": "439167419",
+  "terminal": true,
+  "summary": null,
+  "audit_complete": false,
+  "protocol_passed": false,
+  "archive": {
+    "members": 16,
+    "uncompressed_bytes": 248320,
+    "sha256": "1c045be11aff8bd54774a834d4c127486fc533f0478d4a3f50ef18111a0a5209"
+  },
+  "errors": [
+    "Unsuccessful terminal Pod",
+    "Entrypoint failed",
+    "Generation probe did not complete"
+  ],
+  "gpu_hours": 0.46555555555555556
+}

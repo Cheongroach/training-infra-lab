@@ -1,0 +1,38 @@
+{
+  "control_plane": "cn",
+  "host": "https://kelemetry.byted.org",
+  "observed_at": "2026-10-25T07:33:03.823358+00:00",
+  "start_us": 1792906381720187,
+  "end_us": 1792913581720187,
+  "reports": [
+    {
+      "pod": "trial-439212279-trialrun-439212279-worker-0",
+      "http_status": 200,
+      "traces": 0,
+      "events": [],
+      "errors": null
+    },
+    {
+      "pod": "trial-439212279-trialrun-439212279-worker-1",
+      "http_status": 200,
+      "traces": 0,
+      "events": [],
+      "errors": null
+    },
+    {
+      "pod": "trial-439212279-trialrun-439212279-worker-2",
+      "http_status": 200,
+      "traces": 0,
+      "events": [],
+      "errors": null
+    },
+    {
+      "pod": "trial-439212279-trialrun-439212279-worker-3",
+      "http_status": 200,
+      "traces": 0,
+      "events": [],
+      "errors": null
+    }
+  ],
+  "root_cause_verified": false
+}

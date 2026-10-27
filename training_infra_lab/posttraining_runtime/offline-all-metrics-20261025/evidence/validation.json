@@ -1,0 +1,52 @@
+{
+  "browser": {
+    "initial": {
+      "width": 1440,
+      "scroll": 1440
+    },
+    "metrics": {
+      "catalog": 230,
+      "search_alias": true,
+      "exact_points": true,
+      "time_filter": true,
+      "csv_export": true
+    },
+    "nsys": {
+      "all_tables": 63,
+      "global_kernel_search": 6369,
+      "last_page_verified": true,
+      "all_columns": true,
+      "large_integer_precision": true
+    },
+    "records": {
+      "full_prompt_response_tokens": true,
+      "sample_json_export": true,
+      "tensor_fields": true,
+      "filtered_json_export": true,
+      "all_rank_checksums": 6
+    },
+    "offline": {
+      "file_protocol": true,
+      "network_offline": true,
+      "remote_requests": [],
+      "missing_links": []
+    },
+    "responsive": {
+      "desktop": 1440,
+      "mobile": 390,
+      "all_tabs_no_overflow": true,
+      "print_header_hidden": true
+    },
+    "javascript_errors": [],
+    "failed_requests": [],
+    "passed": true
+  },
+  "data": {
+    "datasets_verified": 71,
+    "rows_verified": 854569,
+    "metric_sequences": 230,
+    "metric_points": 27064,
+    "all_chunk_hashes_verified": true,
+    "passed": true
+  }
+}

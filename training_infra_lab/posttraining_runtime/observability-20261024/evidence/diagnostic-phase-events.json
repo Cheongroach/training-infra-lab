@@ -1,0 +1,62 @@
+[
+  {
+    "rollout_id": 0,
+    "timestamp": "2026-10-24T13:33:48.691959Z",
+    "metrics": {
+      "perf/update_weights_implementation_time": 1.754535436630249,
+      "perf/finalize_and_resume_engines_time": 0.013515233993530273,
+      "perf/update_weights_time": 1.8246517181396484,
+      "perf/data_preprocess_time": 0.007928133010864258,
+      "perf/train_wait_time": 57.224276304244995,
+      "perf/log_probs_time": 11.680558681488037,
+      "perf/actor_train_time": 48.721346616744995,
+      "perf/train_time": 60.436116218566895,
+      "perf/log_probs_tflops": 12.444900598457464,
+      "perf/actor_train_tflops": 8.950700369739463,
+      "perf/actor_train_tok_per_s": 709.9967961088971,
+      "perf/step_time": 117.66039252281189,
+      "perf/wait_time_ratio": 0.486351227267497,
+      "rollout/step": 0
+    }
+  },
+  {
+    "rollout_id": 1,
+    "timestamp": "2026-10-24T13:35:10.468040Z",
+    "metrics": {
+      "perf/update_weights_implementation_time": 0.15602731704711914,
+      "perf/finalize_and_resume_engines_time": 0.011403560638427734,
+      "perf/update_weights_time": 0.1881089210510254,
+      "perf/data_preprocess_time": 0.009268760681152344,
+      "perf/train_wait_time": 23.92399787902832,
+      "perf/log_probs_time": 1.723198652267456,
+      "perf/actor_train_time": 56.11434602737427,
+      "perf/train_time": 57.85158944129944,
+      "perf/log_probs_tflops": 104.89016682171969,
+      "perf/actor_train_tflops": 9.663122190631377,
+      "perf/actor_train_tok_per_s": 751.1269930765735,
+      "perf/step_time": 81.77558732032776,
+      "perf/wait_time_ratio": 0.2925567233814449,
+      "rollout/step": 1
+    }
+  },
+  {
+    "rollout_id": 2,
+    "timestamp": "2026-10-24T13:36:33.036829Z",
+    "metrics": {
+      "perf/update_weights_implementation_time": 0.1688675880432129,
+      "perf/finalize_and_resume_engines_time": 0.012434959411621094,
+      "perf/update_weights_time": 0.20209693908691406,
+      "perf/data_preprocess_time": 0.008437156677246094,
+      "perf/train_wait_time": 42.242701053619385,
+      "perf/log_probs_time": 1.6024229526519775,
+      "perf/actor_train_time": 38.714545488357544,
+      "perf/train_time": 40.32642078399658,
+      "perf/log_probs_tflops": 98.37956525668308,
+      "perf/actor_train_tflops": 12.21600342589377,
+      "perf/actor_train_tok_per_s": 968.5765266513747,
+      "perf/step_time": 82.56912183761597,
+      "perf/wait_time_ratio": 0.5116040974336111,
+      "rollout/step": 2
+    }
+  }
+]

@@ -1,0 +1,14 @@
+{
+  "verified": true,
+  "run_sid": "172e5c51a339edef",
+  "trial_id": "438495582",
+  "pod_sid": "5390798511",
+  "archive_entry_embedded_byte_for_byte_in_run_stdout": true,
+  "hostname_matches_live_logs": true,
+  "archive_entry_bytes": 2427766,
+  "archive_entry_sha256": "3ec26619fdf21408616ecbf3c4af9d063ed8831ea508100d661a1c485970a35b",
+  "live_stdout_sha256": "5c3f6ff35dc0b5493bceee27d4f89dd52c2836962e1a98c2a08f654e3fdeb0ab",
+  "entry_exit_code": 0,
+  "artifact_copy_exit_code": 0,
+  "archive_sha256": "5dea3ac44f46c60d9310c0a2191d2ba5623eeb637d021f1d559f79245cefd2f1"
+}

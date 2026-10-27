@@ -1,0 +1,35 @@
+{
+  "passed": false,
+  "performance_claim": false,
+  "updates": [
+    {
+      "rollout_id": 0
+    },
+    {
+      "rollout_id": 1
+    },
+    {
+      "rollout_id": 2
+    }
+  ],
+  "final_update_published": false,
+  "event_types": {
+    "env_report": 16,
+    "engine_env_report": 2
+  },
+  "errors": [
+    "driver did not complete",
+    "missing publication -1",
+    "missing engine checksum -1",
+    "missing publication 0",
+    "missing engine checksum 0",
+    "missing rollout 0",
+    "missing train dump 0",
+    "missing publication 1",
+    "missing engine checksum 1",
+    "missing rollout 1",
+    "missing train dump 1",
+    "missing rollout 2",
+    "missing train dump 2"
+  ]
+}

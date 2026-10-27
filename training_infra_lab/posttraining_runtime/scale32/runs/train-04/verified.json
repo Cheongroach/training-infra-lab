@@ -1,0 +1,105 @@
+{
+  "observed_at": "2026-10-25T06:04:45.438856+00:00",
+  "run": "428f9ac06ea21524",
+  "trial": "439186603",
+  "status": "failed",
+  "terminal": true,
+  "pods": [
+    {
+      "sid": "5395282505",
+      "pod_name": "trial-439186603-trialrun-439186603-worker-3",
+      "status": 4,
+      "exit_status": 2,
+      "schedule_at": "2026-10-25T05:32:38.000Z",
+      "start_at": "2026-10-25T05:32:38.000Z",
+      "stop_at": "2026-10-25T06:02:50.000Z"
+    },
+    {
+      "sid": "5395282508",
+      "pod_name": "trial-439186603-trialrun-439186603-worker-1",
+      "status": 4,
+      "exit_status": 1,
+      "schedule_at": "2026-10-25T05:32:38.000Z",
+      "start_at": "2026-10-25T05:37:02.000Z",
+      "stop_at": "2026-10-25T06:03:19.000Z"
+    },
+    {
+      "sid": "5395282509",
+      "pod_name": "trial-439186603-trialrun-439186603-worker-2",
+      "status": 4,
+      "exit_status": 1,
+      "schedule_at": "2026-10-25T05:32:38.000Z",
+      "start_at": "2026-10-25T05:32:38.000Z",
+      "stop_at": "2026-10-25T06:02:50.000Z"
+    },
+    {
+      "sid": "5395282512",
+      "pod_name": "trial-439186603-trialrun-439186603-worker-0",
+      "status": 4,
+      "exit_status": 130,
+      "schedule_at": "2026-10-25T05:32:38.000Z",
+      "start_at": "2026-10-25T05:32:38.000Z",
+      "stop_at": "2026-10-25T06:02:49.000Z"
+    }
+  ],
+  "training_verified": false,
+  "performance_claim": false,
+  "training_audit": {
+    "passed": false,
+    "performance_claim": false,
+    "capability_claim": false,
+    "errors": [
+      "FileNotFoundError: [Errno 2] No such file or directory: 'training_infra_lab/posttraining_runtime/scale32/runs/train-04/shared-results/rollout-0.pt'"
+    ]
+  },
+  "errors": [
+    "Unsuccessful terminal cluster",
+    "Node 0: original entry failed",
+    "Node 0: driver did not complete",
+    "Node 1: original entry failed",
+    "Node 1: driver did not complete",
+    "Node 2: original entry failed",
+    "Node 2: driver did not complete",
+    "Node 3: original entry failed",
+    "Node 3: driver did not complete",
+    "Independent semantic training audit failed"
+  ],
+  "node_archives": {
+    "0": {
+      "members": 163,
+      "uncompressed_bytes": 5868877,
+      "sha256": "0ab2d9001e5ab7739e70381edf9379f3fe8710c466fc6dfdd08036ee4bb7e53a"
+    },
+    "1": {
+      "members": 45,
+      "uncompressed_bytes": 522830,
+      "sha256": "d78c2bf353c23f48292ba8b1b19f0ceda8b60fc6ebb0a825184a093a22372c5f"
+    },
+    "2": {
+      "members": 39,
+      "uncompressed_bytes": 467190,
+      "sha256": "d74d51a4aa74e2f1db63a12bf5c5b6be782db5d0cd423f5ec17e5452e0bee3be"
+    },
+    "3": {
+      "members": 39,
+      "uncompressed_bytes": 467180,
+      "sha256": "d6f2923e3cb6c27468ec1af5ef31771e908eae18b26439bf60613bf96c6df7cb"
+    }
+  },
+  "entry_log_matches": {
+    "0": [
+      "pod-0-stdout.log"
+    ],
+    "1": [
+      "pod-3-stdout.log"
+    ],
+    "2": [
+      "pod-1-stdout.log"
+    ],
+    "3": [
+      "pod-2-stdout.log"
+    ]
+  },
+  "gpu_hours": 15.58222222222222,
+  "cost_scope": "Terminal Pod residence including initialization and conversion"
+}

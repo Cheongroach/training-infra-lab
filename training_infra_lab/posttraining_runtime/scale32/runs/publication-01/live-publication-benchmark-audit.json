@@ -1,0 +1,72 @@
+{
+  "passed": false,
+  "errors": [
+    "Benchmark reference differs from published final training weights"
+  ],
+  "comparisons": {
+    "broadcast/checksum-0": {
+      "samples": 4,
+      "wall_seconds": [
+        0.5243341901805252,
+        0.537933929823339,
+        0.5363942375406623,
+        0.5247604299802333
+      ],
+      "median_seconds": 0.5305773337604478,
+      "min_seconds": 0.5243341901805252,
+      "max_seconds": 0.537933929823339,
+      "transfer_median_seconds": 0.5299605741165578
+    },
+    "broadcast_packed/checksum-0": {
+      "samples": 4,
+      "wall_seconds": [
+        0.5284532958175987,
+        0.5168372066691518,
+        0.538482187082991,
+        0.5160109288990498
+      ],
+      "median_seconds": 0.5226452512433752,
+      "min_seconds": 0.5160109288990498,
+      "max_seconds": 0.538482187082991,
+      "transfer_median_seconds": 0.5219960743561387
+    },
+    "broadcast/checksum-1": {
+      "samples": 4,
+      "wall_seconds": [
+        30.111983550013974,
+        30.28688862454146,
+        30.670850487891585,
+        30.278191960882396
+      ],
+      "median_seconds": 30.28254029271193,
+      "min_seconds": 30.111983550013974,
+      "max_seconds": 30.670850487891585,
+      "transfer_median_seconds": 0.5246959957294166
+    },
+    "broadcast_packed/checksum-1": {
+      "samples": 4,
+      "wall_seconds": [
+        30.09110548067838,
+        30.162988710217178,
+        30.361172962002456,
+        30.37483316496946
+      ],
+      "median_seconds": 30.262080836109817,
+      "min_seconds": 30.09110548067838,
+      "max_seconds": 30.37483316496946,
+      "transfer_median_seconds": 0.5216357177123427
+    }
+  },
+  "speedup_ratios": {
+    "packed_speedup_checksum_0": 1.0151768001301114,
+    "packed_speedup_checksum_1": 1.0006760756708342
+  },
+  "checksum_added_median_seconds": {
+    "broadcast": 29.75196295895148,
+    "broadcast_packed": 29.739435584866442
+  },
+  "scope": "Same final model, optimizer, sender layouts and eight engines; publication only",
+  "end_to_end_training_speedup_claim": false,
+  "quality_improvement_claim": false,
+  "sender_bytes": 16381470720
+}

@@ -1,0 +1,8 @@
+{
+  "residence_s": 1432.0,
+  "gpu_hours": 1.5911111111111111,
+  "gpus": 4,
+  "start_at": "2026-10-24T13:13:35.000Z",
+  "stop_at": "2026-10-24T13:37:27.000Z",
+  "scope": "terminal Pod residence; includes setup and profiling"
+}

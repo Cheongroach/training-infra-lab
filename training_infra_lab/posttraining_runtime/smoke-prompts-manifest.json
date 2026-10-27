@@ -1,0 +1,14 @@
+{
+  "repo": "zhuzilin/dapo-math-17k",
+  "revision": "2e65612930298bde4c5d58fd97b3f23a483aaff9",
+  "selection": "first 64 nonempty records in source order; no model-response filtering",
+  "rows": 64,
+  "sha256": "67173a6074167cb280f1cf70542ccd1c1f91583defa8698f2428d268858e4fff",
+  "bytes": 37102,
+  "columns": [
+    "prompt",
+    "label"
+  ],
+  "source_url": "https://huggingface.co/datasets/zhuzilin/dapo-math-17k/resolve/2e65612930298bde4c5d58fd97b3f23a483aaff9/dapo-math-17k.jsonl",
+  "purpose": "short infrastructure preflight, not held-out evaluation"
+}

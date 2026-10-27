@@ -1,0 +1,2079 @@
+{
+  "observed_at": "2026-10-25T08:39:42.066759+00:00",
+  "runs": [
+    {
+      "name": "format-01",
+      "run": "64bf39daf0b766d2",
+      "status": "failed",
+      "terminal": true,
+      "gpu_hours": 0.39555555555555555,
+      "cost_scope": "Terminal Pod residence including image preparation, assets and diagnostics",
+      "training_verified": false,
+      "observed_optimizer_boundaries": [],
+      "verified_updates": [],
+      "final_evaluation": null,
+      "publication_benchmark": {},
+      "stage_baseline": {},
+      "stage_metrics": {},
+      "failure": {},
+      "environment_verified": false,
+      "format_probe_audit_complete": false,
+      "format_probe_protocol_passed": false,
+      "allocated_gpus": 4,
+      "source": "runs/format-01"
+    },
+    {
+      "name": "format-02",
+      "run": "603b17dfdb13a1bf",
+      "status": "failed",
+      "terminal": true,
+      "gpu_hours": 0.46555555555555556,
+      "cost_scope": "Terminal Pod residence including image preparation, assets and diagnostics",
+      "training_verified": false,
+      "observed_optimizer_boundaries": [],
+      "verified_updates": [],
+      "final_evaluation": null,
+      "publication_benchmark": {},
+      "stage_baseline": {},
+      "stage_metrics": {},
+      "failure": {},
+      "environment_verified": false,
+      "format_probe_audit_complete": false,
+      "format_probe_protocol_passed": false,
+      "allocated_gpus": 4,
+      "source": "runs/format-02"
+    },
+    {
+      "name": "format-03",
+      "run": "fc234509cf0d43b9",
+      "status": "done",
+      "terminal": true,
+      "gpu_hours": 0.7133333333333334,
+      "cost_scope": "Terminal Pod residence including image preparation, assets and diagnostics",
+      "training_verified": false,
+      "observed_optimizer_boundaries": [],
+      "verified_updates": [],
+      "final_evaluation": null,
+      "publication_benchmark": {},
+      "stage_baseline": {},
+      "stage_metrics": {},
+      "failure": {},
+      "environment_verified": false,
+      "format_probe_audit_complete": true,
+      "format_probe_protocol_passed": false,
+      "allocated_gpus": 4,
+      "source": "runs/format-03"
+    },
+    {
+      "name": "preflight-01",
+      "run": "0487f5d136d7b5b9",
+      "status": "done",
+      "terminal": true,
+      "gpu_hours": 3.7644444444444445,
+      "cost_scope": "Terminal Pod residence including image preparation, assets and diagnostics",
+      "training_verified": false,
+      "observed_optimizer_boundaries": [],
+      "verified_updates": [],
+      "final_evaluation": null,
+      "publication_benchmark": {},
+      "stage_baseline": {},
+      "stage_metrics": {},
+      "failure": {},
+      "environment_verified": true,
+      "format_probe_audit_complete": false,
+      "format_probe_protocol_passed": false,
+      "allocated_gpus": null,
+      "source": "runs/preflight-01"
+    },
+    {
+      "name": "publication-01",
+      "run": "2e633b4e08807737",
+      "status": "done",
+      "terminal": true,
+      "gpu_hours": 19.484444444444446,
+      "cost_scope": "Terminal Pod residence including image preparation, assets and diagnostics",
+      "training_verified": true,
+      "observed_optimizer_boundaries": [
+        0,
+        1,
+        2
+      ],
+      "verified_updates": [
+        {
+          "rollout_id": 0,
+          "learner_ranks": [
+            {
+              "rank": 0,
+              "changed_model_tensors": 202,
+              "adam_moment_tensors": 38
+            },
+            {
+              "rank": 1,
+              "changed_model_tensors": 202,
+              "adam_moment_tensors": 38
+            },
+            {
+              "rank": 2,
+              "changed_model_tensors": 202,
+              "adam_moment_tensors": 84
+            },
+            {
+              "rank": 3,
+              "changed_model_tensors": 202,
+              "adam_moment_tensors": 84
+            },
+            {
+              "rank": 4,
+              "changed_model_tensors": 202,
+              "adam_moment_tensors": 82
+            },
+            {
+              "rank": 5,
+              "changed_model_tensors": 202,
+              "adam_moment_tensors": 82
+            },
+            {
+              "rank": 6,
+              "changed_model_tensors": 202,
+              "adam_moment_tensors": 94
+            },
+            {
+              "rank": 7,
+              "changed_model_tensors": 202,
+              "adam_moment_tensors": 94
+            },
+            {
+              "rank": 8,
+              "changed_model_tensors": 202,
+              "adam_moment_tensors": 86
+            },
+            {
+              "rank": 9,
+              "changed_model_tensors": 202,
+              "adam_moment_tensors": 86
+            },
+            {
+              "rank": 10,
+              "changed_model_tensors": 202,
+              "adam_moment_tensors": 82
+            },
+            {
+              "rank": 11,
+              "changed_model_tensors": 202,
+              "adam_moment_tensors": 82
+            },
+            {
+              "rank": 12,
+              "changed_model_tensors": 202,
+              "adam_moment_tensors": 94
+            },
+            {
+              "rank": 13,
+              "changed_model_tensors": 202,
+              "adam_moment_tensors": 94
+            },
+            {
+              "rank": 14,
+              "changed_model_tensors": 202,
+              "adam_moment_tensors": 36
+            },
+            {
+              "rank": 15,
+              "changed_model_tensors": 202,
+              "adam_moment_tensors": 36
+            }
+          ],
+          "candidate_batches": 1,
+          "rejected_batches": 0,
+          "nonzero_advantage_tokens": 19453,
+          "grad_norm": [
+            0.2113305777311325
+          ],
+          "admitted_samples": 64,
+          "mixed_reward_groups": 3,
+          "completed_samples": 62,
+          "strict_extracted_samples": 25,
+          "strict_extraction_passed": false,
+          "format_contract_passed": false,
+          "format_is_training_admission_gate": false,
+          "response_tokens": 97217
+        },
+        {
+          "rollout_id": 1,
+          "learner_ranks": [
+            {
+              "rank": 0,
+              "changed_model_tensors": 197,
+              "adam_moment_tensors": 38
+            },
+            {
+              "rank": 1,
+              "changed_model_tensors": 197,
+              "adam_moment_tensors": 38
+            },
+            {
+              "rank": 2,
+              "changed_model_tensors": 197,
+              "adam_moment_tensors": 84
+            },
+            {
+              "rank": 3,
+              "changed_model_tensors": 197,
+              "adam_moment_tensors": 84
+            },
+            {
+              "rank": 4,
+              "changed_model_tensors": 197,
+              "adam_moment_tensors": 82
+            },
+            {
+              "rank": 5,
+              "changed_model_tensors": 197,
+              "adam_moment_tensors": 82
+            },
+            {
+              "rank": 6,
+              "changed_model_tensors": 197,
+              "adam_moment_tensors": 94
+            },
+            {
+              "rank": 7,
+              "changed_model_tensors": 197,
+              "adam_moment_tensors": 94
+            },
+            {
+              "rank": 8,
+              "changed_model_tensors": 197,
+              "adam_moment_tensors": 86
+            },
+            {
+              "rank": 9,
+              "changed_model_tensors": 197,
+              "adam_moment_tensors": 86
+            },
+            {
+              "rank": 10,
+              "changed_model_tensors": 197,
+              "adam_moment_tensors": 82
+            },
+            {
+              "rank": 11,
+              "changed_model_tensors": 197,
+              "adam_moment_tensors": 82
+            },
+            {
+              "rank": 12,
+              "changed_model_tensors": 197,
+              "adam_moment_tensors": 94
+            },
+            {
+              "rank": 13,
+              "changed_model_tensors": 197,
+              "adam_moment_tensors": 94
+            },
+            {
+              "rank": 14,
+              "changed_model_tensors": 197,
+              "adam_moment_tensors": 36
+            },
+            {
+              "rank": 15,
+              "changed_model_tensors": 197,
+              "adam_moment_tensors": 36
+            }
+          ],
+          "candidate_batches": 1,
+          "rejected_batches": 0,
+          "nonzero_advantage_tokens": 18600,
+          "grad_norm": [
+            0.21805059909820557
+          ],
+          "admitted_samples": 64,
+          "mixed_reward_groups": 4,
+          "completed_samples": 64,
+          "strict_extracted_samples": 16,
+          "strict_extraction_passed": false,
+          "format_contract_passed": false,
+          "format_is_training_admission_gate": false,
+          "response_tokens": 89263
+        },
+        {
+          "rollout_id": 2,
+          "learner_ranks": [
+            {
+              "rank": 0,
+              "changed_model_tensors": 200,
+              "adam_moment_tensors": 38
+            },
+            {
+              "rank": 1,
+              "changed_model_tensors": 200,
+              "adam_moment_tensors": 38
+            },
+            {
+              "rank": 2,
+              "changed_model_tensors": 200,
+              "adam_moment_tensors": 84
+            },
+            {
+              "rank": 3,
+              "changed_model_tensors": 200,
+              "adam_moment_tensors": 84
+            },
+            {
+              "rank": 4,
+              "changed_model_tensors": 200,
+              "adam_moment_tensors": 82
+            },
+            {
+              "rank": 5,
+              "changed_model_tensors": 200,
+              "adam_moment_tensors": 82
+            },
+            {
+              "rank": 6,
+              "changed_model_tensors": 200,
+              "adam_moment_tensors": 94
+            },
+            {
+              "rank": 7,
+              "changed_model_tensors": 200,
+              "adam_moment_tensors": 94
+            },
+            {
+              "rank": 8,
+              "changed_model_tensors": 200,
+              "adam_moment_tensors": 86
+            },
+            {
+              "rank": 9,
+              "changed_model_tensors": 200,
+              "adam_moment_tensors": 86
+            },
+            {
+              "rank": 10,
+              "changed_model_tensors": 200,
+              "adam_moment_tensors": 82
+            },
+            {
+              "rank": 11,
+              "changed_model_tensors": 200,
+              "adam_moment_tensors": 82
+            },
+            {
+              "rank": 12,
+              "changed_model_tensors": 200,
+              "adam_moment_tensors": 94
+            },
+            {
+              "rank": 13,
+              "changed_model_tensors": 200,
+              "adam_moment_tensors": 94
+            },
+            {
+              "rank": 14,
+              "changed_model_tensors": 200,
+              "adam_moment_tensors": 36
+            },
+            {
+              "rank": 15,
+              "changed_model_tensors": 200,
+              "adam_moment_tensors": 36
+            }
+          ],
+          "candidate_batches": 1,
+          "rejected_batches": 0,
+          "nonzero_advantage_tokens": 39114,
+          "grad_norm": [
+            0.19959458708763123
+          ],
+          "admitted_samples": 64,
+          "mixed_reward_groups": 7,
+          "completed_samples": 64,
+          "strict_extracted_samples": 17,
+          "strict_extraction_passed": false,
+          "format_contract_passed": false,
+          "format_is_training_admission_gate": false,
+          "response_tokens": 88012
+        }
+      ],
+      "final_evaluation": {
+        "samples": 16,
+        "completed": 12,
+        "strict_extracted": 4,
+        "original_scorer_correct": 0,
+        "response_tokens": 34259,
+        "consumed_weight_version": 3,
+        "scope": "Exposed prompts; protocol only",
+        "quality_improvement_claim": false
+      },
+      "publication_benchmark": {
+        "passed": true,
+        "errors": [],
+        "comparisons": {
+          "broadcast/checksum-0": {
+            "samples": 4,
+            "wall_seconds": [
+              0.5243341901805252,
+              0.537933929823339,
+              0.5363942375406623,
+              0.5247604299802333
+            ],
+            "median_seconds": 0.5305773337604478,
+            "min_seconds": 0.5243341901805252,
+            "max_seconds": 0.537933929823339,
+            "transfer_median_seconds": 0.5299605741165578
+          },
+          "broadcast_packed/checksum-0": {
+            "samples": 4,
+            "wall_seconds": [
+              0.5284532958175987,
+              0.5168372066691518,
+              0.538482187082991,
+              0.5160109288990498
+            ],
+            "median_seconds": 0.5226452512433752,
+            "min_seconds": 0.5160109288990498,
+            "max_seconds": 0.538482187082991,
+            "transfer_median_seconds": 0.5219960743561387
+          },
+          "broadcast/checksum-1": {
+            "samples": 4,
+            "wall_seconds": [
+              30.111983550013974,
+              30.28688862454146,
+              30.670850487891585,
+              30.278191960882396
+            ],
+            "median_seconds": 30.28254029271193,
+            "min_seconds": 30.111983550013974,
+            "max_seconds": 30.670850487891585,
+            "transfer_median_seconds": 0.5246959957294166
+          },
+          "broadcast_packed/checksum-1": {
+            "samples": 4,
+            "wall_seconds": [
+              30.09110548067838,
+              30.162988710217178,
+              30.361172962002456,
+              30.37483316496946
+            ],
+            "median_seconds": 30.262080836109817,
+            "min_seconds": 30.09110548067838,
+            "max_seconds": 30.37483316496946,
+            "transfer_median_seconds": 0.5216357177123427
+          }
+        },
+        "speedup_ratios": {
+          "packed_speedup_checksum_0": 1.0151768001301114,
+          "packed_speedup_checksum_1": 1.0006760756708342
+        },
+        "checksum_added_median_seconds": {
+          "broadcast": 29.75196295895148,
+          "broadcast_packed": 29.739435584866442
+        },
+        "scope": "Same final model, optimizer, sender layouts and eight engines; publication only",
+        "end_to_end_training_speedup_claim": false,
+        "quality_improvement_claim": false,
+        "engine_hash_binding": {
+          "benchmark_algorithm": "raw tensor SHA256",
+          "benchmark_reference_and_all_iterations_equal": true,
+          "final_event_algorithm": "SGLang tensor_hash (16 hex digits)",
+          "cross_algorithm_digest_equality_claim": false,
+          "binding": "Exact final learner state; same eight publication cells/update identity and tensor-name coverage; each algorithm verifies replica agreement separately"
+        },
+        "sender_bytes": 16381470720
+      },
+      "stage_baseline": {},
+      "stage_metrics": {
+        "perf/update_weights_implementation_time": [
+          {
+            "rollout_id": 0,
+            "value": 3.0730104446411133,
+            "source": {
+              "component": "actor",
+              "model_id": null,
+              "cell_index": 0,
+              "rank_within_cell": 0
+            }
+          },
+          {
+            "rollout_id": 1,
+            "value": 0.4678921699523926,
+            "source": {
+              "component": "actor",
+              "model_id": null,
+              "cell_index": 0,
+              "rank_within_cell": 0
+            }
+          },
+          {
+            "rollout_id": 2,
+            "value": 0.47252845764160156,
+            "source": {
+              "component": "actor",
+              "model_id": null,
+              "cell_index": 0,
+              "rank_within_cell": 0
+            }
+          }
+        ],
+        "perf/finalize_and_resume_engines_time": [
+          {
+            "rollout_id": 0,
+            "value": 0.03424501419067383,
+            "source": {
+              "component": "actor",
+              "model_id": null,
+              "cell_index": 0,
+              "rank_within_cell": 0
+            }
+          },
+          {
+            "rollout_id": 1,
+            "value": 0.032512664794921875,
+            "source": {
+              "component": "actor",
+              "model_id": null,
+              "cell_index": 0,
+              "rank_within_cell": 0
+            }
+          },
+          {
+            "rollout_id": 2,
+            "value": 0.035565853118896484,
+            "source": {
+              "component": "actor",
+              "model_id": null,
+              "cell_index": 0,
+              "rank_within_cell": 0
+            }
+          }
+        ],
+        "perf/update_weights_time": [
+          {
+            "rollout_id": 0,
+            "value": 3.2120351791381836,
+            "source": {
+              "component": "actor",
+              "model_id": null,
+              "cell_index": 0,
+              "rank_within_cell": 0
+            }
+          },
+          {
+            "rollout_id": 1,
+            "value": 0.5396018028259277,
+            "source": {
+              "component": "actor",
+              "model_id": null,
+              "cell_index": 0,
+              "rank_within_cell": 0
+            }
+          },
+          {
+            "rollout_id": 2,
+            "value": 0.5404491424560547,
+            "source": {
+              "component": "actor",
+              "model_id": null,
+              "cell_index": 0,
+              "rank_within_cell": 0
+            }
+          }
+        ],
+        "perf/data_preprocess_time": [
+          {
+            "rollout_id": 0,
+            "value": 0.00891423225402832,
+            "source": {
+              "component": "actor",
+              "model_id": null,
+              "cell_index": 0,
+              "rank_within_cell": 0
+            }
+          },
+          {
+            "rollout_id": 1,
+            "value": 0.00616145133972168,
+            "source": {
+              "component": "actor",
+              "model_id": null,
+              "cell_index": 0,
+              "rank_within_cell": 0
+            }
+          },
+          {
+            "rollout_id": 2,
+            "value": 0.005074024200439453,
+            "source": {
+              "component": "actor",
+              "model_id": null,
+              "cell_index": 0,
+              "rank_within_cell": 0
+            }
+          }
+        ],
+        "perf/train_wait_time": [
+          {
+            "rollout_id": 0,
+            "value": 49.44422149658203,
+            "source": {
+              "component": "actor",
+              "model_id": null,
+              "cell_index": 0,
+              "rank_within_cell": 0
+            }
+          },
+          {
+            "rollout_id": 1,
+            "value": 35.296950817108154,
+            "source": {
+              "component": "actor",
+              "model_id": null,
+              "cell_index": 0,
+              "rank_within_cell": 0
+            }
+          },
+          {
+            "rollout_id": 2,
+            "value": 26.136116981506348,
+            "source": {
+              "component": "actor",
+              "model_id": null,
+              "cell_index": 0,
+              "rank_within_cell": 0
+            }
+          }
+        ],
+        "perf/log_probs_time": [
+          {
+            "rollout_id": 0,
+            "value": 6.6342668533325195,
+            "source": {
+              "component": "actor",
+              "model_id": null,
+              "cell_index": 0,
+              "rank_within_cell": 0
+            }
+          },
+          {
+            "rollout_id": 1,
+            "value": 0.857097864151001,
+            "source": {
+              "component": "actor",
+              "model_id": null,
+              "cell_index": 0,
+              "rank_within_cell": 0
+            }
+          },
+          {
+            "rollout_id": 2,
+            "value": 0.8531768321990967,
+            "source": {
+              "component": "actor",
+              "model_id": null,
+              "cell_index": 0,
+              "rank_within_cell": 0
+            }
+          }
+        ],
+        "perf/actor_train_time": [
+          {
+            "rollout_id": 0,
+            "value": 50.55518555641174,
+            "source": {
+              "component": "actor",
+              "model_id": null,
+              "cell_index": 0,
+              "rank_within_cell": 0
+            }
+          },
+          {
+            "rollout_id": 1,
+            "value": 64.859689950943,
+            "source": {
+              "component": "actor",
+              "model_id": null,
+              "cell_index": 0,
+              "rank_within_cell": 0
+            }
+          },
+          {
+            "rollout_id": 2,
+            "value": 45.620591163635254,
+            "source": {
+              "component": "actor",
+              "model_id": null,
+              "cell_index": 0,
+              "rank_within_cell": 0
+            }
+          }
+        ],
+        "perf/train_time": [
+          {
+            "rollout_id": 0,
+            "value": 58.27264976501465,
+            "source": {
+              "component": "actor",
+              "model_id": null,
+              "cell_index": 0,
+              "rank_within_cell": 0
+            }
+          },
+          {
+            "rollout_id": 1,
+            "value": 65.90016078948975,
+            "source": {
+              "component": "actor",
+              "model_id": null,
+              "cell_index": 0,
+              "rank_within_cell": 0
+            }
+          },
+          {
+            "rollout_id": 2,
+            "value": 46.622546434402466,
+            "source": {
+              "component": "actor",
+              "model_id": null,
+              "cell_index": 0,
+              "rank_within_cell": 0
+            }
+          }
+        ],
+        "perf/log_probs_tflops": [
+          {
+            "rollout_id": 0,
+            "value": 15.62319543360777,
+            "source": {
+              "component": "actor",
+              "model_id": null,
+              "cell_index": 0,
+              "rank_within_cell": 0
+            }
+          },
+          {
+            "rollout_id": 1,
+            "value": 111.35213390066006,
+            "source": {
+              "component": "actor",
+              "model_id": null,
+              "cell_index": 0,
+              "rank_within_cell": 0
+            }
+          },
+          {
+            "rollout_id": 2,
+            "value": 109.19147671575351,
+            "source": {
+              "component": "actor",
+              "model_id": null,
+              "cell_index": 0,
+              "rank_within_cell": 0
+            }
+          }
+        ],
+        "perf/actor_train_tflops": [
+          {
+            "rollout_id": 0,
+            "value": 6.150612234980192,
+            "source": {
+              "component": "actor",
+              "model_id": null,
+              "cell_index": 0,
+              "rank_within_cell": 0
+            }
+          },
+          {
+            "rollout_id": 1,
+            "value": 4.414437204699793,
+            "source": {
+              "component": "actor",
+              "model_id": null,
+              "cell_index": 0,
+              "rank_within_cell": 0
+            }
+          },
+          {
+            "rollout_id": 2,
+            "value": 6.1261572350083915,
+            "source": {
+              "component": "actor",
+              "model_id": null,
+              "cell_index": 0,
+              "rank_within_cell": 0
+            }
+          }
+        ],
+        "perf/actor_train_tok_per_s": [
+          {
+            "rollout_id": 0,
+            "value": 2135.5870582163684,
+            "source": {
+              "component": "actor",
+              "model_id": null,
+              "cell_index": 0,
+              "rank_within_cell": 0
+            }
+          },
+          {
+            "rollout_id": 1,
+            "value": 1545.8445773612934,
+            "source": {
+              "component": "actor",
+              "model_id": null,
+              "cell_index": 0,
+              "rank_within_cell": 0
+            }
+          },
+          {
+            "rollout_id": 2,
+            "value": 2143.1550426276654,
+            "source": {
+              "component": "actor",
+              "model_id": null,
+              "cell_index": 0,
+              "rank_within_cell": 0
+            }
+          }
+        ],
+        "perf/step_time": [
+          {
+            "rollout_id": 0,
+            "value": 107.71687126159668,
+            "source": {
+              "component": "actor",
+              "model_id": null,
+              "cell_index": 0,
+              "rank_within_cell": 0
+            }
+          },
+          {
+            "rollout_id": 1,
+            "value": 101.1971116065979,
+            "source": {
+              "component": "actor",
+              "model_id": null,
+              "cell_index": 0,
+              "rank_within_cell": 0
+            }
+          },
+          {
+            "rollout_id": 2,
+            "value": 72.75866341590881,
+            "source": {
+              "component": "actor",
+              "model_id": null,
+              "cell_index": 0,
+              "rank_within_cell": 0
+            }
+          }
+        ],
+        "perf/wait_time_ratio": [
+          {
+            "rollout_id": 0,
+            "value": 0.45902021584440444,
+            "source": {
+              "component": "actor",
+              "model_id": null,
+              "cell_index": 0,
+              "rank_within_cell": 0
+            }
+          },
+          {
+            "rollout_id": 1,
+            "value": 0.3487940540667254,
+            "source": {
+              "component": "actor",
+              "model_id": null,
+              "cell_index": 0,
+              "rank_within_cell": 0
+            }
+          },
+          {
+            "rollout_id": 2,
+            "value": 0.3592165627356981,
+            "source": {
+              "component": "actor",
+              "model_id": null,
+              "cell_index": 0,
+              "rank_within_cell": 0
+            }
+          }
+        ],
+        "perf/rollout_time": [
+          {
+            "rollout_id": 0,
+            "value": 31.068477153778076,
+            "source": {
+              "component": "rollout_executor"
+            }
+          },
+          {
+            "rollout_id": 1,
+            "value": 21.289726972579956,
+            "source": {
+              "component": "rollout_executor"
+            }
+          },
+          {
+            "rollout_id": 2,
+            "value": 16.023736238479614,
+            "source": {
+              "component": "rollout_executor"
+            }
+          }
+        ],
+        "perf/tokens_per_gpu_per_sec": [
+          {
+            "rollout_id": 0,
+            "value": 195.57001361623293,
+            "source": {
+              "component": "rollout_executor"
+            }
+          },
+          {
+            "rollout_id": 1,
+            "value": 262.04833472901635,
+            "source": {
+              "component": "rollout_executor"
+            }
+          },
+          {
+            "rollout_id": 2,
+            "value": 343.2876027246645,
+            "source": {
+              "component": "rollout_executor"
+            }
+          }
+        ],
+        "perf/longest_sample_tokens_per_sec": [
+          {
+            "rollout_id": 0,
+            "value": 131.8378103865933,
+            "source": {
+              "component": "rollout_executor"
+            }
+          },
+          {
+            "rollout_id": 1,
+            "value": 147.77080063318246,
+            "source": {
+              "component": "rollout_executor"
+            }
+          },
+          {
+            "rollout_id": 2,
+            "value": 194.27429119336102,
+            "source": {
+              "component": "rollout_executor"
+            }
+          }
+        ],
+        "perf/effective_tokens_per_gpu_per_sec": [
+          {
+            "rollout_id": 0,
+            "value": 195.57001361623293,
+            "source": {
+              "component": "rollout_executor"
+            }
+          },
+          {
+            "rollout_id": 1,
+            "value": 262.04833472901635,
+            "source": {
+              "component": "rollout_executor"
+            }
+          },
+          {
+            "rollout_id": 2,
+            "value": 343.2876027246645,
+            "source": {
+              "component": "rollout_executor"
+            }
+          }
+        ],
+        "perf/longest_effective_sample_tokens_per_sec": [
+          {
+            "rollout_id": 0,
+            "value": 131.8378103865933,
+            "source": {
+              "component": "rollout_executor"
+            }
+          },
+          {
+            "rollout_id": 1,
+            "value": 147.77080063318246,
+            "source": {
+              "component": "rollout_executor"
+            }
+          },
+          {
+            "rollout_id": 2,
+            "value": 194.27429119336102,
+            "source": {
+              "component": "rollout_executor"
+            }
+          }
+        ]
+      },
+      "failure": {},
+      "environment_verified": false,
+      "format_probe_audit_complete": false,
+      "format_probe_protocol_passed": false,
+      "allocated_gpus": 32,
+      "source": "runs/publication-01"
+    },
+    {
+      "name": "train-03",
+      "run": "03c584556b4a96a9",
+      "status": "failed",
+      "terminal": true,
+      "gpu_hours": 1.8244444444444445,
+      "cost_scope": "Terminal Pod residence including image preparation, assets and diagnostics",
+      "training_verified": false,
+      "observed_optimizer_boundaries": [],
+      "verified_updates": [],
+      "final_evaluation": null,
+      "publication_benchmark": {},
+      "stage_baseline": {},
+      "stage_metrics": {},
+      "failure": {
+        "run": "03c584556b4a96a9",
+        "trial": "439180304",
+        "terminal_status": "failed",
+        "training_started": false,
+        "root_cause": "Platform GCS port 11516 overlaps Ray default worker port range 10002\u201319999",
+        "evidence": {
+          "arnold_id": 0,
+          "entry_matches_actual_stdout": [
+            "pod-3-stdout.log"
+          ],
+          "entry_sha256": "9b34f59cedb0f5490c1c5a3234627741f44a393cc50b1f18117ccd1822bd3661",
+          "source_sha256": "e7fdeccb81fb5dd2cbf4adfb4721e09a19d789a3de8badbebdf00e4196f6e296",
+          "error": "ValueError: Ray component worker_ports is trying to use a port number 11516 that is used by other components."
+        },
+        "fix": "Pass a disjoint explicit worker port range on all Ray nodes",
+        "fix_cpu_validation": "All 65535 GCS ports checked for non-overlap",
+        "gpu_hours": 1.8244444444444445,
+        "missing_node_archives": [
+          1,
+          3
+        ],
+        "semantic_training_verification": false,
+        "performance_claim": false
+      },
+      "environment_verified": false,
+      "format_probe_audit_complete": false,
+      "format_probe_protocol_passed": false,
+      "allocated_gpus": 32,
+      "source": "runs/train-03"
+    },
+    {
+      "name": "train-04",
+      "run": "428f9ac06ea21524",
+      "status": "failed",
+      "terminal": true,
+      "gpu_hours": 15.58222222222222,
+      "cost_scope": "Terminal Pod residence including image preparation, assets and diagnostics",
+      "training_verified": false,
+      "observed_optimizer_boundaries": [],
+      "verified_updates": [],
+      "final_evaluation": null,
+      "publication_benchmark": {},
+      "stage_baseline": {},
+      "stage_metrics": {},
+      "failure": {
+        "run": "428f9ac06ea21524",
+        "trial": "439186603",
+        "terminal_status": "failed",
+        "training_updates_completed": 0,
+        "failure": "GRPO_QUALIFICATION_EXHAUSTED: four candidate batches rejected",
+        "root_cause": "The authored strict final-line gate treated the decoded natural EOS <|im_end|> as answer text. All four batches recorded extracted=0, despite many valid final lines before the terminator.",
+        "remaining_format_failure_after_eos_fix": {
+          "completed": [
+            61,
+            63,
+            63,
+            63
+          ],
+          "strict_extracted": [
+            25,
+            14,
+            19,
+            20
+          ],
+          "mixed_reward_groups": [
+            7,
+            5,
+            6,
+            6
+          ],
+          "identity_probability_errors": []
+        },
+        "terminal_evidence": [
+          "exit-info.json",
+          "verified.json",
+          "shared-results/qualification/step-0.json",
+          "shared-results/qualification/candidate-0-0.json",
+          "shared-results/qualification/candidate-0-1.json",
+          "shared-results/qualification/candidate-0-2.json",
+          "shared-results/qualification/candidate-0-3.json",
+          "node-0/results/entry.log"
+        ],
+        "node_source_hashes_verified": true,
+        "all_four_archives_map_to_distinct_actual_stdout": true,
+        "gpu_hours": 15.58222222222222,
+        "cost_scope": "Terminal platform Pod residence, including initialization, checkpoint conversion, copying, graph preparation and rejected generation",
+        "next_change": "Strip only the completed-response EOS text for format assessment. Report strict formatting separately from complete-group admission; retain all original responses, token IDs, probabilities and rewards.",
+        "format_contract_fixed": false,
+        "performance_claim": false,
+        "capability_claim": false
+      },
+      "environment_verified": false,
+      "format_probe_audit_complete": false,
+      "format_probe_protocol_passed": false,
+      "allocated_gpus": 32,
+      "source": "runs/train-04"
+    },
+    {
+      "name": "train-05",
+      "run": "dd561599d5c16cc6",
+      "status": "done",
+      "terminal": true,
+      "gpu_hours": 12.53111111111111,
+      "cost_scope": "Terminal Pod residence including image preparation, assets and diagnostics",
+      "training_verified": true,
+      "observed_optimizer_boundaries": [
+        0,
+        1,
+        2
+      ],
+      "verified_updates": [
+        {
+          "rollout_id": 0,
+          "learner_ranks": [
+            {
+              "rank": 0,
+              "changed_model_tensors": 202,
+              "adam_moment_tensors": 38
+            },
+            {
+              "rank": 1,
+              "changed_model_tensors": 202,
+              "adam_moment_tensors": 38
+            },
+            {
+              "rank": 2,
+              "changed_model_tensors": 202,
+              "adam_moment_tensors": 84
+            },
+            {
+              "rank": 3,
+              "changed_model_tensors": 202,
+              "adam_moment_tensors": 84
+            },
+            {
+              "rank": 4,
+              "changed_model_tensors": 202,
+              "adam_moment_tensors": 82
+            },
+            {
+              "rank": 5,
+              "changed_model_tensors": 202,
+              "adam_moment_tensors": 82
+            },
+            {
+              "rank": 6,
+              "changed_model_tensors": 202,
+              "adam_moment_tensors": 94
+            },
+            {
+              "rank": 7,
+              "changed_model_tensors": 202,
+              "adam_moment_tensors": 94
+            },
+            {
+              "rank": 8,
+              "changed_model_tensors": 202,
+              "adam_moment_tensors": 86
+            },
+            {
+              "rank": 9,
+              "changed_model_tensors": 202,
+              "adam_moment_tensors": 86
+            },
+            {
+              "rank": 10,
+              "changed_model_tensors": 202,
+              "adam_moment_tensors": 82
+            },
+            {
+              "rank": 11,
+              "changed_model_tensors": 202,
+              "adam_moment_tensors": 82
+            },
+            {
+              "rank": 12,
+              "changed_model_tensors": 202,
+              "adam_moment_tensors": 94
+            },
+            {
+              "rank": 13,
+              "changed_model_tensors": 202,
+              "adam_moment_tensors": 94
+            },
+            {
+              "rank": 14,
+              "changed_model_tensors": 202,
+              "adam_moment_tensors": 36
+            },
+            {
+              "rank": 15,
+              "changed_model_tensors": 202,
+              "adam_moment_tensors": 36
+            }
+          ],
+          "candidate_batches": 1,
+          "rejected_batches": 0,
+          "nonzero_advantage_tokens": 36008,
+          "grad_norm": [
+            0.2956434190273285
+          ],
+          "admitted_samples": 64,
+          "mixed_reward_groups": 7,
+          "completed_samples": 61,
+          "strict_extracted_samples": 26,
+          "strict_extraction_passed": false,
+          "format_contract_passed": false,
+          "format_is_training_admission_gate": false,
+          "response_tokens": 94437
+        },
+        {
+          "rollout_id": 1,
+          "learner_ranks": [
+            {
+              "rank": 0,
+              "changed_model_tensors": 202,
+              "adam_moment_tensors": 38
+            },
+            {
+              "rank": 1,
+              "changed_model_tensors": 202,
+              "adam_moment_tensors": 38
+            },
+            {
+              "rank": 2,
+              "changed_model_tensors": 202,
+              "adam_moment_tensors": 84
+            },
+            {
+              "rank": 3,
+              "changed_model_tensors": 202,
+              "adam_moment_tensors": 84
+            },
+            {
+              "rank": 4,
+              "changed_model_tensors": 202,
+              "adam_moment_tensors": 82
+            },
+            {
+              "rank": 5,
+              "changed_model_tensors": 202,
+              "adam_moment_tensors": 82
+            },
+            {
+              "rank": 6,
+              "changed_model_tensors": 202,
+              "adam_moment_tensors": 94
+            },
+            {
+              "rank": 7,
+              "changed_model_tensors": 202,
+              "adam_moment_tensors": 94
+            },
+            {
+              "rank": 8,
+              "changed_model_tensors": 202,
+              "adam_moment_tensors": 86
+            },
+            {
+              "rank": 9,
+              "changed_model_tensors": 202,
+              "adam_moment_tensors": 86
+            },
+            {
+              "rank": 10,
+              "changed_model_tensors": 202,
+              "adam_moment_tensors": 82
+            },
+            {
+              "rank": 11,
+              "changed_model_tensors": 202,
+              "adam_moment_tensors": 82
+            },
+            {
+              "rank": 12,
+              "changed_model_tensors": 202,
+              "adam_moment_tensors": 94
+            },
+            {
+              "rank": 13,
+              "changed_model_tensors": 202,
+              "adam_moment_tensors": 94
+            },
+            {
+              "rank": 14,
+              "changed_model_tensors": 202,
+              "adam_moment_tensors": 36
+            },
+            {
+              "rank": 15,
+              "changed_model_tensors": 202,
+              "adam_moment_tensors": 36
+            }
+          ],
+          "candidate_batches": 1,
+          "rejected_batches": 0,
+          "nonzero_advantage_tokens": 25736,
+          "grad_norm": [
+            0.20580638945102692
+          ],
+          "admitted_samples": 64,
+          "mixed_reward_groups": 5,
+          "completed_samples": 64,
+          "strict_extracted_samples": 12,
+          "strict_extraction_passed": false,
+          "format_contract_passed": false,
+          "format_is_training_admission_gate": false,
+          "response_tokens": 93074
+        },
+        {
+          "rollout_id": 2,
+          "learner_ranks": [
+            {
+              "rank": 0,
+              "changed_model_tensors": 197,
+              "adam_moment_tensors": 38
+            },
+            {
+              "rank": 1,
+              "changed_model_tensors": 197,
+              "adam_moment_tensors": 38
+            },
+            {
+              "rank": 2,
+              "changed_model_tensors": 197,
+              "adam_moment_tensors": 84
+            },
+            {
+              "rank": 3,
+              "changed_model_tensors": 197,
+              "adam_moment_tensors": 84
+            },
+            {
+              "rank": 4,
+              "changed_model_tensors": 197,
+              "adam_moment_tensors": 82
+            },
+            {
+              "rank": 5,
+              "changed_model_tensors": 197,
+              "adam_moment_tensors": 82
+            },
+            {
+              "rank": 6,
+              "changed_model_tensors": 197,
+              "adam_moment_tensors": 94
+            },
+            {
+              "rank": 7,
+              "changed_model_tensors": 197,
+              "adam_moment_tensors": 94
+            },
+            {
+              "rank": 8,
+              "changed_model_tensors": 197,
+              "adam_moment_tensors": 86
+            },
+            {
+              "rank": 9,
+              "changed_model_tensors": 197,
+              "adam_moment_tensors": 86
+            },
+            {
+              "rank": 10,
+              "changed_model_tensors": 197,
+              "adam_moment_tensors": 82
+            },
+            {
+              "rank": 11,
+              "changed_model_tensors": 197,
+              "adam_moment_tensors": 82
+            },
+            {
+              "rank": 12,
+              "changed_model_tensors": 197,
+              "adam_moment_tensors": 94
+            },
+            {
+              "rank": 13,
+              "changed_model_tensors": 197,
+              "adam_moment_tensors": 94
+            },
+            {
+              "rank": 14,
+              "changed_model_tensors": 197,
+              "adam_moment_tensors": 36
+            },
+            {
+              "rank": 15,
+              "changed_model_tensors": 197,
+              "adam_moment_tensors": 36
+            }
+          ],
+          "candidate_batches": 1,
+          "rejected_batches": 0,
+          "nonzero_advantage_tokens": 44074,
+          "grad_norm": [
+            0.24710068106651306
+          ],
+          "admitted_samples": 64,
+          "mixed_reward_groups": 8,
+          "completed_samples": 63,
+          "strict_extracted_samples": 18,
+          "strict_extraction_passed": false,
+          "format_contract_passed": false,
+          "format_is_training_admission_gate": false,
+          "response_tokens": 84743
+        }
+      ],
+      "final_evaluation": {
+        "samples": 16,
+        "completed": 10,
+        "strict_extracted": 4,
+        "original_scorer_correct": 2,
+        "response_tokens": 38348,
+        "consumed_weight_version": 3,
+        "scope": "Exposed prompts; protocol only",
+        "quality_improvement_claim": false
+      },
+      "publication_benchmark": {},
+      "stage_baseline": {
+        "passed": true,
+        "rows": [
+          {
+            "rollout_id": 0,
+            "admitted_samples": 64,
+            "response_tokens": 94437,
+            "nonzero_advantage_tokens": 36008,
+            "nonzero_advantage_fraction": 0.3812912311911645,
+            "rollout_seconds": 30.723252534866333,
+            "response_tokens_per_rollout_gpu_second": 192.1122281341063,
+            "actor_train_seconds_rank0": 50.692275047302246,
+            "log_probs_seconds_rank0": 6.639002323150635,
+            "train_wait_seconds_rank0": 48.03802132606506,
+            "publication_seconds_rank0": 3.7092764377593994,
+            "rollout_metric_timestamp": "2026-10-25T06:30:44.417176Z",
+            "learner_metric_timestamp": "2026-10-25T06:31:43.601476Z"
+          },
+          {
+            "rollout_id": 1,
+            "admitted_samples": 64,
+            "response_tokens": 93074,
+            "nonzero_advantage_tokens": 25736,
+            "nonzero_advantage_fraction": 0.27651116316049595,
+            "rollout_seconds": 17.655081748962402,
+            "response_tokens_per_rollout_gpu_second": 329.48728772337034,
+            "actor_train_seconds_rank0": 51.21104979515076,
+            "log_probs_seconds_rank0": 0.8680932521820068,
+            "train_wait_seconds_rank0": 23.930237531661987,
+            "publication_seconds_rank0": 0.5434854030609131,
+            "rollout_metric_timestamp": "2026-10-25T06:32:06.595833Z",
+            "learner_metric_timestamp": "2026-10-25T06:33:00.399572Z"
+          },
+          {
+            "rollout_id": 2,
+            "admitted_samples": 64,
+            "response_tokens": 84743,
+            "nonzero_advantage_tokens": 44074,
+            "nonzero_advantage_fraction": 0.520090154939051,
+            "rollout_seconds": 21.987718105316162,
+            "response_tokens_per_rollout_gpu_second": 240.88163558543323,
+            "actor_train_seconds_rank0": 48.91745162010193,
+            "log_probs_seconds_rank0": 0.6297607421875,
+            "train_wait_seconds_rank0": 29.103025674819946,
+            "publication_seconds_rank0": 0.5465335845947266,
+            "rollout_metric_timestamp": "2026-10-25T06:33:28.352029Z",
+            "learner_metric_timestamp": "2026-10-25T06:34:22.870718Z"
+          }
+        ],
+        "totals": {
+          "admitted_samples": 192,
+          "admitted_response_tokens": 272254,
+          "nonzero_advantage_tokens": 105818,
+          "nonzero_advantage_fraction": 0.3886738119550126,
+          "terminal_pod_gpu_hours": 12.53111111111111,
+          "admitted_samples_per_total_gpu_hour": 15.32186557900337,
+          "admitted_response_tokens_per_total_gpu_second": 6.0350682745167585,
+          "response_tokens_per_rollout_gpu_second_pooled": 241.81937770073023
+        },
+        "scope": "Three-update diagnostic baseline; rank-0 learner timers are not global critical-path timers",
+        "cost_scope": "All 32 terminal Pod residence times, including preparation and final evaluation",
+        "token_scope": "Admitted response tokens only; no TP/DP double counting; excludes prompts and evaluation",
+        "signal_scope": "Nonzero advantage tokens indicate a learning signal, not correct answers or quality improvement",
+        "speedup_claim": false,
+        "quality_improvement_claim": false
+      },
+      "stage_metrics": {
+        "perf/update_weights_implementation_time": [
+          {
+            "rollout_id": 0,
+            "value": 3.5437748432159424,
+            "source": {
+              "component": "actor",
+              "model_id": null,
+              "cell_index": 0,
+              "rank_within_cell": 0
+            }
+          },
+          {
+            "rollout_id": 1,
+            "value": 0.4747328758239746,
+            "source": {
+              "component": "actor",
+              "model_id": null,
+              "cell_index": 0,
+              "rank_within_cell": 0
+            }
+          },
+          {
+            "rollout_id": 2,
+            "value": 0.48510003089904785,
+            "source": {
+              "component": "actor",
+              "model_id": null,
+              "cell_index": 0,
+              "rank_within_cell": 0
+            }
+          }
+        ],
+        "perf/finalize_and_resume_engines_time": [
+          {
+            "rollout_id": 0,
+            "value": 0.029650211334228516,
+            "source": {
+              "component": "actor",
+              "model_id": null,
+              "cell_index": 0,
+              "rank_within_cell": 0
+            }
+          },
+          {
+            "rollout_id": 1,
+            "value": 0.027407407760620117,
+            "source": {
+              "component": "actor",
+              "model_id": null,
+              "cell_index": 0,
+              "rank_within_cell": 0
+            }
+          },
+          {
+            "rollout_id": 2,
+            "value": 0.028336048126220703,
+            "source": {
+              "component": "actor",
+              "model_id": null,
+              "cell_index": 0,
+              "rank_within_cell": 0
+            }
+          }
+        ],
+        "perf/update_weights_time": [
+          {
+            "rollout_id": 0,
+            "value": 3.7092764377593994,
+            "source": {
+              "component": "actor",
+              "model_id": null,
+              "cell_index": 0,
+              "rank_within_cell": 0
+            }
+          },
+          {
+            "rollout_id": 1,
+            "value": 0.5434854030609131,
+            "source": {
+              "component": "actor",
+              "model_id": null,
+              "cell_index": 0,
+              "rank_within_cell": 0
+            }
+          },
+          {
+            "rollout_id": 2,
+            "value": 0.5465335845947266,
+            "source": {
+              "component": "actor",
+              "model_id": null,
+              "cell_index": 0,
+              "rank_within_cell": 0
+            }
+          }
+        ],
+        "perf/data_preprocess_time": [
+          {
+            "rollout_id": 0,
+            "value": 0.00858449935913086,
+            "source": {
+              "component": "actor",
+              "model_id": null,
+              "cell_index": 0,
+              "rank_within_cell": 0
+            }
+          },
+          {
+            "rollout_id": 1,
+            "value": 0.005572319030761719,
+            "source": {
+              "component": "actor",
+              "model_id": null,
+              "cell_index": 0,
+              "rank_within_cell": 0
+            }
+          },
+          {
+            "rollout_id": 2,
+            "value": 0.0051250457763671875,
+            "source": {
+              "component": "actor",
+              "model_id": null,
+              "cell_index": 0,
+              "rank_within_cell": 0
+            }
+          }
+        ],
+        "perf/train_wait_time": [
+          {
+            "rollout_id": 0,
+            "value": 48.03802132606506,
+            "source": {
+              "component": "actor",
+              "model_id": null,
+              "cell_index": 0,
+              "rank_within_cell": 0
+            }
+          },
+          {
+            "rollout_id": 1,
+            "value": 23.930237531661987,
+            "source": {
+              "component": "actor",
+              "model_id": null,
+              "cell_index": 0,
+              "rank_within_cell": 0
+            }
+          },
+          {
+            "rollout_id": 2,
+            "value": 29.103025674819946,
+            "source": {
+              "component": "actor",
+              "model_id": null,
+              "cell_index": 0,
+              "rank_within_cell": 0
+            }
+          }
+        ],
+        "perf/log_probs_time": [
+          {
+            "rollout_id": 0,
+            "value": 6.639002323150635,
+            "source": {
+              "component": "actor",
+              "model_id": null,
+              "cell_index": 0,
+              "rank_within_cell": 0
+            }
+          },
+          {
+            "rollout_id": 1,
+            "value": 0.8680932521820068,
+            "source": {
+              "component": "actor",
+              "model_id": null,
+              "cell_index": 0,
+              "rank_within_cell": 0
+            }
+          },
+          {
+            "rollout_id": 2,
+            "value": 0.6297607421875,
+            "source": {
+              "component": "actor",
+              "model_id": null,
+              "cell_index": 0,
+              "rank_within_cell": 0
+            }
+          }
+        ],
+        "perf/actor_train_time": [
+          {
+            "rollout_id": 0,
+            "value": 50.692275047302246,
+            "source": {
+              "component": "actor",
+              "model_id": null,
+              "cell_index": 0,
+              "rank_within_cell": 0
+            }
+          },
+          {
+            "rollout_id": 1,
+            "value": 51.21104979515076,
+            "source": {
+              "component": "actor",
+              "model_id": null,
+              "cell_index": 0,
+              "rank_within_cell": 0
+            }
+          },
+          {
+            "rollout_id": 2,
+            "value": 48.91745162010193,
+            "source": {
+              "component": "actor",
+              "model_id": null,
+              "cell_index": 0,
+              "rank_within_cell": 0
+            }
+          }
+        ],
+        "perf/train_time": [
+          {
+            "rollout_id": 0,
+            "value": 57.85496401786804,
+            "source": {
+              "component": "actor",
+              "model_id": null,
+              "cell_index": 0,
+              "rank_within_cell": 0
+            }
+          },
+          {
+            "rollout_id": 1,
+            "value": 52.67790675163269,
+            "source": {
+              "component": "actor",
+              "model_id": null,
+              "cell_index": 0,
+              "rank_within_cell": 0
+            }
+          },
+          {
+            "rollout_id": 2,
+            "value": 50.16378569602966,
+            "source": {
+              "component": "actor",
+              "model_id": null,
+              "cell_index": 0,
+              "rank_within_cell": 0
+            }
+          }
+        ],
+        "perf/log_probs_tflops": [
+          {
+            "rollout_id": 0,
+            "value": 15.206242148228483,
+            "source": {
+              "component": "actor",
+              "model_id": null,
+              "cell_index": 0,
+              "rank_within_cell": 0
+            }
+          },
+          {
+            "rollout_id": 1,
+            "value": 114.28757473324407,
+            "source": {
+              "component": "actor",
+              "model_id": null,
+              "cell_index": 0,
+              "rank_within_cell": 0
+            }
+          },
+          {
+            "rollout_id": 2,
+            "value": 142.74247127939864,
+            "source": {
+              "component": "actor",
+              "model_id": null,
+              "cell_index": 0,
+              "rank_within_cell": 0
+            }
+          }
+        ],
+        "perf/actor_train_tflops": [
+          {
+            "rollout_id": 0,
+            "value": 5.9745361707051226,
+            "source": {
+              "component": "actor",
+              "model_id": null,
+              "cell_index": 0,
+              "rank_within_cell": 0
+            }
+          },
+          {
+            "rollout_id": 1,
+            "value": 5.811964771140302,
+            "source": {
+              "component": "actor",
+              "model_id": null,
+              "cell_index": 0,
+              "rank_within_cell": 0
+            }
+          },
+          {
+            "rollout_id": 2,
+            "value": 5.512977578189182,
+            "source": {
+              "component": "actor",
+              "model_id": null,
+              "cell_index": 0,
+              "rank_within_cell": 0
+            }
+          }
+        ],
+        "perf/actor_train_tok_per_s": [
+          {
+            "rollout_id": 0,
+            "value": 2074.9709872332464,
+            "source": {
+              "component": "actor",
+              "model_id": null,
+              "cell_index": 0,
+              "rank_within_cell": 0
+            }
+          },
+          {
+            "rollout_id": 1,
+            "value": 2032.2567183509468,
+            "source": {
+              "component": "actor",
+              "model_id": null,
+              "cell_index": 0,
+              "rank_within_cell": 0
+            }
+          },
+          {
+            "rollout_id": 2,
+            "value": 1931.887227771394,
+            "source": {
+              "component": "actor",
+              "model_id": null,
+              "cell_index": 0,
+              "rank_within_cell": 0
+            }
+          }
+        ],
+        "perf/step_time": [
+          {
+            "rollout_id": 0,
+            "value": 105.8929853439331,
+            "source": {
+              "component": "actor",
+              "model_id": null,
+              "cell_index": 0,
+              "rank_within_cell": 0
+            }
+          },
+          {
+            "rollout_id": 1,
+            "value": 76.60814428329468,
+            "source": {
+              "component": "actor",
+              "model_id": null,
+              "cell_index": 0,
+              "rank_within_cell": 0
+            }
+          },
+          {
+            "rollout_id": 2,
+            "value": 79.26681137084961,
+            "source": {
+              "component": "actor",
+              "model_id": null,
+              "cell_index": 0,
+              "rank_within_cell": 0
+            }
+          }
+        ],
+        "perf/wait_time_ratio": [
+          {
+            "rollout_id": 0,
+            "value": 0.4536468697151269,
+            "source": {
+              "component": "actor",
+              "model_id": null,
+              "cell_index": 0,
+              "rank_within_cell": 0
+            }
+          },
+          {
+            "rollout_id": 1,
+            "value": 0.31237197762118696,
+            "source": {
+              "component": "actor",
+              "model_id": null,
+              "cell_index": 0,
+              "rank_within_cell": 0
+            }
+          },
+          {
+            "rollout_id": 2,
+            "value": 0.36715272346028277,
+            "source": {
+              "component": "actor",
+              "model_id": null,
+              "cell_index": 0,
+              "rank_within_cell": 0
+            }
+          }
+        ],
+        "perf/rollout_time": [
+          {
+            "rollout_id": 0,
+            "value": 30.723252534866333,
+            "source": {
+              "component": "rollout_executor"
+            }
+          },
+          {
+            "rollout_id": 1,
+            "value": 17.655081748962402,
+            "source": {
+              "component": "rollout_executor"
+            }
+          },
+          {
+            "rollout_id": 2,
+            "value": 21.987718105316162,
+            "source": {
+              "component": "rollout_executor"
+            }
+          }
+        ],
+        "perf/tokens_per_gpu_per_sec": [
+          {
+            "rollout_id": 0,
+            "value": 192.1122281341063,
+            "source": {
+              "component": "rollout_executor"
+            }
+          },
+          {
+            "rollout_id": 1,
+            "value": 329.48728772337034,
+            "source": {
+              "component": "rollout_executor"
+            }
+          },
+          {
+            "rollout_id": 2,
+            "value": 240.88163558543323,
+            "source": {
+              "component": "rollout_executor"
+            }
+          }
+        ],
+        "perf/longest_sample_tokens_per_sec": [
+          {
+            "rollout_id": 0,
+            "value": 133.3192179230258,
+            "source": {
+              "component": "rollout_executor"
+            }
+          },
+          {
+            "rollout_id": 1,
+            "value": 162.84263312283815,
+            "source": {
+              "component": "rollout_executor"
+            }
+          },
+          {
+            "rollout_id": 2,
+            "value": 186.28581558036595,
+            "source": {
+              "component": "rollout_executor"
+            }
+          }
+        ],
+        "perf/effective_tokens_per_gpu_per_sec": [
+          {
+            "rollout_id": 0,
+            "value": 192.1122281341063,
+            "source": {
+              "component": "rollout_executor"
+            }
+          },
+          {
+            "rollout_id": 1,
+            "value": 329.48728772337034,
+            "source": {
+              "component": "rollout_executor"
+            }
+          },
+          {
+            "rollout_id": 2,
+            "value": 240.88163558543323,
+            "source": {
+              "component": "rollout_executor"
+            }
+          }
+        ],
+        "perf/longest_effective_sample_tokens_per_sec": [
+          {
+            "rollout_id": 0,
+            "value": 133.3192179230258,
+            "source": {
+              "component": "rollout_executor"
+            }
+          },
+          {
+            "rollout_id": 1,
+            "value": 162.84263312283815,
+            "source": {
+              "component": "rollout_executor"
+            }
+          },
+          {
+            "rollout_id": 2,
+            "value": 186.28581558036595,
+            "source": {
+              "component": "rollout_executor"
+            }
+          }
+        ]
+      },
+      "failure": {},
+      "environment_verified": false,
+      "format_probe_audit_complete": false,
+      "format_probe_protocol_passed": false,
+      "allocated_gpus": 32,
+      "source": "runs/train-05"
+    }
+  ],
+  "terminal_gpu_hours": 54.76111111111111,
+  "unfinished_runs": [],
+  "verified_training_runs": [
+    "publication-01",
+    "train-05"
+  ],
+  "sota_claim": false,
+  "held_out_quality_improvement_claim": false,
+  "end_to_end_speedup_claim": false
+}

@@ -1,0 +1,9 @@
+{
+  "source_sha256": "9fd0474145bd1ebfb5d091a55f6fb6e6465ed32057cbd0a0bf48583fc348d5ed",
+  "nodes": 4,
+  "gpus_per_node": 8,
+  "world_size": 32,
+  "remote_output": "/mnt/hdfs/lab_owner/training_infra_lab/miles-grpo/grpo-scale32-nccl-20261025-01",
+  "submitted": false,
+  "scope": "environment_preflight_only"
+}

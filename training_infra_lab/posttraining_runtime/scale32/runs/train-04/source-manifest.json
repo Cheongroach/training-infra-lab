@@ -1,0 +1,20 @@
+{
+  "run_train32.py": "bb4fba4df55ce464ffcfe9961b02f1b1d980fb1cd641af9a79107c57c545e13a",
+  "train32_checks.py": "802df7b3eb6bccc0525a02601e756338618048749d93f78627bd910f54cfd776",
+  "multinode_entry.py": "ddfd3e3b7467d6e57d2921e3e15c9e4884789d1cfd3a1cf00b464e452e4e7d8d",
+  "format_contract.py": "8a0e99e9e0f28100877d054d4d9d838a995d4b69b38f213f29c30bf6ffb78a7a",
+  "rollout_gate.py": "a33d88308addff680ecf1f274e08100417dd056076b814729dedf3f78cdf72bf",
+  "original_rollout_gate.py": "2162051bbfe05b7ea2a18e72bb9e5d4299656404e23212c66387e802b64ecafd",
+  "model-manifest-8b.json": "9fc24c2bdaddde721d7b5c9d8047a5c8ffc6f15b71165c74bbba84c07bdc2a2a",
+  "math_dapo_utils.py": "3d6b61357e2ee8f1704ba0eb1726ea2dd65dbf9c76e963f20d5ff6598b8f7b23",
+  "bounded_rollout.py": "5891258a3c604d1f37d9f5519899fc0c8096ec08d32f16d97ca05227c2191e61",
+  "qualification.py": "14a40f301b049580c5c4fe69af7e7df2218129dc54417caeb1e3fc143a7b9b04",
+  "recovery_checks.py": "4c1673d093ed4a50191c9dd872cfa0e843bc4c27865a276b31cc27d07b76f091",
+  "patch_broadcast_ipv6.py": "813c4c18a810278fc4117642e3120503fcd226a300e13c77a27a7af57e1ee4da",
+  "broadcast-ipv6.patch": "6386c653ae3cad7dce6ebb8420cae5fccf6b56997cf70c50bbae840f035a9d46",
+  "patch_publication_probe.py": "a0d66bbd236e7fd262af7387ba77aac20051f7b25dc400f86c5271f7aabe9fbb",
+  "patch_ray_launcher.py": "320160ab221cdc56e99298605c1ad976a60a2366a8b15f831e2a7b8db7f7c524",
+  "ray_readiness.py": "838d2368a8e556bc9daa9dc9b51a7f48f715728298463d709053afb8a834b622",
+  "explicit-prompts.jsonl": "498d4e3342c97fd7e35223093d0211c921c92fd54ec9b19bcd69fd67e883259f",
+  "format-manifest.json": "56a9cf5afa5c94aaf3e204487daf34dcacf3a6abb4c033a4ca30eb6a7f6c8549"
+}

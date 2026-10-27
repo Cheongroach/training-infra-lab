@@ -1,0 +1,373 @@
+{
+  "world": 4,
+  "paired_samples": [
+    {
+      "repeat": 0,
+      "baseline": {
+        "seconds": 12.34499454498291,
+        "response_tokens": 2048,
+        "tokens_per_second": 165.89719764860658,
+        "peak_allocated_gib": 16.994423389434814
+      },
+      "resident": {
+        "seconds": 7.116570472717285,
+        "response_tokens": 2048,
+        "tokens_per_second": 287.7790654714085,
+        "peak_allocated_gib": 29.439890384674072
+      },
+      "speedup": 1.734683102248446
+    },
+    {
+      "repeat": 1,
+      "baseline": {
+        "seconds": 12.407449722290039,
+        "response_tokens": 2048,
+        "tokens_per_second": 165.062123630512,
+        "peak_allocated_gib": 16.994423389434814
+      },
+      "resident": {
+        "seconds": 7.037981033325195,
+        "response_tokens": 2048,
+        "tokens_per_second": 290.9925432169562,
+        "peak_allocated_gib": 29.439890384674072
+      },
+      "speedup": 1.7629274167605935
+    },
+    {
+      "repeat": 2,
+      "baseline": {
+        "seconds": 12.378896713256836,
+        "response_tokens": 2048,
+        "tokens_per_second": 165.4428538697436,
+        "peak_allocated_gib": 16.994423389434814
+      },
+      "resident": {
+        "seconds": 7.029264450073242,
+        "response_tokens": 2048,
+        "tokens_per_second": 291.35338619656864,
+        "peak_allocated_gib": 29.439890384674072
+      },
+      "speedup": 1.7610515013598405
+    }
+  ],
+  "median_paired_speedup": 1.7610515013598405,
+  "exact_sampling_passed": true,
+  "profiles": [
+    {
+      "rank": 0,
+      "resident": false,
+      "decode_steps": 16,
+      "collectives": [
+        {
+          "name": "nccl:_all_gather_base",
+          "calls": 528,
+          "self_cpu_us": 0,
+          "total_cpu_us": 0,
+          "self_device_us": 874711.9279999987,
+          "total_device_us": 874711.9279999987
+        },
+        {
+          "name": "nccl:all_reduce",
+          "calls": 16,
+          "self_cpu_us": 0,
+          "total_cpu_us": 0,
+          "self_device_us": 11516.845999999816,
+          "total_device_us": 11516.845999999816
+        },
+        {
+          "name": "nccl:_all_gather_base",
+          "calls": 528,
+          "self_cpu_us": 0,
+          "total_cpu_us": 33544.28900000064,
+          "self_device_us": 0,
+          "total_device_us": 0
+        },
+        {
+          "name": "nccl:all_reduce",
+          "calls": 16,
+          "self_cpu_us": 0,
+          "total_cpu_us": 1119.251000000164,
+          "self_device_us": 0,
+          "total_device_us": 0
+        }
+      ]
+    },
+    {
+      "rank": 0,
+      "resident": true,
+      "decode_steps": 16,
+      "collectives": [
+        {
+          "name": "nccl:all_reduce",
+          "calls": 16,
+          "self_cpu_us": 0,
+          "total_cpu_us": 0,
+          "self_device_us": 57320.59600000031,
+          "total_device_us": 57320.59600000031
+        },
+        {
+          "name": "nccl:_all_gather_base",
+          "calls": 33,
+          "self_cpu_us": 0,
+          "total_cpu_us": 0,
+          "self_device_us": 52495.83000000003,
+          "total_device_us": 52495.83000000003
+        },
+        {
+          "name": "nccl:all_reduce",
+          "calls": 17,
+          "self_cpu_us": 0,
+          "total_cpu_us": 2500.6210000002184,
+          "self_device_us": 0,
+          "total_device_us": 0
+        },
+        {
+          "name": "nccl:_all_gather_base",
+          "calls": 33,
+          "self_cpu_us": 0,
+          "total_cpu_us": 2278.773999999996,
+          "self_device_us": 0,
+          "total_device_us": 0
+        }
+      ]
+    },
+    {
+      "rank": 1,
+      "resident": false,
+      "decode_steps": 16,
+      "collectives": [
+        {
+          "name": "nccl:_all_gather_base",
+          "calls": 528,
+          "self_cpu_us": 0,
+          "total_cpu_us": 0,
+          "self_device_us": 1126902.2579999988,
+          "total_device_us": 1126902.2579999988
+        },
+        {
+          "name": "nccl:all_reduce",
+          "calls": 16,
+          "self_cpu_us": 0,
+          "total_cpu_us": 0,
+          "self_device_us": 18544.70599999989,
+          "total_device_us": 18544.70599999989
+        },
+        {
+          "name": "nccl:_all_gather_base",
+          "calls": 528,
+          "self_cpu_us": 0,
+          "total_cpu_us": 32767.797000000908,
+          "self_device_us": 0,
+          "total_device_us": 0
+        },
+        {
+          "name": "nccl:all_reduce",
+          "calls": 16,
+          "self_cpu_us": 0,
+          "total_cpu_us": 1122.5100000000675,
+          "self_device_us": 0,
+          "total_device_us": 0
+        }
+      ]
+    },
+    {
+      "rank": 1,
+      "resident": true,
+      "decode_steps": 16,
+      "collectives": [
+        {
+          "name": "nccl:_all_gather_base",
+          "calls": 33,
+          "self_cpu_us": 0,
+          "total_cpu_us": 0,
+          "self_device_us": 50337.617000000006,
+          "total_device_us": 50337.617000000006
+        },
+        {
+          "name": "nccl:all_reduce",
+          "calls": 16,
+          "self_cpu_us": 0,
+          "total_cpu_us": 0,
+          "self_device_us": 6813.505000000034,
+          "total_device_us": 6813.505000000034
+        },
+        {
+          "name": "nccl:all_reduce",
+          "calls": 17,
+          "self_cpu_us": 0,
+          "total_cpu_us": 1461.0310000003283,
+          "self_device_us": 0,
+          "total_device_us": 0
+        },
+        {
+          "name": "nccl:_all_gather_base",
+          "calls": 33,
+          "self_cpu_us": 0,
+          "total_cpu_us": 2236.1889999999985,
+          "self_device_us": 0,
+          "total_device_us": 0
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "resident": false,
+      "decode_steps": 16,
+      "collectives": [
+        {
+          "name": "nccl:_all_gather_base",
+          "calls": 528,
+          "self_cpu_us": 0,
+          "total_cpu_us": 0,
+          "self_device_us": 731831.435999999,
+          "total_device_us": 731831.435999999
+        },
+        {
+          "name": "nccl:all_reduce",
+          "calls": 16,
+          "self_cpu_us": 0,
+          "total_cpu_us": 0,
+          "self_device_us": 3339.4789999998757,
+          "total_device_us": 3339.4789999998757
+        },
+        {
+          "name": "nccl:_all_gather_base",
+          "calls": 528,
+          "self_cpu_us": 0,
+          "total_cpu_us": 33195.44699999603,
+          "self_device_us": 0,
+          "total_device_us": 0
+        },
+        {
+          "name": "nccl:all_reduce",
+          "calls": 16,
+          "self_cpu_us": 0,
+          "total_cpu_us": 1119.49099999998,
+          "self_device_us": 0,
+          "total_device_us": 0
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "resident": true,
+      "decode_steps": 16,
+      "collectives": [
+        {
+          "name": "nccl:_all_gather_base",
+          "calls": 33,
+          "self_cpu_us": 0,
+          "total_cpu_us": 0,
+          "self_device_us": 68226.69400000002,
+          "total_device_us": 68226.69400000002
+        },
+        {
+          "name": "nccl:all_reduce",
+          "calls": 16,
+          "self_cpu_us": 0,
+          "total_cpu_us": 0,
+          "self_device_us": 32412.22299999962,
+          "total_device_us": 32412.22299999962
+        },
+        {
+          "name": "nccl:all_reduce",
+          "calls": 17,
+          "self_cpu_us": 0,
+          "total_cpu_us": 1633.3059999999755,
+          "self_device_us": 0,
+          "total_device_us": 0
+        },
+        {
+          "name": "nccl:_all_gather_base",
+          "calls": 33,
+          "self_cpu_us": 0,
+          "total_cpu_us": 2232.1039999999957,
+          "self_device_us": 0,
+          "total_device_us": 0
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "resident": false,
+      "decode_steps": 16,
+      "collectives": [
+        {
+          "name": "nccl:_all_gather_base",
+          "calls": 528,
+          "self_cpu_us": 0,
+          "total_cpu_us": 0,
+          "self_device_us": 1174589.9979999997,
+          "total_device_us": 1174589.9979999997
+        },
+        {
+          "name": "nccl:all_reduce",
+          "calls": 16,
+          "self_cpu_us": 0,
+          "total_cpu_us": 0,
+          "self_device_us": 16038.196000000054,
+          "total_device_us": 16038.196000000054
+        },
+        {
+          "name": "nccl:_all_gather_base",
+          "calls": 528,
+          "self_cpu_us": 0,
+          "total_cpu_us": 33292.521000003486,
+          "self_device_us": 0,
+          "total_device_us": 0
+        },
+        {
+          "name": "nccl:all_reduce",
+          "calls": 16,
+          "self_cpu_us": 0,
+          "total_cpu_us": 1303.3799999993062,
+          "self_device_us": 0,
+          "total_device_us": 0
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "resident": true,
+      "decode_steps": 16,
+      "collectives": [
+        {
+          "name": "nccl:_all_gather_base",
+          "calls": 33,
+          "self_cpu_us": 0,
+          "total_cpu_us": 0,
+          "self_device_us": 86370.00899999999,
+          "total_device_us": 86370.00899999999
+        },
+        {
+          "name": "nccl:all_reduce",
+          "calls": 16,
+          "self_cpu_us": 0,
+          "total_cpu_us": 0,
+          "self_device_us": 73002.57999999973,
+          "total_device_us": 73002.57999999973
+        },
+        {
+          "name": "nccl:all_reduce",
+          "calls": 17,
+          "self_cpu_us": 0,
+          "total_cpu_us": 1998.701999999671,
+          "self_device_us": 0,
+          "total_device_us": 0
+        },
+        {
+          "name": "nccl:_all_gather_base",
+          "calls": 33,
+          "self_cpu_us": 0,
+          "total_cpu_us": 2295.225000000022,
+          "self_device_us": 0,
+          "total_device_us": 0
+        }
+      ]
+    }
+  ],
+  "scope": "128-token generation only; 3 paired repetitions in one job; one prompt per rank",
+  "excluded": "optimizer updates, startup, weights copying, warmup, independent 16-token profiles",
+  "timing": "includes memory admission, first all-gather, sampling and final reshard",
+  "limitations": "not full RL throughput, convergence, or independent-job replication"
+}

@@ -1,0 +1,7 @@
+{
+  "source_payload_roundtrip": true,
+  "source_files": 7,
+  "shell_argument_bytes": 54729,
+  "bash_syntax": "passed",
+  "gpu_generation_verified": false
+}

@@ -1,0 +1,8 @@
+{
+  "frozen_sources": 20,
+  "source_roundtrip": true,
+  "AST_passed": true,
+  "bash_passed": true,
+  "shell_argument_bytes": 81578,
+  "GPU_run_verified": false
+}

@@ -1,0 +1,45 @@
+{
+  "passed": false,
+  "performance_claim": false,
+  "updates": [
+    {
+      "rollout_id": 0,
+      "nonzero_advantage_tokens": 2782,
+      "reward_mean": -0.875,
+      "mixed_reward_groups": 1,
+      "truncated_samples": 1,
+      "grad_norm": [
+        0.6337099075317383
+      ]
+    },
+    {
+      "rollout_id": 1,
+      "nonzero_advantage_tokens": 11678,
+      "reward_mean": -0.875,
+      "mixed_reward_groups": 1,
+      "truncated_samples": 0,
+      "grad_norm": [
+        0.21395732462406158
+      ]
+    },
+    {
+      "rollout_id": 2
+    }
+  ],
+  "final_update_published": false,
+  "rollout_gate_required": true,
+  "event_types": {
+    "env_report": 18,
+    "metric": 8,
+    "train_engine_local_weight_checksum": 4,
+    "engine_env_report": 2,
+    "inference_engine_weight_checksum": 3,
+    "weight_update_result": 3,
+    "train_group_step_end": 2
+  },
+  "errors": [
+    "driver did not complete",
+    "rollout gate rejected 2",
+    "missing train dump 2"
+  ]
+}

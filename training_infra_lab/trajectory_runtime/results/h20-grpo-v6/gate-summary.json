@@ -1,0 +1,16 @@
+{
+  "all_device_gates_passed": true,
+  "rank_counts": [
+    17,
+    17,
+    17,
+    17
+  ],
+  "distributed_rank_agreement": true,
+  "bf16_max_parameter_error": 8.001923561096191e-06,
+  "bf16_max_gradient_relative_l2": 0.002539289584975549,
+  "real_grpo_updates": 0,
+  "failure": "Chat template default returned BatchEncoding; tensor construction failed before sampling.",
+  "run": "034bfc708a9ff5f1",
+  "adam_eps": 0.0001
+}

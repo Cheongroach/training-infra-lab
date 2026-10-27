@@ -1,0 +1,77 @@
+{
+  "model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+  "model_mirror": "https://modelscope.cn/models/Qwen/Qwen2.5-1.5B-Instruct",
+  "model_file_identities": {
+    "config.json": [
+      "f81ead14ab072d65a07817f83a3ee0e5a1890d10",
+      "a3c2dc17129625b1e51caf21ab486d32d1f12982"
+    ],
+    "generation_config.json": [
+      "dfc11073787daf1b0f9c0f1499487ab5f4c93738",
+      "a3c2dc17129625b1e51caf21ab486d32d1f12982"
+    ],
+    "merges.txt": [
+      "20024bfe7c83998e9aeaf98a0cd6a2ce6306c2f0",
+      "a3c2dc17129625b1e51caf21ab486d32d1f12982"
+    ],
+    "tokenizer.json": [
+      "443909a61d429dff23010e5bddd28ff530edda00",
+      "a3c2dc17129625b1e51caf21ab486d32d1f12982"
+    ],
+    "vocab.json": [
+      "4783fe10ac3adce15ac8f358ef5462739852c569",
+      "a3c2dc17129625b1e51caf21ab486d32d1f12982"
+    ],
+    "tokenizer_config.json": [
+      "07bfe0640cb5a0037f9322287fbfc682806cf672",
+      "bc68ae58812462d8bf5d9ba5131317ed7fb71665"
+    ],
+    "LICENSE": [
+      "6634c8cc3133b3848ec74b9f275acaaa1ea618ab",
+      "800496101fe8b9995a7a3ed260ef7a7288d68472"
+    ],
+    "model.safetensors": [
+      "dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee",
+      "a3c2dc17129625b1e51caf21ab486d32d1f12982"
+    ]
+  },
+  "dataset": "HuggingFaceH4/no_robots",
+  "dataset_revision": "e6f9a4ac5c37faeb744ba9ecf0473184d7f8105b",
+  "dataset_mirror_revision": "c10ce599dc8beb6be40b7473ecf28b05d80302ba",
+  "dataset_file_sha256": {
+    "train": "76d64120a2ab20eb85d6b22bdced5b1ec638a6213a97004741006745c92489ef",
+    "test": "60707b2636a46e37bb0c1e9ca263a18553f430317b7a53c691676d6a492fc0f2"
+  },
+  "dataset_license": "cc-by-nc-4.0",
+  "selection_seed": 20261019,
+  "max_length": 4096,
+  "counts": {
+    "train": {
+      "examples": 2048,
+      "tokens": 625296,
+      "supervised_tokens": 374781,
+      "boundary_tokens_ignored": 30
+    },
+    "test": {
+      "examples": 128,
+      "tokens": 43166,
+      "supervised_tokens": 25246,
+      "boundary_tokens_ignored": 1
+    }
+  },
+  "files": {
+    "test.jsonl": "3c51d2ad9f1e4066aa03183058f2a63ba53f60f02361ec3740fd9829b273a6cf",
+    "test.parquet": "60707b2636a46e37bb0c1e9ca263a18553f430317b7a53c691676d6a492fc0f2",
+    "train.jsonl": "c35348f98b176c0752fb6349209472a74364e1881b9404702142c739833cf8c3",
+    "train.parquet": "76d64120a2ab20eb85d6b22bdced5b1ec638a6213a97004741006745c92489ef",
+    "model/LICENSE": "832dd9e00a68dd83b3c3fb9f5588dad7dcf337a0db50f7d9483f310cd292e92e",
+    "model/config.json": "98d2ff8cc47488d08a2b0b3acf4eb99ef210779b42bd48605f6b8e36acdbf670",
+    "model/generation_config.json": "e558847a8b4402616f1273797b015104dc266fe4b520056fca88823ba8f8ebe6",
+    "model/merges.txt": "599bab54075088774b1733fde865d5bd747cbcc7a547c5bc12610e874e26f5e3",
+    "model/model.safetensors": "dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee",
+    "model/tokenizer.json": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539",
+    "model/tokenizer_config.json": "5b5d4f65d0acd3b2d56a35b56d374a36cbc1c8fa5cf3b3febbbfabf22f359583",
+    "model/vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+  }
+}

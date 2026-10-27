@@ -1,0 +1,7 @@
+{
+  "passed": true,
+  "frozen_files": 18,
+  "shell_argument_bytes": 71978,
+  "observed_at": "2026-10-25T05:29:58.432336+00:00",
+  "validation_scope": "CPU syntax and frozen payload roundtrip; no GPU claim"
+}

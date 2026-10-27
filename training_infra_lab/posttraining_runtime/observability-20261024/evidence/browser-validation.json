@@ -1,0 +1,33 @@
+{
+  "downloads": {
+    "local_links_checked": 19,
+    "missing": []
+  },
+  "interaction": {
+    "kernel_filter_verified": true,
+    "kernel_rows": 122,
+    "quality_and_capture_boundaries_visible": true
+  },
+  "zoom": {
+    "start": 25,
+    "end": 75
+  },
+  "desktop": {
+    "width": 1440,
+    "scroll": 1440,
+    "charts": 9,
+    "rows": 3
+  },
+  "mobile": {
+    "width": 390,
+    "scroll": 390,
+    "charts": 9
+  },
+  "print": {
+    "headerVisible": false,
+    "bodyWidth": 697
+  },
+  "javascript_errors": [],
+  "failed_requests": [],
+  "passed": true
+}

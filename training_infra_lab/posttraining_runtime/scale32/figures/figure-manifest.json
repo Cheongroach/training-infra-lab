@@ -1,0 +1,40 @@
+{
+  "figures": [
+    "terminal-cost.png",
+    "terminal-cost.svg",
+    "publication-01-training.png",
+    "publication-01-training.svg",
+    "publication-01-publication.png",
+    "publication-01-publication.svg",
+    "publication-01-gpu-duty.png",
+    "publication-01-gpu-duty.svg",
+    "train-04-gpu-duty.png",
+    "train-04-gpu-duty.svg",
+    "train-05-training.png",
+    "train-05-training.svg",
+    "train-05-stage-baseline.png",
+    "train-05-stage-baseline.svg",
+    "train-05-gpu-duty.png",
+    "train-05-gpu-duty.svg"
+  ],
+  "source_sha256": {
+    "runs/format-01/verified.json": "4f0e19dc690365b7203d29bb839648cbf2e82c9b49708a58d8642e8c5403838f",
+    "runs/format-02/verified.json": "200e0c7431791f116d8b8f417eda115210feaead8ec423a81fe52bf819e50d3f",
+    "runs/format-03/verified.json": "801d23d38421e8aa4a548f8dded945f2cd5ab46b2912519ad5abcc750cb20264",
+    "runs/preflight-01/verified.json": "031e7eced01ffa7641b62c1536af984d071b178c36fe0c73a0dea4219d3dfb27",
+    "runs/publication-01/grafana/panel-7.summary.json": "25a6038002d34b829eb3fe1d4e0855e575c138bdd94361eeee44c7e01c9f0227",
+    "runs/publication-01/publication-benchmark-audit.json": "bc808044f26e7c20579a97e657f7e1ee3483b2d2dfb2b07b1ecd260d84b5c1f8",
+    "runs/publication-01/training-audit.json": "01fb68994b62bc8d0e63be14c05b0f90323a445995f705808060111b130f121a",
+    "runs/publication-01/verified.json": "b228cb2a44665b1c1632a96e3bba643891fbb557569b803a2d6def00b9c43157",
+    "runs/train-03/verified.json": "ed5be71cdc1e62b8e6c7e83fdfa649dffddd45e44f71f6bdb71e749a7f05c1b6",
+    "runs/train-04/grafana/panel-7.summary.json": "9c621b5f218cf01d512834b2b3f0fb36f5b2dae51a0e5e07cdab0b7f8377b91e",
+    "runs/train-04/verified.json": "ae508291e86f3617f843b790fe5adb00c157f56200ca5b42fede3c4edc26c1b8",
+    "runs/train-05/grafana/panel-7.summary.json": "36d5989429e11d13e00512b11bb012b1f4afd2c88d8d7fa062edf128f541b882",
+    "runs/train-05/stage-baseline.json": "a561673c2c8a2f0aed7f1d9040d4b025cd146c0c99226db6ef3e8af28a95bcff",
+    "runs/train-05/training-audit.json": "925f9893b6a75235fa4eff3aa6b77e7b1102dee9bdd7077312fd4efabe999dfc",
+    "runs/train-05/verified.json": "62c6707dde138a52589a594fbbc793ec68f1f909a87f7305090ecfcca6b86486"
+  },
+  "scope": "Terminal costs, independent audits and captured Pod resource series",
+  "quality_improvement_claim": false,
+  "end_to_end_speedup_claim": false
+}

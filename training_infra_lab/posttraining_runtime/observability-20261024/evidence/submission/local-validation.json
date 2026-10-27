@@ -1,0 +1,21 @@
+{
+  "source_count": 16,
+  "python_syntax": true,
+  "shell_syntax": true,
+  "patch_bases": [
+    {
+      "path": "miles/utils/workers/ray_worker_manager.py",
+      "before": "            runtime_env={\"env_vars\": self.spec.env_var(self.launch_context)},",
+      "after": "            runtime_env=__import__(\"profile_runtime\").actor_runtime_env(\n                self.spec.env_var(self.launch_context), actor_class, self.worker_in_cell_index),",
+      "before_sha256": "e295915042ff4f2bc0e60433cda7bffcc7069fdb77c1ba5c081abed49e552eb3"
+    },
+    {
+      "path": "miles/backends/megatron_utils/actor.py",
+      "before": "            with timer(\"actor_train\"):",
+      "after": "            with timer(\"actor_train\"), __import__(\"profile_runtime\").profile_train_range(rollout_id):",
+      "before_sha256": "f9cf84fb407a83a3ca277e03a8668b4848eaf110b99f7916d790cc4dcede0bd6"
+    }
+  ],
+  "submitted": false,
+  "purpose": "diagnostic, no performance improvement claim"
+}

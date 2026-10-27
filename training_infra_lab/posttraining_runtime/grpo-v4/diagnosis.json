@@ -1,0 +1,396 @@
+{
+  "rollouts": [
+    {
+      "passed": true,
+      "errors": [],
+      "fatal_errors": [],
+      "samples": 16,
+      "groups": 4,
+      "completed": 16,
+      "extracted": 14,
+      "mixed_reward_groups": 2,
+      "max_response_tokens": 4096,
+      "rollout_id": 0,
+      "rollout_seconds": 45.58410286903381,
+      "positive_rewards": 2
+    },
+    {
+      "passed": true,
+      "errors": [],
+      "fatal_errors": [],
+      "samples": 16,
+      "groups": 4,
+      "completed": 14,
+      "extracted": 14,
+      "mixed_reward_groups": 1,
+      "max_response_tokens": 4096,
+      "rollout_id": 1,
+      "rollout_seconds": 56.103806018829346,
+      "positive_rewards": 1
+    },
+    {
+      "passed": true,
+      "errors": [],
+      "fatal_errors": [],
+      "samples": 16,
+      "groups": 4,
+      "completed": 13,
+      "extracted": 12,
+      "mixed_reward_groups": 1,
+      "max_response_tokens": 4096,
+      "rollout_id": 2,
+      "rollout_seconds": 18.9128520488739,
+      "positive_rewards": 3
+    }
+  ],
+  "qualification": [
+    {
+      "rollout_id": 0,
+      "passed": true,
+      "attempts": [
+        {
+          "attempt": 0,
+          "decision": "rejected",
+          "sample_indices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "assessment": {
+            "passed": false,
+            "errors": [
+              "no within-group reward variation"
+            ],
+            "fatal_errors": [],
+            "samples": 16,
+            "groups": 4,
+            "completed": 15,
+            "extracted": 15,
+            "mixed_reward_groups": 0,
+            "max_response_tokens": 4096,
+            "retryable": true
+          },
+          "response_tokens": 30221,
+          "positive_rewards": 0
+        },
+        {
+          "attempt": 1,
+          "decision": "admitted",
+          "sample_indices": [
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31
+          ],
+          "assessment": {
+            "passed": true,
+            "errors": [],
+            "fatal_errors": [],
+            "samples": 16,
+            "groups": 4,
+            "completed": 16,
+            "extracted": 14,
+            "mixed_reward_groups": 2,
+            "max_response_tokens": 4096,
+            "retryable": false
+          },
+          "response_tokens": 29886,
+          "positive_rewards": 2
+        }
+      ]
+    },
+    {
+      "rollout_id": 1,
+      "passed": true,
+      "attempts": [
+        {
+          "attempt": 0,
+          "decision": "rejected",
+          "sample_indices": [
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45,
+            46,
+            47
+          ],
+          "assessment": {
+            "passed": false,
+            "errors": [
+              "no within-group reward variation"
+            ],
+            "fatal_errors": [],
+            "samples": 16,
+            "groups": 4,
+            "completed": 14,
+            "extracted": 12,
+            "mixed_reward_groups": 0,
+            "max_response_tokens": 4096,
+            "retryable": true
+          },
+          "response_tokens": 35301,
+          "positive_rewards": 0
+        },
+        {
+          "attempt": 1,
+          "decision": "rejected",
+          "sample_indices": [
+            48,
+            49,
+            50,
+            51,
+            52,
+            53,
+            54,
+            55,
+            56,
+            57,
+            58,
+            59,
+            60,
+            61,
+            62,
+            63
+          ],
+          "assessment": {
+            "passed": false,
+            "errors": [
+              "no within-group reward variation"
+            ],
+            "fatal_errors": [],
+            "samples": 16,
+            "groups": 4,
+            "completed": 16,
+            "extracted": 16,
+            "mixed_reward_groups": 0,
+            "max_response_tokens": 4096,
+            "retryable": true
+          },
+          "response_tokens": 29784,
+          "positive_rewards": 0
+        },
+        {
+          "attempt": 2,
+          "decision": "admitted",
+          "sample_indices": [
+            64,
+            65,
+            66,
+            67,
+            68,
+            69,
+            70,
+            71,
+            72,
+            73,
+            74,
+            75,
+            76,
+            77,
+            78,
+            79
+          ],
+          "assessment": {
+            "passed": true,
+            "errors": [],
+            "fatal_errors": [],
+            "samples": 16,
+            "groups": 4,
+            "completed": 14,
+            "extracted": 14,
+            "mixed_reward_groups": 1,
+            "max_response_tokens": 4096,
+            "retryable": false
+          },
+          "response_tokens": 33523,
+          "positive_rewards": 1
+        }
+      ]
+    },
+    {
+      "rollout_id": 2,
+      "passed": true,
+      "attempts": [
+        {
+          "attempt": 0,
+          "decision": "admitted",
+          "sample_indices": [
+            80,
+            81,
+            82,
+            83,
+            84,
+            85,
+            86,
+            87,
+            88,
+            89,
+            90,
+            91,
+            92,
+            93,
+            94,
+            95
+          ],
+          "assessment": {
+            "passed": true,
+            "errors": [],
+            "fatal_errors": [],
+            "samples": 16,
+            "groups": 4,
+            "completed": 13,
+            "extracted": 12,
+            "mixed_reward_groups": 1,
+            "max_response_tokens": 4096,
+            "retryable": false
+          },
+          "response_tokens": 34483,
+          "positive_rewards": 3
+        }
+      ]
+    }
+  ],
+  "engine_checksums": [
+    {
+      "rollout_id": -1,
+      "weight_version": 0,
+      "tensor_count": 290,
+      "replicas_equal": true,
+      "changed_tensors": null
+    },
+    {
+      "rollout_id": 0,
+      "weight_version": 1,
+      "tensor_count": 290,
+      "replicas_equal": true,
+      "changed_tensors": 207
+    },
+    {
+      "rollout_id": 1,
+      "weight_version": 2,
+      "tensor_count": 290,
+      "replicas_equal": true,
+      "changed_tensors": 202
+    }
+  ],
+  "learner_checksums": [
+    {
+      "rank": 0,
+      "rollout_id": 0,
+      "parameter_count": 292
+    },
+    {
+      "rank": 0,
+      "rollout_id": 1,
+      "parameter_count": 292,
+      "changed_model_parameters": 202,
+      "optimizer_moments_changed": true
+    },
+    {
+      "rank": 0,
+      "rollout_id": 2,
+      "parameter_count": 292,
+      "changed_model_parameters": 203,
+      "optimizer_moments_changed": true
+    },
+    {
+      "rank": 1,
+      "rollout_id": 0,
+      "parameter_count": 292
+    },
+    {
+      "rank": 1,
+      "rollout_id": 1,
+      "parameter_count": 292,
+      "changed_model_parameters": 202,
+      "optimizer_moments_changed": true
+    },
+    {
+      "rank": 1,
+      "rollout_id": 2,
+      "parameter_count": 292,
+      "changed_model_parameters": 203,
+      "optimizer_moments_changed": true
+    }
+  ],
+  "timeline": [
+    {
+      "event_type": "job_success",
+      "created_at": "2026-10-24T02:41:37.924Z",
+      "created_by": "Merlin"
+    },
+    {
+      "event_type": "start_run",
+      "created_at": "2026-10-24T02:29:08.763Z",
+      "created_by": "Merlin"
+    },
+    {
+      "event_type": "job_queue",
+      "created_at": "2026-10-24T02:26:39.561Z",
+      "created_by": "auto"
+    },
+    {
+      "event_type": "task_group_submit",
+      "created_at": "2026-10-24T02:25:46.633Z",
+      "created_by": "auto"
+    },
+    {
+      "event_type": "job_created",
+      "created_at": "2026-10-24T02:25:45.306Z",
+      "created_by": "zhangyang.exp"
+    }
+  ],
+  "platform_status": "done",
+  "pods": [
+    {
+      "sid": "5390706384",
+      "start_at": "2026-10-24T02:26:43.000Z",
+      "stop_at": "2026-10-24T02:40:23.000Z",
+      "exit_status": 0
+    }
+  ],
+  "startup_seconds": 203.457,
+  "platform_run_seconds": 749.161,
+  "pod_resident_gpu_hours": 0.9111111111111111,
+  "entry_exit_records": [
+    [
+      "0",
+      "0"
+    ]
+  ]
+}

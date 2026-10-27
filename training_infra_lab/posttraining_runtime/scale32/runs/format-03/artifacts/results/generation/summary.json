@@ -1,0 +1,30 @@
+{
+  "passed": false,
+  "capability_claim": false,
+  "groups": {
+    "original_deterministic": {
+      "samples": 16,
+      "passed": 2,
+      "natural_eos": 12,
+      "format_ok": 2,
+      "probability_ok": 16,
+      "correct": 1
+    },
+    "explicit_deterministic": {
+      "samples": 16,
+      "passed": 10,
+      "natural_eos": 13,
+      "format_ok": 10,
+      "probability_ok": 16,
+      "correct": 5
+    },
+    "explicit_stochastic": {
+      "samples": 16,
+      "passed": 8,
+      "natural_eos": 16,
+      "format_ok": 8,
+      "probability_ok": 16,
+      "correct": 2
+    }
+  }
+}

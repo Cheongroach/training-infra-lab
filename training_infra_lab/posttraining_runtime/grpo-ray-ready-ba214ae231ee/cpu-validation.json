@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "sources": 11,
+  "auditor_files": 15,
+  "nested_shell_syntax": true,
+  "source_hashes": true,
+  "cpu_tests": 125,
+  "ray_fixture_tests": 16,
+  "tokenizer_prompts_checked": 64,
+  "entry_sha256": "75e039603227be92c126dc4eef879ac2cc59bd874857f550f1afce494dc618f5",
+  "tag": "grpo-ray-ready-ba214ae231ee"
+}

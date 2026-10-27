@@ -1,0 +1,208 @@
+{
+  "files": {
+    "dashboard.err": {
+      "bytes": 0,
+      "original_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "dashboard.log": {
+      "bytes": 23336,
+      "original_bytes": 23336,
+      "sha256": "43f890ff9d7bac4eaefa8ffe18b39873e63f0badbd16763813b26f1db7a3dc35"
+    },
+    "dashboard.out": {
+      "bytes": 0,
+      "original_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "dashboard_DataHead.err": {
+      "bytes": 0,
+      "original_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "dashboard_DataHead.log": {
+      "bytes": 1253,
+      "original_bytes": 1253,
+      "sha256": "73aff6ac224f7bb62722131fcc400a2878a3311f3c644f82582ba784031de284"
+    },
+    "dashboard_DataHead.out": {
+      "bytes": 0,
+      "original_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "dashboard_EventHead.err": {
+      "bytes": 0,
+      "original_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "dashboard_EventHead.log": {
+      "bytes": 1604,
+      "original_bytes": 1604,
+      "sha256": "ae1e197609ac15a1d825b23bde81a1a2d9625f4127956fe61f7535e437511df9"
+    },
+    "dashboard_EventHead.out": {
+      "bytes": 0,
+      "original_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "dashboard_JobHead.err": {
+      "bytes": 0,
+      "original_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "dashboard_JobHead.log": {
+      "bytes": 1396,
+      "original_bytes": 1396,
+      "sha256": "b67ab40c38503f9ec1e7c9b7648a6a9dab7f2dfb22585a1189a80be5254e9d6d"
+    },
+    "dashboard_JobHead.out": {
+      "bytes": 0,
+      "original_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "dashboard_MetricsHead.err": {
+      "bytes": 0,
+      "original_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "dashboard_MetricsHead.log": {
+      "bytes": 1262,
+      "original_bytes": 1262,
+      "sha256": "d91f75a088a0a2dcd89276fb1117e55b8b4180a12ed44fe38dd7773876db4360"
+    },
+    "dashboard_MetricsHead.out": {
+      "bytes": 0,
+      "original_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "dashboard_NodeHead.err": {
+      "bytes": 0,
+      "original_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "dashboard_NodeHead.log": {
+      "bytes": 38934,
+      "original_bytes": 38934,
+      "sha256": "bc62a122c9a4539adf3702c2be65629cef79ff16ae3be04cc55b46bc5a782ea1"
+    },
+    "dashboard_NodeHead.out": {
+      "bytes": 0,
+      "original_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "dashboard_ReportHead.err": {
+      "bytes": 0,
+      "original_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "dashboard_ReportHead.log": {
+      "bytes": 1259,
+      "original_bytes": 1259,
+      "sha256": "4d33c15fccb0966fb0217bb3a07380b62f711c70bb18d7777eb367fce6db1fa8"
+    },
+    "dashboard_ReportHead.out": {
+      "bytes": 0,
+      "original_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "dashboard_ServeHead.err": {
+      "bytes": 0,
+      "original_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "dashboard_ServeHead.log": {
+      "bytes": 1256,
+      "original_bytes": 1256,
+      "sha256": "3ce701a50f383f3903bb39678ada15958e1eefe4e7d4bd3a7ce3fe3680b65602"
+    },
+    "dashboard_ServeHead.out": {
+      "bytes": 0,
+      "original_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "dashboard_StateHead.err": {
+      "bytes": 0,
+      "original_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "dashboard_StateHead.log": {
+      "bytes": 1256,
+      "original_bytes": 1256,
+      "sha256": "6e95e741de5a87e80b983787d775598cbb74b6ecbf4fa4e3fef6ca02b975aa1c"
+    },
+    "dashboard_StateHead.out": {
+      "bytes": 0,
+      "original_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "dashboard_TrainHead.err": {
+      "bytes": 0,
+      "original_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "dashboard_TrainHead.log": {
+      "bytes": 1256,
+      "original_bytes": 1256,
+      "sha256": "765bed96e57b02bddf543ba7f4c1e5b061271fce2fdf11007d2d4e432c5ca93b"
+    },
+    "dashboard_TrainHead.out": {
+      "bytes": 0,
+      "original_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "dashboard_agent.err": {
+      "bytes": 0,
+      "original_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "dashboard_agent.log": {
+      "bytes": 13534,
+      "original_bytes": 13534,
+      "sha256": "cd1b77792eb48a0871d37bbc99289ebc7f1d55501a9089384c9be0f0f58699aa"
+    },
+    "dashboard_agent.out": {
+      "bytes": 3902,
+      "original_bytes": 3902,
+      "sha256": "fffe7c0941bdc3dd7eb873541b94326895d1bd2c67f61034b3d159129f113687"
+    },
+    "gcs_server.err": {
+      "bytes": 0,
+      "original_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "gcs_server.out": {
+      "bytes": 262144,
+      "original_bytes": 344349,
+      "sha256": "9a6dc987f3a657160d4970b3a29c4652668f0aa58e6f31d21353957c21715fd0"
+    },
+    "raylet.err": {
+      "bytes": 0,
+      "original_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "raylet.out": {
+      "bytes": 262144,
+      "original_bytes": 300633,
+      "sha256": "406d0cce54e7c6f83e8facc742b7e30af61cb5eddba7a16309e79612e968cf8d"
+    },
+    "runtime_env_agent.err": {
+      "bytes": 3884,
+      "original_bytes": 3884,
+      "sha256": "833d958b5275eff65c59664aab359d638d5842f9aa8a0cbeef40eecb01d265a8"
+    },
+    "runtime_env_agent.log": {
+      "bytes": 44118,
+      "original_bytes": 44118,
+      "sha256": "dabd1bf9fc511a3148cca30c27f05f121f2d0ff9bfb52c90fe26a51435b43b98"
+    },
+    "runtime_env_agent.out": {
+      "bytes": 103,
+      "original_bytes": 103,
+      "sha256": "7b8ae3b42c165de66224f6b7247dbbe61afcac24c912636199b80439017f20fd"
+    }
+  },
+  "errors": [],
+  "max_files": 64,
+  "max_bytes_per_file": 262144,
+  "session": "session_2026-10-24_13-27-37_636745_2742"
+}

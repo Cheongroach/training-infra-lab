@@ -1,0 +1,81 @@
+{
+  "observed_at": "2026-10-25T05:28:53.843085+00:00",
+  "run": "03c584556b4a96a9",
+  "trial": "439180304",
+  "status": "failed",
+  "terminal": true,
+  "pods": [
+    {
+      "sid": "5395271691",
+      "pod_name": "trial-439180304-trialrun-439180304-worker-0",
+      "status": 4,
+      "exit_status": -1919,
+      "schedule_at": "2026-10-25T05:18:02.000Z",
+      "start_at": "2026-10-25T05:22:10.000Z",
+      "stop_at": "2026-10-25T05:23:40.000Z"
+    },
+    {
+      "sid": "5395271692",
+      "pod_name": "trial-439180304-trialrun-439180304-worker-1",
+      "status": 4,
+      "exit_status": 2,
+      "schedule_at": "2026-10-25T05:18:02.000Z",
+      "start_at": "2026-10-25T05:18:02.000Z",
+      "stop_at": "2026-10-25T05:23:11.000Z"
+    },
+    {
+      "sid": "5395271694",
+      "pod_name": "trial-439180304-trialrun-439180304-worker-2",
+      "status": 4,
+      "exit_status": -1919,
+      "schedule_at": "2026-10-25T05:18:02.000Z",
+      "start_at": "2026-10-25T05:22:14.000Z",
+      "stop_at": "2026-10-25T05:23:40.000Z"
+    },
+    {
+      "sid": "5395271696",
+      "pod_name": "trial-439180304-trialrun-439180304-worker-3",
+      "status": 4,
+      "exit_status": 1,
+      "schedule_at": "2026-10-25T05:18:02.000Z",
+      "start_at": "2026-10-25T05:18:04.000Z",
+      "stop_at": "2026-10-25T05:23:40.000Z"
+    }
+  ],
+  "training_verified": false,
+  "performance_claim": false,
+  "errors": [
+    "Unsuccessful terminal cluster",
+    "Node 0: original entry failed",
+    "Node 0: driver did not complete",
+    "Node archive unavailable 1",
+    "Node 2: original entry failed",
+    "Node 2: driver did not complete",
+    "Node archive unavailable 3",
+    "Physical-node archives do not map to four distinct actual Pod logs",
+    "Shared diagnostic results unavailable",
+    "Insufficient artifacts for semantic audit"
+  ],
+  "node_archives": {
+    "0": {
+      "members": 28,
+      "uncompressed_bytes": 134208,
+      "sha256": "8a6853a96688163a97ae955936081fff383f2bb86c206c8a570c2e9bb7d0e5c0"
+    },
+    "2": {
+      "members": 28,
+      "uncompressed_bytes": 131670,
+      "sha256": "80c66353661a0671e06b7e68745f0aacdafe592fbdba1066e0e76c7f9013f61b"
+    }
+  },
+  "entry_log_matches": {
+    "0": [
+      "pod-3-stdout.log"
+    ],
+    "2": [
+      "pod-1-stdout.log"
+    ]
+  },
+  "gpu_hours": 1.8244444444444445,
+  "cost_scope": "Terminal Pod residence including initialization and conversion"
+}

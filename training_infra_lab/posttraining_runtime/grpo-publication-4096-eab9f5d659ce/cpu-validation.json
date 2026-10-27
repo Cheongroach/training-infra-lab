@@ -1,0 +1,9 @@
+{
+  "sources": 9,
+  "nested_shell_syntax": true,
+  "source_hashes": true,
+  "cpu_tests": 108,
+  "tokenizer_prompts_checked": 64,
+  "tag": "grpo-publication-4096-eab9f5d659ce",
+  "entry_sha256": "247134381f45d54d71dfe7bda947f7b0bd08ace1019c47efa4b76562d9d03ed2"
+}

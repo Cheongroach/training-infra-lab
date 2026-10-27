@@ -1,0 +1,65 @@
+{
+  "passed": false,
+  "errors": [
+    "driver did not complete",
+    "no audit events",
+    "missing final weight publication",
+    "missing final engine checksum",
+    "missing publication -1",
+    "missing engine checksum -1",
+    "missing publication 0",
+    "missing engine checksum 0",
+    "missing rollout gate 0",
+    "missing rollout 0",
+    "missing train dump 0",
+    "missing publication 1",
+    "missing engine checksum 1",
+    "missing rollout gate 1",
+    "missing rollout 1",
+    "missing train dump 1",
+    "missing rollout gate 2",
+    "missing rollout 2",
+    "missing train dump 2"
+  ],
+  "performance_claim": false,
+  "capability_claim": false,
+  "semantic_audit": {
+    "passed": false,
+    "performance_claim": false,
+    "updates": [
+      {
+        "rollout_id": 0
+      },
+      {
+        "rollout_id": 1
+      },
+      {
+        "rollout_id": 2
+      }
+    ],
+    "final_update_published": false,
+    "rollout_gate_required": true,
+    "event_types": {},
+    "errors": [
+      "driver did not complete",
+      "no audit events",
+      "missing final weight publication",
+      "missing final engine checksum",
+      "missing publication -1",
+      "missing engine checksum -1",
+      "missing publication 0",
+      "missing engine checksum 0",
+      "missing rollout gate 0",
+      "missing rollout 0",
+      "missing train dump 0",
+      "missing publication 1",
+      "missing engine checksum 1",
+      "missing rollout gate 1",
+      "missing rollout 1",
+      "missing train dump 1",
+      "missing rollout gate 2",
+      "missing rollout 2",
+      "missing train dump 2"
+    ]
+  }
+}

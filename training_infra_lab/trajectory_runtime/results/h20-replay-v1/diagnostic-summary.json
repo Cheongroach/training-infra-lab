@@ -1,0 +1,1177 @@
+{
+  "world": 4,
+  "batch_sha256": "8ee0e2dc25b126aae262fd77a9bdf14dca36b69ddeba0429c6d5c283cca92e2a",
+  "comparisons": [
+    {
+      "fp32_head": false,
+      "case": 1,
+      "strategy": "verl",
+      "micro_batch": 1,
+      "accepted": true,
+      "errors": {
+        "parameter": {
+          "global_relative_l2": 2.5924870642262286e-08,
+          "worst_rank_relative_l2": 2.6579230728984758e-08,
+          "max_abs": 5.506444722414017e-07
+        },
+        "gradient": {
+          "global_relative_l2": 0.0097321814340109,
+          "worst_rank_relative_l2": 0.009906109329233945,
+          "max_abs": 0.0012618042528629303
+        },
+        "exp_avg": {
+          "global_relative_l2": 0.00973218122754608,
+          "worst_rank_relative_l2": 0.009906108411065392,
+          "max_abs": 0.0001261802390217781
+        },
+        "exp_avg_sq": {
+          "global_relative_l2": 0.022273418346036238,
+          "worst_rank_relative_l2": 0.025155752401265444,
+          "max_abs": 1.3108115126669873e-07
+        },
+        "step": {
+          "global_relative_l2": 0.0,
+          "worst_rank_relative_l2": 0.0,
+          "max_abs": 0.0
+        }
+      },
+      "probability_difference": {
+        "rms": 0.0,
+        "max_abs": 0.0,
+        "p99_abs": 0.0
+      },
+      "largest_gradient_differences": [
+        {
+          "name": "backbone.layers.0.linear_attn.out_proj/gradient",
+          "difference_l2": 0.003996292206429592,
+          "reference_l2": 0.26016575870103587
+        },
+        {
+          "name": "backbone.layers.3.self_attn.v_proj/gradient",
+          "difference_l2": 0.002553232166280143,
+          "reference_l2": 0.15704925876725134
+        },
+        {
+          "name": "backbone.layers.6.mlp.up_proj/gradient",
+          "difference_l2": 0.0014644898285991607,
+          "reference_l2": 0.13210651141118748
+        },
+        {
+          "name": "backbone.layers.6.linear_attn.in_proj_qkv/gradient",
+          "difference_l2": 0.0014617395716162343,
+          "reference_l2": 0.12064801385413891
+        },
+        {
+          "name": "backbone.layers.5.linear_attn.in_proj_qkv/gradient",
+          "difference_l2": 0.0014365317889980444,
+          "reference_l2": 0.09435851718412634
+        },
+        {
+          "name": "backbone.layers.7.self_attn.v_proj/gradient",
+          "difference_l2": 0.0013150539683493005,
+          "reference_l2": 0.1312394423825044
+        },
+        {
+          "name": "backbone.layers.5.linear_attn.conv1d/gradient",
+          "difference_l2": 0.0012798583776230381,
+          "reference_l2": 0.0904898623171173
+        },
+        {
+          "name": "backbone.layers.2.mlp.down_proj/gradient",
+          "difference_l2": 0.001266453758503132,
+          "reference_l2": 0.08757357326689656
+        },
+        {
+          "name": "backbone.layers.5.mlp.up_proj/gradient",
+          "difference_l2": 0.0012564281611117604,
+          "reference_l2": 0.10557158335151455
+        },
+        {
+          "name": "backbone.embed_tokens/gradient",
+          "difference_l2": 0.0012495353245793003,
+          "reference_l2": 0.07736748067126893
+        }
+      ]
+    },
+    {
+      "fp32_head": false,
+      "case": 2,
+      "strategy": "slot_sorted",
+      "micro_batch": 1,
+      "accepted": true,
+      "errors": {
+        "parameter": {
+          "global_relative_l2": 2.0407026546973237e-08,
+          "worst_rank_relative_l2": 2.1114608840916828e-08,
+          "max_abs": 2.4761538952589035e-07
+        },
+        "gradient": {
+          "global_relative_l2": 0.005734186455955342,
+          "worst_rank_relative_l2": 0.005801405787449794,
+          "max_abs": 0.00037676841020584106
+        },
+        "exp_avg": {
+          "global_relative_l2": 0.005734186288525764,
+          "worst_rank_relative_l2": 0.005801405627112587,
+          "max_abs": 3.767665475606918e-05
+        },
+        "exp_avg_sq": {
+          "global_relative_l2": 0.00747147766433466,
+          "worst_rank_relative_l2": 0.01247981774016779,
+          "max_abs": 3.330296749481931e-08
+        },
+        "step": {
+          "global_relative_l2": 0.0,
+          "worst_rank_relative_l2": 0.0,
+          "max_abs": 0.0
+        }
+      },
+      "probability_difference": {
+        "rms": 0.0,
+        "max_abs": 0.0,
+        "p99_abs": 0.0
+      },
+      "largest_gradient_differences": [
+        {
+          "name": "backbone.layers.0.linear_attn.out_proj/gradient",
+          "difference_l2": 0.0024325458807958277,
+          "reference_l2": 0.26016575870103587
+        },
+        {
+          "name": "backbone.layers.3.self_attn.v_proj/gradient",
+          "difference_l2": 0.0011308847305943853,
+          "reference_l2": 0.15704925876725134
+        },
+        {
+          "name": "backbone.embed_tokens/gradient",
+          "difference_l2": 0.0009541518574691526,
+          "reference_l2": 0.07736748067126893
+        },
+        {
+          "name": "backbone.layers.6.mlp.up_proj/gradient",
+          "difference_l2": 0.0007988216004564159,
+          "reference_l2": 0.13210651141118748
+        },
+        {
+          "name": "backbone.layers.7.self_attn.v_proj/gradient",
+          "difference_l2": 0.0007719048786499178,
+          "reference_l2": 0.1312394423825044
+        },
+        {
+          "name": "backbone.layers.0.linear_attn.conv1d/gradient",
+          "difference_l2": 0.0007341395684224062,
+          "reference_l2": 0.07667583105204982
+        },
+        {
+          "name": "backbone.layers.1.linear_attn.in_proj_qkv/gradient",
+          "difference_l2": 0.0006907026878807468,
+          "reference_l2": 0.07750755137079039
+        },
+        {
+          "name": "backbone.layers.6.linear_attn.in_proj_qkv/gradient",
+          "difference_l2": 0.0006667382837989362,
+          "reference_l2": 0.12064801385413891
+        },
+        {
+          "name": "backbone.layers.5.mlp.up_proj/gradient",
+          "difference_l2": 0.0006536066849645501,
+          "reference_l2": 0.10557158335151455
+        },
+        {
+          "name": "backbone.layers.6.mlp.gate_proj/gradient",
+          "difference_l2": 0.000651283539793962,
+          "reference_l2": 0.10663807594185623
+        }
+      ]
+    },
+    {
+      "fp32_head": false,
+      "case": 3,
+      "strategy": "verl",
+      "micro_batch": 2,
+      "accepted": false,
+      "errors": {
+        "parameter": {
+          "global_relative_l2": 1.5872698053303166e-07,
+          "worst_rank_relative_l2": 1.6260098223397975e-07,
+          "max_abs": 1.319684088230133e-06
+        },
+        "gradient": {
+          "global_relative_l2": 0.07677344740926899,
+          "worst_rank_relative_l2": 0.07801379564331484,
+          "max_abs": 0.005631972104310989
+        },
+        "exp_avg": {
+          "global_relative_l2": 0.07677344740854251,
+          "worst_rank_relative_l2": 0.07801379591399582,
+          "max_abs": 0.0005631973035633564
+        },
+        "exp_avg_sq": {
+          "global_relative_l2": 0.142951027393127,
+          "worst_rank_relative_l2": 0.15719598625683517,
+          "max_abs": 6.096847755543422e-07
+        },
+        "step": {
+          "global_relative_l2": 0.0,
+          "worst_rank_relative_l2": 0.0,
+          "max_abs": 0.0
+        }
+      },
+      "probability_difference": {
+        "rms": 0.012920842505991459,
+        "max_abs": 0.23488783836364746,
+        "p99_abs": 0.06909621506929398
+      },
+      "largest_gradient_differences": [
+        {
+          "name": "backbone.layers.0.linear_attn.out_proj/gradient",
+          "difference_l2": 0.028098435579688788,
+          "reference_l2": 0.26016575870103587
+        },
+        {
+          "name": "backbone.layers.3.self_attn.v_proj/gradient",
+          "difference_l2": 0.017128433700287486,
+          "reference_l2": 0.15704925876725134
+        },
+        {
+          "name": "backbone.layers.6.linear_attn.in_proj_qkv/gradient",
+          "difference_l2": 0.013431442825116489,
+          "reference_l2": 0.12064801385413891
+        },
+        {
+          "name": "backbone.layers.7.self_attn.v_proj/gradient",
+          "difference_l2": 0.010904426247978393,
+          "reference_l2": 0.1312394423825044
+        },
+        {
+          "name": "backbone.layers.3.self_attn.q_proj/gradient",
+          "difference_l2": 0.010653729084045545,
+          "reference_l2": 0.08130201199357735
+        },
+        {
+          "name": "backbone.layers.6.mlp.up_proj/gradient",
+          "difference_l2": 0.010605023833847375,
+          "reference_l2": 0.13210651141118748
+        },
+        {
+          "name": "backbone.layers.5.mlp.up_proj/gradient",
+          "difference_l2": 0.00978055760299552,
+          "reference_l2": 0.10557158335151455
+        },
+        {
+          "name": "backbone.layers.5.linear_attn.in_proj_qkv/gradient",
+          "difference_l2": 0.009635132192218983,
+          "reference_l2": 0.09435851718412634
+        },
+        {
+          "name": "backbone.layers.7.self_attn.q_proj/gradient",
+          "difference_l2": 0.009471962954650626,
+          "reference_l2": 0.12093238256951695
+        },
+        {
+          "name": "backbone.layers.2.linear_attn.in_proj_qkv/gradient",
+          "difference_l2": 0.009328891165935148,
+          "reference_l2": 0.0840647100734454
+        }
+      ]
+    },
+    {
+      "fp32_head": false,
+      "case": 4,
+      "strategy": "slot_sorted",
+      "micro_batch": 2,
+      "accepted": false,
+      "errors": {
+        "parameter": {
+          "global_relative_l2": 1.3109783280680436e-07,
+          "worst_rank_relative_l2": 1.3497210942065691e-07,
+          "max_abs": 1.3450626283884048e-06
+        },
+        "gradient": {
+          "global_relative_l2": 0.06794285939344794,
+          "worst_rank_relative_l2": 0.07014534691375804,
+          "max_abs": 0.00561213493347168
+        },
+        "exp_avg": {
+          "global_relative_l2": 0.06794285955700995,
+          "worst_rank_relative_l2": 0.07014534680237665,
+          "max_abs": 0.0005612135864794254
+        },
+        "exp_avg_sq": {
+          "global_relative_l2": 0.13172417070853676,
+          "worst_rank_relative_l2": 0.1456204505019026,
+          "max_abs": 6.074258180888137e-07
+        },
+        "step": {
+          "global_relative_l2": 0.0,
+          "worst_rank_relative_l2": 0.0,
+          "max_abs": 0.0
+        }
+      },
+      "probability_difference": {
+        "rms": 0.013100283220410347,
+        "max_abs": 0.2406461238861084,
+        "p99_abs": 0.0691976472735405
+      },
+      "largest_gradient_differences": [
+        {
+          "name": "backbone.layers.0.linear_attn.out_proj/gradient",
+          "difference_l2": 0.027809617521846044,
+          "reference_l2": 0.26016575870103587
+        },
+        {
+          "name": "backbone.layers.3.self_attn.v_proj/gradient",
+          "difference_l2": 0.017300646559688264,
+          "reference_l2": 0.15704925876725134
+        },
+        {
+          "name": "backbone.layers.6.linear_attn.in_proj_qkv/gradient",
+          "difference_l2": 0.012887672207882284,
+          "reference_l2": 0.12064801385413891
+        },
+        {
+          "name": "backbone.layers.3.self_attn.q_proj/gradient",
+          "difference_l2": 0.011069937953315645,
+          "reference_l2": 0.08130201199357735
+        },
+        {
+          "name": "backbone.layers.5.linear_attn.in_proj_qkv/gradient",
+          "difference_l2": 0.010148685316798928,
+          "reference_l2": 0.09435851718412634
+        },
+        {
+          "name": "backbone.layers.6.mlp.up_proj/gradient",
+          "difference_l2": 0.009694293180942939,
+          "reference_l2": 0.13210651141118748
+        },
+        {
+          "name": "backbone.layers.5.mlp.up_proj/gradient",
+          "difference_l2": 0.00939988690994614,
+          "reference_l2": 0.10557158335151455
+        },
+        {
+          "name": "backbone.layers.7.self_attn.v_proj/gradient",
+          "difference_l2": 0.00939038818786875,
+          "reference_l2": 0.1312394423825044
+        },
+        {
+          "name": "backbone.layers.2.linear_attn.in_proj_qkv/gradient",
+          "difference_l2": 0.00928269869468146,
+          "reference_l2": 0.0840647100734454
+        },
+        {
+          "name": "backbone.layers.7.self_attn.q_proj/gradient",
+          "difference_l2": 0.009050501970705237,
+          "reference_l2": 0.12093238256951695
+        }
+      ]
+    },
+    {
+      "fp32_head": true,
+      "case": 1,
+      "strategy": "verl",
+      "micro_batch": 1,
+      "accepted": true,
+      "errors": {
+        "parameter": {
+          "global_relative_l2": 0.0,
+          "worst_rank_relative_l2": 0.0,
+          "max_abs": 0.0
+        },
+        "gradient": {
+          "global_relative_l2": 0.0,
+          "worst_rank_relative_l2": 0.0,
+          "max_abs": 0.0
+        },
+        "exp_avg": {
+          "global_relative_l2": 0.0,
+          "worst_rank_relative_l2": 0.0,
+          "max_abs": 0.0
+        },
+        "exp_avg_sq": {
+          "global_relative_l2": 0.0,
+          "worst_rank_relative_l2": 0.0,
+          "max_abs": 0.0
+        },
+        "step": {
+          "global_relative_l2": 0.0,
+          "worst_rank_relative_l2": 0.0,
+          "max_abs": 0.0
+        }
+      },
+      "probability_difference": {
+        "rms": 0.0,
+        "max_abs": 0.0,
+        "p99_abs": 0.0
+      },
+      "largest_gradient_differences": [
+        {
+          "name": "backbone.embed_tokens/gradient",
+          "difference_l2": 0.0,
+          "reference_l2": 0.0767446029343479
+        },
+        {
+          "name": "backbone.layers.0.linear_attn/gradient",
+          "difference_l2": 0.0,
+          "reference_l2": 0.0002688879217585997
+        },
+        {
+          "name": "backbone.layers.0.linear_attn.conv1d/gradient",
+          "difference_l2": 0.0,
+          "reference_l2": 0.07614069669368054
+        },
+        {
+          "name": "backbone.layers.0.linear_attn.norm/gradient",
+          "difference_l2": 0.0,
+          "reference_l2": 0.0018644406459612287
+        },
+        {
+          "name": "backbone.layers.0.linear_attn.out_proj/gradient",
+          "difference_l2": 0.0,
+          "reference_l2": 0.25890069638648333
+        },
+        {
+          "name": "backbone.layers.0.linear_attn.in_proj_qkv/gradient",
+          "difference_l2": 0.0,
+          "reference_l2": 0.036458130182214485
+        },
+        {
+          "name": "backbone.layers.0.linear_attn.in_proj_z/gradient",
+          "difference_l2": 0.0,
+          "reference_l2": 0.027488118893211462
+        },
+        {
+          "name": "backbone.layers.0.linear_attn.in_proj_b/gradient",
+          "difference_l2": 0.0,
+          "reference_l2": 0.008613773474733685
+        },
+        {
+          "name": "backbone.layers.0.linear_attn.in_proj_a/gradient",
+          "difference_l2": 0.0,
+          "reference_l2": 0.0017819438117994764
+        },
+        {
+          "name": "backbone.layers.0.mlp.gate_proj/gradient",
+          "difference_l2": 0.0,
+          "reference_l2": 0.027383232589555034
+        }
+      ]
+    },
+    {
+      "fp32_head": true,
+      "case": 2,
+      "strategy": "slot_sorted",
+      "micro_batch": 1,
+      "accepted": true,
+      "errors": {
+        "parameter": {
+          "global_relative_l2": 2.042205668204034e-08,
+          "worst_rank_relative_l2": 2.1090276764606127e-08,
+          "max_abs": 2.2118911147117615e-07
+        },
+        "gradient": {
+          "global_relative_l2": 0.005698426195350017,
+          "worst_rank_relative_l2": 0.005914076115527144,
+          "max_abs": 0.0007177963852882385
+        },
+        "exp_avg": {
+          "global_relative_l2": 0.005698426399442844,
+          "worst_rank_relative_l2": 0.005914076960580017,
+          "max_abs": 7.177982479333878e-05
+        },
+        "exp_avg_sq": {
+          "global_relative_l2": 0.011450696802826241,
+          "worst_rank_relative_l2": 0.0134315924207105,
+          "max_abs": 6.659229256911203e-08
+        },
+        "step": {
+          "global_relative_l2": 0.0,
+          "worst_rank_relative_l2": 0.0,
+          "max_abs": 0.0
+        }
+      },
+      "probability_difference": {
+        "rms": 0.0,
+        "max_abs": 0.0,
+        "p99_abs": 0.0
+      },
+      "largest_gradient_differences": [
+        {
+          "name": "backbone.layers.0.linear_attn.out_proj/gradient",
+          "difference_l2": 0.002285162276348145,
+          "reference_l2": 0.25890069638648333
+        },
+        {
+          "name": "backbone.layers.3.self_attn.v_proj/gradient",
+          "difference_l2": 0.0012296847641983905,
+          "reference_l2": 0.1551688701521058
+        },
+        {
+          "name": "backbone.embed_tokens/gradient",
+          "difference_l2": 0.0008501691355999912,
+          "reference_l2": 0.0767446029343479
+        },
+        {
+          "name": "backbone.layers.6.mlp.up_proj/gradient",
+          "difference_l2": 0.0008256533469917584,
+          "reference_l2": 0.13169011495455318
+        },
+        {
+          "name": "backbone.layers.7.self_attn.v_proj/gradient",
+          "difference_l2": 0.0008000555211626359,
+          "reference_l2": 0.1312556236620666
+        },
+        {
+          "name": "backbone.layers.6.linear_attn.in_proj_qkv/gradient",
+          "difference_l2": 0.0007278318229545531,
+          "reference_l2": 0.11976769148367694
+        },
+        {
+          "name": "backbone.layers.5.mlp.up_proj/gradient",
+          "difference_l2": 0.000680091763187591,
+          "reference_l2": 0.10504047434859656
+        },
+        {
+          "name": "backbone.layers.0.linear_attn.conv1d/gradient",
+          "difference_l2": 0.0006778083298516586,
+          "reference_l2": 0.07614069669368054
+        },
+        {
+          "name": "backbone.layers.2.linear_attn.in_proj_qkv/gradient",
+          "difference_l2": 0.0006687639785539081,
+          "reference_l2": 0.08346291716659926
+        },
+        {
+          "name": "backbone.layers.6.mlp.gate_proj/gradient",
+          "difference_l2": 0.0006623748373627805,
+          "reference_l2": 0.10616204900461536
+        }
+      ]
+    },
+    {
+      "fp32_head": true,
+      "case": 3,
+      "strategy": "verl",
+      "micro_batch": 2,
+      "accepted": false,
+      "errors": {
+        "parameter": {
+          "global_relative_l2": 1.2279691101284867e-07,
+          "worst_rank_relative_l2": 1.2659092529876265e-07,
+          "max_abs": 1.3422686606645584e-06
+        },
+        "gradient": {
+          "global_relative_l2": 0.06508483882856807,
+          "worst_rank_relative_l2": 0.0670641167324895,
+          "max_abs": 0.008239351212978363
+        },
+        "exp_avg": {
+          "global_relative_l2": 0.0650848394754943,
+          "worst_rank_relative_l2": 0.06706411651432623,
+          "max_abs": 0.0008239354938268661
+        },
+        "exp_avg_sq": {
+          "global_relative_l2": 0.16148557317488682,
+          "worst_rank_relative_l2": 0.18678470299482097,
+          "max_abs": 8.263627933047246e-07
+        },
+        "step": {
+          "global_relative_l2": 0.0,
+          "worst_rank_relative_l2": 0.0,
+          "max_abs": 0.0
+        }
+      },
+      "probability_difference": {
+        "rms": 0.009315628558397293,
+        "max_abs": 0.19169974327087402,
+        "p99_abs": 0.043509237468242645
+      },
+      "largest_gradient_differences": [
+        {
+          "name": "backbone.layers.0.linear_attn.out_proj/gradient",
+          "difference_l2": 0.0263927076565046,
+          "reference_l2": 0.25890069638648333
+        },
+        {
+          "name": "backbone.layers.3.self_attn.v_proj/gradient",
+          "difference_l2": 0.0175823732360843,
+          "reference_l2": 0.1551688701521058
+        },
+        {
+          "name": "backbone.layers.6.linear_attn.in_proj_qkv/gradient",
+          "difference_l2": 0.012556788058739922,
+          "reference_l2": 0.11976769148367694
+        },
+        {
+          "name": "backbone.layers.3.self_attn.q_proj/gradient",
+          "difference_l2": 0.011078530378904352,
+          "reference_l2": 0.08085800647938275
+        },
+        {
+          "name": "backbone.layers.5.linear_attn.in_proj_qkv/gradient",
+          "difference_l2": 0.009938015253807471,
+          "reference_l2": 0.09330914760984435
+        },
+        {
+          "name": "backbone.layers.6.mlp.up_proj/gradient",
+          "difference_l2": 0.009478717149363996,
+          "reference_l2": 0.13169011495455318
+        },
+        {
+          "name": "backbone.layers.5.mlp.up_proj/gradient",
+          "difference_l2": 0.00929354582132896,
+          "reference_l2": 0.10504047434859656
+        },
+        {
+          "name": "backbone.layers.7.self_attn.v_proj/gradient",
+          "difference_l2": 0.009253545164835739,
+          "reference_l2": 0.1312556236620666
+        },
+        {
+          "name": "backbone.layers.7.self_attn.q_proj/gradient",
+          "difference_l2": 0.009030557170069682,
+          "reference_l2": 0.12023827549044216
+        },
+        {
+          "name": "backbone.layers.2.linear_attn.in_proj_qkv/gradient",
+          "difference_l2": 0.008712258981786222,
+          "reference_l2": 0.08346291716659926
+        }
+      ]
+    },
+    {
+      "fp32_head": true,
+      "case": 4,
+      "strategy": "slot_sorted",
+      "micro_batch": 2,
+      "accepted": false,
+      "errors": {
+        "parameter": {
+          "global_relative_l2": 1.2562802492399764e-07,
+          "worst_rank_relative_l2": 1.2944815569869883e-07,
+          "max_abs": 1.3362150639295578e-06
+        },
+        "gradient": {
+          "global_relative_l2": 0.06688270687959165,
+          "worst_rank_relative_l2": 0.06865867072989781,
+          "max_abs": 0.008440446108579636
+        },
+        "exp_avg": {
+          "global_relative_l2": 0.0668827073375345,
+          "worst_rank_relative_l2": 0.06865867096233559,
+          "max_abs": 0.0008440446108579636
+        },
+        "exp_avg_sq": {
+          "global_relative_l2": 0.15995239599675384,
+          "worst_rank_relative_l2": 0.1844721858107345,
+          "max_abs": 8.482288649247494e-07
+        },
+        "step": {
+          "global_relative_l2": 0.0,
+          "worst_rank_relative_l2": 0.0,
+          "max_abs": 0.0
+        }
+      },
+      "probability_difference": {
+        "rms": 0.009118928574025631,
+        "max_abs": 0.19169974327087402,
+        "p99_abs": 0.0442269928753376
+      },
+      "largest_gradient_differences": [
+        {
+          "name": "backbone.layers.0.linear_attn.out_proj/gradient",
+          "difference_l2": 0.028062893576367164,
+          "reference_l2": 0.25890069638648333
+        },
+        {
+          "name": "backbone.layers.3.self_attn.v_proj/gradient",
+          "difference_l2": 0.01847573312343411,
+          "reference_l2": 0.1551688701521058
+        },
+        {
+          "name": "backbone.layers.6.linear_attn.in_proj_qkv/gradient",
+          "difference_l2": 0.012894707899368193,
+          "reference_l2": 0.11976769148367694
+        },
+        {
+          "name": "backbone.layers.3.self_attn.q_proj/gradient",
+          "difference_l2": 0.01088120737345857,
+          "reference_l2": 0.08085800647938275
+        },
+        {
+          "name": "backbone.layers.5.linear_attn.in_proj_qkv/gradient",
+          "difference_l2": 0.010257586244693268,
+          "reference_l2": 0.09330914760984435
+        },
+        {
+          "name": "backbone.layers.6.mlp.up_proj/gradient",
+          "difference_l2": 0.009612013010352518,
+          "reference_l2": 0.13169011495455318
+        },
+        {
+          "name": "backbone.layers.5.mlp.up_proj/gradient",
+          "difference_l2": 0.009481386552528575,
+          "reference_l2": 0.10504047434859656
+        },
+        {
+          "name": "backbone.layers.2.linear_attn.in_proj_qkv/gradient",
+          "difference_l2": 0.009270739201712777,
+          "reference_l2": 0.08346291716659926
+        },
+        {
+          "name": "backbone.layers.7.self_attn.v_proj/gradient",
+          "difference_l2": 0.009187333418697909,
+          "reference_l2": 0.1312556236620666
+        },
+        {
+          "name": "backbone.layers.7.self_attn.q_proj/gradient",
+          "difference_l2": 0.009093505972248176,
+          "reference_l2": 0.12023827549044216
+        }
+      ]
+    }
+  ],
+  "profiles": [
+    {
+      "path": "profile-headFalse-rank0/operators.json",
+      "rank": 0,
+      "identity": {
+        "batch_sha256": "8ee0e2dc25b126aae262fd77a9bdf14dca36b69ddeba0429c6d5c283cca92e2a",
+        "fp32_head": false,
+        "strategy": "verl",
+        "micro": 2
+      },
+      "instrumented_seconds": 2.078881863504648,
+      "largest_device_operators": [
+        {
+          "name": "trajectory_runtime::actor_update",
+          "calls": 1,
+          "self_cpu_us": 0,
+          "total_cpu_us": 0,
+          "self_device_us": 1433380.37,
+          "total_device_us": 1433380.37
+        },
+        {
+          "name": "aten::mm",
+          "calls": 1524,
+          "self_cpu_us": 38967.30600000077,
+          "total_cpu_us": 66388.67899999996,
+          "self_device_us": 696424.4549999988,
+          "total_device_us": 696424.4549999988
+        },
+        {
+          "name": "record_param_comms",
+          "calls": 213,
+          "self_cpu_us": 13452.039000001441,
+          "total_cpu_us": 21443.488000000663,
+          "self_device_us": 428416.7460000011,
+          "total_device_us": 428429.86800000106
+        },
+        {
+          "name": "ncclDevKernel_AllGather_RING_LL(ncclDevKernelArgsStorage<4096ul>)",
+          "calls": 134,
+          "self_cpu_us": 0,
+          "total_cpu_us": 0,
+          "self_device_us": 241324.1250000007,
+          "total_device_us": 241324.1250000007
+        },
+        {
+          "name": "nccl:_all_gather_base",
+          "calls": 132,
+          "self_cpu_us": 0,
+          "total_cpu_us": 0,
+          "self_device_us": 240761.2770000007,
+          "total_device_us": 240761.2770000007
+        },
+        {
+          "name": "nvjet_tst_320x128_64x3_1x2_h_bz_coopB_NTT",
+          "calls": 256,
+          "self_cpu_us": 0,
+          "total_cpu_us": 0,
+          "self_device_us": 183909.2920000002,
+          "total_device_us": 183909.2920000002
+        },
+        {
+          "name": "ncclDevKernel_ReduceScatter_Sum_f32_RING_LL(ncclDevKernelArgsStorage<4096ul>)",
+          "calls": 66,
+          "self_cpu_us": 0,
+          "total_cpu_us": 0,
+          "self_device_us": 183680.01000000036,
+          "total_device_us": 183680.01000000036
+        },
+        {
+          "name": "nccl:_reduce_scatter_base",
+          "calls": 66,
+          "self_cpu_us": 0,
+          "total_cpu_us": 0,
+          "self_device_us": 183680.01000000036,
+          "total_device_us": 183680.01000000036
+        },
+        {
+          "name": "Optimizer.step#AdamW.step",
+          "calls": 1,
+          "self_cpu_us": 0,
+          "total_cpu_us": 0,
+          "self_device_us": 167806.6200000001,
+          "total_device_us": 167806.6200000001
+        },
+        {
+          "name": "aten::_chunk_cat",
+          "calls": 66,
+          "self_cpu_us": 31321.31599999877,
+          "total_cpu_us": 37199.41499999905,
+          "self_device_us": 84484.64999999997,
+          "total_device_us": 86256.93799999944
+        },
+        {
+          "name": "void at::native::detail::chunk_cat_cuda_kernel<float, c10::BFloat16>(c10::BFloat16**, float*, long*, long*, long*, long*, long*, long*, long, long, long)",
+          "calls": 66,
+          "self_cpu_us": 0,
+          "total_cpu_us": 0,
+          "self_device_us": 84484.64999999997,
+          "total_device_us": 84484.64999999997
+        },
+        {
+          "name": "nvjet_tst_128x232_64x4_2x1_v_bz_coopA_TNT",
+          "calls": 128,
+          "self_cpu_us": 0,
+          "total_cpu_us": 0,
+          "self_device_us": 83876.43099999997,
+          "total_device_us": 83876.43099999997
+        }
+      ]
+    },
+    {
+      "path": "profile-headFalse-rank1/operators.json",
+      "rank": 1,
+      "identity": {
+        "batch_sha256": "8ee0e2dc25b126aae262fd77a9bdf14dca36b69ddeba0429c6d5c283cca92e2a",
+        "fp32_head": false,
+        "strategy": "verl",
+        "micro": 2
+      },
+      "instrumented_seconds": 2.1062409058213234,
+      "largest_device_operators": [
+        {
+          "name": "trajectory_runtime::actor_update",
+          "calls": 1,
+          "self_cpu_us": 0,
+          "total_cpu_us": 0,
+          "self_device_us": 1433395.5450000002,
+          "total_device_us": 1433395.5450000002
+        },
+        {
+          "name": "aten::mm",
+          "calls": 1524,
+          "self_cpu_us": 39695.7339999992,
+          "total_cpu_us": 65162.85300000035,
+          "self_device_us": 679499.7440000015,
+          "total_device_us": 679612.1280000014
+        },
+        {
+          "name": "record_param_comms",
+          "calls": 213,
+          "self_cpu_us": 13267.646999998791,
+          "total_cpu_us": 21589.756000000278,
+          "self_device_us": 440550.53899999947,
+          "total_device_us": 440563.4349999995
+        },
+        {
+          "name": "ncclDevKernel_AllGather_RING_LL(ncclDevKernelArgsStorage<4096ul>)",
+          "calls": 134,
+          "self_cpu_us": 0,
+          "total_cpu_us": 0,
+          "self_device_us": 220964.95299999986,
+          "total_device_us": 220964.95299999986
+        },
+        {
+          "name": "nccl:_all_gather_base",
+          "calls": 132,
+          "self_cpu_us": 0,
+          "total_cpu_us": 0,
+          "self_device_us": 220406.42099999986,
+          "total_device_us": 220406.42099999986
+        },
+        {
+          "name": "ncclDevKernel_ReduceScatter_Sum_f32_RING_LL(ncclDevKernelArgsStorage<4096ul>)",
+          "calls": 66,
+          "self_cpu_us": 0,
+          "total_cpu_us": 0,
+          "self_device_us": 205872.19599999976,
+          "total_device_us": 205872.19599999976
+        },
+        {
+          "name": "nccl:_reduce_scatter_base",
+          "calls": 66,
+          "self_cpu_us": 0,
+          "total_cpu_us": 0,
+          "self_device_us": 205872.19599999976,
+          "total_device_us": 205872.19599999976
+        },
+        {
+          "name": "nvjet_tst_320x128_64x3_1x2_h_bz_coopB_NTT",
+          "calls": 256,
+          "self_cpu_us": 0,
+          "total_cpu_us": 0,
+          "self_device_us": 187846.20900000003,
+          "total_device_us": 187846.20900000003
+        },
+        {
+          "name": "Optimizer.step#AdamW.step",
+          "calls": 1,
+          "self_cpu_us": 0,
+          "total_cpu_us": 0,
+          "self_device_us": 164602.23399999994,
+          "total_device_us": 164602.23399999994
+        },
+        {
+          "name": "aten::_chunk_cat",
+          "calls": 66,
+          "self_cpu_us": 28867.07499999937,
+          "total_cpu_us": 35144.12299999973,
+          "self_device_us": 84342.61500000005,
+          "total_device_us": 86019.26900000026
+        },
+        {
+          "name": "void at::native::detail::chunk_cat_cuda_kernel<float, c10::BFloat16>(c10::BFloat16**, float*, long*, long*, long*, long*, long*, long*, long, long, long)",
+          "calls": 66,
+          "self_cpu_us": 0,
+          "total_cpu_us": 0,
+          "self_device_us": 84342.61500000005,
+          "total_device_us": 84342.61500000005
+        },
+        {
+          "name": "nvjet_tst_256x104_64x4_2x1_v_bz_coopA_NNT",
+          "calls": 168,
+          "self_cpu_us": 0,
+          "total_cpu_us": 0,
+          "self_device_us": 81826.09100000013,
+          "total_device_us": 81826.09100000013
+        }
+      ]
+    },
+    {
+      "path": "profile-headFalse-rank2/operators.json",
+      "rank": 2,
+      "identity": {
+        "batch_sha256": "8ee0e2dc25b126aae262fd77a9bdf14dca36b69ddeba0429c6d5c283cca92e2a",
+        "fp32_head": false,
+        "strategy": "verl",
+        "micro": 2
+      },
+      "instrumented_seconds": 2.097182482481003,
+      "largest_device_operators": [
+        {
+          "name": "trajectory_runtime::actor_update",
+          "calls": 1,
+          "self_cpu_us": 0,
+          "total_cpu_us": 0,
+          "self_device_us": 1430830.8080000002,
+          "total_device_us": 1430830.8080000002
+        },
+        {
+          "name": "aten::mm",
+          "calls": 1528,
+          "self_cpu_us": 39076.46199999642,
+          "total_cpu_us": 57821.4849999991,
+          "self_device_us": 692059.4569999981,
+          "total_device_us": 692069.2169999981
+        },
+        {
+          "name": "record_param_comms",
+          "calls": 213,
+          "self_cpu_us": 13188.36499999772,
+          "total_cpu_us": 19418.907999999625,
+          "self_device_us": 508911.7400000005,
+          "total_device_us": 508923.9980000005
+        },
+        {
+          "name": "ncclDevKernel_AllGather_RING_LL(ncclDevKernelArgsStorage<4096ul>)",
+          "calls": 134,
+          "self_cpu_us": 0,
+          "total_cpu_us": 0,
+          "self_device_us": 263023.74400000036,
+          "total_device_us": 263023.74400000036
+        },
+        {
+          "name": "nccl:_all_gather_base",
+          "calls": 132,
+          "self_cpu_us": 0,
+          "total_cpu_us": 0,
+          "self_device_us": 262493.6660000004,
+          "total_device_us": 262493.6660000004
+        },
+        {
+          "name": "ncclDevKernel_ReduceScatter_Sum_f32_RING_LL(ncclDevKernelArgsStorage<4096ul>)",
+          "calls": 66,
+          "self_cpu_us": 0,
+          "total_cpu_us": 0,
+          "self_device_us": 221278.30700000003,
+          "total_device_us": 221278.30700000003
+        },
+        {
+          "name": "nccl:_reduce_scatter_base",
+          "calls": 66,
+          "self_cpu_us": 0,
+          "total_cpu_us": 0,
+          "self_device_us": 221278.30700000003,
+          "total_device_us": 221278.30700000003
+        },
+        {
+          "name": "nvjet_tst_320x128_64x3_1x2_h_bz_coopB_NTT",
+          "calls": 256,
+          "self_cpu_us": 0,
+          "total_cpu_us": 0,
+          "self_device_us": 182177.78899999935,
+          "total_device_us": 182177.78899999935
+        },
+        {
+          "name": "Optimizer.step#AdamW.step",
+          "calls": 1,
+          "self_cpu_us": 0,
+          "total_cpu_us": 0,
+          "self_device_us": 157389.67299999995,
+          "total_device_us": 157389.67299999995
+        },
+        {
+          "name": "aten::_chunk_cat",
+          "calls": 66,
+          "self_cpu_us": 28335.825999998895,
+          "total_cpu_us": 34556.49900000001,
+          "self_device_us": 84458.78899999964,
+          "total_device_us": 86313.18599999911
+        },
+        {
+          "name": "void at::native::detail::chunk_cat_cuda_kernel<float, c10::BFloat16>(c10::BFloat16**, float*, long*, long*, long*, long*, long*, long*, long, long, long)",
+          "calls": 66,
+          "self_cpu_us": 0,
+          "total_cpu_us": 0,
+          "self_device_us": 84458.78899999964,
+          "total_device_us": 84458.78899999964
+        },
+        {
+          "name": "nvjet_tst_384x88_64x3_1x1_h_bz_coopA_NNT",
+          "calls": 216,
+          "self_cpu_us": 0,
+          "total_cpu_us": 0,
+          "self_device_us": 77039.27299999935,
+          "total_device_us": 77039.27299999935
+        }
+      ]
+    },
+    {
+      "path": "profile-headFalse-rank3/operators.json",
+      "rank": 3,
+      "identity": {
+        "batch_sha256": "8ee0e2dc25b126aae262fd77a9bdf14dca36b69ddeba0429c6d5c283cca92e2a",
+        "fp32_head": false,
+        "strategy": "verl",
+        "micro": 2
+      },
+      "instrumented_seconds": 2.075073506683111,
+      "largest_device_operators": [
+        {
+          "name": "trajectory_runtime::actor_update",
+          "calls": 1,
+          "self_cpu_us": 0,
+          "total_cpu_us": 0,
+          "self_device_us": 1433404.6130000001,
+          "total_device_us": 1433404.6130000001
+        },
+        {
+          "name": "aten::mm",
+          "calls": 1528,
+          "self_cpu_us": 38405.10300000073,
+          "total_cpu_us": 53086.548000000446,
+          "self_device_us": 690168.979999998,
+          "total_device_us": 690168.979999998
+        },
+        {
+          "name": "record_param_comms",
+          "calls": 213,
+          "self_cpu_us": 13245.695000001724,
+          "total_cpu_us": 21198.846999999816,
+          "self_device_us": 589152.7759999991,
+          "total_device_us": 589165.1599999992
+        },
+        {
+          "name": "ncclDevKernel_AllGather_RING_LL(ncclDevKernelArgsStorage<4096ul>)",
+          "calls": 134,
+          "self_cpu_us": 0,
+          "total_cpu_us": 0,
+          "self_device_us": 285227.1439999994,
+          "total_device_us": 285227.1439999994
+        },
+        {
+          "name": "nccl:_all_gather_base",
+          "calls": 132,
+          "self_cpu_us": 0,
+          "total_cpu_us": 0,
+          "self_device_us": 284626.82199999935,
+          "total_device_us": 284626.82199999935
+        },
+        {
+          "name": "ncclDevKernel_ReduceScatter_Sum_f32_RING_LL(ncclDevKernelArgsStorage<4096ul>)",
+          "calls": 66,
+          "self_cpu_us": 0,
+          "total_cpu_us": 0,
+          "self_device_us": 270830.0639999995,
+          "total_device_us": 270830.0639999995
+        },
+        {
+          "name": "nccl:_reduce_scatter_base",
+          "calls": 66,
+          "self_cpu_us": 0,
+          "total_cpu_us": 0,
+          "self_device_us": 270830.0639999995,
+          "total_device_us": 270830.0639999995
+        },
+        {
+          "name": "nvjet_tst_320x128_64x3_1x2_h_bz_coopB_NTT",
+          "calls": 256,
+          "self_cpu_us": 0,
+          "total_cpu_us": 0,
+          "self_device_us": 172198.24599999806,
+          "total_device_us": 172198.24599999806
+        },
+        {
+          "name": "Optimizer.step#AdamW.step",
+          "calls": 1,
+          "self_cpu_us": 0,
+          "total_cpu_us": 0,
+          "self_device_us": 153945.97199999983,
+          "total_device_us": 153945.97199999983
+        },
+        {
+          "name": "nvjet_tst_192x128_64x5_2x1_v_bz_coopB_NNT",
+          "calls": 216,
+          "self_cpu_us": 0,
+          "total_cpu_us": 0,
+          "self_device_us": 90009.24099999969,
+          "total_device_us": 90009.24099999969
+        },
+        {
+          "name": "aten::_chunk_cat",
+          "calls": 66,
+          "self_cpu_us": 42278.05199999933,
+          "total_cpu_us": 48392.93899999949,
+          "self_device_us": 84304.49300000031,
+          "total_device_us": 86111.76000000007
+        },
+        {
+          "name": "void at::native::detail::chunk_cat_cuda_kernel<float, c10::BFloat16>(c10::BFloat16**, float*, long*, long*, long*, long*, long*, long*, long, long, long)",
+          "calls": 66,
+          "self_cpu_us": 0,
+          "total_cpu_us": 0,
+          "self_device_us": 84304.49300000031,
+          "total_device_us": 84304.49300000031
+        }
+      ]
+    }
+  ],
+  "profiles_complete": false,
+  "expected_profile_count": 8,
+  "performance_comparison": false,
+  "scope": "one frozen real batch; forward/backward/state diagnostic; not on-policy training",
+  "profile_semantics": "operator device times may overlap and cannot be summed as wall time"
+}

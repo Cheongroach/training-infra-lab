@@ -1,0 +1,102 @@
+{
+  "verified": true,
+  "completed_rollout_id": 1,
+  "expected_resume_rollout_id": 2,
+  "checkpoint_scope": "job-local filesystem, cold process restart",
+  "raw_checkpoint_in_result_archive": false,
+  "bytes": 56334419596,
+  "files": {
+    "iter_0000001/.metadata": {
+      "bytes": 685618,
+      "sha256": "64f4c6836381a159556e89bfd06002711e7c59ecd7f6b47a9c05c52e1e8ddbc5"
+    },
+    "iter_0000001/__0_0.distcp": {
+      "bytes": 28163252844,
+      "sha256": "5ddbd772f1951993a686c8ff2ecf01a519a7a66fd70010d9116e279bf3cb6d11"
+    },
+    "iter_0000001/__1_0.distcp": {
+      "bytes": 28162228083,
+      "sha256": "a3c3934b50d641d577c6b1a0b4c9b786be14d31c01c10920146e4f8be1e2e508"
+    },
+    "iter_0000001/metadata.json": {
+      "bytes": 63,
+      "sha256": "56b32e2dfbc0255db319bddf6880c9dfd3475135ca8d5ace23b8a6a384ed63c6"
+    },
+    "latest_checkpointed_iteration.txt": {
+      "bytes": 1,
+      "sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b"
+    },
+    "rollout/1/data_source/state.pt": {
+      "bytes": 1325,
+      "sha256": "37b95cce7d52febc16c1061e42dc5201f7345cab18a8bd964215023122dd66e9"
+    },
+    "rollout/1/debug_events/actor_cell00000_rank00000.jsonl": {
+      "bytes": 744991,
+      "sha256": "c4d8779723be75283d180c0af40a482bd9401e8a4d4e618e869dddd331b825b4"
+    },
+    "rollout/1/debug_events/actor_cell00000_rank00001.jsonl": {
+      "bytes": 741289,
+      "sha256": "5dd8f359253efeb6d30f36f7e3f02cf7ee13cf99abbc4735fe7de95ae94d6e39"
+    },
+    "rollout/1/debug_events/inference_controller.jsonl": {
+      "bytes": 473911,
+      "sha256": "d829c8e09690396a7eda7a4e89d4e2f668f2ee20da47e37b1e842354d3433a6d"
+    },
+    "rollout/1/debug_events/main.jsonl": {
+      "bytes": 484063,
+      "sha256": "e44d1b66c3d0799fc3511e0105cac637376da3e0d8abde6310afb6e6e5a43441"
+    },
+    "rollout/1/debug_events/rollout_executor.jsonl": {
+      "bytes": 400039,
+      "sha256": "f5c40602e055200cf5b1590cc128037a1e13ddbe1ec7997fd9ea76983c7f4f86"
+    },
+    "rollout/1/debug_events/trainer_controller_actor.jsonl": {
+      "bytes": 259974,
+      "sha256": "68d48ec831257861bfe5afdb277b04ebe95c77c87d205816f755fd2b13cbe646"
+    },
+    "rollout/1/debug_events/worker_manager.jsonl": {
+      "bytes": 397171,
+      "sha256": "6a801dc89c795ee01557bf1a859c4bd491f6f72e02e650b366b352ba128a792c"
+    },
+    "rollout/1/executor/state.pt": {
+      "bytes": 1261,
+      "sha256": "07c7431cf6005e7d8f367d79e995f63e2f9b981a37e3437b795d058f9af4308b"
+    },
+    "rollout/1/generate_rollout/journal/candidate-0-0.json": {
+      "bytes": 932257,
+      "sha256": "0d01d7a3e832a7d257d117bc27fd55265b0e22f977f5d9afefb2ca6b525223c0"
+    },
+    "rollout/1/generate_rollout/journal/candidate-0-1.json": {
+      "bytes": 887237,
+      "sha256": "cb95194cbddb58d281f664739a1d85bab5bb0b9f80b5cc567737f7c241606a8c"
+    },
+    "rollout/1/generate_rollout/journal/candidate-1-0.json": {
+      "bytes": 957135,
+      "sha256": "03b58969a521b298bd0679db45c4babff38b879bca15588672fe8a8d34a48565"
+    },
+    "rollout/1/generate_rollout/journal/candidate-1-1.json": {
+      "bytes": 956142,
+      "sha256": "f310cc4476ef600685dfafc227bb43a5719618800b513cfa64f9ef5489d1400e"
+    },
+    "rollout/1/generate_rollout/journal/candidate-1-2.json": {
+      "bytes": 1009856,
+      "sha256": "193d5141ea4ae50099812fef2c7c6c16d9199a850e69335c6ff1e2efffb193b0"
+    },
+    "rollout/1/generate_rollout/journal/step-0.json": {
+      "bytes": 1559,
+      "sha256": "7b50952c66e58daf29b920bf3e4ea71631b58eaa000dbee1914b716419125962"
+    },
+    "rollout/1/generate_rollout/journal/step-1.json": {
+      "bytes": 2328,
+      "sha256": "b0d62772acd790e34f8414c027125aefcc9d292dd185146445d3585636374136"
+    },
+    "rollout/1/generate_rollout/state.json": {
+      "bytes": 2385,
+      "sha256": "768be4a3170c2b2f180e258578333627ca94f1193a8b1b132ebece6fb9e9f708"
+    },
+    "rollout/1/generate_rollout/state.sha256": {
+      "bytes": 64,
+      "sha256": "b472b49853bf42760be34d219e35f11dbf37e8aff98b79284606ce0c4fa68368"
+    }
+  }
+}

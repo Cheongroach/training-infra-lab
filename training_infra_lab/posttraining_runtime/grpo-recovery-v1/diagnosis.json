@@ -1,0 +1,12 @@
+{
+  "failed": true,
+  "gpu_verified": false,
+  "checkpoint_saved": true,
+  "checkpoint_bytes": 56334419596,
+  "sampler_restored_samples": 80,
+  "restored_engine_checksums_equal_saved_version2": true,
+  "cause": "train.py initial action=compare uses original HF snapshot after broadcasting trained version 2",
+  "needs_auditor_fix": "resume replays exact old events and fresh initial transfer uses rollout_id=1; join fresh transfer by debug_weight_update_id and deduplicate exact history",
+  "exit_status": 1,
+  "final_publication_verified": false
+}

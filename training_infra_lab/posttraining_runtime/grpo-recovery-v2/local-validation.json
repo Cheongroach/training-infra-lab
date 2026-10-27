@@ -1,0 +1,7 @@
+{
+  "frozen_worker_sources": 14,
+  "matches_tested_sources": true,
+  "python_and_shell_syntax": "pass",
+  "exact_upstream_patches": "pass",
+  "gpus": 4
+}

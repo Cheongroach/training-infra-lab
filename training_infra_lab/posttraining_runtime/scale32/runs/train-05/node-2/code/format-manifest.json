@@ -1,0 +1,37 @@
+{
+  "original_sha256": "67173a6074167cb280f1cf70542ccd1c1f91583defa8698f2428d268858e4fff",
+  "explicit_sha256": "498d4e3342c97fd7e35223093d0211c921c92fd54ec9b19bcd69fd67e883259f",
+  "rows": 64,
+  "selection": "all original 64 rows; original order and labels",
+  "deterministic_probe_indices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+  ],
+  "stochastic_probe_indices": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "samples_per_stochastic_prompt": 4,
+  "model_revision": "1cfa9a7208912126459214e8b04321603b3df60c",
+  "max_response_tokens": 4096,
+  "format_instruction": "Solve this math problem with concise reasoning. The answer is an integer.\n\n{question}\n\nFinish with exactly one final line in the form Answer: \\boxed{integer}, replacing integer with your result. Keep Answer: and the boxed integer on the same line. Use no dollar signs, Markdown bold, heading, or text after that final line. Then end the response.",
+  "purpose": "format contract; previously exposed infrastructure prompts, not held-out capability",
+  "scorer_modified": false,
+  "constrained_decoding": false
+}

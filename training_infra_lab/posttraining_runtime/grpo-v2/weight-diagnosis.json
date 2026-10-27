@@ -1,0 +1,153 @@
+{
+  "learner_checksums": [
+    {
+      "rank": 0,
+      "rollout_id": 0,
+      "parameters_hashed": 292
+    },
+    {
+      "rank": 0,
+      "rollout_id": 1,
+      "parameters_hashed": 292,
+      "changed_parameters": 1,
+      "optimizer_changed_fields": 2,
+      "optimizer_changed_paths": {
+        "step": 2
+      },
+      "optimizer_diff_examples": [
+        {
+          "path": "/0/state_dict/param_groups/0/step",
+          "before": 1,
+          "after": 2
+        },
+        {
+          "path": "/0/state_dict/param_groups/1/step",
+          "before": 1,
+          "after": 2
+        }
+      ],
+      "changed_parameter_names": [
+        "pp0.module.module.model_companion.weight_version"
+      ],
+      "changed_model_parameters_excluding_companion": 0
+    },
+    {
+      "rank": 0,
+      "rollout_id": 2,
+      "parameters_hashed": 292,
+      "changed_parameters": 1,
+      "optimizer_changed_fields": 2,
+      "optimizer_changed_paths": {
+        "step": 2
+      },
+      "optimizer_diff_examples": [
+        {
+          "path": "/0/state_dict/param_groups/0/step",
+          "before": 2,
+          "after": 3
+        },
+        {
+          "path": "/0/state_dict/param_groups/1/step",
+          "before": 2,
+          "after": 3
+        }
+      ],
+      "changed_parameter_names": [
+        "pp0.module.module.model_companion.weight_version"
+      ],
+      "changed_model_parameters_excluding_companion": 0
+    },
+    {
+      "rank": 1,
+      "rollout_id": 0,
+      "parameters_hashed": 292
+    },
+    {
+      "rank": 1,
+      "rollout_id": 1,
+      "parameters_hashed": 292,
+      "changed_parameters": 1,
+      "optimizer_changed_fields": 2,
+      "optimizer_changed_paths": {
+        "step": 2
+      },
+      "optimizer_diff_examples": [
+        {
+          "path": "/0/state_dict/param_groups/0/step",
+          "before": 1,
+          "after": 2
+        },
+        {
+          "path": "/0/state_dict/param_groups/1/step",
+          "before": 1,
+          "after": 2
+        }
+      ],
+      "changed_parameter_names": [
+        "pp0.module.module.model_companion.weight_version"
+      ],
+      "changed_model_parameters_excluding_companion": 0
+    },
+    {
+      "rank": 1,
+      "rollout_id": 2,
+      "parameters_hashed": 292,
+      "changed_parameters": 1,
+      "optimizer_changed_fields": 2,
+      "optimizer_changed_paths": {
+        "step": 2
+      },
+      "optimizer_diff_examples": [
+        {
+          "path": "/0/state_dict/param_groups/0/step",
+          "before": 2,
+          "after": 3
+        },
+        {
+          "path": "/0/state_dict/param_groups/1/step",
+          "before": 2,
+          "after": 3
+        }
+      ],
+      "changed_parameter_names": [
+        "pp0.module.module.model_companion.weight_version"
+      ],
+      "changed_model_parameters_excluding_companion": 0
+    }
+  ],
+  "engine_checksums": [
+    {
+      "rollout_id": -1,
+      "weight_version": 0,
+      "cell_ids": [
+        "inference-engine-all-0-0-00000",
+        "inference-engine-all-0-0-00001"
+      ],
+      "engine_equal": true,
+      "tensors_hashed": 290,
+      "changed_tensors_since_previous": null
+    },
+    {
+      "rollout_id": 0,
+      "weight_version": 1,
+      "cell_ids": [
+        "inference-engine-all-0-0-00000",
+        "inference-engine-all-0-0-00001"
+      ],
+      "engine_equal": true,
+      "tensors_hashed": 290,
+      "changed_tensors_since_previous": 0
+    },
+    {
+      "rollout_id": 1,
+      "weight_version": 2,
+      "cell_ids": [
+        "inference-engine-all-0-0-00000",
+        "inference-engine-all-0-0-00001"
+      ],
+      "engine_equal": true,
+      "tensors_hashed": 290,
+      "changed_tensors_since_previous": 0
+    }
+  ]
+}

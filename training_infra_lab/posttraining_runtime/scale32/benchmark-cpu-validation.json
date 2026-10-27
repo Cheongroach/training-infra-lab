@@ -1,0 +1,8 @@
+{
+  "syntax_passed": true,
+  "case_count": 18,
+  "warmups": 2,
+  "repetitions_per_case": 4,
+  "actor_boundary_verified": true,
+  "gpu_verified": false
+}

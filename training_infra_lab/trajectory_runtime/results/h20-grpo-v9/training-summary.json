@@ -1,0 +1,157 @@
+{
+  "world": 4,
+  "completed_updates": 4,
+  "updates": [
+    {
+      "update": 0,
+      "policy_version": 0,
+      "batch_sha256": "7235799889614b6943eccd25608fd54881fb540b951a5cc3b9854d08681b422c",
+      "trajectories": 16,
+      "groups": 4,
+      "response_tokens": 8024,
+      "mean_reward": 1.0,
+      "signal_groups": 0,
+      "signal_groups_with_completed_wrong_answer": 0,
+      "termination_and_reward": {
+        "eos_correct": 16,
+        "eos_wrong": 0,
+        "length_correct": 0,
+        "length_wrong": 0
+      },
+      "reward_outcomes": {
+        "correct": 16,
+        "incorrect": 0,
+        "missing_final_answer": 0,
+        "truncated": 0
+      },
+      "optimizer_nonzero_counts": {
+        "exp_avg": 0,
+        "exp_avg_sq": 0
+      },
+      "gradient_norm_range": [
+        0.0,
+        0.0
+      ],
+      "nonzero_live_gradient_all_ranks": false,
+      "generation_phase_seconds_max_rank": 182.31020813062787,
+      "optimizer_update_seconds_max_rank": 66.05365753173828,
+      "peak_update_allocated_gib": 35.313551902770996
+    },
+    {
+      "update": 1,
+      "policy_version": 1,
+      "batch_sha256": "916d5fc011c68479a4988c9d591d6dc93338c65a3cc4517749bd3e8713933922",
+      "trajectories": 16,
+      "groups": 4,
+      "response_tokens": 7320,
+      "mean_reward": 1.0,
+      "signal_groups": 0,
+      "signal_groups_with_completed_wrong_answer": 0,
+      "termination_and_reward": {
+        "eos_correct": 16,
+        "eos_wrong": 0,
+        "length_correct": 0,
+        "length_wrong": 0
+      },
+      "reward_outcomes": {
+        "correct": 16,
+        "incorrect": 0,
+        "missing_final_answer": 0,
+        "truncated": 0
+      },
+      "optimizer_nonzero_counts": {
+        "exp_avg": 0,
+        "exp_avg_sq": 0
+      },
+      "gradient_norm_range": [
+        0.0,
+        0.0
+      ],
+      "nonzero_live_gradient_all_ranks": false,
+      "generation_phase_seconds_max_rank": 45.46344067156315,
+      "optimizer_update_seconds_max_rank": 4.021927833557129,
+      "peak_update_allocated_gib": 47.38919973373413
+    },
+    {
+      "update": 2,
+      "policy_version": 2,
+      "batch_sha256": "da422554e5e6221f931981e7a287879dee5793c9bd6c5109b5a22bf0dba7c5e8",
+      "trajectories": 16,
+      "groups": 4,
+      "response_tokens": 6942,
+      "mean_reward": 1.0,
+      "signal_groups": 0,
+      "signal_groups_with_completed_wrong_answer": 0,
+      "termination_and_reward": {
+        "eos_correct": 16,
+        "eos_wrong": 0,
+        "length_correct": 0,
+        "length_wrong": 0
+      },
+      "reward_outcomes": {
+        "correct": 16,
+        "incorrect": 0,
+        "missing_final_answer": 0,
+        "truncated": 0
+      },
+      "optimizer_nonzero_counts": {
+        "exp_avg": 0,
+        "exp_avg_sq": 0
+      },
+      "gradient_norm_range": [
+        0.0,
+        0.0
+      ],
+      "nonzero_live_gradient_all_ranks": false,
+      "generation_phase_seconds_max_rank": 44.08303341269493,
+      "optimizer_update_seconds_max_rank": 4.297187805175781,
+      "peak_update_allocated_gib": 47.360862255096436
+    },
+    {
+      "update": 3,
+      "policy_version": 3,
+      "batch_sha256": "c469c4322f8800979a25943218dc73dd9cdcb03f9fbe2f2c384b94930d14e3ec",
+      "trajectories": 16,
+      "groups": 4,
+      "response_tokens": 9929,
+      "mean_reward": 0.875,
+      "signal_groups": 1,
+      "signal_groups_with_completed_wrong_answer": 1,
+      "termination_and_reward": {
+        "eos_correct": 14,
+        "eos_wrong": 2,
+        "length_correct": 0,
+        "length_wrong": 0
+      },
+      "reward_outcomes": {
+        "correct": 14,
+        "incorrect": 2,
+        "missing_final_answer": 0,
+        "truncated": 0
+      },
+      "optimizer_nonzero_counts": {
+        "exp_avg": 7935924616,
+        "exp_avg_sq": 7935924616
+      },
+      "gradient_norm_range": [
+        0.9154521822929382,
+        0.9154521822929382
+      ],
+      "nonzero_live_gradient_all_ranks": true,
+      "generation_phase_seconds_max_rank": 93.84637802094221,
+      "optimizer_update_seconds_max_rank": 5.1379594802856445,
+      "peak_update_allocated_gib": 47.437411308288574
+    }
+  ],
+  "reward_rule": "eos_final_line_decimal_v2",
+  "direct_adam_evidence_saved": true,
+  "all_updates_have_nonzero_gradients": false,
+  "all_updates_have_completed_wrong_signal": false,
+  "scope": "Short synchronous execution audit; different prompts at each update",
+  "limitations": [
+    "Reward uses the declared numeric rule, not full mathematical equivalence",
+    "Reported phases exclude probability replay and diagnostic experiments; not full RL throughput",
+    "Adam counts, when present, measure nonzero elements; absolute moment norms were not saved",
+    "No held-out evaluation or convergence claim"
+  ]
+}

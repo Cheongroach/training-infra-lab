@@ -1,0 +1,356 @@
+{
+  "passed": true,
+  "performance_claim": false,
+  "capability_claim": false,
+  "updates": [
+    {
+      "rollout_id": 0,
+      "learner_ranks": [
+        {
+          "rank": 0,
+          "changed_model_tensors": 202,
+          "adam_moment_tensors": 38
+        },
+        {
+          "rank": 1,
+          "changed_model_tensors": 202,
+          "adam_moment_tensors": 38
+        },
+        {
+          "rank": 2,
+          "changed_model_tensors": 202,
+          "adam_moment_tensors": 84
+        },
+        {
+          "rank": 3,
+          "changed_model_tensors": 202,
+          "adam_moment_tensors": 84
+        },
+        {
+          "rank": 4,
+          "changed_model_tensors": 202,
+          "adam_moment_tensors": 82
+        },
+        {
+          "rank": 5,
+          "changed_model_tensors": 202,
+          "adam_moment_tensors": 82
+        },
+        {
+          "rank": 6,
+          "changed_model_tensors": 202,
+          "adam_moment_tensors": 94
+        },
+        {
+          "rank": 7,
+          "changed_model_tensors": 202,
+          "adam_moment_tensors": 94
+        },
+        {
+          "rank": 8,
+          "changed_model_tensors": 202,
+          "adam_moment_tensors": 86
+        },
+        {
+          "rank": 9,
+          "changed_model_tensors": 202,
+          "adam_moment_tensors": 86
+        },
+        {
+          "rank": 10,
+          "changed_model_tensors": 202,
+          "adam_moment_tensors": 82
+        },
+        {
+          "rank": 11,
+          "changed_model_tensors": 202,
+          "adam_moment_tensors": 82
+        },
+        {
+          "rank": 12,
+          "changed_model_tensors": 202,
+          "adam_moment_tensors": 94
+        },
+        {
+          "rank": 13,
+          "changed_model_tensors": 202,
+          "adam_moment_tensors": 94
+        },
+        {
+          "rank": 14,
+          "changed_model_tensors": 202,
+          "adam_moment_tensors": 36
+        },
+        {
+          "rank": 15,
+          "changed_model_tensors": 202,
+          "adam_moment_tensors": 36
+        }
+      ],
+      "candidate_batches": 1,
+      "rejected_batches": 0,
+      "nonzero_advantage_tokens": 36008,
+      "grad_norm": [
+        0.2956434190273285
+      ],
+      "admitted_samples": 64,
+      "mixed_reward_groups": 7,
+      "completed_samples": 61,
+      "strict_extracted_samples": 26,
+      "strict_extraction_passed": false,
+      "format_contract_passed": false,
+      "format_is_training_admission_gate": false,
+      "response_tokens": 94437
+    },
+    {
+      "rollout_id": 1,
+      "learner_ranks": [
+        {
+          "rank": 0,
+          "changed_model_tensors": 202,
+          "adam_moment_tensors": 38
+        },
+        {
+          "rank": 1,
+          "changed_model_tensors": 202,
+          "adam_moment_tensors": 38
+        },
+        {
+          "rank": 2,
+          "changed_model_tensors": 202,
+          "adam_moment_tensors": 84
+        },
+        {
+          "rank": 3,
+          "changed_model_tensors": 202,
+          "adam_moment_tensors": 84
+        },
+        {
+          "rank": 4,
+          "changed_model_tensors": 202,
+          "adam_moment_tensors": 82
+        },
+        {
+          "rank": 5,
+          "changed_model_tensors": 202,
+          "adam_moment_tensors": 82
+        },
+        {
+          "rank": 6,
+          "changed_model_tensors": 202,
+          "adam_moment_tensors": 94
+        },
+        {
+          "rank": 7,
+          "changed_model_tensors": 202,
+          "adam_moment_tensors": 94
+        },
+        {
+          "rank": 8,
+          "changed_model_tensors": 202,
+          "adam_moment_tensors": 86
+        },
+        {
+          "rank": 9,
+          "changed_model_tensors": 202,
+          "adam_moment_tensors": 86
+        },
+        {
+          "rank": 10,
+          "changed_model_tensors": 202,
+          "adam_moment_tensors": 82
+        },
+        {
+          "rank": 11,
+          "changed_model_tensors": 202,
+          "adam_moment_tensors": 82
+        },
+        {
+          "rank": 12,
+          "changed_model_tensors": 202,
+          "adam_moment_tensors": 94
+        },
+        {
+          "rank": 13,
+          "changed_model_tensors": 202,
+          "adam_moment_tensors": 94
+        },
+        {
+          "rank": 14,
+          "changed_model_tensors": 202,
+          "adam_moment_tensors": 36
+        },
+        {
+          "rank": 15,
+          "changed_model_tensors": 202,
+          "adam_moment_tensors": 36
+        }
+      ],
+      "candidate_batches": 1,
+      "rejected_batches": 0,
+      "nonzero_advantage_tokens": 25736,
+      "grad_norm": [
+        0.20580638945102692
+      ],
+      "admitted_samples": 64,
+      "mixed_reward_groups": 5,
+      "completed_samples": 64,
+      "strict_extracted_samples": 12,
+      "strict_extraction_passed": false,
+      "format_contract_passed": false,
+      "format_is_training_admission_gate": false,
+      "response_tokens": 93074
+    },
+    {
+      "rollout_id": 2,
+      "learner_ranks": [
+        {
+          "rank": 0,
+          "changed_model_tensors": 197,
+          "adam_moment_tensors": 38
+        },
+        {
+          "rank": 1,
+          "changed_model_tensors": 197,
+          "adam_moment_tensors": 38
+        },
+        {
+          "rank": 2,
+          "changed_model_tensors": 197,
+          "adam_moment_tensors": 84
+        },
+        {
+          "rank": 3,
+          "changed_model_tensors": 197,
+          "adam_moment_tensors": 84
+        },
+        {
+          "rank": 4,
+          "changed_model_tensors": 197,
+          "adam_moment_tensors": 82
+        },
+        {
+          "rank": 5,
+          "changed_model_tensors": 197,
+          "adam_moment_tensors": 82
+        },
+        {
+          "rank": 6,
+          "changed_model_tensors": 197,
+          "adam_moment_tensors": 94
+        },
+        {
+          "rank": 7,
+          "changed_model_tensors": 197,
+          "adam_moment_tensors": 94
+        },
+        {
+          "rank": 8,
+          "changed_model_tensors": 197,
+          "adam_moment_tensors": 86
+        },
+        {
+          "rank": 9,
+          "changed_model_tensors": 197,
+          "adam_moment_tensors": 86
+        },
+        {
+          "rank": 10,
+          "changed_model_tensors": 197,
+          "adam_moment_tensors": 82
+        },
+        {
+          "rank": 11,
+          "changed_model_tensors": 197,
+          "adam_moment_tensors": 82
+        },
+        {
+          "rank": 12,
+          "changed_model_tensors": 197,
+          "adam_moment_tensors": 94
+        },
+        {
+          "rank": 13,
+          "changed_model_tensors": 197,
+          "adam_moment_tensors": 94
+        },
+        {
+          "rank": 14,
+          "changed_model_tensors": 197,
+          "adam_moment_tensors": 36
+        },
+        {
+          "rank": 15,
+          "changed_model_tensors": 197,
+          "adam_moment_tensors": 36
+        }
+      ],
+      "candidate_batches": 1,
+      "rejected_batches": 0,
+      "nonzero_advantage_tokens": 44074,
+      "grad_norm": [
+        0.24710068106651306
+      ],
+      "admitted_samples": 64,
+      "mixed_reward_groups": 8,
+      "completed_samples": 63,
+      "strict_extracted_samples": 18,
+      "strict_extraction_passed": false,
+      "format_contract_passed": false,
+      "format_is_training_admission_gate": false,
+      "response_tokens": 84743
+    }
+  ],
+  "publications": [
+    {
+      "rollout_id": -1,
+      "version": 0,
+      "engine_count": 8,
+      "tensors_per_engine": 582,
+      "changed_tensors": 0
+    },
+    {
+      "rollout_id": 0,
+      "version": 1,
+      "engine_count": 8,
+      "tensors_per_engine": 582,
+      "changed_tensors": 404
+    },
+    {
+      "rollout_id": 1,
+      "version": 2,
+      "engine_count": 8,
+      "tensors_per_engine": 582,
+      "changed_tensors": 404
+    },
+    {
+      "rollout_id": 2,
+      "version": 3,
+      "engine_count": 8,
+      "tensors_per_engine": 582,
+      "changed_tensors": 394
+    }
+  ],
+  "event_types": {
+    "env_report": 79,
+    "metric": 13,
+    "train_engine_local_weight_checksum": 48,
+    "trainer_model_companion_info": 3,
+    "engine_env_report": 8,
+    "inference_engine_weight_checksum": 4,
+    "data_source_issued_samples": 3,
+    "weight_update_result": 4,
+    "train_group_step_end": 3
+  },
+  "final_evaluation": {
+    "samples": 16,
+    "completed": 10,
+    "strict_extracted": 4,
+    "original_scorer_correct": 2,
+    "response_tokens": 38348,
+    "consumed_weight_version": 3,
+    "scope": "Exposed prompts; protocol only",
+    "quality_improvement_claim": false
+  },
+  "errors": []
+}

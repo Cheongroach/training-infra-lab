@@ -1,0 +1,7 @@
+{
+  "python_syntax": true,
+  "outer_and_inner_bash_syntax": true,
+  "packed_sources_match": true,
+  "missing_dependencies_rejected": true,
+  "gpu_execution": false
+}

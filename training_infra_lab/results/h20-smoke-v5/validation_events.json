@@ -1,0 +1,257 @@
+[
+  {
+    "pod_sid": "5368615438",
+    "event": "qwen_hf_padding_recompute_gate_passed",
+    "device": "cuda",
+    "mode": "full",
+    "padding": "fixed",
+    "activation_checkpoint": false,
+    "loss": 4.599862098693848,
+    "shape": [
+      2,
+      256
+    ]
+  },
+  {
+    "pod_sid": "5368615438",
+    "event": "qwen_hf_padding_recompute_gate_passed",
+    "device": "cuda",
+    "mode": "chunk",
+    "padding": "fixed",
+    "activation_checkpoint": false,
+    "loss": 4.5998616218566895,
+    "shape": [
+      2,
+      256
+    ]
+  },
+  {
+    "pod_sid": "5368615438",
+    "event": "qwen_hf_padding_recompute_gate_passed",
+    "device": "cuda",
+    "mode": "full",
+    "padding": "dynamic",
+    "activation_checkpoint": false,
+    "loss": 4.599862098693848,
+    "shape": [
+      2,
+      128
+    ]
+  },
+  {
+    "pod_sid": "5368615438",
+    "event": "qwen_hf_padding_recompute_gate_passed",
+    "device": "cuda",
+    "mode": "selected",
+    "padding": "dynamic",
+    "activation_checkpoint": false,
+    "loss": 4.5998616218566895,
+    "shape": [
+      2,
+      128
+    ]
+  },
+  {
+    "pod_sid": "5368615438",
+    "event": "qwen_hf_padding_recompute_gate_passed",
+    "device": "cuda",
+    "mode": "chunk",
+    "padding": "dynamic",
+    "activation_checkpoint": true,
+    "loss": 4.5998616218566895,
+    "shape": [
+      2,
+      128
+    ]
+  },
+  {
+    "pod_sid": "5368615438",
+    "event": "loss_gradient_gate_passed",
+    "rank": 1,
+    "loss": 6.6993632316589355,
+    "tokens": 42
+  },
+  {
+    "pod_sid": "5368615438",
+    "event": "loss_gradient_gate_passed",
+    "rank": 0,
+    "loss": 6.6993632316589355,
+    "tokens": 42
+  },
+  {
+    "pod_sid": "5368615438",
+    "event": "bf16_loss_gate_passed",
+    "rank": 1,
+    "max_relative_l2_grad_error": 0.0036514101084321737
+  },
+  {
+    "pod_sid": "5368615438",
+    "event": "bf16_loss_gate_passed",
+    "rank": 0,
+    "max_relative_l2_grad_error": 0.0036514101084321737
+  },
+  {
+    "pod_sid": "5368615438",
+    "event": "fsdp2_global_token_update_gate_passed",
+    "rank": 0,
+    "world_size": 2
+  },
+  {
+    "pod_sid": "5368615438",
+    "event": "fsdp2_global_token_update_gate_passed",
+    "rank": 1,
+    "world_size": 2
+  },
+  {
+    "pod_sid": "5368615438",
+    "event": "training_environment",
+    "rank": 1,
+    "host": "g340-cd51-4900-5858-31cf-7a5e-17e1",
+    "world_size": 2,
+    "device": "cuda",
+    "device_name": "NVIDIA H20",
+    "torch": "2.9.1",
+    "transformers": "4.57.1",
+    "parameters": 1543714304,
+    "trainable_parameters": 1543714304,
+    "load_seconds": 4.5003655487671494,
+    "args": {
+      "assets": "/tmp/training_lab/assets",
+      "output": "/tmp/training_lab/results/full-fixed-ac0-s1024-r1",
+      "mode": "full",
+      "activation_checkpoint": false,
+      "seq_length": 1024,
+      "padding": "fixed",
+      "micro_batch": 1,
+      "global_batch": 8,
+      "steps": 8,
+      "warmup": 2,
+      "chunk_tokens": 256,
+      "lr": 1e-05,
+      "seed": 20261019,
+      "eval_examples": 16,
+      "save_checkpoint": false,
+      "require_hosts": 1,
+      "checkpoint_dir": null,
+      "resume": null,
+      "stop_after": null,
+      "fingerprint": false,
+      "profile_step": -1
+    },
+    "assets_manifest_sha256": "7b090baee1f35c36a7486e0f126e40c5be2d4834157506e2c6cb8016a12b5a12"
+  },
+  {
+    "pod_sid": "5368615438",
+    "event": "training_environment",
+    "rank": 0,
+    "host": "g340-cd51-4900-5858-31cf-7a5e-17e1",
+    "world_size": 2,
+    "device": "cuda",
+    "device_name": "NVIDIA H20",
+    "torch": "2.9.1",
+    "transformers": "4.57.1",
+    "parameters": 1543714304,
+    "trainable_parameters": 1543714304,
+    "load_seconds": 4.564173799939454,
+    "args": {
+      "assets": "/tmp/training_lab/assets",
+      "output": "/tmp/training_lab/results/full-fixed-ac0-s1024-r1",
+      "mode": "full",
+      "activation_checkpoint": false,
+      "seq_length": 1024,
+      "padding": "fixed",
+      "micro_batch": 1,
+      "global_batch": 8,
+      "steps": 8,
+      "warmup": 2,
+      "chunk_tokens": 256,
+      "lr": 1e-05,
+      "seed": 20261019,
+      "eval_examples": 16,
+      "save_checkpoint": false,
+      "require_hosts": 1,
+      "checkpoint_dir": null,
+      "resume": null,
+      "stop_after": null,
+      "fingerprint": false,
+      "profile_step": -1
+    },
+    "assets_manifest_sha256": "7b090baee1f35c36a7486e0f126e40c5be2d4834157506e2c6cb8016a12b5a12"
+  },
+  {
+    "pod_sid": "5368615438",
+    "event": "training_environment",
+    "rank": 0,
+    "host": "g340-cd51-4900-5858-31cf-7a5e-17e1",
+    "world_size": 2,
+    "device": "cuda",
+    "device_name": "NVIDIA H20",
+    "torch": "2.9.1",
+    "transformers": "4.57.1",
+    "parameters": 1543714304,
+    "trainable_parameters": 1543714304,
+    "load_seconds": 4.346559885889292,
+    "args": {
+      "assets": "/tmp/training_lab/assets",
+      "output": "/tmp/training_lab/results/chunk-fixed-ac0-s1024-r1",
+      "mode": "chunk",
+      "activation_checkpoint": false,
+      "seq_length": 1024,
+      "padding": "fixed",
+      "micro_batch": 1,
+      "global_batch": 8,
+      "steps": 8,
+      "warmup": 2,
+      "chunk_tokens": 256,
+      "lr": 1e-05,
+      "seed": 20261019,
+      "eval_examples": 16,
+      "save_checkpoint": false,
+      "require_hosts": 1,
+      "checkpoint_dir": null,
+      "resume": null,
+      "stop_after": null,
+      "fingerprint": false,
+      "profile_step": -1
+    },
+    "assets_manifest_sha256": "7b090baee1f35c36a7486e0f126e40c5be2d4834157506e2c6cb8016a12b5a12"
+  },
+  {
+    "pod_sid": "5368615438",
+    "event": "training_environment",
+    "rank": 1,
+    "host": "g340-cd51-4900-5858-31cf-7a5e-17e1",
+    "world_size": 2,
+    "device": "cuda",
+    "device_name": "NVIDIA H20",
+    "torch": "2.9.1",
+    "transformers": "4.57.1",
+    "parameters": 1543714304,
+    "trainable_parameters": 1543714304,
+    "load_seconds": 4.3501161662861705,
+    "args": {
+      "assets": "/tmp/training_lab/assets",
+      "output": "/tmp/training_lab/results/chunk-fixed-ac0-s1024-r1",
+      "mode": "chunk",
+      "activation_checkpoint": false,
+      "seq_length": 1024,
+      "padding": "fixed",
+      "micro_batch": 1,
+      "global_batch": 8,
+      "steps": 8,
+      "warmup": 2,
+      "chunk_tokens": 256,
+      "lr": 1e-05,
+      "seed": 20261019,
+      "eval_examples": 16,
+      "save_checkpoint": false,
+      "require_hosts": 1,
+      "checkpoint_dir": null,
+      "resume": null,
+      "stop_after": null,
+      "fingerprint": false,
+      "profile_step": -1
+    },
+    "assets_manifest_sha256": "7b090baee1f35c36a7486e0f126e40c5be2d4834157506e2c6cb8016a12b5a12"
+  }
+]

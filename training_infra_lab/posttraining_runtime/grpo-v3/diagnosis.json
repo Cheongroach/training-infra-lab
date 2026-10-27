@@ -1,0 +1,94 @@
+{
+  "rollouts": [
+    {
+      "passed": true,
+      "errors": [],
+      "samples": 16,
+      "groups": 4,
+      "completed": 15,
+      "extracted": 15,
+      "mixed_reward_groups": 1,
+      "max_response_tokens": 4096,
+      "rollout_id": 0,
+      "rollout_seconds": 26.22606110572815,
+      "positive_rewards": 1
+    },
+    {
+      "passed": true,
+      "errors": [],
+      "samples": 16,
+      "groups": 4,
+      "completed": 16,
+      "extracted": 16,
+      "mixed_reward_groups": 1,
+      "max_response_tokens": 4096,
+      "rollout_id": 1,
+      "rollout_seconds": 21.3423273563385,
+      "positive_rewards": 1
+    },
+    {
+      "passed": false,
+      "errors": [
+        "no within-group reward variation"
+      ],
+      "samples": 16,
+      "groups": 4,
+      "completed": 12,
+      "extracted": 11,
+      "mixed_reward_groups": 0,
+      "max_response_tokens": 4096,
+      "rollout_id": 2,
+      "rollout_seconds": 20.129746198654175,
+      "positive_rewards": 0
+    }
+  ],
+  "engine_checksums": [
+    {
+      "rollout_id": -1,
+      "weight_version": 0,
+      "tensor_count": 290,
+      "replicas_equal": true,
+      "changed_tensors": null
+    },
+    {
+      "rollout_id": 0,
+      "weight_version": 1,
+      "tensor_count": 290,
+      "replicas_equal": true,
+      "changed_tensors": 206
+    },
+    {
+      "rollout_id": 1,
+      "weight_version": 2,
+      "tensor_count": 290,
+      "replicas_equal": true,
+      "changed_tensors": 205
+    }
+  ],
+  "learner_checksums": [
+    {
+      "rank": 0,
+      "rollout_id": 0,
+      "parameter_count": 292
+    },
+    {
+      "rank": 0,
+      "rollout_id": 1,
+      "parameter_count": 292,
+      "changed_model_parameters": 205,
+      "optimizer_moments_changed": true
+    },
+    {
+      "rank": 1,
+      "rollout_id": 0,
+      "parameter_count": 292
+    },
+    {
+      "rank": 1,
+      "rollout_id": 1,
+      "parameter_count": 292,
+      "changed_model_parameters": 205,
+      "optimizer_moments_changed": true
+    }
+  ]
+}

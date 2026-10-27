@@ -1,0 +1,302 @@
+{
+  "run": "84527e7696acae23",
+  "status": "failed",
+  "source_verified": true,
+  "cpu_tests": 16,
+  "gates_per_rank": [
+    17,
+    17,
+    17,
+    17
+  ],
+  "batch_diagnostics": [
+    {
+      "update": 0,
+      "batch_sha256": "fbfddc2eb176e5fe2f7888b12fc9d0a4dd74d87fb02e5ab8c17569a3f2c0f9af",
+      "probability_replay": {
+        "tokens": 3878,
+        "rms": 0.01557021215558052,
+        "p99_abs": 0.09297116845846176,
+        "max_abs": 0.24156427383422852,
+        "outside_clip_fraction": 0.0005157297709956765
+      },
+      "signal_groups": 0,
+      "groups": 4,
+      "mean_reward": 1.0
+    },
+    {
+      "update": 1,
+      "batch_sha256": "8ee0e2dc25b126aae262fd77a9bdf14dca36b69ddeba0429c6d5c283cca92e2a",
+      "probability_replay": {
+        "tokens": 4292,
+        "rms": 0.017181068658828735,
+        "p99_abs": 0.08874524384737015,
+        "max_abs": 0.32026100158691406,
+        "outside_clip_fraction": 0.0009319664677605033
+      },
+      "signal_groups": 2,
+      "groups": 4,
+      "mean_reward": 0.875
+    }
+  ],
+  "completed_live_updates": 1,
+  "completed_live_updates_with_nonzero_advantages": 0,
+  "failed_candidate": {
+    "strategy": "verl",
+    "micro_batch": 2,
+    "gradient_relative_l2_per_rank": [
+      0.1744935360046184,
+      0.17503169068536037,
+      0.18400680177117718,
+      0.17314372735279154
+    ],
+    "parameter_max_abs_per_rank": [
+      1.3113021850585938e-06,
+      1.2819655239582062e-06,
+      1.3867393136024475e-06,
+      1.3010576367378235e-06
+    ]
+  },
+  "performance_comparison_accepted": false,
+  "profiles_collected": false,
+  "rollouts": [
+    {
+      "update": 0,
+      "trajectories": 16,
+      "eos": 16,
+      "length": 0,
+      "zero_reward_eos": 0,
+      "zero_reward_length": 0
+    },
+    {
+      "update": 1,
+      "trajectories": 16,
+      "eos": 14,
+      "length": 2,
+      "zero_reward_eos": 0,
+      "zero_reward_length": 2
+    }
+  ],
+  "plan_shapes": [
+    {
+      "strategy": "verl",
+      "micro_batch": 1,
+      "shapes": [
+        [
+          [
+            461
+          ],
+          [
+            467
+          ],
+          [
+            474
+          ],
+          [
+            435
+          ]
+        ],
+        [
+          [
+            351
+          ],
+          [
+            359
+          ],
+          [
+            412
+          ],
+          [
+            421
+          ]
+        ],
+        [
+          [
+            345
+          ],
+          [
+            330
+          ],
+          [
+            298
+          ],
+          [
+            294
+          ]
+        ],
+        [
+          [
+            273
+          ],
+          [
+            272
+          ],
+          [
+            242
+          ],
+          [
+            274
+          ]
+        ]
+      ],
+      "padded_tokens": 5708,
+      "slot_max_padded_tokens_sum": 1514,
+      "note": "Analytic shape count, not measured runtime"
+    },
+    {
+      "strategy": "verl",
+      "micro_batch": 2,
+      "shapes": [
+        [
+          [
+            461,
+            351
+          ],
+          [
+            467,
+            359
+          ],
+          [
+            474,
+            412
+          ],
+          [
+            435,
+            421
+          ]
+        ],
+        [
+          [
+            345,
+            273
+          ],
+          [
+            330,
+            272
+          ],
+          [
+            298,
+            242
+          ],
+          [
+            294,
+            274
+          ]
+        ]
+      ],
+      "padded_tokens": 6208,
+      "slot_max_padded_tokens_sum": 1638,
+      "note": "Analytic shape count, not measured runtime"
+    },
+    {
+      "strategy": "slot_sorted",
+      "micro_batch": 1,
+      "shapes": [
+        [
+          [
+            474
+          ],
+          [
+            467
+          ],
+          [
+            461
+          ],
+          [
+            435
+          ]
+        ],
+        [
+          [
+            421
+          ],
+          [
+            412
+          ],
+          [
+            359
+          ],
+          [
+            351
+          ]
+        ],
+        [
+          [
+            345
+          ],
+          [
+            330
+          ],
+          [
+            298
+          ],
+          [
+            294
+          ]
+        ],
+        [
+          [
+            274
+          ],
+          [
+            273
+          ],
+          [
+            272
+          ],
+          [
+            242
+          ]
+        ]
+      ],
+      "padded_tokens": 5708,
+      "slot_max_padded_tokens_sum": 1514,
+      "note": "Analytic shape count, not measured runtime"
+    },
+    {
+      "strategy": "slot_sorted",
+      "micro_batch": 2,
+      "shapes": [
+        [
+          [
+            474,
+            421
+          ],
+          [
+            467,
+            412
+          ],
+          [
+            461,
+            359
+          ],
+          [
+            435,
+            351
+          ]
+        ],
+        [
+          [
+            345,
+            274
+          ],
+          [
+            330,
+            273
+          ],
+          [
+            298,
+            272
+          ],
+          [
+            294,
+            242
+          ]
+        ]
+      ],
+      "padded_tokens": 6208,
+      "slot_max_padded_tokens_sum": 1638,
+      "note": "Analytic shape count, not measured runtime"
+    }
+  ]
+}

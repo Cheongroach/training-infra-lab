@@ -1,0 +1,2130 @@
+{
+  "rollout_id": 1,
+  "rank": 1,
+  "world_size": 2,
+  "policy_version": 2,
+  "state": {
+    "param_hashes": {
+      "pp0.module.module.decoder.final_layernorm.weight": "2e185da56e34e5461e40b8cad00745efc88e6edb956d3879adcba96caaabbbef",
+      "pp0.module.module.decoder.layers.0.mlp.linear_fc1.layer_norm_weight": "e00ee041b54ebfb3aa681f7ec74bf37e962d3e47764e5abe9c3738bb195493e9",
+      "pp0.module.module.decoder.layers.0.mlp.linear_fc1.weight": "158362155390690abd6d7ee670dda87a17636e5585d1eb0d9f0f56523bedaa99",
+      "pp0.module.module.decoder.layers.0.mlp.linear_fc2.weight": "6cd4ee26d20f8e36f0450a375e666e7d2fa8920d9c8c04dda5dc127c79ef2ec0",
+      "pp0.module.module.decoder.layers.0.self_attention.k_layernorm.weight": "fd5fce9d76cc8de88ccc006467e7b923fdecf1263b5b1b999f46950fefcc8df2",
+      "pp0.module.module.decoder.layers.0.self_attention.linear_proj.weight": "b10fa959f9519a530363698dd941593d4337bda3198cf0ee946d9893e05ce714",
+      "pp0.module.module.decoder.layers.0.self_attention.linear_qkv.layer_norm_weight": "5812f00704f74996f9460b6f78a3fdaafb759d8c1b9d406f3b3515e6376a33ac",
+      "pp0.module.module.decoder.layers.0.self_attention.linear_qkv.weight": "adcd9120f50e681d4fedc0cb1eff6a9ae21384ae0cbc084075d51858d827e5ae",
+      "pp0.module.module.decoder.layers.0.self_attention.q_layernorm.weight": "e164ef8d7d043266a0e09e002caa236d0f79ea6d847d32ff15a9966b4f8573aa",
+      "pp0.module.module.decoder.layers.1.mlp.linear_fc1.layer_norm_weight": "b0f06016313271a6a7bc44a8384d94f5acc6ed0c6ce69db3b38386134c933d4b",
+      "pp0.module.module.decoder.layers.1.mlp.linear_fc1.weight": "64ef4028f2bd838f2e7599794f55dd62026c866db10e6203a217dc815b623aba",
+      "pp0.module.module.decoder.layers.1.mlp.linear_fc2.weight": "0c7e3727cc468b33f2cff91d65daf8feae4227f0dcd9a3f6d8c65ed2e74f2def",
+      "pp0.module.module.decoder.layers.1.self_attention.k_layernorm.weight": "3b374a813bd088b13edcae584b3f57dcf1585c38c1839701ff0da7537f7d38bb",
+      "pp0.module.module.decoder.layers.1.self_attention.linear_proj.weight": "fe8e77c7b9febcc2b884e41a3d1381b13e2f6f5ea2b18b73e0f1f42e739833c9",
+      "pp0.module.module.decoder.layers.1.self_attention.linear_qkv.layer_norm_weight": "97689a9b9b115a2335c61a0f6e3d92af8f89dfcab8941002ae98ee7a1506406d",
+      "pp0.module.module.decoder.layers.1.self_attention.linear_qkv.weight": "b5dfe55993571f94354bfcc742260d9c4ce5f9a3db05d988e62ae7e993c1c401",
+      "pp0.module.module.decoder.layers.1.self_attention.q_layernorm.weight": "d030404233de6bf9384cca0f2e06604ded7ec902715aa1d336a79fb758ddd6f4",
+      "pp0.module.module.decoder.layers.10.mlp.linear_fc1.layer_norm_weight": "a139a8c362e3599fe0b4e30eb7a771982ff148e2323f8881e6774d8432839814",
+      "pp0.module.module.decoder.layers.10.mlp.linear_fc1.weight": "f22e99f6ce023de43a7062db3d4fe224eef7df008fc4a24a6a7a70c76f348fbb",
+      "pp0.module.module.decoder.layers.10.mlp.linear_fc2.weight": "162f726a34509f830e1edd4c31c15f8e2bea5b2cb668e9487d8ae5c5369f500c",
+      "pp0.module.module.decoder.layers.10.self_attention.k_layernorm.weight": "75acc93897e97c611f21b899b839d88d615210a472e82ddff6eb1e0637c1a929",
+      "pp0.module.module.decoder.layers.10.self_attention.linear_proj.weight": "45a95a3005e28d227f5af38a8a73673fe3c7390116cd40ba835a3c2d95ffb729",
+      "pp0.module.module.decoder.layers.10.self_attention.linear_qkv.layer_norm_weight": "e3440e48c75227d47941b6f45c8111670668e98eee3c7d794d2ee610269fef1a",
+      "pp0.module.module.decoder.layers.10.self_attention.linear_qkv.weight": "cadddd27c5d0b3b179df370fa3069fce1a8b727bcf884de5afc610e13540cdf4",
+      "pp0.module.module.decoder.layers.10.self_attention.q_layernorm.weight": "bd61384beeb70235b50a19aa88e53cff1ef4e6235ffd9b8baa0125f751277ab6",
+      "pp0.module.module.decoder.layers.11.mlp.linear_fc1.layer_norm_weight": "3f72717bd49939e0cf1963914311152ffa82e977148940ca090c21e264502c3b",
+      "pp0.module.module.decoder.layers.11.mlp.linear_fc1.weight": "3a18631f6fadfab81727c1e5d112952c5196f7c3b19d80b98e3808bb907e95b0",
+      "pp0.module.module.decoder.layers.11.mlp.linear_fc2.weight": "4ebcd1a57cb179c6d023e5b3e1552eca0246497d510dad93f80e86007676dcf6",
+      "pp0.module.module.decoder.layers.11.self_attention.k_layernorm.weight": "e5d4f59f9398396b9403b72a24571f1db24ef1ca3eb81a88b2eba99bc2f36880",
+      "pp0.module.module.decoder.layers.11.self_attention.linear_proj.weight": "143ffac7becd6450458cf09ec7ab81da7355cf9e572e0455b6894aa3642af2a5",
+      "pp0.module.module.decoder.layers.11.self_attention.linear_qkv.layer_norm_weight": "28d5cbb07444c7f9a8a1406a17d850fcc1ae8fda2a099be44ff9c1ee915e7c5c",
+      "pp0.module.module.decoder.layers.11.self_attention.linear_qkv.weight": "8111844579ca693e6271fe8c142108b02e01ada7af97c780aa105fd1816f657f",
+      "pp0.module.module.decoder.layers.11.self_attention.q_layernorm.weight": "d236b294287337df39942bef166acf805939fe785d3c42d13df6fb28863e70b0",
+      "pp0.module.module.decoder.layers.12.mlp.linear_fc1.layer_norm_weight": "d83b4a4792752ff6650837bbe226e1503339f2f661c200ad7660dee0cb3ca615",
+      "pp0.module.module.decoder.layers.12.mlp.linear_fc1.weight": "85169c9351fb17c6de1c1af6b89af1944d449b1a2441a89ae52794ff43d8a50e",
+      "pp0.module.module.decoder.layers.12.mlp.linear_fc2.weight": "16962400b5d9c67889b8e9226b95e26b2e907bc4fc8a01a175fa9eef2d37beff",
+      "pp0.module.module.decoder.layers.12.self_attention.k_layernorm.weight": "d9d44fc27713233e91c0a786c03f2d7235f54a1a637dba30d97ddc58960e230e",
+      "pp0.module.module.decoder.layers.12.self_attention.linear_proj.weight": "7afa649569459843a76840c5014706c2b3258c85f423aae2a1e09bfe16556af1",
+      "pp0.module.module.decoder.layers.12.self_attention.linear_qkv.layer_norm_weight": "aa00bcf2162e81dd83367923530cc174c7f74072b4d89f9fe5e66ec21499eb61",
+      "pp0.module.module.decoder.layers.12.self_attention.linear_qkv.weight": "a890f76fca10427e042c4314443b6f80246c83ebaaf9bac7d295a4bfc68c12d6",
+      "pp0.module.module.decoder.layers.12.self_attention.q_layernorm.weight": "3e7644b4888988c6c2a1e4ade46bc0b9c72abd40e6b9892415ce52a81b5dbded",
+      "pp0.module.module.decoder.layers.13.mlp.linear_fc1.layer_norm_weight": "117b85641ade09d34d8e3b538cf1d22486c2dd18af36b37126899215597187fa",
+      "pp0.module.module.decoder.layers.13.mlp.linear_fc1.weight": "1ef0208a435d9d0151c8af3e30a7ba8ab6447f6e25c1fb4216c384bb410ed819",
+      "pp0.module.module.decoder.layers.13.mlp.linear_fc2.weight": "71e8a8106ed7c73132cd14ecf6f748445512a28896978b1c0a7c7ad204aef0cc",
+      "pp0.module.module.decoder.layers.13.self_attention.k_layernorm.weight": "25fac1faf1293c4ca6a6f972fd5bf5ecf83c5499be88cbce04cfa6801e806cda",
+      "pp0.module.module.decoder.layers.13.self_attention.linear_proj.weight": "b6a5b95d9c2551358195a2b96107e4a256a35b8db66f626ef9db7be5490277e3",
+      "pp0.module.module.decoder.layers.13.self_attention.linear_qkv.layer_norm_weight": "0d9f1ee606f99e2fed8c121ed337117bf381ec1fc85fd50ae4ab24e7bed334b2",
+      "pp0.module.module.decoder.layers.13.self_attention.linear_qkv.weight": "3b308bb8bbcc78dae72d38b86219de60566cd5c346f6c246275d1f4050aef6ee",
+      "pp0.module.module.decoder.layers.13.self_attention.q_layernorm.weight": "320daaaa867e5b0098f5a21edc8a6168fb1165f0d851a6f20b468a3aeeb97f8a",
+      "pp0.module.module.decoder.layers.14.mlp.linear_fc1.layer_norm_weight": "db79917121ec3ea19e92258940b4d5eabccfba40237682100b29d9040a19e871",
+      "pp0.module.module.decoder.layers.14.mlp.linear_fc1.weight": "7587a130ddd0316f5dccd970051f823d1b7948fb08d9f12c03e3ed6071a65db1",
+      "pp0.module.module.decoder.layers.14.mlp.linear_fc2.weight": "c9346880b510bf522a6f398eb7bd4484f1a25c2a64239c7b8a4124f0c872c64b",
+      "pp0.module.module.decoder.layers.14.self_attention.k_layernorm.weight": "16dab5aa8a1e014ef5d8005f2e1efec888833df0bd14dbb8327de2db43cb94d7",
+      "pp0.module.module.decoder.layers.14.self_attention.linear_proj.weight": "a4b5deb9ccc1efe37f7cadda5893a190ffc84d72a0a6177ce3f00bde4b4d4a16",
+      "pp0.module.module.decoder.layers.14.self_attention.linear_qkv.layer_norm_weight": "c0247f82ba6815f4f5fbd82dcd52d07ec74b046ef950ab5de9a62f41e96897b4",
+      "pp0.module.module.decoder.layers.14.self_attention.linear_qkv.weight": "b1d72356ba125d3c5949fb1cc35d20b75c002981c2cdd50a82f00d1da6bb3623",
+      "pp0.module.module.decoder.layers.14.self_attention.q_layernorm.weight": "3a9ee5597ec4c4a07ebe3aa4419b61ac67b0e18578b3d5a6a2fee43423944996",
+      "pp0.module.module.decoder.layers.15.mlp.linear_fc1.layer_norm_weight": "4771984fe6e9295d1f2a3b22b47cab2172d95a16016b390ba13e727925677601",
+      "pp0.module.module.decoder.layers.15.mlp.linear_fc1.weight": "0d5508fc6071a1b43e88980c2c37ace193b9f9f5d645e97cc70851c092f1fdb0",
+      "pp0.module.module.decoder.layers.15.mlp.linear_fc2.weight": "67427dc675cdb1f3c0822089e8b32c0ef57c8f44ea6d0aa81352579a33209beb",
+      "pp0.module.module.decoder.layers.15.self_attention.k_layernorm.weight": "3341d8e69a65c19154fbacf1de201a0cb6933b2c654fd0d562c428dbed278eaa",
+      "pp0.module.module.decoder.layers.15.self_attention.linear_proj.weight": "d5aba9e8ed2f774031935ad7dba0fa113b15d6879fbe64d219b790c833e812ed",
+      "pp0.module.module.decoder.layers.15.self_attention.linear_qkv.layer_norm_weight": "f9ee4438eaa7f006f85ce0151017c7d8a894c06d69d3828ca36fc662757eb016",
+      "pp0.module.module.decoder.layers.15.self_attention.linear_qkv.weight": "e2eecf532c0697e1fa726a7b41ec624e74a30ec356d689ac595c57738321e3cc",
+      "pp0.module.module.decoder.layers.15.self_attention.q_layernorm.weight": "731e6d241f1489e357895c62138a6def445bf52b9beb9de1517851fc4e17d82b",
+      "pp0.module.module.decoder.layers.16.mlp.linear_fc1.layer_norm_weight": "13fe7af5502d8a447012097339ee41a8b6d7170c16fd8324b9a4513ec1ed0c75",
+      "pp0.module.module.decoder.layers.16.mlp.linear_fc1.weight": "815e28cfdac182019f56de02bb7ff61a15ba5ff6ccb4009fa1a7d5e5e816711f",
+      "pp0.module.module.decoder.layers.16.mlp.linear_fc2.weight": "ae416b30983d2c96bf62175235fc1765a993ee3b75d03fcd010363ca7b762cb4",
+      "pp0.module.module.decoder.layers.16.self_attention.k_layernorm.weight": "25b1c51bc9480ed72596620e9ac43c121a7ef4c92c40155b5bac3dc0651d0e48",
+      "pp0.module.module.decoder.layers.16.self_attention.linear_proj.weight": "e683a2fdb15e796dd839878a8cdf23619064bb7129ffe3c91747de888ac2c521",
+      "pp0.module.module.decoder.layers.16.self_attention.linear_qkv.layer_norm_weight": "7b9068b7bdfa50adc9893385d2ec41ab14331559c60895e459d81fff26812f42",
+      "pp0.module.module.decoder.layers.16.self_attention.linear_qkv.weight": "5e7ca9a1fa0f489021500898d79e06952a4562267f79fb8404669fade8a71d2d",
+      "pp0.module.module.decoder.layers.16.self_attention.q_layernorm.weight": "1124b43191b733af14ba6cda56c6e5a8801b418f71caf197285da37611b235ba",
+      "pp0.module.module.decoder.layers.17.mlp.linear_fc1.layer_norm_weight": "2015c58316ab687a73ca23e92398c874890e292360f9c3cd6921bb3016679bd0",
+      "pp0.module.module.decoder.layers.17.mlp.linear_fc1.weight": "06a053a31d9fbacc28441edfed5c81b500fdc07e7fcbbc71d4980c6f4fd4afe7",
+      "pp0.module.module.decoder.layers.17.mlp.linear_fc2.weight": "d8472ffb735afc94011de8a1f22c5c2a3d1566b4e6398b9a7c2a355a8164c433",
+      "pp0.module.module.decoder.layers.17.self_attention.k_layernorm.weight": "ff7904da2c6c798d2b98b5c1b77feaabdc1ff21590768887bfd2345253f51f9b",
+      "pp0.module.module.decoder.layers.17.self_attention.linear_proj.weight": "4aff1201d8c1131c2b7ec26f0208fd1e015f1ca7cfaf0534588107b866f06386",
+      "pp0.module.module.decoder.layers.17.self_attention.linear_qkv.layer_norm_weight": "7f98844720e9d8f3d5727d6bbcf7c161d77bb041281ea91639d32f3a1c07aacd",
+      "pp0.module.module.decoder.layers.17.self_attention.linear_qkv.weight": "508b71a95e99a2075c0f58432f020911f1bef3640767415a53b6a3b57086b3c4",
+      "pp0.module.module.decoder.layers.17.self_attention.q_layernorm.weight": "3023b9e9561827278d5780dba6fbe01b490ed55ecada9ed466b20456cf652a4d",
+      "pp0.module.module.decoder.layers.18.mlp.linear_fc1.layer_norm_weight": "2aae26336e05f4ecbb1cd0cf23f5c0bf30fae7867426ed896381edbaea413aa6",
+      "pp0.module.module.decoder.layers.18.mlp.linear_fc1.weight": "df81fbe6a3b7de0d04bdd20edbaf5bbfb0630579804f61c367b64597afab7aaf",
+      "pp0.module.module.decoder.layers.18.mlp.linear_fc2.weight": "f6c5bdeec78073f49a89cec4e4724d539cbcd9c5cdfe70cae7c611b44a04d9d9",
+      "pp0.module.module.decoder.layers.18.self_attention.k_layernorm.weight": "d3b8c22916d5cbd150b680f3de8038e8a1d5f0be12f755a551151e131c813ea6",
+      "pp0.module.module.decoder.layers.18.self_attention.linear_proj.weight": "3565ec5e8c4deb669e4b6008abc4bf4af083c474cf492a74b71910dad92a21bb",
+      "pp0.module.module.decoder.layers.18.self_attention.linear_qkv.layer_norm_weight": "1fa08ab5cea0a8128c8ed832fce76a911a09ba28d932f9969a6b652f6e85e84c",
+      "pp0.module.module.decoder.layers.18.self_attention.linear_qkv.weight": "f2990f70dd277c21e30fdac24c16b13040749daa17f747542c4a4cb35b2808c9",
+      "pp0.module.module.decoder.layers.18.self_attention.q_layernorm.weight": "1be96f42e1c42b92cc2fb2ef534ced2926901786424f143b861eff43cf160b1c",
+      "pp0.module.module.decoder.layers.19.mlp.linear_fc1.layer_norm_weight": "a4118e937e5b3a3feabba20ca75e4da0ee4b7a4013ad1872b147c7561e84bb15",
+      "pp0.module.module.decoder.layers.19.mlp.linear_fc1.weight": "e99628f8b1d440ee56a8fa7a3258e9d28748cda549fb838fde56f927d6bd1a3f",
+      "pp0.module.module.decoder.layers.19.mlp.linear_fc2.weight": "b1b3761aeaa90ae4a62f07a26314804c58350977f6684e6af578e06ea8c2cdc2",
+      "pp0.module.module.decoder.layers.19.self_attention.k_layernorm.weight": "6df971514a2393a33ec152dde21aa7d2400ef6ed1df65e2379be9b16bd32c825",
+      "pp0.module.module.decoder.layers.19.self_attention.linear_proj.weight": "acd4caebb87649cc0f2b4aadb193d9e897cb95b22dd941b9236cbf78132bd136",
+      "pp0.module.module.decoder.layers.19.self_attention.linear_qkv.layer_norm_weight": "d13c36205f70164bbb33e934b2dbe3d43ec89e9d86a133636bd4838a0aea7ecf",
+      "pp0.module.module.decoder.layers.19.self_attention.linear_qkv.weight": "6336b4700faec33d155382e12dfef423b569eca2d85d6b1eaa5174e6e6700a2e",
+      "pp0.module.module.decoder.layers.19.self_attention.q_layernorm.weight": "0ac0bd21aaecf753d4a55a097159588a8ac52d053a9441fe0147188ecf0bad09",
+      "pp0.module.module.decoder.layers.2.mlp.linear_fc1.layer_norm_weight": "7eeb09d8d0844d462bf13c44b58300a115897cf071cb7a32b5240224a1267efa",
+      "pp0.module.module.decoder.layers.2.mlp.linear_fc1.weight": "3e02bfdccfd989a53595632e1879e6645d13656646cd62d0fa8a68f4e285e270",
+      "pp0.module.module.decoder.layers.2.mlp.linear_fc2.weight": "eee6f145b47aded6d4caac6275cb06d6ebde8772aeeb97bca7963b6407b3cf56",
+      "pp0.module.module.decoder.layers.2.self_attention.k_layernorm.weight": "4ad0c342861e7814b2200283fc70801123bd040122990725466452f0d5c50b05",
+      "pp0.module.module.decoder.layers.2.self_attention.linear_proj.weight": "1b8c0a5ebc134b43146b3db844731c187a65b43ebee55b1c5a5fc9e3e6b646e2",
+      "pp0.module.module.decoder.layers.2.self_attention.linear_qkv.layer_norm_weight": "e6f27d9c2ec45686026f5fdfc49608ac5e18eaf440db71338d5cdd1b9e72d21b",
+      "pp0.module.module.decoder.layers.2.self_attention.linear_qkv.weight": "3da25e451547b2baf2ab62ef9e5467a38f1062c8f4e91f18244587661bb22a86",
+      "pp0.module.module.decoder.layers.2.self_attention.q_layernorm.weight": "2307ff064308f2c450b84120b07e81466a0de40b003efc72374d6f17ab203241",
+      "pp0.module.module.decoder.layers.20.mlp.linear_fc1.layer_norm_weight": "0ddb7792a792b460b6f627daeeb6dd9d68cc9a105067f3aa918958f07f5d80f5",
+      "pp0.module.module.decoder.layers.20.mlp.linear_fc1.weight": "accf2291977136e68332b03e59ba9e1a04f788d3763a91a91d47db55c97d96cf",
+      "pp0.module.module.decoder.layers.20.mlp.linear_fc2.weight": "690529b901114856a1c4029a097c5e1be8b81ac593a856c86d4e026209fc2be8",
+      "pp0.module.module.decoder.layers.20.self_attention.k_layernorm.weight": "58e7d2ae53fcbb75dbe8e466b0052d3189b09f20946ffe5a2f651f7a461cf3b5",
+      "pp0.module.module.decoder.layers.20.self_attention.linear_proj.weight": "82f33cec29104b9fc115c5ebab730ba3b58f4df3d9d5149057aebe4c58648157",
+      "pp0.module.module.decoder.layers.20.self_attention.linear_qkv.layer_norm_weight": "4199628d43e76af9b1aaa76d451fed8b813ffef180bb02f805e13fd5e79cee54",
+      "pp0.module.module.decoder.layers.20.self_attention.linear_qkv.weight": "29ead6509b344c290fc3ae4ab99f5680212f8a1888c7087a39aea00e8584533b",
+      "pp0.module.module.decoder.layers.20.self_attention.q_layernorm.weight": "992ba8ebf284a0cf9b2f894ad48b61e893df43f7a874fd1e1c61f0ba79f1e9a8",
+      "pp0.module.module.decoder.layers.21.mlp.linear_fc1.layer_norm_weight": "70b9c44a389026bf123084132a5fb3ffa2eddef7a8f33a0beb9b8dd1f0b8f8c7",
+      "pp0.module.module.decoder.layers.21.mlp.linear_fc1.weight": "877992e386c949e88f89244b98a2771f277a76f4757281aa6985fdbbc08304a9",
+      "pp0.module.module.decoder.layers.21.mlp.linear_fc2.weight": "885f63acfd7c0a294de288f7fc04f1e4e7a57c15a16b46f4468cd36154fbe904",
+      "pp0.module.module.decoder.layers.21.self_attention.k_layernorm.weight": "ec95bf0416d2ac63d2684ad6946e56ed8d2cf6dd207ca93e3f774074b041c3ef",
+      "pp0.module.module.decoder.layers.21.self_attention.linear_proj.weight": "4bb8b2575c01f1b139b38784a60ebad92f4690acc3a75709fbdc733e1e626947",
+      "pp0.module.module.decoder.layers.21.self_attention.linear_qkv.layer_norm_weight": "7d2724ab1a80aa5b876f4c84f4d96d2b42aca6fed938e1bb40369ab6e7dc16ee",
+      "pp0.module.module.decoder.layers.21.self_attention.linear_qkv.weight": "9cb1f85bb840b109c88a96934f519c43fbe73dfd2616c71a57c23c67ee07fc21",
+      "pp0.module.module.decoder.layers.21.self_attention.q_layernorm.weight": "148b0a6ac0eca33ab6aed5740f357defa893d246c07f7f330e09d537d88710e6",
+      "pp0.module.module.decoder.layers.22.mlp.linear_fc1.layer_norm_weight": "da596037813d275811a3bc2d272552ce9b06eb818f8e54dee8827549cd76f8eb",
+      "pp0.module.module.decoder.layers.22.mlp.linear_fc1.weight": "37e2f90dda50160b21470b6d0e611278e4738fb29614315a6b05797a22419e84",
+      "pp0.module.module.decoder.layers.22.mlp.linear_fc2.weight": "6e2c9957e65b7d7ae00d237d6532fb4455eefed5d747b981e2e9a077ee624bcb",
+      "pp0.module.module.decoder.layers.22.self_attention.k_layernorm.weight": "81f44ebe68663b88b33daa2f3e2fe95eba5b9c6e766551ebd2bfe38fae969397",
+      "pp0.module.module.decoder.layers.22.self_attention.linear_proj.weight": "9163112a418ca2b3b8cc380c743356a52138e1f9bd5fa1f5b322ae7bc4e22cfb",
+      "pp0.module.module.decoder.layers.22.self_attention.linear_qkv.layer_norm_weight": "740a6239cbe626025d13de7a5682c548fec4038e6c0def9441ee7c970453b096",
+      "pp0.module.module.decoder.layers.22.self_attention.linear_qkv.weight": "ee7221af618c83a78aff74896214b98db19b90398392b7cd9724b075ecc9612f",
+      "pp0.module.module.decoder.layers.22.self_attention.q_layernorm.weight": "ed8c091f978b4e983537b33f0aebde901c73a1894c7b16cf7d34d2db5366629f",
+      "pp0.module.module.decoder.layers.23.mlp.linear_fc1.layer_norm_weight": "13c669cd7db2846962a613d9aaca67426caec3fa60dfadf89a0587d90e0ade41",
+      "pp0.module.module.decoder.layers.23.mlp.linear_fc1.weight": "1f26e64631e4c482ef1ff4d5c0b14452730dc645669cbb5d966f6a947173c63a",
+      "pp0.module.module.decoder.layers.23.mlp.linear_fc2.weight": "b8b3b3aa1ed1c1c9fb1a8beaaf505afa9a538d383a382e1d79e240a8fbdb4cc4",
+      "pp0.module.module.decoder.layers.23.self_attention.k_layernorm.weight": "419f0e830ecdaa5ec6a884ae8e141f5a018530758806e0de422965405f50e177",
+      "pp0.module.module.decoder.layers.23.self_attention.linear_proj.weight": "203f730963c09db6491efdac16e7a64703f622554c9ab7b12c8a1ced04976f7b",
+      "pp0.module.module.decoder.layers.23.self_attention.linear_qkv.layer_norm_weight": "e0b7939d8d8ae3b1b3435b54e865ef31162e113a8d4af453019b1b40b32d8e6f",
+      "pp0.module.module.decoder.layers.23.self_attention.linear_qkv.weight": "9208ce0cb17ec1557f3ba1b150896948bdf7a199ad87ac5cf247d6c1cd03b85b",
+      "pp0.module.module.decoder.layers.23.self_attention.q_layernorm.weight": "74f406f3904424314c43c79720c11ac0859ff898077b05decce90762ee59c122",
+      "pp0.module.module.decoder.layers.24.mlp.linear_fc1.layer_norm_weight": "f5dd3205af8df13d2746e42ec575d8f13f1a9fc1b69ad234c5582a659dbfcf28",
+      "pp0.module.module.decoder.layers.24.mlp.linear_fc1.weight": "3cff905ecec59b54f0a49b6224f9e33a2e957e055e5eea5b0a3ba5ecd695b8c0",
+      "pp0.module.module.decoder.layers.24.mlp.linear_fc2.weight": "8d18fafa433656c17fa11d8eb826b4d2a1135a209ba93adb19f3881e71d68caf",
+      "pp0.module.module.decoder.layers.24.self_attention.k_layernorm.weight": "3727e93bab00022ceb1f87e6f9dd5cf4e479f5a86c21c64fb1d7ba802bc7dad3",
+      "pp0.module.module.decoder.layers.24.self_attention.linear_proj.weight": "91d391b4edb3a09a4072774ed58ce1533d741357e4253ec1a5e8a8b134c86f6f",
+      "pp0.module.module.decoder.layers.24.self_attention.linear_qkv.layer_norm_weight": "648848619dfe09254942e3f1b75fb3fbff35de89bf432676188a71b3768e6ed1",
+      "pp0.module.module.decoder.layers.24.self_attention.linear_qkv.weight": "2c4a719b54bedef80d606bad9c9772b97d78befb2659cfdf69288ba5df41093f",
+      "pp0.module.module.decoder.layers.24.self_attention.q_layernorm.weight": "947a382239ce14fb2679414fc1ad8b751735c64c9f8611d9fa6740c8fed3a2a3",
+      "pp0.module.module.decoder.layers.25.mlp.linear_fc1.layer_norm_weight": "9da0477932b26a0a27ede4a29c618f22130c793095993b07f47d44e9a19be2b6",
+      "pp0.module.module.decoder.layers.25.mlp.linear_fc1.weight": "595b86bee3344b4525779d5ba6f490c78a6e303548d00630d6e768bb2fdaa4a8",
+      "pp0.module.module.decoder.layers.25.mlp.linear_fc2.weight": "aa87b937757480d6fef9c51896e38f0d5d88b0c6cb4b92311f57f91255c13086",
+      "pp0.module.module.decoder.layers.25.self_attention.k_layernorm.weight": "a6e7c3ce118c9cbbb33543dfaaa9692ed6020f128c225c295519c7e6a2c2052c",
+      "pp0.module.module.decoder.layers.25.self_attention.linear_proj.weight": "631579037973003c0c846a7bde7a9b6b72e7f239ac50dec9ad184ffcff2838a0",
+      "pp0.module.module.decoder.layers.25.self_attention.linear_qkv.layer_norm_weight": "0178634abea0bd4a4f87087717a44a1e338c89ae6497b05a41d9987664b6247a",
+      "pp0.module.module.decoder.layers.25.self_attention.linear_qkv.weight": "04ef9d8bf6dbe4beee373d35ebb09a0dc9cd461426254ee65dbb1f88095685cd",
+      "pp0.module.module.decoder.layers.25.self_attention.q_layernorm.weight": "c4664aa80f2d9012968e83288ca198bb231d2c483ca8bfd0e33b78102de6cd5e",
+      "pp0.module.module.decoder.layers.26.mlp.linear_fc1.layer_norm_weight": "8154a13cf8a44bb75eb0fe17432fe154e2ef0d7bf178c5360b0d85b3c1ab52fd",
+      "pp0.module.module.decoder.layers.26.mlp.linear_fc1.weight": "aa43092b5dd72951447e1549b5b1ca80da7663d236fe30f08b592eb40a66fc4c",
+      "pp0.module.module.decoder.layers.26.mlp.linear_fc2.weight": "bf0471f4c7e26bdee770918369b315c34abfd15d5c82d947cec3fa152281f782",
+      "pp0.module.module.decoder.layers.26.self_attention.k_layernorm.weight": "d961b281907268e428aa6e6b9a8b550f352e75145e4eacd6d3e105e2aeaca5d0",
+      "pp0.module.module.decoder.layers.26.self_attention.linear_proj.weight": "7885b8cc58557feb3305cc746a7dd240db2b665fd1e5f64ad8db245e901f1510",
+      "pp0.module.module.decoder.layers.26.self_attention.linear_qkv.layer_norm_weight": "422887363c139f9a1e048d65498eff0bfd62e208400ca6120556bc4db7a6bb71",
+      "pp0.module.module.decoder.layers.26.self_attention.linear_qkv.weight": "e10572b792afb97d2fe3bb1d5970069b20fcc20e98e0cfc1b68662a8c892a48b",
+      "pp0.module.module.decoder.layers.26.self_attention.q_layernorm.weight": "bfedb869421d2764bc56b0ec4986cf329c2e4bf868f7867eeaee38b989a9c1c3",
+      "pp0.module.module.decoder.layers.27.mlp.linear_fc1.layer_norm_weight": "fe217b647afdcde1dcbea0f9a23701ddae50725be9718c56e3a098523b85a72f",
+      "pp0.module.module.decoder.layers.27.mlp.linear_fc1.weight": "d0138391cf6c8ac447d63dc41a9fd151dfb9f34c384914f17597c604cf11eaf4",
+      "pp0.module.module.decoder.layers.27.mlp.linear_fc2.weight": "c974f963641a9f2290f367d920494dbc5919cdc631c261d07dc5b1ad605e5307",
+      "pp0.module.module.decoder.layers.27.self_attention.k_layernorm.weight": "172adb45ae2543d639da26e5baba0aabdc343a3df5421906d06707e127d47e40",
+      "pp0.module.module.decoder.layers.27.self_attention.linear_proj.weight": "0fa3b31590815de99294822de4abd740206eecf5b9609282e4b2ffca36ae409b",
+      "pp0.module.module.decoder.layers.27.self_attention.linear_qkv.layer_norm_weight": "e53990d14a84de4eff3f3f09e22708d74f6445ae1430c7486ed44a729a6f2526",
+      "pp0.module.module.decoder.layers.27.self_attention.linear_qkv.weight": "9c47f7f87c8425e3f02138b1dd9a7462772d57e3c4d7c2678c10811eb29c306f",
+      "pp0.module.module.decoder.layers.27.self_attention.q_layernorm.weight": "c4ff88a19e1431603e6583ba6cd96f5b5d1e8970bca9a9da4c6103baf2eae396",
+      "pp0.module.module.decoder.layers.28.mlp.linear_fc1.layer_norm_weight": "5413ac6a8572f550912c445d35718b12354adaf77550de20ad00f2f75df3da96",
+      "pp0.module.module.decoder.layers.28.mlp.linear_fc1.weight": "edf51d30971e70ff49401696fae9d9ad7f66289003b816105480a55983696412",
+      "pp0.module.module.decoder.layers.28.mlp.linear_fc2.weight": "ca39fd9a2beb62e7cea317b3ccb0e250abeb962f7d905fd5cce45a4c6b277194",
+      "pp0.module.module.decoder.layers.28.self_attention.k_layernorm.weight": "41c57f278851b4759f945b1c41c0115cdaf69e73871efabc9a1f0c1f05f89ede",
+      "pp0.module.module.decoder.layers.28.self_attention.linear_proj.weight": "0d89852085b7b6de8b7a77fc3522b98050c26a2c802e0644e9e949e35076b37c",
+      "pp0.module.module.decoder.layers.28.self_attention.linear_qkv.layer_norm_weight": "e37284ef82c4a733466826e4d6baeceb38942ad83e428806b13894b16551aa65",
+      "pp0.module.module.decoder.layers.28.self_attention.linear_qkv.weight": "f011d7f5410e2a4135fd6797d2bb0368fc5a887ad5f5548fb8bc046824a0a742",
+      "pp0.module.module.decoder.layers.28.self_attention.q_layernorm.weight": "bbf653770b41029679014f921012d6a4034e6c02fb6ba91cb9fea8abb6128e0f",
+      "pp0.module.module.decoder.layers.29.mlp.linear_fc1.layer_norm_weight": "4a9d686b48fd72878dd8a89e079922560948942f83ded21b671fc57add16a4cd",
+      "pp0.module.module.decoder.layers.29.mlp.linear_fc1.weight": "9f808dbc6b25e70fb251cd45b79f389aa62106880700c1c257075def84e64cad",
+      "pp0.module.module.decoder.layers.29.mlp.linear_fc2.weight": "fd901c306827b57995a8e7646ddc6637301b26b0677c324350ad4e477d8d482d",
+      "pp0.module.module.decoder.layers.29.self_attention.k_layernorm.weight": "877b0d655a8cad725e50cd9c3572c2d6c7cf609e8152e65ee3823377d0d371dd",
+      "pp0.module.module.decoder.layers.29.self_attention.linear_proj.weight": "082e8afbc627a494e6d8c5caa33c6d3f952a6f6bd4a13d84255dc8096b9702e4",
+      "pp0.module.module.decoder.layers.29.self_attention.linear_qkv.layer_norm_weight": "86cd775f4cf70a9447df723e8e99ca5aec887a29445af2aed832809f73f20c49",
+      "pp0.module.module.decoder.layers.29.self_attention.linear_qkv.weight": "c25adb2adb9afc68dd50666e421615579dc1606e556a5ca49ecd4ac80cd616de",
+      "pp0.module.module.decoder.layers.29.self_attention.q_layernorm.weight": "a62c54329487aa6c03df94192b993c06f043883b1eb188fe46790855ff9fcdba",
+      "pp0.module.module.decoder.layers.3.mlp.linear_fc1.layer_norm_weight": "6c3e3705bd690100662b0244a2f23aff3727282af24be5216de0c6731737feae",
+      "pp0.module.module.decoder.layers.3.mlp.linear_fc1.weight": "62fea708c8bf2900a300cc6de985ad262f6eb1bee6585a98c1513a0e3195dbac",
+      "pp0.module.module.decoder.layers.3.mlp.linear_fc2.weight": "fda27714a8b5668fb8fd8f95faee4a286be67d87bd73e1aab9391ad22d77cd6a",
+      "pp0.module.module.decoder.layers.3.self_attention.k_layernorm.weight": "9fee209ee28a1d965a19ff1dab54b6f24f4dbdd149783c969b28aae3f8c780ba",
+      "pp0.module.module.decoder.layers.3.self_attention.linear_proj.weight": "41b59d962c891979a01feda9490ed44c2b1d47c157d3ed041f91bcee3af9f38e",
+      "pp0.module.module.decoder.layers.3.self_attention.linear_qkv.layer_norm_weight": "d0586d51ef45a142c6d7c41f6781ac1f61b4849de84926b06a15fb2d8734eb69",
+      "pp0.module.module.decoder.layers.3.self_attention.linear_qkv.weight": "1415afae091cb3b3b9319f1954eac047cd3b2fb6a07aaa4dba387ead10ef7303",
+      "pp0.module.module.decoder.layers.3.self_attention.q_layernorm.weight": "548b89d9033715bade77054bdbc8ee6498976c50275e7d23bd8cc7fc19f78c7e",
+      "pp0.module.module.decoder.layers.30.mlp.linear_fc1.layer_norm_weight": "7af6fd8752cf69498a0c067c46d05cea12d0d3ac00a2fd0308d7fb2bf2c4de35",
+      "pp0.module.module.decoder.layers.30.mlp.linear_fc1.weight": "c1edffff2ad87a7dd320e9d5f5d9acf5ccdde078d52753cb9f2e526c0407822d",
+      "pp0.module.module.decoder.layers.30.mlp.linear_fc2.weight": "65ec7bcbeeff701137973f9e3bdadd9ea1ee1400b1ab5569e1c2972010dcb247",
+      "pp0.module.module.decoder.layers.30.self_attention.k_layernorm.weight": "ea8541dda3b9d7c88338c7c2669c793e796a336c903753f0399a89145a85cb6b",
+      "pp0.module.module.decoder.layers.30.self_attention.linear_proj.weight": "e744c9408d9872de95fc7498c7bbb76aa89b196467a7e9fa4100348211d171da",
+      "pp0.module.module.decoder.layers.30.self_attention.linear_qkv.layer_norm_weight": "607b23ce78d8a1fb81fb24cf56836722a4a1305ac466ffbe9b98788e91dd2048",
+      "pp0.module.module.decoder.layers.30.self_attention.linear_qkv.weight": "5bbd7b3c8bc3833f54852cc191b376174aab5dc604f7dd05040d4a211b127ad6",
+      "pp0.module.module.decoder.layers.30.self_attention.q_layernorm.weight": "fe80d1ab2cab60036e06845a44de4cfb31b3b69c46666634bebc1b8d5d207827",
+      "pp0.module.module.decoder.layers.31.mlp.linear_fc1.layer_norm_weight": "3dfbeb61efb3040d9146c7a07837b30086d8c381f127bffac29b7175ff7b74bc",
+      "pp0.module.module.decoder.layers.31.mlp.linear_fc1.weight": "7b449972cb74fb36b473a1f3dd15a2f0a233df63e1cb02c0a508803eaac1e866",
+      "pp0.module.module.decoder.layers.31.mlp.linear_fc2.weight": "39b2a82a123ec7a277a5ac5ef94f010d1308a8f3a09a4b40d03b1874a2b4fcfc",
+      "pp0.module.module.decoder.layers.31.self_attention.k_layernorm.weight": "39dff0d73ce98b72dbf0eec86664d77fe064d8c6e18abd76bbfabea28c6d9e9f",
+      "pp0.module.module.decoder.layers.31.self_attention.linear_proj.weight": "b656be4b75729fff4cd9b1494da374882c37ab557e32564946f82dd41db54519",
+      "pp0.module.module.decoder.layers.31.self_attention.linear_qkv.layer_norm_weight": "ae485480a07d3a204f14272e70dd6b6e5a46c5aef1b65b2e12373eff44e0e14e",
+      "pp0.module.module.decoder.layers.31.self_attention.linear_qkv.weight": "2e5ae2ac2e8035a66c84fb7dc618445e65f703d81b7aeae03e85197ecd748989",
+      "pp0.module.module.decoder.layers.31.self_attention.q_layernorm.weight": "7ab54a7543eb43e330f76dc6a6a79d4a52a7eaf52ea934073ea8aa689f6441f5",
+      "pp0.module.module.decoder.layers.32.mlp.linear_fc1.layer_norm_weight": "664cc9a59e17fd83a238d683fd22de4c507742d28e1462bb1846dafe87dbb145",
+      "pp0.module.module.decoder.layers.32.mlp.linear_fc1.weight": "d7ea110fb483f4b97dafb177af49f16c6c84c5d93dfc715beea480f92d7af4a7",
+      "pp0.module.module.decoder.layers.32.mlp.linear_fc2.weight": "23f7a9a5b2209303e76e9de922e6e6977376ce583fc91cfc4dfafe2a1f0e075a",
+      "pp0.module.module.decoder.layers.32.self_attention.k_layernorm.weight": "61757a0c2327e52586ca364d794641f4b16b9a0482ac72db26233ed98571561e",
+      "pp0.module.module.decoder.layers.32.self_attention.linear_proj.weight": "a20d38d84263a16481487d9f88369258b98a2da1d76f1f2ea802e84b210c738a",
+      "pp0.module.module.decoder.layers.32.self_attention.linear_qkv.layer_norm_weight": "b12e598f676745519389f77bff22c6b5f62b907c91c2ab3e9dec17b799eb8172",
+      "pp0.module.module.decoder.layers.32.self_attention.linear_qkv.weight": "abf77a9eb8b9a5e68eea8c04c3c91e929b056c724ac8d51c61f25c60a569a8ef",
+      "pp0.module.module.decoder.layers.32.self_attention.q_layernorm.weight": "8bfab157c75cfa2d1e18126e7a4da4e8dfde4c4cb8b240c0d865bc847d54a939",
+      "pp0.module.module.decoder.layers.33.mlp.linear_fc1.layer_norm_weight": "9b8b8cf7fd46308eb93ea222847c828cb9df777ba361b7971aba5eb69885e304",
+      "pp0.module.module.decoder.layers.33.mlp.linear_fc1.weight": "c74e47792964858b14ef9d444468e2481b0890c3f9e7bb197d260dac7ee91a2b",
+      "pp0.module.module.decoder.layers.33.mlp.linear_fc2.weight": "79153d8eec7fea227d4386f5711a50fb41134b2a19f41d46d7962f2c0aa4c558",
+      "pp0.module.module.decoder.layers.33.self_attention.k_layernorm.weight": "5819d40120a40580aba9324fccebe9e11181284ae5361f2581124c7dc042f0df",
+      "pp0.module.module.decoder.layers.33.self_attention.linear_proj.weight": "40980b6f9116f93807a39080f7dd7dddb4154b92691e825d3fc0825c39bc02ad",
+      "pp0.module.module.decoder.layers.33.self_attention.linear_qkv.layer_norm_weight": "578de70dfe1ab366ea1b2b78582b4867535a119cdd7a983477eaf6c99e4dab83",
+      "pp0.module.module.decoder.layers.33.self_attention.linear_qkv.weight": "b75cfa1de057ce913e1169d7b0f2dc01293f24f34505b5440bca846f480bd2af",
+      "pp0.module.module.decoder.layers.33.self_attention.q_layernorm.weight": "719f2f46c1fd74901f7a6173cdcdc89746e3da119bf6551c8562513cdac6a31d",
+      "pp0.module.module.decoder.layers.34.mlp.linear_fc1.layer_norm_weight": "220a0441afee84dacfd41fcaabe7a6d1bc137de38ca9fb3a71a7b9909a9bd20f",
+      "pp0.module.module.decoder.layers.34.mlp.linear_fc1.weight": "85c596865ce2357aaf26f95b3bc722309534850fe2544c3c8dd3b1504cbe01fa",
+      "pp0.module.module.decoder.layers.34.mlp.linear_fc2.weight": "f89607a72257acb83c5c036a6daf1db53c7e434f0e611b8f4e3d64c4b5a68023",
+      "pp0.module.module.decoder.layers.34.self_attention.k_layernorm.weight": "2e2f291cd6627a2179fac2f7bf3bea259d678826a27347ed3a6c3d1cf8b1cd09",
+      "pp0.module.module.decoder.layers.34.self_attention.linear_proj.weight": "8a73d91aea528709a55c0f65117fd23e249b9985a7eaee6e696f988def9d275e",
+      "pp0.module.module.decoder.layers.34.self_attention.linear_qkv.layer_norm_weight": "13f4a0b92ea4ee9b07ec2ae5ba646d0e3a315875d839a2f6cdb86f1e256cedbe",
+      "pp0.module.module.decoder.layers.34.self_attention.linear_qkv.weight": "fc06029c3b2e0bb6096075e503d9292e6c2fd08c9dd1db0111d0ee5f6b3ae2dd",
+      "pp0.module.module.decoder.layers.34.self_attention.q_layernorm.weight": "1364086deae5bc5510503356574b2838d215652194f35a16b49f8b6f7d4d7a25",
+      "pp0.module.module.decoder.layers.35.mlp.linear_fc1.layer_norm_weight": "f6fad8178f693e5a5ac42fa928551dfff7b40bb4919c915db0cc76e30e6f350d",
+      "pp0.module.module.decoder.layers.35.mlp.linear_fc1.weight": "b01c6bc5f8ba455e75fd8da786559a654692375522a85a67b7c5b4c75114e140",
+      "pp0.module.module.decoder.layers.35.mlp.linear_fc2.weight": "14ec200b0df07293a12f7d7d8a47be543d22030394f053ffc1a879eb22487f32",
+      "pp0.module.module.decoder.layers.35.self_attention.k_layernorm.weight": "6b830277322a4c8b30ef627604de59ca78ad2062872cf048b86851172b47a936",
+      "pp0.module.module.decoder.layers.35.self_attention.linear_proj.weight": "2da8803a3e766b45e1b2fefd02975dce6a2ec8b3564ca2578a5e2b6dc6200082",
+      "pp0.module.module.decoder.layers.35.self_attention.linear_qkv.layer_norm_weight": "d7ecb3bc5ade3dcb1ba2ede3109daa99973f8a29852d7fb1b2337222626b67ea",
+      "pp0.module.module.decoder.layers.35.self_attention.linear_qkv.weight": "acae5bd565a61a6c299e58fb68602cc6b8dd858dcc22564839fb3b038a98627f",
+      "pp0.module.module.decoder.layers.35.self_attention.q_layernorm.weight": "c17fe41dcd0cb46303ac3a9c3d50b972c6c99f4a3b3fc67b4e2f66afdba07795",
+      "pp0.module.module.decoder.layers.4.mlp.linear_fc1.layer_norm_weight": "77c026fc228d7861e2d2ad1c0baff3687eb4c0ff8fe08f1e38aaecdf9f6c7cc2",
+      "pp0.module.module.decoder.layers.4.mlp.linear_fc1.weight": "4edb4ed56d838cf011ae8c0f115b47782647689e0c28b6a944d3226b3216830e",
+      "pp0.module.module.decoder.layers.4.mlp.linear_fc2.weight": "d820031d358dc22cfceb8677ca5841ae90a09d6821fd68ecf92b1b9bf25a8518",
+      "pp0.module.module.decoder.layers.4.self_attention.k_layernorm.weight": "6ba793eed809c2be9d19566da4355d4e6ab371538c3ffdefe068640e262767df",
+      "pp0.module.module.decoder.layers.4.self_attention.linear_proj.weight": "89b96fba28a23b331976501683f5e2d70439c2802224321c57beff8ecf93f674",
+      "pp0.module.module.decoder.layers.4.self_attention.linear_qkv.layer_norm_weight": "aecbe8d1f4989e8cd4d73b817d00f81e66b55f607c43f5ad4190d642dc28d371",
+      "pp0.module.module.decoder.layers.4.self_attention.linear_qkv.weight": "1f691444d93e15ae838d98d6088261e764172803199c75f8df897f01c2a15cc8",
+      "pp0.module.module.decoder.layers.4.self_attention.q_layernorm.weight": "ffc36a1ae972612f8b53d2b59fceb66528be30f12e6603c5b41ff730704d5712",
+      "pp0.module.module.decoder.layers.5.mlp.linear_fc1.layer_norm_weight": "076a5fe6a5757f8c3308d028a405d24819c2712d61bf80daf156733a6972cb30",
+      "pp0.module.module.decoder.layers.5.mlp.linear_fc1.weight": "b254bad044f012bc4121c2babe8c0c4664bba5766e3b0ff078b7b93d4c5c0546",
+      "pp0.module.module.decoder.layers.5.mlp.linear_fc2.weight": "6e234e6dd9704eb275a6459f7302dfe578d50bd09ece4419b0ce6f346b741950",
+      "pp0.module.module.decoder.layers.5.self_attention.k_layernorm.weight": "61e78243de4956e39eef69041d88162ad27747e69fd28893622ab2c5718ae119",
+      "pp0.module.module.decoder.layers.5.self_attention.linear_proj.weight": "6cd58338fecec664938f2ae6db208a5d5dc93f9179c823faa32be74489740dfa",
+      "pp0.module.module.decoder.layers.5.self_attention.linear_qkv.layer_norm_weight": "c4e2c1477d2fc00cfd279d885ced29e18ef059560bf920987018680d79a7210d",
+      "pp0.module.module.decoder.layers.5.self_attention.linear_qkv.weight": "a0ee2b43c1f25361552bc656aabde234d8904f32b9f0cb1415388dd1f2810907",
+      "pp0.module.module.decoder.layers.5.self_attention.q_layernorm.weight": "40fda5d5309c222e3c745795c1be15c3256f5bf240a063e73f9396e83f188242",
+      "pp0.module.module.decoder.layers.6.mlp.linear_fc1.layer_norm_weight": "3d3c6cbf672fe0d55f57429b2eb3d851ebac0290ae457352ae30069bf4a88de5",
+      "pp0.module.module.decoder.layers.6.mlp.linear_fc1.weight": "318dd2446b49ceb4443b556cee0a07226c13ef2ac47e98af496ae2492e78aad3",
+      "pp0.module.module.decoder.layers.6.mlp.linear_fc2.weight": "2053badf1cac28b2be47768fa38151167daabbb63325d899fce394a6d0bec601",
+      "pp0.module.module.decoder.layers.6.self_attention.k_layernorm.weight": "58aa23e11d84512ff957b6ba978253d4abb236ca654e4eec0ee0f029ba38ed4a",
+      "pp0.module.module.decoder.layers.6.self_attention.linear_proj.weight": "82548817cd1c90254dbcac1624bbccd45ac4bf6ea157075c7ff6335ee1fdf385",
+      "pp0.module.module.decoder.layers.6.self_attention.linear_qkv.layer_norm_weight": "b684fc6909aa6bb5ca3a833ef2def70721d7fc717bc8e71d999a9c707dd85960",
+      "pp0.module.module.decoder.layers.6.self_attention.linear_qkv.weight": "8fae33325b564bc93b38edaefd9ab4126d281353e85036a319df40ed47e0a99c",
+      "pp0.module.module.decoder.layers.6.self_attention.q_layernorm.weight": "a0eae1c86071391b19398bb5fe31ab2d191af7249cfddc622d4ef7f88ed028f2",
+      "pp0.module.module.decoder.layers.7.mlp.linear_fc1.layer_norm_weight": "c8fb0c291d66c0f09c7ee9f8fbdc999392ae7e9fba53d2992585c25fb1e13c8b",
+      "pp0.module.module.decoder.layers.7.mlp.linear_fc1.weight": "982d46d178f40839593b63865e7a4083b5bd8358bcb5833f7770155bbf568fb5",
+      "pp0.module.module.decoder.layers.7.mlp.linear_fc2.weight": "87810b7b9d7b15499e972b4fc35b5f43c3c25a722ba75d6c32c333e5b4dd78d0",
+      "pp0.module.module.decoder.layers.7.self_attention.k_layernorm.weight": "5d32f65cd7066479fee4bb38db5d9083e4805f6baffeb454f2cf82e30a3427c4",
+      "pp0.module.module.decoder.layers.7.self_attention.linear_proj.weight": "a72ae49c7308d4c5df24f273e4d37045bb781942422f867823bb0675f04abab6",
+      "pp0.module.module.decoder.layers.7.self_attention.linear_qkv.layer_norm_weight": "10a8ac429ebf7f500219d7d6f901fab54e9ed8f2bad7b7a4b6cef3ceb9e19c3d",
+      "pp0.module.module.decoder.layers.7.self_attention.linear_qkv.weight": "d21e11b5875e6d187ace62f974b70094af2e99acbc55ae93c9621a0ada894bf6",
+      "pp0.module.module.decoder.layers.7.self_attention.q_layernorm.weight": "d124c2b635901242eb40a86e095ee82dc3084defc0407c9879a9c1e9a7764a56",
+      "pp0.module.module.decoder.layers.8.mlp.linear_fc1.layer_norm_weight": "9d3f043b0725ccd149306e53557926409ea726176e2f2f8af95f587059fa1410",
+      "pp0.module.module.decoder.layers.8.mlp.linear_fc1.weight": "69b2c7ee9deaec766ef9c007c7ec27d620c9d61ff7c528eb5541c16ac68fe397",
+      "pp0.module.module.decoder.layers.8.mlp.linear_fc2.weight": "315aa3d929f388e2256700568561fc5a3628716506ffd860002af1da9a6486b9",
+      "pp0.module.module.decoder.layers.8.self_attention.k_layernorm.weight": "be071158411ffa49df3f48bce8b09826b143269b5afdbaba5d342a1e7052e873",
+      "pp0.module.module.decoder.layers.8.self_attention.linear_proj.weight": "de4b697ef16e134f0323bb02e674f49de5d87897af748c141e28419655b650c4",
+      "pp0.module.module.decoder.layers.8.self_attention.linear_qkv.layer_norm_weight": "205060920e0e918a5739c0ee1d73b8395b5f27d1e3c2d120ce2d396aa46254fb",
+      "pp0.module.module.decoder.layers.8.self_attention.linear_qkv.weight": "01705c3fec6f073405e273c131596e918f7969ced606448e2efb29c229a767e7",
+      "pp0.module.module.decoder.layers.8.self_attention.q_layernorm.weight": "abc5866af2b625adb13f9485ea8c467c6d8b3c417dbf69c2634802abf8833894",
+      "pp0.module.module.decoder.layers.9.mlp.linear_fc1.layer_norm_weight": "e243751b04aaf0e4de7c643450dd1130656a10cf86e373c59d426872376ac4ac",
+      "pp0.module.module.decoder.layers.9.mlp.linear_fc1.weight": "62a6ee8bbc9c735f0212cfa76ff7bf0aa36f44c5c0a57ab69bd76e6fed9fdcab",
+      "pp0.module.module.decoder.layers.9.mlp.linear_fc2.weight": "5d777b00194e7ff38745eb3fb093f7f3e3e8e57d2440458c48a1b5d2b47c0464",
+      "pp0.module.module.decoder.layers.9.self_attention.k_layernorm.weight": "ce78b650b25aff7fc72a8191479891f2c7c25213c2b21710716a348a5d564f3b",
+      "pp0.module.module.decoder.layers.9.self_attention.linear_proj.weight": "8bd644a54a4a68a9a3ca1322b949d480babef9979429c9282b9e5237ca0060bd",
+      "pp0.module.module.decoder.layers.9.self_attention.linear_qkv.layer_norm_weight": "30b2b6eed4adecab5ab914211385be6e16d1b794380b00737d4018ce27486cc2",
+      "pp0.module.module.decoder.layers.9.self_attention.linear_qkv.weight": "ae7bd89d945136634f6df8090260ccc1d127cc9c3ba42ac077632f26a170e38c",
+      "pp0.module.module.decoder.layers.9.self_attention.q_layernorm.weight": "a11ee8b5ac9d5f00fed767f95bb7617e46d39164ebb154340ec191483fa24933",
+      "pp0.module.module.embedding.word_embeddings.weight": "02ce2b51ac9ef43bc0a4c58fe8b1b371a09eba360a5935e2d85a582c6b7b9244",
+      "pp0.module.module.model_companion.sample_consumptions": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "pp0.module.module.model_companion.weight_version": "d86e8112f3c4c4442126f8e9f44f16867da487f29052bf91b810457db34209a4"
+    },
+    "buffer_hashes": {},
+    "optimizer_hashes": [
+      {
+        "param_names": {
+          "0": "pp0.module.module.decoder.layers.35.mlp.linear_fc2.weight",
+          "1": "pp0.module.module.decoder.layers.35.mlp.linear_fc1.weight",
+          "2": "pp0.module.module.decoder.layers.35.self_attention.linear_qkv.weight",
+          "3": "pp0.module.module.decoder.layers.35.self_attention.linear_proj.weight",
+          "4": "pp0.module.module.decoder.layers.34.mlp.linear_fc2.weight",
+          "5": "pp0.module.module.decoder.layers.34.mlp.linear_fc1.weight",
+          "6": "pp0.module.module.decoder.layers.34.self_attention.linear_qkv.weight",
+          "7": "pp0.module.module.decoder.layers.34.self_attention.linear_proj.weight",
+          "8": "pp0.module.module.decoder.layers.33.mlp.linear_fc2.weight",
+          "9": "pp0.module.module.decoder.layers.33.mlp.linear_fc1.weight",
+          "10": "pp0.module.module.decoder.layers.33.self_attention.linear_qkv.weight",
+          "11": "pp0.module.module.decoder.layers.33.self_attention.linear_proj.weight",
+          "12": "pp0.module.module.decoder.layers.32.mlp.linear_fc2.weight",
+          "13": "pp0.module.module.decoder.layers.32.mlp.linear_fc1.weight",
+          "14": "pp0.module.module.decoder.layers.32.self_attention.linear_qkv.weight",
+          "15": "pp0.module.module.decoder.layers.32.self_attention.linear_proj.weight",
+          "16": "pp0.module.module.decoder.layers.31.mlp.linear_fc2.weight",
+          "17": "pp0.module.module.decoder.layers.31.mlp.linear_fc1.weight",
+          "18": "pp0.module.module.decoder.layers.31.self_attention.linear_qkv.weight",
+          "19": "pp0.module.module.decoder.layers.31.self_attention.linear_proj.weight",
+          "20": "pp0.module.module.decoder.layers.30.mlp.linear_fc2.weight",
+          "21": "pp0.module.module.decoder.layers.30.mlp.linear_fc1.weight",
+          "22": "pp0.module.module.decoder.layers.30.self_attention.linear_qkv.weight",
+          "23": "pp0.module.module.decoder.layers.30.self_attention.linear_proj.weight",
+          "24": "pp0.module.module.decoder.layers.29.mlp.linear_fc2.weight",
+          "25": "pp0.module.module.decoder.layers.29.mlp.linear_fc1.weight",
+          "26": "pp0.module.module.decoder.layers.29.self_attention.linear_qkv.weight",
+          "27": "pp0.module.module.decoder.layers.29.self_attention.linear_proj.weight",
+          "28": "pp0.module.module.decoder.layers.28.mlp.linear_fc2.weight",
+          "29": "pp0.module.module.decoder.layers.28.mlp.linear_fc1.weight",
+          "30": "pp0.module.module.decoder.layers.28.self_attention.linear_qkv.weight",
+          "31": "pp0.module.module.decoder.layers.28.self_attention.linear_proj.weight",
+          "32": "pp0.module.module.decoder.layers.27.mlp.linear_fc2.weight",
+          "33": "pp0.module.module.decoder.layers.27.mlp.linear_fc1.weight",
+          "34": "pp0.module.module.decoder.layers.27.self_attention.linear_qkv.weight",
+          "35": "pp0.module.module.decoder.layers.27.self_attention.linear_proj.weight",
+          "36": "pp0.module.module.decoder.layers.26.mlp.linear_fc2.weight",
+          "37": "pp0.module.module.decoder.layers.26.mlp.linear_fc1.weight",
+          "38": "pp0.module.module.decoder.layers.26.self_attention.linear_qkv.weight",
+          "39": "pp0.module.module.decoder.layers.26.self_attention.linear_proj.weight",
+          "40": "pp0.module.module.decoder.layers.25.mlp.linear_fc2.weight",
+          "41": "pp0.module.module.decoder.layers.25.mlp.linear_fc1.weight",
+          "42": "pp0.module.module.decoder.layers.25.self_attention.linear_qkv.weight",
+          "43": "pp0.module.module.decoder.layers.25.self_attention.linear_proj.weight",
+          "44": "pp0.module.module.decoder.layers.24.mlp.linear_fc2.weight",
+          "45": "pp0.module.module.decoder.layers.24.mlp.linear_fc1.weight",
+          "46": "pp0.module.module.decoder.layers.24.self_attention.linear_qkv.weight",
+          "47": "pp0.module.module.decoder.layers.24.self_attention.linear_proj.weight",
+          "48": "pp0.module.module.decoder.layers.23.mlp.linear_fc2.weight",
+          "49": "pp0.module.module.decoder.layers.23.mlp.linear_fc1.weight",
+          "50": "pp0.module.module.decoder.layers.23.self_attention.linear_qkv.weight",
+          "51": "pp0.module.module.decoder.layers.23.self_attention.linear_proj.weight",
+          "52": "pp0.module.module.decoder.layers.22.mlp.linear_fc2.weight",
+          "53": "pp0.module.module.decoder.layers.22.mlp.linear_fc1.weight",
+          "54": "pp0.module.module.decoder.layers.22.self_attention.linear_qkv.weight",
+          "55": "pp0.module.module.decoder.layers.22.self_attention.linear_proj.weight",
+          "56": "pp0.module.module.decoder.layers.21.mlp.linear_fc2.weight",
+          "57": "pp0.module.module.decoder.layers.21.mlp.linear_fc1.weight",
+          "58": "pp0.module.module.decoder.layers.21.self_attention.linear_qkv.weight",
+          "59": "pp0.module.module.decoder.layers.21.self_attention.linear_proj.weight",
+          "60": "pp0.module.module.decoder.layers.20.mlp.linear_fc2.weight",
+          "61": "pp0.module.module.decoder.layers.20.mlp.linear_fc1.weight",
+          "62": "pp0.module.module.decoder.layers.20.self_attention.linear_qkv.weight",
+          "63": "pp0.module.module.decoder.layers.20.self_attention.linear_proj.weight",
+          "64": "pp0.module.module.decoder.layers.19.mlp.linear_fc2.weight",
+          "65": "pp0.module.module.decoder.layers.19.mlp.linear_fc1.weight",
+          "66": "pp0.module.module.decoder.layers.19.self_attention.linear_qkv.weight",
+          "67": "pp0.module.module.decoder.layers.19.self_attention.linear_proj.weight",
+          "68": "pp0.module.module.decoder.layers.18.mlp.linear_fc2.weight",
+          "69": "pp0.module.module.decoder.layers.18.mlp.linear_fc1.weight",
+          "70": "pp0.module.module.decoder.layers.18.self_attention.linear_qkv.weight",
+          "71": "pp0.module.module.decoder.layers.18.self_attention.linear_proj.weight",
+          "72": "pp0.module.module.decoder.layers.17.mlp.linear_fc2.weight",
+          "73": "pp0.module.module.decoder.layers.17.mlp.linear_fc1.weight",
+          "74": "pp0.module.module.decoder.layers.17.self_attention.linear_qkv.weight",
+          "75": "pp0.module.module.decoder.layers.17.self_attention.linear_proj.weight",
+          "76": "pp0.module.module.decoder.layers.16.mlp.linear_fc2.weight",
+          "77": "pp0.module.module.decoder.layers.16.mlp.linear_fc1.weight",
+          "78": "pp0.module.module.decoder.layers.16.self_attention.linear_qkv.weight",
+          "79": "pp0.module.module.decoder.layers.16.self_attention.linear_proj.weight",
+          "80": "pp0.module.module.decoder.layers.15.mlp.linear_fc2.weight",
+          "81": "pp0.module.module.decoder.layers.15.mlp.linear_fc1.weight",
+          "82": "pp0.module.module.decoder.layers.15.self_attention.linear_qkv.weight",
+          "83": "pp0.module.module.decoder.layers.15.self_attention.linear_proj.weight",
+          "84": "pp0.module.module.decoder.layers.14.mlp.linear_fc2.weight",
+          "85": "pp0.module.module.decoder.layers.14.mlp.linear_fc1.weight",
+          "86": "pp0.module.module.decoder.layers.14.self_attention.linear_qkv.weight",
+          "87": "pp0.module.module.decoder.layers.14.self_attention.linear_proj.weight",
+          "88": "pp0.module.module.decoder.layers.13.mlp.linear_fc2.weight",
+          "89": "pp0.module.module.decoder.layers.13.mlp.linear_fc1.weight",
+          "90": "pp0.module.module.decoder.layers.13.self_attention.linear_qkv.weight",
+          "91": "pp0.module.module.decoder.layers.13.self_attention.linear_proj.weight",
+          "92": "pp0.module.module.decoder.layers.12.mlp.linear_fc2.weight",
+          "93": "pp0.module.module.decoder.layers.12.mlp.linear_fc1.weight",
+          "94": "pp0.module.module.decoder.layers.12.self_attention.linear_qkv.weight",
+          "95": "pp0.module.module.decoder.layers.12.self_attention.linear_proj.weight",
+          "96": "pp0.module.module.decoder.layers.11.mlp.linear_fc2.weight",
+          "97": "pp0.module.module.decoder.layers.11.mlp.linear_fc1.weight",
+          "98": "pp0.module.module.decoder.layers.11.self_attention.linear_qkv.weight",
+          "99": "pp0.module.module.decoder.layers.11.self_attention.linear_proj.weight",
+          "100": "pp0.module.module.decoder.layers.10.mlp.linear_fc2.weight",
+          "101": "pp0.module.module.decoder.layers.10.mlp.linear_fc1.weight",
+          "102": "pp0.module.module.decoder.layers.10.self_attention.linear_qkv.weight",
+          "103": "pp0.module.module.decoder.layers.10.self_attention.linear_proj.weight",
+          "104": "pp0.module.module.decoder.layers.9.mlp.linear_fc2.weight",
+          "105": "pp0.module.module.decoder.layers.9.mlp.linear_fc1.weight",
+          "106": "pp0.module.module.decoder.layers.9.self_attention.linear_qkv.weight",
+          "107": "pp0.module.module.decoder.layers.9.self_attention.linear_proj.weight",
+          "108": "pp0.module.module.decoder.layers.8.mlp.linear_fc2.weight",
+          "109": "pp0.module.module.decoder.layers.8.mlp.linear_fc1.weight",
+          "110": "pp0.module.module.decoder.layers.8.self_attention.linear_qkv.weight",
+          "111": "pp0.module.module.decoder.layers.8.self_attention.linear_proj.weight",
+          "112": "pp0.module.module.decoder.layers.7.mlp.linear_fc2.weight",
+          "113": "pp0.module.module.decoder.layers.7.mlp.linear_fc1.weight",
+          "114": "pp0.module.module.decoder.layers.7.self_attention.linear_qkv.weight",
+          "115": "pp0.module.module.decoder.layers.7.self_attention.linear_proj.weight",
+          "116": "pp0.module.module.decoder.layers.6.mlp.linear_fc2.weight",
+          "117": "pp0.module.module.decoder.layers.6.mlp.linear_fc1.weight",
+          "118": "pp0.module.module.decoder.layers.6.self_attention.linear_qkv.weight",
+          "119": "pp0.module.module.decoder.layers.6.self_attention.linear_proj.weight",
+          "120": "pp0.module.module.decoder.layers.5.mlp.linear_fc2.weight",
+          "121": "pp0.module.module.decoder.layers.5.mlp.linear_fc1.weight",
+          "122": "pp0.module.module.decoder.layers.5.self_attention.linear_qkv.weight",
+          "123": "pp0.module.module.decoder.layers.5.self_attention.linear_proj.weight",
+          "124": "pp0.module.module.decoder.layers.4.mlp.linear_fc2.weight",
+          "125": "pp0.module.module.decoder.layers.4.mlp.linear_fc1.weight",
+          "126": "pp0.module.module.decoder.layers.4.self_attention.linear_qkv.weight",
+          "127": "pp0.module.module.decoder.layers.4.self_attention.linear_proj.weight",
+          "128": "pp0.module.module.decoder.layers.3.mlp.linear_fc2.weight",
+          "129": "pp0.module.module.decoder.layers.3.mlp.linear_fc1.weight",
+          "130": "pp0.module.module.decoder.layers.3.self_attention.linear_qkv.weight",
+          "131": "pp0.module.module.decoder.layers.3.self_attention.linear_proj.weight",
+          "132": "pp0.module.module.decoder.layers.2.mlp.linear_fc2.weight",
+          "133": "pp0.module.module.decoder.layers.2.mlp.linear_fc1.weight",
+          "134": "pp0.module.module.decoder.layers.2.self_attention.linear_qkv.weight",
+          "135": "pp0.module.module.decoder.layers.2.self_attention.linear_proj.weight",
+          "136": "pp0.module.module.decoder.layers.1.mlp.linear_fc2.weight",
+          "137": "pp0.module.module.decoder.layers.1.mlp.linear_fc1.weight",
+          "138": "pp0.module.module.decoder.layers.1.self_attention.linear_qkv.weight",
+          "139": "pp0.module.module.decoder.layers.1.self_attention.linear_proj.weight",
+          "140": "pp0.module.module.decoder.layers.0.mlp.linear_fc2.weight",
+          "141": "pp0.module.module.decoder.layers.0.mlp.linear_fc1.weight",
+          "142": "pp0.module.module.decoder.layers.0.self_attention.linear_qkv.weight",
+          "143": "pp0.module.module.decoder.layers.0.self_attention.linear_proj.weight",
+          "144": "pp0.module.module.embedding.word_embeddings.weight",
+          "145": "pp0.module.module.decoder.final_layernorm.weight",
+          "146": "pp0.module.module.decoder.layers.35.mlp.linear_fc1.layer_norm_weight",
+          "147": "pp0.module.module.decoder.layers.35.self_attention.k_layernorm.weight",
+          "148": "pp0.module.module.decoder.layers.35.self_attention.q_layernorm.weight",
+          "149": "pp0.module.module.decoder.layers.35.self_attention.linear_qkv.layer_norm_weight",
+          "150": "pp0.module.module.decoder.layers.34.mlp.linear_fc1.layer_norm_weight",
+          "151": "pp0.module.module.decoder.layers.34.self_attention.k_layernorm.weight",
+          "152": "pp0.module.module.decoder.layers.34.self_attention.q_layernorm.weight",
+          "153": "pp0.module.module.decoder.layers.34.self_attention.linear_qkv.layer_norm_weight",
+          "154": "pp0.module.module.decoder.layers.33.mlp.linear_fc1.layer_norm_weight",
+          "155": "pp0.module.module.decoder.layers.33.self_attention.k_layernorm.weight",
+          "156": "pp0.module.module.decoder.layers.33.self_attention.q_layernorm.weight",
+          "157": "pp0.module.module.decoder.layers.33.self_attention.linear_qkv.layer_norm_weight",
+          "158": "pp0.module.module.decoder.layers.32.mlp.linear_fc1.layer_norm_weight",
+          "159": "pp0.module.module.decoder.layers.32.self_attention.k_layernorm.weight",
+          "160": "pp0.module.module.decoder.layers.32.self_attention.q_layernorm.weight",
+          "161": "pp0.module.module.decoder.layers.32.self_attention.linear_qkv.layer_norm_weight",
+          "162": "pp0.module.module.decoder.layers.31.mlp.linear_fc1.layer_norm_weight",
+          "163": "pp0.module.module.decoder.layers.31.self_attention.k_layernorm.weight",
+          "164": "pp0.module.module.decoder.layers.31.self_attention.q_layernorm.weight",
+          "165": "pp0.module.module.decoder.layers.31.self_attention.linear_qkv.layer_norm_weight",
+          "166": "pp0.module.module.decoder.layers.30.mlp.linear_fc1.layer_norm_weight",
+          "167": "pp0.module.module.decoder.layers.30.self_attention.k_layernorm.weight",
+          "168": "pp0.module.module.decoder.layers.30.self_attention.q_layernorm.weight",
+          "169": "pp0.module.module.decoder.layers.30.self_attention.linear_qkv.layer_norm_weight",
+          "170": "pp0.module.module.decoder.layers.29.mlp.linear_fc1.layer_norm_weight",
+          "171": "pp0.module.module.decoder.layers.29.self_attention.k_layernorm.weight",
+          "172": "pp0.module.module.decoder.layers.29.self_attention.q_layernorm.weight",
+          "173": "pp0.module.module.decoder.layers.29.self_attention.linear_qkv.layer_norm_weight",
+          "174": "pp0.module.module.decoder.layers.28.mlp.linear_fc1.layer_norm_weight",
+          "175": "pp0.module.module.decoder.layers.28.self_attention.k_layernorm.weight",
+          "176": "pp0.module.module.decoder.layers.28.self_attention.q_layernorm.weight",
+          "177": "pp0.module.module.decoder.layers.28.self_attention.linear_qkv.layer_norm_weight",
+          "178": "pp0.module.module.decoder.layers.27.mlp.linear_fc1.layer_norm_weight",
+          "179": "pp0.module.module.decoder.layers.27.self_attention.k_layernorm.weight",
+          "180": "pp0.module.module.decoder.layers.27.self_attention.q_layernorm.weight",
+          "181": "pp0.module.module.decoder.layers.27.self_attention.linear_qkv.layer_norm_weight",
+          "182": "pp0.module.module.decoder.layers.26.mlp.linear_fc1.layer_norm_weight",
+          "183": "pp0.module.module.decoder.layers.26.self_attention.k_layernorm.weight",
+          "184": "pp0.module.module.decoder.layers.26.self_attention.q_layernorm.weight",
+          "185": "pp0.module.module.decoder.layers.26.self_attention.linear_qkv.layer_norm_weight",
+          "186": "pp0.module.module.decoder.layers.25.mlp.linear_fc1.layer_norm_weight",
+          "187": "pp0.module.module.decoder.layers.25.self_attention.k_layernorm.weight",
+          "188": "pp0.module.module.decoder.layers.25.self_attention.q_layernorm.weight",
+          "189": "pp0.module.module.decoder.layers.25.self_attention.linear_qkv.layer_norm_weight",
+          "190": "pp0.module.module.decoder.layers.24.mlp.linear_fc1.layer_norm_weight",
+          "191": "pp0.module.module.decoder.layers.24.self_attention.k_layernorm.weight",
+          "192": "pp0.module.module.decoder.layers.24.self_attention.q_layernorm.weight",
+          "193": "pp0.module.module.decoder.layers.24.self_attention.linear_qkv.layer_norm_weight",
+          "194": "pp0.module.module.decoder.layers.23.mlp.linear_fc1.layer_norm_weight",
+          "195": "pp0.module.module.decoder.layers.23.self_attention.k_layernorm.weight",
+          "196": "pp0.module.module.decoder.layers.23.self_attention.q_layernorm.weight",
+          "197": "pp0.module.module.decoder.layers.23.self_attention.linear_qkv.layer_norm_weight",
+          "198": "pp0.module.module.decoder.layers.22.mlp.linear_fc1.layer_norm_weight",
+          "199": "pp0.module.module.decoder.layers.22.self_attention.k_layernorm.weight",
+          "200": "pp0.module.module.decoder.layers.22.self_attention.q_layernorm.weight",
+          "201": "pp0.module.module.decoder.layers.22.self_attention.linear_qkv.layer_norm_weight",
+          "202": "pp0.module.module.decoder.layers.21.mlp.linear_fc1.layer_norm_weight",
+          "203": "pp0.module.module.decoder.layers.21.self_attention.k_layernorm.weight",
+          "204": "pp0.module.module.decoder.layers.21.self_attention.q_layernorm.weight",
+          "205": "pp0.module.module.decoder.layers.21.self_attention.linear_qkv.layer_norm_weight",
+          "206": "pp0.module.module.decoder.layers.20.mlp.linear_fc1.layer_norm_weight",
+          "207": "pp0.module.module.decoder.layers.20.self_attention.k_layernorm.weight",
+          "208": "pp0.module.module.decoder.layers.20.self_attention.q_layernorm.weight",
+          "209": "pp0.module.module.decoder.layers.20.self_attention.linear_qkv.layer_norm_weight",
+          "210": "pp0.module.module.decoder.layers.19.mlp.linear_fc1.layer_norm_weight",
+          "211": "pp0.module.module.decoder.layers.19.self_attention.k_layernorm.weight",
+          "212": "pp0.module.module.decoder.layers.19.self_attention.q_layernorm.weight",
+          "213": "pp0.module.module.decoder.layers.19.self_attention.linear_qkv.layer_norm_weight",
+          "214": "pp0.module.module.decoder.layers.18.mlp.linear_fc1.layer_norm_weight",
+          "215": "pp0.module.module.decoder.layers.18.self_attention.k_layernorm.weight",
+          "216": "pp0.module.module.decoder.layers.18.self_attention.q_layernorm.weight",
+          "217": "pp0.module.module.decoder.layers.18.self_attention.linear_qkv.layer_norm_weight",
+          "218": "pp0.module.module.decoder.layers.17.mlp.linear_fc1.layer_norm_weight",
+          "219": "pp0.module.module.decoder.layers.17.self_attention.k_layernorm.weight",
+          "220": "pp0.module.module.decoder.layers.17.self_attention.q_layernorm.weight",
+          "221": "pp0.module.module.decoder.layers.17.self_attention.linear_qkv.layer_norm_weight",
+          "222": "pp0.module.module.decoder.layers.16.mlp.linear_fc1.layer_norm_weight",
+          "223": "pp0.module.module.decoder.layers.16.self_attention.k_layernorm.weight",
+          "224": "pp0.module.module.decoder.layers.16.self_attention.q_layernorm.weight",
+          "225": "pp0.module.module.decoder.layers.16.self_attention.linear_qkv.layer_norm_weight",
+          "226": "pp0.module.module.decoder.layers.15.mlp.linear_fc1.layer_norm_weight",
+          "227": "pp0.module.module.decoder.layers.15.self_attention.k_layernorm.weight",
+          "228": "pp0.module.module.decoder.layers.15.self_attention.q_layernorm.weight",
+          "229": "pp0.module.module.decoder.layers.15.self_attention.linear_qkv.layer_norm_weight",
+          "230": "pp0.module.module.decoder.layers.14.mlp.linear_fc1.layer_norm_weight",
+          "231": "pp0.module.module.decoder.layers.14.self_attention.k_layernorm.weight",
+          "232": "pp0.module.module.decoder.layers.14.self_attention.q_layernorm.weight",
+          "233": "pp0.module.module.decoder.layers.14.self_attention.linear_qkv.layer_norm_weight",
+          "234": "pp0.module.module.decoder.layers.13.mlp.linear_fc1.layer_norm_weight",
+          "235": "pp0.module.module.decoder.layers.13.self_attention.k_layernorm.weight",
+          "236": "pp0.module.module.decoder.layers.13.self_attention.q_layernorm.weight",
+          "237": "pp0.module.module.decoder.layers.13.self_attention.linear_qkv.layer_norm_weight",
+          "238": "pp0.module.module.decoder.layers.12.mlp.linear_fc1.layer_norm_weight",
+          "239": "pp0.module.module.decoder.layers.12.self_attention.k_layernorm.weight",
+          "240": "pp0.module.module.decoder.layers.12.self_attention.q_layernorm.weight",
+          "241": "pp0.module.module.decoder.layers.12.self_attention.linear_qkv.layer_norm_weight",
+          "242": "pp0.module.module.decoder.layers.11.mlp.linear_fc1.layer_norm_weight",
+          "243": "pp0.module.module.decoder.layers.11.self_attention.k_layernorm.weight",
+          "244": "pp0.module.module.decoder.layers.11.self_attention.q_layernorm.weight",
+          "245": "pp0.module.module.decoder.layers.11.self_attention.linear_qkv.layer_norm_weight",
+          "246": "pp0.module.module.decoder.layers.10.mlp.linear_fc1.layer_norm_weight",
+          "247": "pp0.module.module.decoder.layers.10.self_attention.k_layernorm.weight",
+          "248": "pp0.module.module.decoder.layers.10.self_attention.q_layernorm.weight",
+          "249": "pp0.module.module.decoder.layers.10.self_attention.linear_qkv.layer_norm_weight",
+          "250": "pp0.module.module.decoder.layers.9.mlp.linear_fc1.layer_norm_weight",
+          "251": "pp0.module.module.decoder.layers.9.self_attention.k_layernorm.weight",
+          "252": "pp0.module.module.decoder.layers.9.self_attention.q_layernorm.weight",
+          "253": "pp0.module.module.decoder.layers.9.self_attention.linear_qkv.layer_norm_weight",
+          "254": "pp0.module.module.decoder.layers.8.mlp.linear_fc1.layer_norm_weight",
+          "255": "pp0.module.module.decoder.layers.8.self_attention.k_layernorm.weight",
+          "256": "pp0.module.module.decoder.layers.8.self_attention.q_layernorm.weight",
+          "257": "pp0.module.module.decoder.layers.8.self_attention.linear_qkv.layer_norm_weight",
+          "258": "pp0.module.module.decoder.layers.7.mlp.linear_fc1.layer_norm_weight",
+          "259": "pp0.module.module.decoder.layers.7.self_attention.k_layernorm.weight",
+          "260": "pp0.module.module.decoder.layers.7.self_attention.q_layernorm.weight",
+          "261": "pp0.module.module.decoder.layers.7.self_attention.linear_qkv.layer_norm_weight",
+          "262": "pp0.module.module.decoder.layers.6.mlp.linear_fc1.layer_norm_weight",
+          "263": "pp0.module.module.decoder.layers.6.self_attention.k_layernorm.weight",
+          "264": "pp0.module.module.decoder.layers.6.self_attention.q_layernorm.weight",
+          "265": "pp0.module.module.decoder.layers.6.self_attention.linear_qkv.layer_norm_weight",
+          "266": "pp0.module.module.decoder.layers.5.mlp.linear_fc1.layer_norm_weight",
+          "267": "pp0.module.module.decoder.layers.5.self_attention.k_layernorm.weight",
+          "268": "pp0.module.module.decoder.layers.5.self_attention.q_layernorm.weight",
+          "269": "pp0.module.module.decoder.layers.5.self_attention.linear_qkv.layer_norm_weight",
+          "270": "pp0.module.module.decoder.layers.4.mlp.linear_fc1.layer_norm_weight",
+          "271": "pp0.module.module.decoder.layers.4.self_attention.k_layernorm.weight",
+          "272": "pp0.module.module.decoder.layers.4.self_attention.q_layernorm.weight",
+          "273": "pp0.module.module.decoder.layers.4.self_attention.linear_qkv.layer_norm_weight",
+          "274": "pp0.module.module.decoder.layers.3.mlp.linear_fc1.layer_norm_weight",
+          "275": "pp0.module.module.decoder.layers.3.self_attention.k_layernorm.weight",
+          "276": "pp0.module.module.decoder.layers.3.self_attention.q_layernorm.weight",
+          "277": "pp0.module.module.decoder.layers.3.self_attention.linear_qkv.layer_norm_weight",
+          "278": "pp0.module.module.decoder.layers.2.mlp.linear_fc1.layer_norm_weight",
+          "279": "pp0.module.module.decoder.layers.2.self_attention.k_layernorm.weight",
+          "280": "pp0.module.module.decoder.layers.2.self_attention.q_layernorm.weight",
+          "281": "pp0.module.module.decoder.layers.2.self_attention.linear_qkv.layer_norm_weight",
+          "282": "pp0.module.module.decoder.layers.1.mlp.linear_fc1.layer_norm_weight",
+          "283": "pp0.module.module.decoder.layers.1.self_attention.k_layernorm.weight",
+          "284": "pp0.module.module.decoder.layers.1.self_attention.q_layernorm.weight",
+          "285": "pp0.module.module.decoder.layers.1.self_attention.linear_qkv.layer_norm_weight",
+          "286": "pp0.module.module.decoder.layers.0.mlp.linear_fc1.layer_norm_weight",
+          "287": "pp0.module.module.decoder.layers.0.self_attention.k_layernorm.weight",
+          "288": "pp0.module.module.decoder.layers.0.self_attention.q_layernorm.weight",
+          "289": "pp0.module.module.decoder.layers.0.self_attention.linear_qkv.layer_norm_weight"
+        },
+        "state_dict": {
+          "state": {
+            "0": {
+              "exp_avg": "faaf0b803f16e223d4799817f621095c996847c75e74c864ddabab3c0829faa5",
+              "exp_avg_sq": "e7a58f935db5c3d005aa78e2c7d94eb91b51c21f4e4a797f850111e8045e6e92"
+            },
+            "1": {
+              "exp_avg": "13818e04b81912362a995890bd923e1273e4c441dd8ab589c5ddd264156a786e",
+              "exp_avg_sq": "3c3aa841a9c08fa273fb95038c6e2411bfd172850b8cd6071da24b25da26593a"
+            },
+            "2": {
+              "exp_avg": "df76597df63510e88e8c7285c74c731d0010c15a8e6bc3f35e8056bd0107ce2c",
+              "exp_avg_sq": "351ce466f586f8044b18846d7b942a70bde92c82aebcc61e8126623278168bdf"
+            },
+            "3": {
+              "exp_avg": "c08920ae1d66c8432c5ec3b2f9846a89457d643bcbf976a4d3582f8c39744fae",
+              "exp_avg_sq": "eafdbc562a571b89ae5ccd8b9bcfd461f1b14229f1311ae2e0b093fa6776ba22"
+            },
+            "4": {
+              "exp_avg": "382f513b199abd2b93aca09f966d77f92811582031dca667832de363e1c5ff58",
+              "exp_avg_sq": "63847131640b9b5f0bc26c1767bc73eeacc76e04f7f1ce4251e2e799f62f40fb"
+            },
+            "5": {
+              "exp_avg": "9cc6db0aeaf4d445370068311f3b55c68f5b805b80fe7357b7b196dce7298fcb",
+              "exp_avg_sq": "1d5210058c746e786bff9d86a0267f57515cca39dae4550e2d3492008846eeaa"
+            },
+            "6": {
+              "exp_avg": "b21b3151c629ba863f8918e6a7330be1a9b3284fe24c15af60e57a6206b12974",
+              "exp_avg_sq": "d0bd83abdbaec1f11e10c31a6e673d9484a96e1dfe84e08181a320b9dc1b1a32"
+            },
+            "7": {
+              "exp_avg": "f845b2d26f49047da9afe72b3dc9dc760c2b9604a877fabd6515aea580bb2c0b",
+              "exp_avg_sq": "4756b77ba0171d381b6299187fb8ff168e2789f6b68dda7cabcaf45043a48cdf"
+            },
+            "8": {
+              "exp_avg": "17f5d683359b3d4215899fb2d2d76f3658f1e423b34daa02529363960dacd5e1",
+              "exp_avg_sq": "b9bfd5f1a6a2736cf4636bc4cc21b3cf0758d50aec337db1a2b1581afdbe20b4"
+            },
+            "9": {
+              "exp_avg": "7b3bd698d6c33ac19c097fcea070a6e22f5da26c89f19429f95b5abde0c7f9bf",
+              "exp_avg_sq": "0e83a0f2616990d2253514961a5aa346c1a68a52b394067ab05be13468b11ee5"
+            },
+            "10": {
+              "exp_avg": "7cf634a7846dca71eecd4610dc1a22aa18e4a99aef17446fe6e6e756f4e39605",
+              "exp_avg_sq": "edcc0d36fd1d67db49062a7b7eccaa8f547fcb5fd3641b0b99edf0cb91f8895f"
+            },
+            "11": {
+              "exp_avg": "349bbc60207e9821a03f5005282dae4f5fa3274dc392f37082f82cc90fc5b3c7",
+              "exp_avg_sq": "dc8ecad0a383091cf20da3c4254b9959c6f8606497a6720946ca7d0e1f974fa3"
+            },
+            "12": {
+              "exp_avg": "cdcf455aafe66b224e7ca2b16e45446551adb83b75608bc370c9e27eac4cbc81",
+              "exp_avg_sq": "b1725e11801f558cd2f9e2b1a3c5d1bff34f2376989e8f40cada0b967ee644ce"
+            },
+            "13": {
+              "exp_avg": "4ba79b222e451454c20c9cc5f0e59fd6bca8d7e25376a05d285a5cb58127c6b2",
+              "exp_avg_sq": "e7eaa196d0afdabab3dcb5a9866dcb015f9a5f05e004b44a634af446fcf9ecf8"
+            },
+            "14": {
+              "exp_avg": "1e9a0f9a01ec7a548c0f12356aaeb520fa7d6cd29e834bb44413de490d54b59d",
+              "exp_avg_sq": "b79de76832c86e0a616f9fe3a4c2a5d947814883a909282ea8defcf7dc384805"
+            },
+            "15": {
+              "exp_avg": "2f9d41d5bb502aa84ad713af06c00b243157e32c657083c4e120a11cbf4f3366",
+              "exp_avg_sq": "9157ce105c74803cfd1124293e9c7415c30df99db67fa265bbca6b9a7a4b481a"
+            },
+            "16": {
+              "exp_avg": "011cfc6f46cb873e90762e67cdf6f5b86ba0d2b14a29b8dc2bfdc45bb2fd116d",
+              "exp_avg_sq": "6b1baf4d01d126a48b085f4ee8732ae75c03e880a8b3840e84f973f21584c22e"
+            },
+            "17": {
+              "exp_avg": "f62cbbcc5082a3870126d019b2e2cfdd7b75c27a34b9e64b750a5d90bb11d3be",
+              "exp_avg_sq": "8cd5d4472f36b1d88c78f4d018f6d616a929766cd84a3f4971d2c25ddd978684"
+            },
+            "18": {
+              "exp_avg": "51f03ec4c0190c8f81991e87c543969471a61a801e712c9d64dbfe73635289ec",
+              "exp_avg_sq": "2a7a737be216ccf26d4005b0d004a3238994b9c7c10973ffaa2ec1f2bd6eab0c"
+            },
+            "19": {
+              "exp_avg": "f6c2c5294f09ba139b45fac55f932e9a1d316dd63dd3be29b6b79d049eb06dbb",
+              "exp_avg_sq": "c0e927bb184d22290dc247c870518c657f8f70788be49709a44037fae1b320c1"
+            },
+            "20": {
+              "exp_avg": "cc0192f8a20619f45586cfabcc9dae347f05a0962afb089ed19d0dbac97d81c2",
+              "exp_avg_sq": "f17a792581119b0c2ef7df38ed0e122ff6a0a2ff41a50cdde5fdce7d86741b8d"
+            },
+            "21": {
+              "exp_avg": "2d3d745834df7d0ff5c367fa7f0b9ee02ddd2725aae0b70f638cfdcc91051f8b",
+              "exp_avg_sq": "68328a99cbcddbc2da1ee07e8d3c9f6649e74cc8ae167c912be3d55e74d4d2a2"
+            },
+            "22": {
+              "exp_avg": "10d14cccf3e778a70848b96c52b9ef4a397105f68f4cb8c546d5afa2a63d2d7e",
+              "exp_avg_sq": "383cedbeb6031a430c642799306c22caf7b54fc03710e3ed81d18901a1e4b4da"
+            },
+            "23": {
+              "exp_avg": "5ed6c85095c82f2b5a891173d3599e7343a1d166b9df05450e68b3c3678f79cc",
+              "exp_avg_sq": "1e4237742f3ddde9637752bd9859b638100825a7077fa1aeb1656d897c5f59c3"
+            },
+            "24": {
+              "exp_avg": "06e59a74fef88af8e0f8fbe3723e49cbef9a8bade223d5a0371a2229df2dd286",
+              "exp_avg_sq": "1594096a8a2cf4256738829e4ac607827b765a2bcb0b773043a7414bb579b465"
+            },
+            "25": {
+              "exp_avg": "199a8100f3262369f1049f26dc1ab900b1e6fca26b7504feefb56508672e58a9",
+              "exp_avg_sq": "5d582f8bd651747ee55cf138a35ed05347240d876bee8550ff68847ecede7366"
+            },
+            "26": {
+              "exp_avg": "b48d286b84814f1ba062c20bc7925c5d3fd8e037a5575fdd5f3edb9c4c81a293",
+              "exp_avg_sq": "b168ba8dbe6b4c3e4ba7425d8802c7278911351b5d2f673d47ecf0bf5fc79bec"
+            },
+            "27": {
+              "exp_avg": "7ce2cd595a1f01aabb48cbfb93c5e93396d66f1e91a35acda177f29c054a0940",
+              "exp_avg_sq": "632a4843d8ed064963904a9e3bdce1b2bf50df66840cd385e396c2a14716aa39"
+            },
+            "28": {
+              "exp_avg": "51b4299a2293fbfbde6865df20cfe5593efffb9a0396caf4ea1722faec3b605b",
+              "exp_avg_sq": "bd05ce4df39a49d2dd44bfabcb8137c87bbdad60d96901edf29f828b80e4fc73"
+            },
+            "29": {
+              "exp_avg": "0480797c0985fa72e26addfadd6f8066e46e4d3ae967d72b1d5f0d7161a5fdd8",
+              "exp_avg_sq": "b4bdfb3c1654cf2e5e993bbdc6e9474fcb4beb5117c4003b3273f71d5cef0d36"
+            },
+            "30": {
+              "exp_avg": "6abe47ad32dc0ffb77b3938344e432be6b26b4d97604e5c02ee1494c96216f77",
+              "exp_avg_sq": "d1f599863829dcf3ab8c6c3dfb415feae012e89b5bbf2d708cc75bb1f8263e9c"
+            },
+            "31": {
+              "exp_avg": "d201f269a10bdb346447bd3d50ce6633a9c9d8c29fdd81e7eb77fa21f1c101cc",
+              "exp_avg_sq": "3586e1e1ccf9bd51331050ad432ce3fca702b60ec6d2598157faea67f61a0b3b"
+            },
+            "32": {
+              "exp_avg": "602375f0b5689be68a58234ac844cf1ef26b2ab1ffa8ad54a3bac9b001c55b59",
+              "exp_avg_sq": "08f64ae22e6f987bc71244bac4d285c11b4fc55e5d66ad74bc3639ae54a2a30e"
+            },
+            "33": {
+              "exp_avg": "617d760164e91b10195aaeb8661506fb23ac988905490e35cc31dde787de5694",
+              "exp_avg_sq": "f19fd81f2734f645439f7ca59579597c6d6fa76c5763a38f21ccb913735ebe62"
+            },
+            "34": {
+              "exp_avg": "3d8a9ed71091d631de2e149d5f0e9ef0779bd6b3975b172afaccae9a3eb9db3b",
+              "exp_avg_sq": "c740495cb56bcbfae36665c70296be772ec482beda474a3f9b291abb12eb685d"
+            },
+            "35": {
+              "exp_avg": "97cb4f20c2dad44f61eb6fbc446bc14c4197d2040287d11fe4236073fa767781",
+              "exp_avg_sq": "065dfd459f522f2bbf96de7ec9bad65e1da4d1a6ec08e6a719822d00126b7495"
+            },
+            "36": {
+              "exp_avg": "66b19f592ba8c8d5add9431632fbd6053267241f84cbca2981e67707eb5a5f29",
+              "exp_avg_sq": "247aa158bd43551c31b404b31679400a8fd380691dee597eafb1b06607a76b15"
+            },
+            "37": {
+              "exp_avg": "d2ee714cb5f3d6f3bbd9a6beb0b1cabb94ea3fff46625319b053cc11af93408b",
+              "exp_avg_sq": "0831c11e173d81363f9ad9f6f885f2dad4e018f42e4b831bfaa1fbaaf5487566"
+            },
+            "38": {
+              "exp_avg": "76c3695dc69cc124ee6cd37a3793b92503ace1653fb5e47cdfad509dfef2d4ab",
+              "exp_avg_sq": "5781301f97dd5a82d479701a6ea62b2a7a55f3257fd134213d9243445f64e791"
+            },
+            "39": {
+              "exp_avg": "809edae911f5d167212489be847f73c11ed97017dafbed9b8be229c855d6213a",
+              "exp_avg_sq": "7e542edc60492689cda9a908f2b201dffef85a864961567efc1c96baef755377"
+            },
+            "40": {
+              "exp_avg": "d842f70d022f6609dc438bb18feb687182965ae67b298457aa1675cbe1023374",
+              "exp_avg_sq": "34cce361ba9f0331581dff274baa20ae530881cb923eef621a4e50e1d83de40a"
+            },
+            "41": {
+              "exp_avg": "00cbf1be85f3b4284e89eccb5058fe3fc5504de31f8066990cd233e9fdd41315",
+              "exp_avg_sq": "6c0c466313054e1ad703c455d09bf058d7a8702dc1d233715ee78f3daf656db0"
+            },
+            "42": {
+              "exp_avg": "efac8636601583d75373fa02906fe46dbda43c86ceada67a191c74b548afafa1",
+              "exp_avg_sq": "dc972830cdf98b5fdc0ea087f801b711fa94f0e2aa7c4774daf42b9c4303427c"
+            },
+            "43": {
+              "exp_avg": "c08e18a7fdbf3cb7b402db79fa5cbb7955348af4978b3e2048060a8584514d82",
+              "exp_avg_sq": "bda53d1b72e1212302c19c98a27e0b19ba2a5f4eff0863509209c848e88b12fd"
+            },
+            "44": {
+              "exp_avg": "0ba63b4983687cf966af0519da64b60e84feeb4c02ccf66a57264d741359ae08",
+              "exp_avg_sq": "d01c82bfa0d0af82b2ec14e3da32ee40457dee0aad56ce76537b82a083aa81ee"
+            },
+            "45": {
+              "exp_avg": "7af6b75cb22ebcdab7187e93af2368c9a90ce9fe56e5f16be61baac11ec1078a",
+              "exp_avg_sq": "a7889e477d851945ac337c68a627593306de288dc28fb82241455afc529065a3"
+            },
+            "46": {
+              "exp_avg": "af8200c671b4468b047d13399134a0c526abb8fdb067bd36812b4f137ab912e9",
+              "exp_avg_sq": "3a2e614976da8fa0e28cde11b2810e7d7138de24adce0d428ae9c0bc3dfc75a0"
+            },
+            "47": {
+              "exp_avg": "9e75cd9f34205fe883a953963441920f3490c02f22dda91fd83fb80a0ecdd67a",
+              "exp_avg_sq": "cd4677d1bbce403210131eb5c61e27b8ca97c3b1f07ddf65f1dfaf44fa955cd1"
+            },
+            "48": {
+              "exp_avg": "2cebb38779148d0144445877d282677678ebdfc98c7e72230b82b9b7c57dd7f8",
+              "exp_avg_sq": "98a7f6f6a59ea7e97a9003764a8a1c313a5cce93c53e65d1c57378fe86fd367d"
+            },
+            "49": {
+              "exp_avg": "d1d220f61b04d410d2f298d945d1a9a290cd0c6606c4121d5018b83dd71593f8",
+              "exp_avg_sq": "12739a49ea695420c4ca76e15607cc014404e82e93f12a2aed392545e2973799"
+            },
+            "50": {
+              "exp_avg": "c0c780cc0d35862210dbf8c404d4a86fc73a6b13f2fe257279701d528217a063",
+              "exp_avg_sq": "97083a89886033c4a6113e860ae94caee86daffecc68eea51dbb00717b07ebd6"
+            },
+            "51": {
+              "exp_avg": "8e67d8d97a004cb787d9bcd428547e22620ba3ea4e90ae96cc16964a9b306252",
+              "exp_avg_sq": "65eb100424189d9f225d705b3647acfefd912f4a3e3454ff229f15ec7e21b66d"
+            },
+            "52": {
+              "exp_avg": "0a70d0660655df3f1d9cd8e3bf2c6aa59ad1c4e5db767f22a68cea07d698a87d",
+              "exp_avg_sq": "da54901cd4cff500a0dd70f9c6cd3534ea2fe3260bd1facbb5432bcd1eda8589"
+            },
+            "53": {
+              "exp_avg": "85ab28b9192dd31e1ae9458042464efbd95c2bf07c0b95d9538d0d07b5f0c758",
+              "exp_avg_sq": "2d5d9df3fe27a82d8016237b648ca424bfa419af08cd0c759ea28dbf31a01423"
+            },
+            "54": {
+              "exp_avg": "75378bc0da9cb89d21b654815a70132abe62fb6b00f0009adcaf4e4dd4477b21",
+              "exp_avg_sq": "2e10c6b822fc49163e343ad905896ec2891126d0b0431b91b86952269b2b0900"
+            },
+            "55": {
+              "exp_avg": "ddd83c2cc463af21b3bfc04d40fa3caa095db746062de9d4da2251e27edf401d",
+              "exp_avg_sq": "2ae8e5de302e3d35eaa8d21b7beea70675ec84b2f78ae25161abe96b5d38f89a"
+            },
+            "56": {
+              "exp_avg": "ba78376a8ed7ad9ad52345a8d3688f89fc6ff29844d2fd802bbb120613caadc2",
+              "exp_avg_sq": "00589985c1ff120a11b4221f9e9b21f2d9983732d88a391be8d88b852e57a4b1"
+            },
+            "57": {
+              "exp_avg": "501bd7b5cd84e4660663f56b0e691a59c1e9b5a388e44c5f5b7fda4d52cfeeb9",
+              "exp_avg_sq": "be8ddd2e9b7628641b6ec5a84e24627e92329c49c1f7cc8d281b3249d40b04f0"
+            },
+            "58": {
+              "exp_avg": "2812f74af5d64b7141f7a191a3c940179a28e94eef248000f10bb86dbc81dfbe",
+              "exp_avg_sq": "1140ac2ddafadc3717c7a03debbdec1450dc0d321c7115b17bbe2693ceedd097"
+            },
+            "59": {
+              "exp_avg": "3e55d6d5c56c05b07e37f6e533134e5711ab0aed59872e5458deacdec628909e",
+              "exp_avg_sq": "2ed8946e018f63a12a86882dd35773b0b5aa4d6b1bf319798bdf951a399e9450"
+            },
+            "60": {
+              "exp_avg": "31da2bc72e3140ffc9465a921734df4910ddd1ddb83481ff53fb227cc47a3b97",
+              "exp_avg_sq": "1a774775b546f8950dcd59356f193a0497f02b2774ea063402f0c92a585d8fc6"
+            },
+            "61": {
+              "exp_avg": "07530fb07ddfb148f0decd84c580d8c83af986142b7ab22685abd2c00cf57d55",
+              "exp_avg_sq": "c0027d8913dc3df1887e7e06a9545d467a2451d76bd9f817ba69f31a1660062c"
+            },
+            "62": {
+              "exp_avg": "ff4a2369772f76049e9ef2c6dad24fd6f7ee04ea3d05beefdf282675226a5be0",
+              "exp_avg_sq": "68a0ca799086046ed692be4c935394985071b2616ada7b5c660f11f1b02c625f"
+            },
+            "63": {
+              "exp_avg": "e52e6becd61179c71ede64a268b2f826b9f4ef31e0fe98e1f4dc8b70bd6204f2",
+              "exp_avg_sq": "ee87a67861e9b36bd90e666ee5f413cde733cdd4ab7c71f621e5eef6c13375d7"
+            },
+            "64": {
+              "exp_avg": "7e69257a14090ec1df2dc74336c16a3dcf5548cdd479f1223fe3cc2c84351a23",
+              "exp_avg_sq": "b8d046ab23a0d95a95ea1ef86948dd7ced476d9255a00ba6fac9735b1b0ac8d0"
+            },
+            "65": {
+              "exp_avg": "17036784686236c17d5193a877f42b51ef0dde434ebeab69d679383ecdb060ef",
+              "exp_avg_sq": "878ff924b5ab5474cfd55f94157327c8866ef2492869b803c031134f2ac9c0c7"
+            },
+            "66": {
+              "exp_avg": "416a1cd510e710c20e278e9f9d8446cb43a5cfc2d8dc1a986329377629037876",
+              "exp_avg_sq": "53e5d837e3eac214a1b4460fb7ef98097f2a1dec3e1faae4b2565868c33870f2"
+            },
+            "67": {
+              "exp_avg": "73e1f5e302a6c75a5400ba43f694848934d551e5381e1432157f1535a5d3aafa",
+              "exp_avg_sq": "cc41461ed233e2c8085124e7b57f4fad85a53add0128f40f46cb353c0b1452d9"
+            },
+            "68": {
+              "exp_avg": "7c123db5da7d8ebb7ef5a666c2b3e6ca67ecc47198182cdde0a6f4f7255618e5",
+              "exp_avg_sq": "e6ff7b7cbb66569afa24fd2dbf7638dc3a314d600bf9e3c6a2688828af81925b"
+            },
+            "69": {
+              "exp_avg": "f7f6dbc1c51b0b4e508fef7e399c9f915e4d08e10d1364461a2e81ca3694ef69",
+              "exp_avg_sq": "f030fd5f8c1f6943f97209b36c63d11708cf26c5655e8159937d5079de181488"
+            },
+            "70": {
+              "exp_avg": "3c729d4170c093b88d2f98e7679ddaf0fd38bf0ef84a03bcc8e091128669c806",
+              "exp_avg_sq": "d6f99dd6c26529f64fe4fbb4f5c094bb3c3d0cb3c498135556bb82a7a7ba5ab4"
+            },
+            "71": {
+              "exp_avg": "5df810c23159769a04ed17edccf36eb8bb4d995761c9854a300a9d0ec94adf82",
+              "exp_avg_sq": "e84d4ae795e30f5edf81077575913d39dfd542631708e31e35d2b3a53af61848"
+            },
+            "72": {
+              "exp_avg": "228e6bfdf666b98b51459be39051fde7890579133fafbeeeb91e1d977dbd5b17",
+              "exp_avg_sq": "c1c875b0b5c2f9cdca19a69886b1b785a1af9e54cf4ff2055eebfebae204e24b"
+            },
+            "73": {
+              "exp_avg": "152ba51a1ad08856360d0f18ded9b9d2e77bd202337ffcade0a5d09378409c93",
+              "exp_avg_sq": "2415bc4051a9e5b6379d9e70ae838c07ea5827543d04d712cf5b27d0e6596d96"
+            },
+            "74": {
+              "exp_avg": "ce35225ba7997d101519ddc91d53b404c9811421c1ce6829d260add7fc3c5f55",
+              "exp_avg_sq": "1abd53c19108e1c69e25d7c17c8c507c3f9398691db01bb700aa1561eb22e809"
+            },
+            "75": {
+              "exp_avg": "f35ce26a4ac98e1339d1751d9dfbe9a5b5c8519c16532141144cc6a9dbe21b2a",
+              "exp_avg_sq": "795a844fdd3e3e4433ce22f9d931c57efb8678e68f3553852a4f1692ea97534d"
+            },
+            "76": {
+              "exp_avg": "8d714fe4311d7d17a2f14d7f1556513b0bddc47960a57f929514457bde75c4b8",
+              "exp_avg_sq": "01d1ac9f8f6a544b06659963c81430829899d8f83ccfcd5f4775b9d38fccce21"
+            },
+            "77": {
+              "exp_avg": "821114e1637c9b2e53852ecc45d46be20c119190f9cb6173bb22ebe00fc09ae3",
+              "exp_avg_sq": "b0ddbf1a8163d46fd8edb627ee9778dc5d51d58701b72ba64adf35e6ac123b98"
+            },
+            "78": {
+              "exp_avg": "eaee09cccc4a6a6fe19eb0a824dab3e65e115e3a155c21cf643d9f843c38864e",
+              "exp_avg_sq": "eca28dc2c504e8da2f4c30d66a701f1b033e798c9acda66c4f1243b1e212e82e"
+            },
+            "79": {
+              "exp_avg": "5098c0978e21cbbf4ef698b4794eb04ee8fc640461177f6bce922a10b8f87c43",
+              "exp_avg_sq": "e957d0af5f0524b14ef639b3959308fa69412f4847b0ce37c3f2678fce12eee4"
+            },
+            "80": {
+              "exp_avg": "c5cac610ce0a57c3bb774a0d27095de70539b9a5b2e90598c9e51eb63b531329",
+              "exp_avg_sq": "5d3feeb1b307d4071862c7ea707a3cc0c75afd654cbf2ecc863798d667f02726"
+            },
+            "81": {
+              "exp_avg": "5d33a228f9e7465374349aaa1cbc943461f940e171d421c03d5cbb7dc03f1490",
+              "exp_avg_sq": "0d6604aefd6d6e5af93aa08649eaf0430a02262e3a691bc3a66f1dd98107dc7a"
+            },
+            "82": {
+              "exp_avg": "1b5e27367bdc4cbfe2e9a3a27dd3db295237eb00be694625d0fa7a2425b207d2",
+              "exp_avg_sq": "acda4cac34f8f188aa206f0f9fef1e9e5661bb3b894bbbf3816652605fb5d30c"
+            },
+            "83": {
+              "exp_avg": "0d65d5fadd2ee9b9fd026a48306d95c9c4aa0d1eccaa8baec74dda0644b0c601",
+              "exp_avg_sq": "36ea3642d06f78e61410729b6608a5fdecc4f3ac7d33b591a183b5862904a18d"
+            },
+            "84": {
+              "exp_avg": "1203107551aaa191fbf89ce3a3a5369cea68df00db11149ecc8cee1000e87911",
+              "exp_avg_sq": "6a1763b772d2d935157c155bfb41bf5fd4983f3cfde23f61e740832122af1057"
+            },
+            "85": {
+              "exp_avg": "6562106d89e6bf2faa351bfa3b1287b16bb00030378281b97b2028c4b75f0b00",
+              "exp_avg_sq": "3068e60999c376c985095ee4164ec45603938d9b712a1423c77149464ef335f6"
+            },
+            "86": {
+              "exp_avg": "f3cf3966f8afdc667b6a07542e6bd3d0c1280f676720908e10a9fafef91e13d0",
+              "exp_avg_sq": "82c451999c6a11ee82a67d646987722946f9865d5ad1b232e937564fb60d6b9a"
+            },
+            "87": {
+              "exp_avg": "d1b8d38504e76b634c072ee1e5ac8073cb803c480c6a043e1630990989056534",
+              "exp_avg_sq": "9ccde6d206281e856f86ad54518882909cdee6e83bfdb402b08c3b0fa172c922"
+            },
+            "88": {
+              "exp_avg": "e4bd446015f9dea107c25c1cf182d0c7171f16bf119c3a5d7df885428f0e4f10",
+              "exp_avg_sq": "de95968511d3488d8a8bd608760fecdf023879539f8074cca26eaefacea10378"
+            },
+            "89": {
+              "exp_avg": "77e9a73e8d5b6ea63af718ca74c8e3619f55828978a83d10b34af39850df9079",
+              "exp_avg_sq": "6aec73fa5592b824528f55ece4c14fc09c742b023e0ee86e7bc4a4d9556a777c"
+            },
+            "90": {
+              "exp_avg": "1aa3e3d4cc4e92295de6fe182e0bd2be92ccc5832d531b83ae3517418acd8ad7",
+              "exp_avg_sq": "e1ed04176f6a14886789dff9ef092b65adc280417aadfea338f1489fba9c5845"
+            },
+            "91": {
+              "exp_avg": "3a61db665eb666fe3af82db3fc37100ffe4479acfbd5de5c0eddd618fa77e1d2",
+              "exp_avg_sq": "3cb654446f0914ad26e0c6f88b43f92e79ce1e52f479c2f3f244b2cab4850682"
+            },
+            "92": {
+              "exp_avg": "a7d7c11ee9d8c4d440d4de524622d2da22d6e29c327d6feadbd18aecfb54e801",
+              "exp_avg_sq": "f2220aa1e04dd5c055a78f737addb93cd0488136b39ae94a92e34bedc0ec7d5b"
+            },
+            "93": {
+              "exp_avg": "99f7f1ea662eb54b2d9bddca43f6f8534cccbce406ec963bb21feb613c2d73bb",
+              "exp_avg_sq": "fdcc784d5a914284ae661135ff6d0649fc053c6b890f6fa500620091aac10a95"
+            },
+            "94": {
+              "exp_avg": "2931b0fecdcc893c212204bce9443e0222b6be5234ebec8fca8b27b21af04068",
+              "exp_avg_sq": "65e9cd8b886306e151fa5aa3a8466e348596892bce79dacbb22c442f7da89127"
+            },
+            "95": {
+              "exp_avg": "74be4464ca89ad8a02ab4727188ff8f69bc2ea584a64b264977ebfa0b11a389b",
+              "exp_avg_sq": "7bc24ad7d1284e5700abc93a08085cebe3cbc0d4d9a8e0caa25779bb597de31b"
+            },
+            "96": {
+              "exp_avg": "165d417110c25034292ecde2ae27ee4eeb4f25895a3442da83f8b1dff51b0ed3",
+              "exp_avg_sq": "388cb2c538141084256d6f958f8fa28e4f37d3e0eff1c9ee94cc0ace2d27339e"
+            },
+            "97": {
+              "exp_avg": "3fe97f5453dfab03352823d65c80c0b7a34089616919296e71b172c1f21f0264",
+              "exp_avg_sq": "63352b0e78b12b1a4b990d0edfd3203afccc8447795e18109540221b87d2d9e9"
+            },
+            "98": {
+              "exp_avg": "b18977780a80f8b42c3e50f6b1182b66e99dee5acf5c7c7a9064c26c1e8029f2",
+              "exp_avg_sq": "674ca536c6a488c0422eb4884065c53f93458a2a795dbe6d3e0eca6924e87642"
+            },
+            "99": {
+              "exp_avg": "926c02d0d218bc9bb3c943c65a3a4222dc58527d15319e23c7f73fb2ad415678",
+              "exp_avg_sq": "969716e4470d7c9337e3984b1aa211624cd38db20505a5a056e2878d77bdfcb1"
+            },
+            "100": {
+              "exp_avg": "b998acefc883aa372057c27973941afb08943a996b4239efb21bdfb3f31e0b2b",
+              "exp_avg_sq": "5944dc3339f4b72003970216fc199239ba4fda526da93b60e5fcdee480003c97"
+            },
+            "101": {
+              "exp_avg": "27866e7b4440906ca04ca4068a27cc628c5f58d7f88d30321ae3f06c8e22b694",
+              "exp_avg_sq": "1f005b262bb7e76636759c386387a5af696b0c48925d547fab564b769aa2ceb5"
+            },
+            "102": {
+              "exp_avg": "40a264c9ac1a5744dac5c4cda57116436985172cbe209565cc5c4f8a33ad35af",
+              "exp_avg_sq": "73d6e43f83b201586f7e5c75aad7871c33b81ba07e4020199bef53e643df850e"
+            },
+            "103": {
+              "exp_avg": "ec01970371f88129d4c3316a10478abbd2a4dc9aa2831d04082350b0b1b624ad",
+              "exp_avg_sq": "15bdfec39f353dd4035b9acdcdf7930fcc939784e422b4828cdd2b9def7ed7dc"
+            },
+            "104": {
+              "exp_avg": "386573140700b30c0e375cfdce60388882b1fc910059f99d0ff6414a4838313f",
+              "exp_avg_sq": "4c08c16da711d1ffddaca41353d1048748c5eb2891ed1a40522889a7cd946f40"
+            },
+            "105": {
+              "exp_avg": "a1db42637fd9b95a6b248ad01a1641fc84a9cbe7554111aa070856f65d3fe4d0",
+              "exp_avg_sq": "51da5b8ac5bf9bdc5ae92c6c48f3936143978f1efcfbbba2e77b59894b4c9f56"
+            },
+            "106": {
+              "exp_avg": "e1acff7a9a44a3a7435c4ba2ccaf3798ffaf495d6d90898c41de99cab5aab602",
+              "exp_avg_sq": "9b9cee96030d6665db2d5be831a17aa66d460890ae34799a88a76c41bcf9042c"
+            },
+            "107": {
+              "exp_avg": "eb4ee5cd27dd8ef5b14e6a444ef13e871dfee2cefe3a235e570eb43c695d6260",
+              "exp_avg_sq": "24bd9ba4b32a30f03e58426a0dba5b9fa0892f643ffcf8877ca1835bf550b87a"
+            },
+            "108": {
+              "exp_avg": "c4ff4d86ba8c279fef745f22208e75633999ea819172ca137b86dc0c9f1794d7",
+              "exp_avg_sq": "90e63e42be398a1e6bd5da86f54d7a8e2ff793fd8032bf011648b7a5b0fa1e54"
+            },
+            "109": {
+              "exp_avg": "bc8d2b64685973c9d439f6e0173c50aba14a75160c3be5035e451f6274656dc9",
+              "exp_avg_sq": "5f3576d293476bc8231946fc84b51c10f33d3a5e0f4b571248ceae2c74f58fae"
+            },
+            "110": {
+              "exp_avg": "d981da8de9214a5032dde58dcc0694a94c936928c835c0b0deeb17a93ca25c94",
+              "exp_avg_sq": "1be5e6b07458ad262c2cf0dc1643c314801ca2f91a626dd3eed2d50f0d3e91a6"
+            },
+            "111": {
+              "exp_avg": "d9e88a3f99fbf74c76cbfd7717a93ae94208e5478dad91c190630cff75b95c7a",
+              "exp_avg_sq": "94606854ee83227042e2810a51f21e33c7460b9d42dcb8e939f27be25e157de8"
+            },
+            "112": {
+              "exp_avg": "fe88438e90ebca8c03e41d3173670f9f23dcf2090318a5e3d602e78f80166897",
+              "exp_avg_sq": "b6da0894dbe214e2d810ec95493e5e2ec957b9ccfe18e4fd2bac33e4b881cf76"
+            },
+            "113": {
+              "exp_avg": "66a9d57cedcb38367c63c7ae05e0a4b100c3b79c5a21c121a2bd1a52440afbbd",
+              "exp_avg_sq": "77330575438a50a036fe00d5f3a6a62d0901e62ca09f2ca4097425a4834ce23c"
+            },
+            "114": {
+              "exp_avg": "0482cc04abd11329cc84a16b9b4e9206cecab611121eb4ec434fb131166c4839",
+              "exp_avg_sq": "45b267df1f805cfe97295450b895264f7c306f60700275cadc969e74c9cb455a"
+            },
+            "115": {
+              "exp_avg": "f2b42e92699f4387ae53fbe2b3b904ee3b62a6036c7e8cf28d5b80fd7f479763",
+              "exp_avg_sq": "77da6e345b1360886c2731b0b0612a169aeac32d9cb0a0cd82b9b5b6e15fa023"
+            },
+            "116": {
+              "exp_avg": "f9aaba06fd2cfb16cc6afe72ea6840487dbd5ebba3557b640ae7e0a5168ee545",
+              "exp_avg_sq": "439070ec28a87e693e4a9ce329f9596255516b2c8103b10e46d7fa87b6500fee"
+            },
+            "117": {
+              "exp_avg": "95ed67d2d7bb801883527f360e72b2d96ed1488751ab85b708a573e02c1280ce",
+              "exp_avg_sq": "8563ca1a4b1314e86a568323ddb5443587fae14a3d6537030155af316d7825b2"
+            },
+            "118": {
+              "exp_avg": "0ca63ca3b8d74850de2e9a32fad6ef2bad074d1ae4d34ab301feae048d5a6985",
+              "exp_avg_sq": "14ab3f588959f287d337aab7ae88cccec517b4b58cb1b05b5996d2c66d1fc95f"
+            },
+            "119": {
+              "exp_avg": "0c31a757afc95759fc50efb818e10eb4b984b2f30f51574b126fba8eb81d5ecc",
+              "exp_avg_sq": "8a4769e814932271ae95cef21c2fc6a141b9973de1d1b99f4f8b32812e2f9091"
+            },
+            "120": {
+              "exp_avg": "a9dbeffcb604e74e436fb102bad138196915ed652b9c546ebd13dec279e12e4b",
+              "exp_avg_sq": "bb3b05e8949067330c0fd1374ad59e48983bc8b583fb0c2f38a58b82b5b72556"
+            },
+            "121": {
+              "exp_avg": "984cee7856e94f78d5272a24a2b57286f83b751530831f298512f9bece8b78c1",
+              "exp_avg_sq": "7ca79ed3234d077940f7982eee83408b3d4cc0d46a7b1abec7dc4f8d9c3d521b"
+            },
+            "122": {
+              "exp_avg": "7231175efc56b7d20df936aab4be2b4aeaac0dd1e04da24a6decddaaf73994e7",
+              "exp_avg_sq": "e8055a3db06ad8a6a75d5705c239abf6361996ceaef0d3b798f46d9b7a25ebc6"
+            },
+            "123": {
+              "exp_avg": "547f33c447a09ad46739bd68f9414b2e343748519753ada6b58291e9a27f0b44",
+              "exp_avg_sq": "809bad6bedee567e517d91b8b39ff98489172d4077bf9385895ee585d6f81650"
+            },
+            "124": {
+              "exp_avg": "88b286f038cc16bb17d16579e3090081bd631c73debc39fbdcf4f5662a889553",
+              "exp_avg_sq": "6aa03a8571dc2aeef1b43f2ceb49c7e44e4ac77e55d0b66c039e50790bca1bb7"
+            },
+            "125": {
+              "exp_avg": "72d822c4cea383994b33df0b1be9de1642d97c9630d604ec9c41d1415c83bffa",
+              "exp_avg_sq": "4e883b8d1764d9e5b9768cc37995b056f48b6c082e87cfb9179c9b3bccb0a266"
+            },
+            "126": {
+              "exp_avg": "6a67eb12a25c220acb4901327bd3c1482995efc57ad37bac5fdf65ad8a5ead72",
+              "exp_avg_sq": "562e5a497df9213ca8db367403500fa2db8b342da3d9ebf7f4961a9212e90aba"
+            },
+            "127": {
+              "exp_avg": "a319c8722159b4b641fd88b8224fb35a1d27a63d7cec2c048a4aa8fc56e736f4",
+              "exp_avg_sq": "8b8b076d3d5b7e2558172515180fc09cadc08df62f20e5f38facf88db3f5c6da"
+            },
+            "128": {
+              "exp_avg": "e3b1d18947b2a98aa6049f4a8b9cdda249b9bf318c6a67fb63a7f483b93e3647",
+              "exp_avg_sq": "ddca8eace828c4934af59a208c6ed24f5b39b669a03ee4719e2e22d1da958263"
+            },
+            "129": {
+              "exp_avg": "c734b866ad6cfc3c45916f7f403078d3b2c8b21c2b32065ba28fdd79948f70a1",
+              "exp_avg_sq": "5c5fb15a6114b4a2b369a414c870b618cfe04ee64fbda4fc664910af4f3dab5f"
+            },
+            "130": {
+              "exp_avg": "07282343ca60f8d5c1e5a7390e01ea601c565682c1dd53659a63bf9aebffdb4a",
+              "exp_avg_sq": "4a2ccafbbcb985c39ca627fc8c6ef54bd58ab2ff94427b538fb223287c11fa15"
+            },
+            "131": {
+              "exp_avg": "c56d54c62cd3eb52031dbffae6a16702ebff366e601175103d0da7527a4bc3e7",
+              "exp_avg_sq": "3b95c54e41e2e613d0bddaa76be64884f3145e0fcda84dd8647bc6028114a306"
+            },
+            "132": {
+              "exp_avg": "34e17c53f952faf22b74d2abe1c40fd1f82920f1c981dae194b110f02bb4ae48",
+              "exp_avg_sq": "15ee022be9d9a4a508c5c76e5d446dde9464f967c037d80a1559540d5241ff9c"
+            },
+            "133": {
+              "exp_avg": "246ccec1a1ecd8fcbe1e3cf44ad9c32243e36c18dd291c7898a489ad2b621308",
+              "exp_avg_sq": "6dac2ff312f47b795513cdf55905494e73b7f1d1788039eed48a544b07a20ae9"
+            },
+            "134": {
+              "exp_avg": "6192ef215dfc82291b10e6991466b0c9e269f0b9ba90105bdf0cddf185d22931",
+              "exp_avg_sq": "0c3358363c7d2e2b72c392515db0cd0cfbf04cfda2497fc2e78958bc0b1abae0"
+            },
+            "135": {
+              "exp_avg": "47a7a4d046171013e9fee8da2b4b4ff8fc105dbf1bd9cf8d2f2713e5eca128e0",
+              "exp_avg_sq": "72aede5362849028f06088fadb036ab10d4236ec1d9a7e601291b9989a83af08"
+            },
+            "136": {
+              "exp_avg": "8e4ac8959b48c5bf2b50c83fd1fb34b6cd771a48a8c5f86b4d5306400472c5f1",
+              "exp_avg_sq": "c42520ec83e66a243a133c5029a750e4dc8f6aca9b39241f0a7a2a42400f9a8b"
+            },
+            "137": {
+              "exp_avg": "1243cd750bb95921e9a321fcc5982d00a1150f724b66634a2a7ba104c1ebc059",
+              "exp_avg_sq": "0c7391174e62e30055ea51b8c365f73434603999b2b70a3942544903e875725d"
+            },
+            "138": {
+              "exp_avg": "5318427c9078c3a121091db5d2f6a3718702566e1cd2d056d1a374af19c92cab",
+              "exp_avg_sq": "18120ba81251f7558bb8119b2dddcf5e84d92143bc5a0bfc30aaf443aef61560"
+            },
+            "139": {
+              "exp_avg": "c5449db35e9b0f211f1afcfba95571da821f852ce7507b3ab6fa31e1c3e502f6",
+              "exp_avg_sq": "ed7c1d9a10a0374ec276db8948f9a5bd40ae1434238ceed6291b13cf12591fb9"
+            },
+            "140": {
+              "exp_avg": "bff321f20b5bd7722a2814cd3d638c300b5c2e0ffef707ec18143abac8c74547",
+              "exp_avg_sq": "a6f65fd8763bbc16bae73cf5a19920a94c2bf08e85515f8e230b5e4b08fbad88"
+            },
+            "141": {
+              "exp_avg": "a9adecd77371c9619ffb216e4cf330a01d3bee9d7058f4a62c4b113c096b4622",
+              "exp_avg_sq": "df95c85819e4f75346fdb0882fabed15bde91f3a7e48f7479883a5635b97e345"
+            },
+            "142": {
+              "exp_avg": "cc84e90a69dbd4ece27f003a8112b35247820b579a435d3047b3b8457bf62ff6",
+              "exp_avg_sq": "7f2d2380132bd260b875196e996ea370a80bf8dea7d6c9143e79a6941c2edf48"
+            },
+            "143": {
+              "exp_avg": "bd521955018d04d5d68c8adf40fc5466f1c8702c8bbc64050de7cc77573a385d",
+              "exp_avg_sq": "d3a2af77cbeb875851763b799f76b4cd5380c663453d87114737531d4351e2ab"
+            },
+            "144": {
+              "exp_avg": "7950e32cd2457c60584e08324c10f4918759ce6f41193d351ee26f882edb2081",
+              "exp_avg_sq": "30760a326c1738021e1c10a34583196714e11ce629a0e7485234a49baeb1f64a"
+            },
+            "145": {
+              "exp_avg": "2c8c8592a8beb08dddddd2bd5f99ac0d3b0cf2568a033fdb9c1560a6b16d8664",
+              "exp_avg_sq": "f5fd35aca86a0a30d1dbe2d32c96f2cbba45c35ab5523a3955a017a5f20a898b"
+            },
+            "146": {
+              "exp_avg": "08dd4e55e75a1ef1da6c84848b6117c82a28f2c3f86347de90a979e5f143e0ea",
+              "exp_avg_sq": "09e0e4676e191b707d419a3e74d5249c36dd77e717804e87d29feb1300404efc"
+            },
+            "147": {
+              "exp_avg": "4cfba9edc913fa2032ed77d5e334fc13610ab584ec53587e204deeba771fa1f6",
+              "exp_avg_sq": "dc039216dcaedce698d8f24bc66c2508a778133ac9581fe5bf15912caca6420d"
+            },
+            "148": {
+              "exp_avg": "53c5a257a6d966835da39ae8767a3a0c5002fb172c48c5e49917dbd5f92a1781",
+              "exp_avg_sq": "91c1fe26ed2f2a88e5363689469c7e6f4126ad0a95acd780a1840366099af799"
+            },
+            "149": {
+              "exp_avg": "d9f1c4928cb9927fda95478e9e1e9839c5f3c64bc5c3d45c31e19187fe5a50e8",
+              "exp_avg_sq": "0d577db2c837c1f18c37d73f4a1d0e2a54c5d5786cc273b71b9382be6e88eead"
+            },
+            "150": {
+              "exp_avg": "bffa4c4a171fdd9bd5e83a13c677c38fe3b1a4056e978a34ce758cd3ead9d843",
+              "exp_avg_sq": "7eb8453b76999eebbc00f6bd195e03232654856250b890872ebc7b0a3d2c6e0c"
+            },
+            "151": {
+              "exp_avg": "eb51a6c0d7d490ee5a6879e635ed208b225b35f5759d37d0a64e336f4c2622b3",
+              "exp_avg_sq": "e368c10b6e8ea60ef521a9c2761ffc33e188da890d01b51d4da59b10313fcca1"
+            },
+            "152": {
+              "exp_avg": "9affa7ab1bffa3bd9947952314729eff0d00cede25b0dda37d0e208e9cc37d35",
+              "exp_avg_sq": "5faba6ceafeaf7000e9f8439968b0ee0bb1bcb279770cefea4e7c67f9bea4b0a"
+            },
+            "153": {
+              "exp_avg": "4c820607b43042d3c2a7ff8a5a742fc4f1974ba9a4e363f31550b3cd18bb3b6c",
+              "exp_avg_sq": "0663d938bcc0d1c55a0b7397a6fabb50fb68e045431463e1553e46a240e86270"
+            },
+            "154": {
+              "exp_avg": "63a465c6d05d32ed1f92a904ba8ce99677928ece5c5456abdca463815f4ee096",
+              "exp_avg_sq": "b587491dd3958a0b53bd0b0512d2ec9347d6805f88809b83f102526932f61e5e"
+            },
+            "155": {
+              "exp_avg": "ed7529262f72eb819a9197e11c4b87b1207a151a002bb9af200eff7740440ffb",
+              "exp_avg_sq": "309bda24ef64a8fee5fd8b42979bc05abf7890055f48432a094154b6c5e9b421"
+            },
+            "156": {
+              "exp_avg": "53b4e5a779c6da359baf662ef4532376832cd68156ad88a30e2e2300c3ade176",
+              "exp_avg_sq": "b4e4ee00129a057dea64e37f5138cc09b6c83681aac55cf8cc48e13b886179fc"
+            },
+            "157": {
+              "exp_avg": "cc3e0ba3df826b8a2cfc5208cd5bfa598893a8034abe5370a7763ee839ac91c3",
+              "exp_avg_sq": "e72cb27755300047485f36063ec7c7baef61917fb00df51e79cfcb426b348095"
+            },
+            "158": {
+              "exp_avg": "7c8defbbeb6eda5b888a0e8e7641209bcdb3c9c802a5b34f1302cac75fbf70a6",
+              "exp_avg_sq": "2917f416f3b00a9538df833f3cc8bab91c402f14a1e210113b782b76c3ab543d"
+            },
+            "159": {
+              "exp_avg": "c96aeb6dacf0b2f7fd55659937ff95d40ed20df18a704648f7da16e515374967",
+              "exp_avg_sq": "14e7d302b027f781cb28517b7ec6a7ea9d497a58dd4bff30bb3f49e6af5a84f7"
+            },
+            "160": {
+              "exp_avg": "dbab7f2584d347c5de2a25a1168c0d718b057f022c4ed548c6446bd6ee0baf9b",
+              "exp_avg_sq": "c031d92ad9de13fb3ab0206cb62ab37d084d1eecc2f7948bb0a1d31b7bebd3ee"
+            },
+            "161": {
+              "exp_avg": "317cfa207f1a17c4b326be5528cc0bcc4dc9c3691216b5918347c74aec42cc40",
+              "exp_avg_sq": "149017ed19372ed7f621f245b26a1781cc1480efe7ccecc82171232312e72a27"
+            },
+            "162": {
+              "exp_avg": "4bec42e65d71f68294505c3bb68f86c4173825ea67189f39f379c544b55f2c67",
+              "exp_avg_sq": "14b1339bb5ec69d22619bbc1e2a93a447f952cc1c6a1748309c348123b6a60a4"
+            },
+            "163": {
+              "exp_avg": "fa4f7cbb24f2df0807bf7fe572a05bbfd710b549f390704daf9f1139e9770a5d",
+              "exp_avg_sq": "549202fe9097e0187473c1a8cfa5ab577dd452d3fba98fdd7ec070293ac87884"
+            },
+            "164": {
+              "exp_avg": "41bd843336c2ecb6dd6b1484331eaeefe678f60c45a156ead4076f70d9980b49",
+              "exp_avg_sq": "919ddddbe829dc42d59feae0b28eb575903b3c0b5d6e14666cba4c1881c1d686"
+            },
+            "165": {
+              "exp_avg": "77fce6ca25246c6c419ff292ae8258fef5f0ee1ef53122aaac295f84192ed9f2",
+              "exp_avg_sq": "3fea49e2646847a92b327103d40aac3047bd57a2b121d2ce9d194a0da5287db1"
+            },
+            "166": {
+              "exp_avg": "56d2d282595a45ddfedf5b0c2c2ea5da6f62eaf0ff7c47d5b43c280301e6a152",
+              "exp_avg_sq": "6430c95e5b6c66d07e68fbbfc535a31955e389fdbaafd6d7f4a4b836ae99b55b"
+            },
+            "167": {
+              "exp_avg": "82e9c449d4b7a646c02a6680601d7cc05337b8d3f18e44d5e48f8f68da93aca1",
+              "exp_avg_sq": "7e54c4c8b42bdb57fc82a33d75c892dcd26951ee44c2ec9ffc5959ef9544fb58"
+            },
+            "168": {
+              "exp_avg": "d2aa9a2832913c1258df1406f106f45ee06a712c2be7361a3cfa73c951d273ab",
+              "exp_avg_sq": "6a514dc9392f54aa0839d4c7f742b097d9088a191f3a6226002af66c326b64f9"
+            },
+            "169": {
+              "exp_avg": "f444c9c8cf3df3b05178355478b804de802c29afd08a74e3feeb30912f2fd302",
+              "exp_avg_sq": "b38b1cfc40209b83849b1673a5e40cd90acd3ee8037f85dfec81c3ae0a5aadb7"
+            },
+            "170": {
+              "exp_avg": "18bd217bba07447663a222c8dcf83bd85d271a3469278a9cf5a0f27bb061a2d8",
+              "exp_avg_sq": "0fa06dee6ced5c942a1c7e46e6e0b2568a2fc2b9e536a5b9aae1df5b0073a04e"
+            },
+            "171": {
+              "exp_avg": "49d0a1fdfe0caba7951377cf54637c47f612969adbad1e849efd99f05b2358ae",
+              "exp_avg_sq": "84b43239424c194302c03ed11a962a5dae74c7ccb4eced4bb9a3027d7faced00"
+            },
+            "172": {
+              "exp_avg": "b9a718fa7fe3f30e3bba9d6e141117105696357fc99353ce7487ccbdb61f4220",
+              "exp_avg_sq": "6cdc08445e26b65e55e3f9526badc87596b6f1d704a21a0ca0cfaa1413d01564"
+            },
+            "173": {
+              "exp_avg": "a78957a40e1c330868ee7abbfa1bef5fd8eec0756f0fd843591ada4bdd3abf81",
+              "exp_avg_sq": "07eb4224d3bd0aab0111399c0957cef62a6339c54be4ccd6e07096ca426d7836"
+            },
+            "174": {
+              "exp_avg": "356d56f91f0536dd48de4aa182f6d582e553de126cfd9a2501a151eed0488273",
+              "exp_avg_sq": "f8b0159d9bd3117548c54edeba69c49d0dd4a4fbd7cf7a47f1fecb9096892df9"
+            },
+            "175": {
+              "exp_avg": "80226f089b88d50e8981f293723b2b39062324c52329984420b44e1e577756fd",
+              "exp_avg_sq": "15efd200ffe3710db2272b227549bb03cc2dbacf31754912d95c48a537132640"
+            },
+            "176": {
+              "exp_avg": "2697535005b2343fe21bc71efd20a1dc3211f11b281f5c6fa8cdf861341a06f7",
+              "exp_avg_sq": "7909f393c796a251ea34bc003b95779c57ba3dd00796dca5a1861108f5a6bec0"
+            },
+            "177": {
+              "exp_avg": "4f74ba6c3aeec2ed1d087e70d2e18015967f55a887e856fb0be82d39d0e795a9",
+              "exp_avg_sq": "a2857b69e34c7cb712159dd528135e6d6a016d898d0a8973909e3ff7dabc4cf3"
+            },
+            "178": {
+              "exp_avg": "8d2cf601fa943f7079708683688371ede39a857539a018d4231a5ce2bb2088f1",
+              "exp_avg_sq": "920f4ec0c85a30674da7bca8ff615b9a3dc76f5b4b7976696571c19185e84e3a"
+            },
+            "179": {
+              "exp_avg": "5a1af872d03aec55b7efb8c4b8f69e819f6f1669d18f87c33012c20e4d04ad07",
+              "exp_avg_sq": "95d059ab4fe7b40a5d074945604ebb1785c2d9fcfe2e1ef31a2fbce3c1be7c76"
+            },
+            "180": {
+              "exp_avg": "f06d37efd090e7d83af12824c89e023ec046f85958c414beaa40239002207168",
+              "exp_avg_sq": "d38e298dbf14028e3e60f4b4ca84840298f3a8c6edc1e28c1506f35250426242"
+            },
+            "181": {
+              "exp_avg": "063467fba85d44858278c02e38b4b1a1a5bc12691024a9dfd4c7c9b0d2a19d90",
+              "exp_avg_sq": "e7e5209b74faca8a68ea2d36200fc0887ecfb8f96ec8f226b87ff3dd967a80fa"
+            },
+            "182": {
+              "exp_avg": "fc9b1c8027d762a4adc9e90c53e7873042568335c55129dd8fe5a421d7317531",
+              "exp_avg_sq": "5d1d7d94e2463cb7b4e9ec36138e2cdcb62998d47608c0ac0dec4e22145a308c"
+            },
+            "183": {
+              "exp_avg": "f0d3d653ae5dadd4545609d14b9e868551c20b71529d2337b4938fc2fad116cb",
+              "exp_avg_sq": "4752c266c8ea2a696a7e5bf179c4fc51c837c8a0a911fe34b33f73c479dbb630"
+            },
+            "184": {
+              "exp_avg": "400b6374abfb7623f955290689a8d4d789317222fdee9091217e3a1df55433e0",
+              "exp_avg_sq": "a1d7592bc6e31274602ae31f0a24ac38179e79e31d1974958834560ab3cb4121"
+            },
+            "185": {
+              "exp_avg": "5cdd152c873f32950382b1b217f13700c873d0254aabf39769f842dea0ecc1a9",
+              "exp_avg_sq": "c3a96bac5d5ffa849e3127dba4c51ce1b3a396f241b48f1cb07ce91493f03cea"
+            },
+            "186": {
+              "exp_avg": "db57c7b6bc0327c76003a90aea6db6e57bf591fe5b36d42dfe7d2ac185420b52",
+              "exp_avg_sq": "84c0fce28ee0f30302e77df7aa14be1d460131ce1cb89591ad469972aa1223cf"
+            },
+            "187": {
+              "exp_avg": "4dee6bc1b71504b2de5c3911b5994f5f96108c40c1d56d19d27c3cb74ea2eca1",
+              "exp_avg_sq": "c1c1b2b1fffd77e9cf1343825bb8a6764e59da68b1acd9f3d5e4956503a025c6"
+            },
+            "188": {
+              "exp_avg": "616bb1d190e742bb1f3f53f7573811bef9743c13d8fdb5079842d83af458fa5f",
+              "exp_avg_sq": "e8600c3eefde2891cbf3b846564104d6dae6a2d6086da6bcc99d32a30b16138f"
+            },
+            "189": {
+              "exp_avg": "e50be52b993d38e5ef071ff84c00da50e7fb31b7e1f4759ac151715e9c42609f",
+              "exp_avg_sq": "6f91ebaaa394d7ebb874ae8c18fc588bb33e935c571f22e1285bb708e65bcb93"
+            },
+            "190": {
+              "exp_avg": "607cfdbcd0b2c3dc6b504933388d5779656c17278a47b45aba3af80cd7965cf0",
+              "exp_avg_sq": "ee8527ec319ae8b0867eae9f48b03a0acd71be1442ee2f162f1ffdce044fced1"
+            },
+            "191": {
+              "exp_avg": "9d7997b55de0153734776d4c6c5dbe1266760bd94d00afb6a568c697d8e05c4f",
+              "exp_avg_sq": "b31f8c39ac4ef97ffa16e6e86299f7d3e545520d19c88c5e10e66ff93e784eb1"
+            },
+            "192": {
+              "exp_avg": "7b67610da054e3da82a04efad666650222a4e9c602ceaaa7443a7b8b6c578efd",
+              "exp_avg_sq": "ce135661dccf35e8833c6749602c5fe35888c548c6d1db6ec2cb23cd611185a3"
+            },
+            "193": {
+              "exp_avg": "6d2dc963782a1a9bd0619f7ee9219bbd1f2b5c748693788389a5bb74bc573edc",
+              "exp_avg_sq": "ef797ede43fbe3693720b87d9c00e351fd616ef42f29be3ad76d5c6a2ec85d8d"
+            },
+            "194": {
+              "exp_avg": "1c1b3d85ecd52de3085ea9b69ac9504ad5d153de1d73f1a028f6374d03df601d",
+              "exp_avg_sq": "a36533af72aceeaa40255440aadcdb23092f5b5f53dfd9e73f6704a34a8db764"
+            },
+            "195": {
+              "exp_avg": "2c531ee9af1ef6f02f0146aaeb552aefc07b2e8726ff8b0acfa8785655984434",
+              "exp_avg_sq": "99339f2fe45a8411271ed9ada3a91738ec65202f7f6b331bca0e173b28796234"
+            },
+            "196": {
+              "exp_avg": "b73a0a0fd5a20cb290ad8fe9013ba12871e1e49308145268d7faee774f90858f",
+              "exp_avg_sq": "cdc9679b20141bf8309b2f48f997dd2d9ee405dafb66d95ef20f6b3c525d5f94"
+            },
+            "197": {
+              "exp_avg": "6e49c1af73914ac565282e23904703342575c62ba54e32f549f29820a066cdcf",
+              "exp_avg_sq": "ddb16fc06a9cf9a1008683ee2519573c27807ea8c7f3ce3a5f71d07b1b8a8342"
+            },
+            "198": {
+              "exp_avg": "c9cd52a057ac9c28fc717f1f90f4bd6e2846b94550faed5a773a21f75d491f71",
+              "exp_avg_sq": "02f978f91287f164ca941e98563dcd9e65ea53b018171f3ccdc608ddd18c60f9"
+            },
+            "199": {
+              "exp_avg": "e60588383728d317c36e4299edd1235c21dfec70092a9056f3d54ff78bb9a9e0",
+              "exp_avg_sq": "ebb73fd97b10e16dcc93f6dc45f3736f2eb3664fd47089d91505b7bbb61a90ea"
+            },
+            "200": {
+              "exp_avg": "4b51471f1344d3ec8dc325e2a64a2a870d7ee62270fb344833b28a0ab337b3e3",
+              "exp_avg_sq": "969b8576adfabf6be8429f539dc50c5b25a99ed9035a1c2bdafd6dcd1f3c208f"
+            },
+            "201": {
+              "exp_avg": "81b4b5cfcde9f94525b8c287306827a08d252ada49473e30df1a8779654d2e7e",
+              "exp_avg_sq": "ad4701f017ba62c6d4aa558bdd632400e9882b052151d0d48919c5d7d71e39f2"
+            },
+            "202": {
+              "exp_avg": "0120277c490018d9f180cf0562633c0244dd2f8b77dd1f7eb357d0b0a99520da",
+              "exp_avg_sq": "5a68fd30ee69a5dbc7fc971630f2e8b4afd2209fda274acc2c3681ef2c623eaf"
+            },
+            "203": {
+              "exp_avg": "c08db23e21851089c066621c6661bbbc69398fc5490a6bfe41ed74702ce0e70e",
+              "exp_avg_sq": "e04d6219924d089616a53de0119368d9b62373d2cb2489e58b40d1bfc89ee044"
+            },
+            "204": {
+              "exp_avg": "0e35dae8670d2d02cb62976684eb79a7e11b3ec97e5584c30b4ffdbb252a95fd",
+              "exp_avg_sq": "542bcd7e5dd9a2b120c296875e104cd0196c48a72f46ab56f4c85df624bb11dd"
+            },
+            "205": {
+              "exp_avg": "261a5ac0c27c179d9729e5b695f56407ef43da6b647e1c8237c18995fd33c6ad",
+              "exp_avg_sq": "92ed97aeb83f47eb5ce2c24be9e57c01325243dcfb09795b8c7b12a37090e773"
+            },
+            "206": {
+              "exp_avg": "b0bb02ae5cdd07f2d8f32a164f84fe4899a69d25caeee45a83d16afb05b2cd60",
+              "exp_avg_sq": "d1dbaf33bd02838f0f35cbf2a860ddd13ed58734eb1a49fb15a72b58ceeac4ec"
+            },
+            "207": {
+              "exp_avg": "e4430670fe277c28ba1be258cd373b8c1d89fc1853079b815c693ba3d8847fef",
+              "exp_avg_sq": "8b243684c1bdda4506cf25de603dffcc6ee736d24c3d277157e17eae0df93e91"
+            },
+            "208": {
+              "exp_avg": "a501af350efa395236ae743f252f53384a20bc89fffdceb3d9510f16cc0e142e",
+              "exp_avg_sq": "0635b82bc3a652ff2e29de0edb2b080e4e05d522fa8ad60c941d34f373095912"
+            },
+            "209": {
+              "exp_avg": "2f8f093285502233a1bd788e99cd3de0962175b2bc422a7f1f1f5fd97c60470a",
+              "exp_avg_sq": "9dc55a5bf81f397fcec2aa170cba5bf9c01cdb30f511e9243756a3967cfbea03"
+            },
+            "210": {
+              "exp_avg": "c62a0c05cdfaf6390c744327f2e990540b511a5953f3f8999252b959dae68d43",
+              "exp_avg_sq": "ce22d8a1a5912f1448241bdbb9eb1bf116bf5a740bacd4a6e4d1786af20bb8f3"
+            },
+            "211": {
+              "exp_avg": "5a59dccc8a84c4e74b005b685ee9c7f9cd6a66ad0787693231c6f91856702c4d",
+              "exp_avg_sq": "8e5231f8c0e376a514f0ab1cb3f4160ce33fe2f5659190bf09cc254d1d81260e"
+            },
+            "212": {
+              "exp_avg": "6f71c9fa3021c128b5e1a2611272e0ebb1cd2abeb1bec41edd11ca56b90a3437",
+              "exp_avg_sq": "f2c9025871aef3f402736968d33ee83df6d280923f958a90709e39d1df56527a"
+            },
+            "213": {
+              "exp_avg": "7c7a70b633063f561b946b32630c750602d4ded932d3aa3643335e8cac15f9f8",
+              "exp_avg_sq": "a4c6426adce4d6ec7206a1758d2ec5d95d595e1f98b0afc2a71cfa03bff5ca36"
+            },
+            "214": {
+              "exp_avg": "34f8b193db2452d47241e035fe0cb79e232a70d63deea8fd6d06e590e17206f9",
+              "exp_avg_sq": "0826aed7f28a5470274d2cb132db28b99d67af8deb19d4ff0207097cc0d6b8a5"
+            },
+            "215": {
+              "exp_avg": "7970af04faea204973703f9ffca987afba5d2e6306dcc7b599dc769de6ba5732",
+              "exp_avg_sq": "b4b569179382375d9efeca53af6afbe95cd73dd9f7979a49b622893c61026461"
+            },
+            "216": {
+              "exp_avg": "51e1ac17491f34673f5450d3434781994b61156c3732f33911614fe20c0ddd7a",
+              "exp_avg_sq": "9b8e1bc104f69b1beb31f2aa88b5acf84002329e25cf5c34ec9d59a147a96074"
+            },
+            "217": {
+              "exp_avg": "a880e6d3f8e0b162ac78d5101aa692862e28782e7c8ff358c4c482f168b4594c",
+              "exp_avg_sq": "da954ba00ac611aad6c12ab603f4593ae133396c8d6deeabeadc1bea38e64867"
+            },
+            "218": {
+              "exp_avg": "96f9314f1d5664a741d85b87cd166ba5c0384b2ff087b23591013b1ff4af400e",
+              "exp_avg_sq": "29d506b4a80708fa78cc2adcb46bc92e41aa14162a7cb9017f0b910b40ff4878"
+            },
+            "219": {
+              "exp_avg": "ffde7536e105b9adfadf4e996b3cb13cfd48fc1a88bf77ad0f763f6216609ecf",
+              "exp_avg_sq": "de86d8071202362634bc5346c16f81bf15a4ea80f0f289f0e627114f1ae560aa"
+            },
+            "220": {
+              "exp_avg": "c3377696eca0213a915a597e224479283fe6ea607df279e3a11c58e06e59cdf1",
+              "exp_avg_sq": "f5b528cf12b487287fa6f56a5a1a07f1d054b31af63617dc462301d09bd5c2c0"
+            },
+            "221": {
+              "exp_avg": "5ea4a72c6acf300995c5d168135dbe8afc54f5ab255ee12dbafabea281fed1e7",
+              "exp_avg_sq": "38fc0e1c2ec4c3e9c2c4dfefadd16c919af531c208858d50737b6ee477f25d74"
+            },
+            "222": {
+              "exp_avg": "8b6a5a8d2f5bf2f953a629fd58c88a5359d6c20041b2c1a4eccbf267983396e9",
+              "exp_avg_sq": "9666c423fd980e53115e50778c799077a3c3e1eddbc0b644585dff0a79ced31e"
+            },
+            "223": {
+              "exp_avg": "2c2448d8351b017e518fde56f9086a26c7c247a3fdc98b108b6a96626a6c04cf",
+              "exp_avg_sq": "de7e55c39b47ec2c651b6e6dd70eea979866a0638518d0ee5f28e65f8f51bbf7"
+            },
+            "224": {
+              "exp_avg": "ee20a12ff6e02b9ef861ec3df6f2acdbace43fd817dfe7b4bdd08dde98a15961",
+              "exp_avg_sq": "f717cdc266dd457ff6eb3a878471de06a25b6cebe0f1bda23a703e9bb7fb96cf"
+            },
+            "225": {
+              "exp_avg": "e64f3bdafb631991228ed4a6629dd9bf3f952de77475e7787f027a16ef5e1661",
+              "exp_avg_sq": "2d14ca75ce0c7215f7123abd36463c26a1446ffa8c9bf436899dce51d648f2cd"
+            },
+            "226": {
+              "exp_avg": "9bd26c92c9b1faaca6c4ab004086d3829b2f253b9ab5674abac5f98ad2ea58bb",
+              "exp_avg_sq": "f16e4f6e5b5c75029ee4a086cc15377f4eee0d45425ab216f064add940e4d1a4"
+            },
+            "227": {
+              "exp_avg": "cc1071f942f7d15e76dfcee7d7222d7d46a0998ccac4d937ad3277a5db622c7c",
+              "exp_avg_sq": "b79387e81426f22203877a2f027005b4ab345f62739b596ded97fd9834477c12"
+            },
+            "228": {
+              "exp_avg": "f609b034e1f424c615f161fb3e1bfbe29fd4524177bcf6caab4ff01744edb22b",
+              "exp_avg_sq": "9b56ed8e21695e64284fa6babc3d83e02c5c9a4af8a6fc9279d1aa88a4190074"
+            },
+            "229": {
+              "exp_avg": "0578a336452326934181fa378a754d55dc0b33ad7dae7bdbc98f7ce6ca0795a2",
+              "exp_avg_sq": "1679fe021001d527283e77b601e7bc87379b8bf5c1c707113d08b954d98a92d5"
+            },
+            "230": {
+              "exp_avg": "2b24a871d55a7fe51d167b520c076902eedc5db0a22a0d9093a9dd323feb4eb3",
+              "exp_avg_sq": "9b4e62318f5f876b5d1fa9565f174c2c08c60921e3175c5c7f4ffc757356d5ad"
+            },
+            "231": {
+              "exp_avg": "0d69e472530a302ee62b10b11b71609dc1d1e488a03262323599d4ee8f9793c0",
+              "exp_avg_sq": "39eee55e42aaf87a29b9a59ba4b5ce923d86f82113577d2970ea209b55111a5c"
+            },
+            "232": {
+              "exp_avg": "ca1170f066ee15c4eba97184e0e56b254efc05af4377c8fb85d96cb72ad394cc",
+              "exp_avg_sq": "bf24480da782dc00a8971d7e1d4180aa8d5f601ffab7d6bab397666fa459a9fa"
+            },
+            "233": {
+              "exp_avg": "ef0ea886912566dd9473c0e9a25ac1ad43feddd25800cf2db22ce8de94e7c619",
+              "exp_avg_sq": "36998b5d4f8777110af8e0b42beafa7620f8045d33552300b8b74c0b14b64c9b"
+            },
+            "234": {
+              "exp_avg": "3f64f5528ea0c180e1d9ac529fdfe6d20acb7eda19790db30d667f888828833d",
+              "exp_avg_sq": "e71c0357406aa34409229ee9b7bf0333dd333fd3e7da26ed78d3ab63e54a5379"
+            },
+            "235": {
+              "exp_avg": "9dd051d48198579df63c6687966a7140af59aadfd097e3844171c670ec5dd32e",
+              "exp_avg_sq": "3adaae8c0417c6999cbebfe21a2c5efec49fc3ce37a0d1a4570ef4f0f94a381c"
+            },
+            "236": {
+              "exp_avg": "7f9ad60c01ae5652ad5e7c349eb28c579abd01fabad3af17852ff6b060f016e4",
+              "exp_avg_sq": "7f75eef683bb43054434c67a8319164e2432705b7308c133fbd08b815f863550"
+            },
+            "237": {
+              "exp_avg": "fe6440565d01b6b82d1a167ccfb448bc4368f81d243e66da42599dc466977c1b",
+              "exp_avg_sq": "3e9599015b54bf4b7c5358222ae73ede5f03bdf4a76fdb36ad789b525173ea29"
+            },
+            "238": {
+              "exp_avg": "e9946855dde35a12ea860e5d4a2e05fa6de6888155dfaf815787064947ee5165",
+              "exp_avg_sq": "bac1ac11c1b1b31f158f2b9ed4b06facd0783e6a4da5b65f44e1bdcde2ecf525"
+            },
+            "239": {
+              "exp_avg": "6c70fc3654fdb63c9e0310357cb59079c6612a0e854b37167d48b9e18b9ac04b",
+              "exp_avg_sq": "5ab8995c547b092d8393443560b1019ffe0a9645fd7dfe1148e40f275ea88be6"
+            },
+            "240": {
+              "exp_avg": "f5a57106f41a85758ee9a1874120f152fa078e78046661dbda903bd9620ffc11",
+              "exp_avg_sq": "5692cb9740ba6f6dac7c659e4374661a524669af8cba55d6f19acf369b79a212"
+            },
+            "241": {
+              "exp_avg": "c586d06e3e4e12a48b9293e0fd8ffbb91c8a1d9e3661e51bb5b0e52ec77f50b7",
+              "exp_avg_sq": "a111f5b435a37ca35ad28098da533621137abc1af6e2cf6df344688111dab595"
+            },
+            "242": {
+              "exp_avg": "fd1ec9386439be47acacc31880e327498a685e18af6549aea35453a179b4e1a9",
+              "exp_avg_sq": "1349859beaee9d2edab682ce849dc895e1b0b4ca245493013f291489d40d482f"
+            },
+            "243": {
+              "exp_avg": "5a1fdbd09b60c64a8ffb47495d353e58f291c968b9a5bae93327bccd1b54ee25",
+              "exp_avg_sq": "b8e45c09ca878abe70e4a325bbd78868445e1413fb6a929cbc8152808f2134be"
+            },
+            "244": {
+              "exp_avg": "260c89be72df999c1527064de8e07de1e61ea2cab1642fdb63b136e5c54405e7",
+              "exp_avg_sq": "79237b3c8aaab9c93d078db6e646a91d32deacf63e4968e7a3c083586af7b6f8"
+            },
+            "245": {
+              "exp_avg": "90583d2dc5914e5a17fdfa3e7ab7b99be7dae037846dbdcdabfb8da8c99fe17e",
+              "exp_avg_sq": "cf87080909252b1f61b971b3584b03d2ee50c6c5f570954b54b7f1396daa32ee"
+            },
+            "246": {
+              "exp_avg": "9ed4358d159a081eb37522350953f3543c692efffff0475cc55fccbb3eac9ddd",
+              "exp_avg_sq": "901dd58250b9765f3f0d301f3bbff1b4a68e9606a8b53389e565877395329e27"
+            },
+            "247": {
+              "exp_avg": "74eca10be9fba98bb6c415306088b8ee642ec42adab58470ae7ea52108a49b41",
+              "exp_avg_sq": "e9195777555cf1cdd1a7a085e860c81aecd0be718460f3c2965f3530beea3b05"
+            },
+            "248": {
+              "exp_avg": "954acea644d7cc6d34c8dcc2af9a5bc69473215fdf0843cb06708e06359765f9",
+              "exp_avg_sq": "3d9c5fa17a5545c0bc6e0ecda2519dadce9547786b96f2ef048106ba09792c9d"
+            },
+            "249": {
+              "exp_avg": "9b4fb62dc84ba1148a176b6a0b1a4f3ed291da592ddc8d66313661c744493eff",
+              "exp_avg_sq": "9de0ff28975e160f543cc3e7d08f56ecc506656f38c172c25d52bf62cac186bc"
+            },
+            "250": {
+              "exp_avg": "ee0df19f85b08775f275318b7c4bef5667ccbd4244dca39eb4338fd96e07689d",
+              "exp_avg_sq": "deb9e829db2f552099a9a6ebb5cb8ca6e1a2da59756fa3612360f8b11106e9a4"
+            },
+            "251": {
+              "exp_avg": "b7d6c96233491d96297045c4beeedd711b3d95dffdd273b0301ae7e28dd6cc95",
+              "exp_avg_sq": "c38e893fcca4611cf95b5a6bc0e3fe02a2cfd2fd58b1d2ad5ef9025cc23b279e"
+            },
+            "252": {
+              "exp_avg": "a78401e1e565db4b4bd8a6307e6f4d173bf127d468564c2571d9311689d4868c",
+              "exp_avg_sq": "f3fb69dea29338d67ac36c3c193ddf6be3a1e0c7cca7cccdb213e9129898f96b"
+            },
+            "253": {
+              "exp_avg": "21385df674369b49c4654e6c788d3ce3a363b47285cd45f988b20c2d4fbe217f",
+              "exp_avg_sq": "0d7f4e331bbc08278cb264f76718ae2ddd99be34015315a6735bd0024c67049b"
+            },
+            "254": {
+              "exp_avg": "416e9b42c9fbd10aa0ccd78f9be3c08087f2c88a32b07cfcc0835c365982b8b0",
+              "exp_avg_sq": "74b7580b2b52b04022b93457080198efd26bbd089b0e36828dbd4e89d779a38d"
+            },
+            "255": {
+              "exp_avg": "da00d9fed372c00929d3b77e245298273c2f8c2248867983bbc2440c33ee7024",
+              "exp_avg_sq": "78d06eb2b9325027037442fa89954632ac23e6edc2fe7f5a7833a1353128e9ac"
+            },
+            "256": {
+              "exp_avg": "43cb1b12f89f69f78aead63c4fae13d7f7276e20e25913216ae69c2cf93453f8",
+              "exp_avg_sq": "a2fd2aa087d836d81191839f26bfd38b89a7352d9bb2bd6a0a17a7ebc55cdd57"
+            },
+            "257": {
+              "exp_avg": "f9704f26ad2b7c30d4e51d9a10bf1918d0cf90850b3c1aabe278c38b407eb345",
+              "exp_avg_sq": "285cdb81b09890712a82a7db2618491841664de13b544b22d2331836d1bafca6"
+            },
+            "258": {
+              "exp_avg": "54d0ac2e6cc9f357bb97be7cf4f1eb0d59877406979da3ed5b3f5ef95ceade7c",
+              "exp_avg_sq": "734ea0244bc99772d7ac565232d6cfbcf6fbfff7d588bebab6ef712922f15e5a"
+            },
+            "259": {
+              "exp_avg": "7868f788a396bb23389a5860e91eb04e8fd93b8e94dd7dd78e34d70c13161a86",
+              "exp_avg_sq": "c4d22554c5c8c1f30fc96c27dec9c75586fb62e76eb40f48c16465362baf870f"
+            },
+            "260": {
+              "exp_avg": "138fec565cdc1ba268d5da0dc5a4b3c567a6eb5f5ed2b2ff02ac4e406bc9a055",
+              "exp_avg_sq": "c4aa82843d9224969146fc97a5630b711669771dd4c948bf907047df73388dac"
+            },
+            "261": {
+              "exp_avg": "172a569bbe5f71e978ee788b2579493658c983896c9c706f49e32e07eb0279f9",
+              "exp_avg_sq": "872affc04f4283eb3c02948f4573b0e13e0b553de2a365678197d0a368932d21"
+            },
+            "262": {
+              "exp_avg": "95a11675668dfed766c275b6273d463446badc60f5763ab1e35710da0bf213d1",
+              "exp_avg_sq": "d4fc6655788adbf8ce17674309b78d8ad10206b1988793310e9a256a93a9ffa8"
+            },
+            "263": {
+              "exp_avg": "d5fad0724cb3511176ceff2370d3cb2afe34faff93d65946e20040ca1514c889",
+              "exp_avg_sq": "a214e008473573cd6e0c02a2d818c58234758159f0e6d01258070f0ad6e588a7"
+            },
+            "264": {
+              "exp_avg": "ca67dfda789e686593df757e65f65975ae208dde4411ee4b16c8e39f74245b7c",
+              "exp_avg_sq": "824da988292ed4b576f81feed1ad8d0c5667aeac7bd135dbdffbe6170a3f69fc"
+            },
+            "265": {
+              "exp_avg": "c880ce700ad47cf35133f46e2045bb641c2316ad3bde0505ed640af98abdde69",
+              "exp_avg_sq": "f913d2800c62d90ef5478580108ac9e36572bc06b52cc2be15f262ca05db9808"
+            },
+            "266": {
+              "exp_avg": "462405661d864379644617925bb3dfd4f6b88963749e66f21cc803229bab1ad7",
+              "exp_avg_sq": "c652f4375467f16d0171412daae2400a9b0e21581103c07238f684c447577b4b"
+            },
+            "267": {
+              "exp_avg": "2d46ae191c4ece557da3c18855528289c745db3b07d6729315b7986be3453c51",
+              "exp_avg_sq": "4a4b6059ab987f9c49ff469c8dbdecb1a4871bf858782b7b3f609b77cc27630d"
+            },
+            "268": {
+              "exp_avg": "efe5660cde4246a27daae72c3544b1dcd37f6f9156c412b8a6223d105e8928af",
+              "exp_avg_sq": "c3226f3ba74a3388b8c1f64447f6cdec9b3295096d3cfc4a1ac5443ddb6259f0"
+            },
+            "269": {
+              "exp_avg": "bcfcec9fb1fed5f93842839517c1ab1c9db06ec6fc9405d1aa7a8e3006ced232",
+              "exp_avg_sq": "d8dd2e3341f534dcfd739b00c38f76723f03a3d1338740ca6f7fb6adb864f0d6"
+            },
+            "270": {
+              "exp_avg": "15b5f943bfb76d057c166c6c3104b6f42603507c00bfd8da56cae98b1bb01690",
+              "exp_avg_sq": "b93acad49b46c73b5bdf101896c51469b2d3ee04dc5eff6338f0524777135d28"
+            },
+            "271": {
+              "exp_avg": "5b3d2273839937013786176d554800af2981ef79e0efa19853a99c08bfd45460",
+              "exp_avg_sq": "f6a97b2cc23914cc208b546a76a76288151e6aec64014f7b4cf5527f0057e562"
+            },
+            "272": {
+              "exp_avg": "61afa994f8332d39d4e85abb23520142e4d783d834d65e449756fa6bebacf13e",
+              "exp_avg_sq": "b5282896adfaca09a9244ac20b0b7d2baa8bab0ef54046312078d05dec06372b"
+            },
+            "273": {
+              "exp_avg": "52a00746ca479744436559f710631f34e47c0395c1ea7984d98d4429cb8d7575",
+              "exp_avg_sq": "12bb35a66d48d94ba866291939e3ab4d88273fb881833bcc8b1892142368180b"
+            },
+            "274": {
+              "exp_avg": "38bc40bb70b07834d859d2b21274baa9f0862ed4f8dcfe991f04acc62373b0da",
+              "exp_avg_sq": "b8dc0917f4e098c72e0a8011872e13f9f793337109c2d04c1a939104d7988643"
+            },
+            "275": {
+              "exp_avg": "05459817065df628adfc3c5a019addc3babd5c94c9515fde19bcc3877976bfae",
+              "exp_avg_sq": "542c5bf523541e12a419104915f512d5f9e8d4b702024c3e0698e279b16a8a3b"
+            },
+            "276": {
+              "exp_avg": "9337cf692b667d7ff8a878d8467082853b6569a6e67c6c56b7df02331701520c",
+              "exp_avg_sq": "a65027d0cdbc81c179de69c640947428cd87bfd3e2e4d78e9ad062479c58f512"
+            },
+            "277": {
+              "exp_avg": "d780e8b971e907f70bee67db0013c0e07ea45d59e7a84b78eb43dd4cdddb656a",
+              "exp_avg_sq": "9237719e0b3e75a5796d3a0656d0090989c0d77fd60c1b5315c8189f9c307c08"
+            },
+            "278": {
+              "exp_avg": "f30d65a2c119fef1c61662358240a099b26bab82c3e831cd13c50dbea1e19323",
+              "exp_avg_sq": "79c8015ae40c2e56a2b78f2ce507c470868aed45a25daa4d02f06a4a8bf0a7d8"
+            },
+            "279": {
+              "exp_avg": "c5486a7dc7f39190ea59b2680dca8d096fd72488c6bbaa1030a51f79542c590d",
+              "exp_avg_sq": "3f2209cde22195b39b2e1d530e2d36253693069587d31bc81880517737ba6f94"
+            },
+            "280": {
+              "exp_avg": "1f862d9b451e997a37915f87afc3a48401de9e127b80e1d154202fbf22b015d4",
+              "exp_avg_sq": "4b6343a5c05bf876bc4233e5eeb9e2ed502812b1cebb01589c44174d1160537e"
+            },
+            "281": {
+              "exp_avg": "f91f526071e62478763aea78cf54e60ffd3beab46744673bfe4d34ee9523bf4a",
+              "exp_avg_sq": "977e646cc3406a9c3208b7c2603dc52b37bad759f2a274998cd12bc22e4e50ec"
+            },
+            "282": {
+              "exp_avg": "076577185fb58fa2679c53221c04d313c7e1b02bfcc5d5f634c6afb8824495b0",
+              "exp_avg_sq": "7210f29d3e4a720b5b020bb212de9bac168385852d4b08750435586a60ddfa7e"
+            },
+            "283": {
+              "exp_avg": "9d04183f10110c311e89abe83999192f66db5b5611bdc974b8aa9529f36ac92b",
+              "exp_avg_sq": "921abe5ff0861c2c4d8fb4e859b1d3ed2a4f8c9d22b3888a0d96935e6e899b0d"
+            },
+            "284": {
+              "exp_avg": "c0c34f3b722d96606850c9c33d73275ca59a319fdedbc1f4a72d393054fd6d29",
+              "exp_avg_sq": "922914eeb9c0f13b0213644d7996d8f96aa5df5d9caaf07cf761f657d2ac3cdb"
+            },
+            "285": {
+              "exp_avg": "2c9fb561f39f2ca470303921330abe59a60bab1cbb0d9765d822cf828078e10c",
+              "exp_avg_sq": "ecbcd9114fc833034395596a40273fe1237640df19f5c169249e6400d76769f7"
+            },
+            "286": {
+              "exp_avg": "fc0fd2b462286a513fd700d417fca5035c93a3ea502875c064937dce1627f2f4",
+              "exp_avg_sq": "5d38fb48597c1eeb4cdc491a78d30af350fb2c2dd51bbbc58da3ae93323e4e46"
+            },
+            "287": {
+              "exp_avg": "2125f5702d369dde0371d3342ae4994db0bc37c663070d212120f2f01565a7ce",
+              "exp_avg_sq": "4d32e951746672c5752c1459e67654c6c184b1a00b21f11330f76ab19192fd92"
+            },
+            "288": {
+              "exp_avg": "5dd7a29a51b1a21276397066945a11327b2022bf533afd52565820016a1dacd0",
+              "exp_avg_sq": "f8e5fea75739891ba020e29051a853ffc773fb02ee6955747701b400a357a0b0"
+            },
+            "289": {
+              "exp_avg": "3e87f2c2abf8050b28a8dccc23c743541fa2db4881aef22bd1ecf5b1cfeb4059",
+              "exp_avg_sq": "a4791265c69efc7d219aafa9d59b3b39eb72705f3f3889b830a75019bdb20be9"
+            }
+          },
+          "param_groups": [
+            {
+              "is_expert_parallel": false,
+              "default_config": true,
+              "wd_mult": 1.0,
+              "lr_mult": 1.0,
+              "is_decoupled_lr": false,
+              "max_lr": 1e-06,
+              "min_lr": 0.0,
+              "lr": 1e-06,
+              "bias_correction": true,
+              "betas": [
+                0.9,
+                0.98
+              ],
+              "eps": 1e-08,
+              "weight_decay": 0.1,
+              "step": 2,
+              "params": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19,
+                20,
+                21,
+                22,
+                23,
+                24,
+                25,
+                26,
+                27,
+                28,
+                29,
+                30,
+                31,
+                32,
+                33,
+                34,
+                35,
+                36,
+                37,
+                38,
+                39,
+                40,
+                41,
+                42,
+                43,
+                44,
+                45,
+                46,
+                47,
+                48,
+                49,
+                50,
+                51,
+                52,
+                53,
+                54,
+                55,
+                56,
+                57,
+                58,
+                59,
+                60,
+                61,
+                62,
+                63,
+                64,
+                65,
+                66,
+                67,
+                68,
+                69,
+                70,
+                71,
+                72,
+                73,
+                74,
+                75,
+                76,
+                77,
+                78,
+                79,
+                80,
+                81,
+                82,
+                83,
+                84,
+                85,
+                86,
+                87,
+                88,
+                89,
+                90,
+                91,
+                92,
+                93,
+                94,
+                95,
+                96,
+                97,
+                98,
+                99,
+                100,
+                101,
+                102,
+                103,
+                104,
+                105,
+                106,
+                107,
+                108,
+                109,
+                110,
+                111,
+                112,
+                113,
+                114,
+                115,
+                116,
+                117,
+                118,
+                119,
+                120,
+                121,
+                122,
+                123,
+                124,
+                125,
+                126,
+                127,
+                128,
+                129,
+                130,
+                131,
+                132,
+                133,
+                134,
+                135,
+                136,
+                137,
+                138,
+                139,
+                140,
+                141,
+                142,
+                143,
+                144
+              ]
+            },
+            {
+              "is_expert_parallel": false,
+              "default_config": true,
+              "wd_mult": 0.0,
+              "lr_mult": 1.0,
+              "is_decoupled_lr": false,
+              "max_lr": 1e-06,
+              "min_lr": 0.0,
+              "lr": 1e-06,
+              "bias_correction": true,
+              "betas": [
+                0.9,
+                0.98
+              ],
+              "eps": 1e-08,
+              "weight_decay": 0.0,
+              "step": 2,
+              "params": [
+                145,
+                146,
+                147,
+                148,
+                149,
+                150,
+                151,
+                152,
+                153,
+                154,
+                155,
+                156,
+                157,
+                158,
+                159,
+                160,
+                161,
+                162,
+                163,
+                164,
+                165,
+                166,
+                167,
+                168,
+                169,
+                170,
+                171,
+                172,
+                173,
+                174,
+                175,
+                176,
+                177,
+                178,
+                179,
+                180,
+                181,
+                182,
+                183,
+                184,
+                185,
+                186,
+                187,
+                188,
+                189,
+                190,
+                191,
+                192,
+                193,
+                194,
+                195,
+                196,
+                197,
+                198,
+                199,
+                200,
+                201,
+                202,
+                203,
+                204,
+                205,
+                206,
+                207,
+                208,
+                209,
+                210,
+                211,
+                212,
+                213,
+                214,
+                215,
+                216,
+                217,
+                218,
+                219,
+                220,
+                221,
+                222,
+                223,
+                224,
+                225,
+                226,
+                227,
+                228,
+                229,
+                230,
+                231,
+                232,
+                233,
+                234,
+                235,
+                236,
+                237,
+                238,
+                239,
+                240,
+                241,
+                242,
+                243,
+                244,
+                245,
+                246,
+                247,
+                248,
+                249,
+                250,
+                251,
+                252,
+                253,
+                254,
+                255,
+                256,
+                257,
+                258,
+                259,
+                260,
+                261,
+                262,
+                263,
+                264,
+                265,
+                266,
+                267,
+                268,
+                269,
+                270,
+                271,
+                272,
+                273,
+                274,
+                275,
+                276,
+                277,
+                278,
+                279,
+                280,
+                281,
+                282,
+                283,
+                284,
+                285,
+                286,
+                287,
+                288,
+                289
+              ]
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "scheduler": {
+    "max_lr": 1e-06,
+    "lr_warmup_steps": 0,
+    "num_steps": 32,
+    "lr_decay_style": "constant",
+    "lr_decay_steps": 48,
+    "min_lr": 0.0,
+    "start_wd": 0.1,
+    "end_wd": 0.1,
+    "wd_incr_style": "constant",
+    "wd_incr_steps": 48
+  },
+  "rng": {
+    "python": "a80791b395183699147c2699130ca4e437d02756273989918300ad383aea9b40",
+    "numpy": "6970a3e72fb0c85e2534456216818b7fdc196525bc4aee3aa89878ffbb46e5ff",
+    "torch_cpu": "dbb962b986f107cb5cd6dd9248bf6d9484cb3e428ffb5888ab00fbf6afc98449",
+    "torch_cuda": [
+      "13a80bfdb4d100c854a763ec43f6dd8a9bbb96a278e68cb39be8700c39555e7d",
+      "13a80bfdb4d100c854a763ec43f6dd8a9bbb96a278e68cb39be8700c39555e7d",
+      "13a80bfdb4d100c854a763ec43f6dd8a9bbb96a278e68cb39be8700c39555e7d",
+      "13a80bfdb4d100c854a763ec43f6dd8a9bbb96a278e68cb39be8700c39555e7d"
+    ],
+    "cuda_tracker": {
+      "data-parallel-rng": "13a80bfdb4d100c854a763ec43f6dd8a9bbb96a278e68cb39be8700c39555e7d",
+      "model-parallel-rng": "87e6bf20a9e5666122ccdf41b6d1e7971ada1558ce671cf37708993ef4e2d5c8",
+      "expert-parallel-rng": "c43f1c2db314f5f436a8a51612a8b01505941b9adb91a1ad0d9fa18918d1ea0c"
+    }
+  },
+  "load_options": {
+    "finetune": true,
+    "no_load_optim": true,
+    "no_load_rng": true,
+    "use_checkpoint_opt_param_scheduler": false
+  },
+  "checkpoint_directory": "/tmp/grpo-smoke/training-checkpoint/iter_0000001"
+}

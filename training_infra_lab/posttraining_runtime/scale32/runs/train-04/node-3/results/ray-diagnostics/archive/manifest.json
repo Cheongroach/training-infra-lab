@@ -1,0 +1,48 @@
+{
+  "files": {
+    "dashboard_agent.err": {
+      "bytes": 0,
+      "original_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "dashboard_agent.log": {
+      "bytes": 7133,
+      "original_bytes": 7133,
+      "sha256": "8da3ebfeef65e4694fc20d6c386f1560e59a2b39c477f5ab6fb571e55333657a"
+    },
+    "dashboard_agent.out": {
+      "bytes": 0,
+      "original_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "raylet.err": {
+      "bytes": 0,
+      "original_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "raylet.out": {
+      "bytes": 262144,
+      "original_bytes": 634379,
+      "sha256": "b91ac17cec5c24b92b76a9bec2c014605f1c503b3e54dc6ba71c2b32176484ad"
+    },
+    "runtime_env_agent.err": {
+      "bytes": 0,
+      "original_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "runtime_env_agent.log": {
+      "bytes": 44375,
+      "original_bytes": 44375,
+      "sha256": "236dd1b0c724133cb2c078d5c07f934db0ef68c503a8427335872c39d50143a0"
+    },
+    "runtime_env_agent.out": {
+      "bytes": 106,
+      "original_bytes": 106,
+      "sha256": "5691a39ba3987acf7265030c858869b59af6ad69b95043dd70dd9f98107adf2d"
+    }
+  },
+  "errors": [],
+  "max_files": 64,
+  "max_bytes_per_file": 262144,
+  "session": "session_2026-10-25_05-41-08_985950_2094"
+}

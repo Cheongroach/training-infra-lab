@@ -1,0 +1,35 @@
+{
+  "passed": true,
+  "errors": [],
+  "job_sid": "172e5c51a339edef",
+  "trial_sid": "438495582",
+  "pod_sid": "5390798511",
+  "publication_ids_matched": {
+    "f0bea5e45bf54f0892a7658a40ac2aef": true,
+    "d44e8c3ee9a1447d9962b9739e5a8be6": true,
+    "f7c18d56f9bf4abaa5e1bf5207aa66ff": true,
+    "1b29731cf6d840c68a5233e565ae3daa": true,
+    "3d51f1fca040463db3fa143b7534a82d": true
+  },
+  "event_rows_in_pod_interval": 119,
+  "worker_sources_verified": 14,
+  "audit_sources_verified": 22,
+  "runtime_patch_checks": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true
+  ],
+  "archive_sha256": "5dea3ac44f46c60d9310c0a2191d2ba5623eeb637d021f1d559f79245cefd2f1",
+  "stdout_sha256": "5c3f6ff35dc0b5493bceee27d4f89dd52c2836962e1a98c2a08f654e3fdeb0ab",
+  "pod_start_at": "2026-10-24T04:10:17.000Z",
+  "pod_stop_at": "2026-10-24T04:41:05.000Z",
+  "pod_exit_status": 0,
+  "platform_status": "done",
+  "entry_exit_code": 0,
+  "archive_copy_exit_code": 0,
+  "pod_residence_gpu_hours": 2.0533333333333332
+}

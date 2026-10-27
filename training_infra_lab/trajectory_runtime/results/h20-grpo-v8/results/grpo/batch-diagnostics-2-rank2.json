@@ -1,0 +1,14 @@
+{
+  "update": 2,
+  "batch_sha256": "be0fbefd6fc3c2a60c4f56bd1ea7581938e440b0fc534176b4649e25f734d07e",
+  "probability_replay": {
+    "tokens": 10353,
+    "rms": 0.010851068422198296,
+    "p99_abs": 0.05410688742995262,
+    "max_abs": 0.2618560791015625,
+    "outside_clip_fraction": 9.659036004450172e-05
+  },
+  "signal_groups": 2,
+  "groups": 4,
+  "mean_reward": 0.5625
+}

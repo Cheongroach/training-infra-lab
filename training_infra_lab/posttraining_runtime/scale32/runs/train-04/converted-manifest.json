@@ -1,0 +1,28 @@
+{
+  "files": {
+    "latest_checkpointed_iteration.txt": {
+      "bytes": 7,
+      "sha256": "a4d451ec23463726f72c43d64c710968f6b602cd653b4de8adee1b556240a829"
+    },
+    "miles_conversion_version.txt": {
+      "bytes": 1,
+      "sha256": "ef2d127de37b942baad06145e54b0c619a1f22327b2ebbcfbec78f5564afe39d"
+    },
+    "release/.metadata": {
+      "bytes": 150509,
+      "sha256": "b6cde4838a8149caa375059abe2d59b5623f9602bfffa7e0f0228ca29123cb7d"
+    },
+    "release/__0_0.distcp": {
+      "bytes": 8191202687,
+      "sha256": "ceeb8b60052d09db2acec99eee0e2f7111c301bc1ba3cfe8ac79b4bf0601c8cc"
+    },
+    "release/__1_0.distcp": {
+      "bytes": 8191181476,
+      "sha256": "88bfb863ec634abfd60606ce5d723a66c58fda335b38d0740ab42d78c052e505"
+    },
+    "release/metadata.json": {
+      "bytes": 63,
+      "sha256": "56b32e2dfbc0255db319bddf6880c9dfd3475135ca8d5ace23b8a6a384ed63c6"
+    }
+  }
+}

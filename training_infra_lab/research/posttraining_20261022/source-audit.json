@@ -1,0 +1,1349 @@
+{
+  "validation": "local_static_preparation_only",
+  "gpu_jobs_launched": 0,
+  "upstream_tests_executed": false,
+  "source_commit": "2233d795dcf167be489d1859971c9233393f04c3",
+  "plan_sha256": "b12524123aada1b3912bbe166f82d33b66d06e79b5acdfa7fb70991d2da504e4",
+  "topology": [
+    {
+      "phase": "smoke",
+      "learner_gpus": 2,
+      "learner_dp": 1,
+      "rollout_replicas": 2,
+      "total_gpus": 4
+    },
+    {
+      "phase": "cross_node_preflight",
+      "learner_gpus": 8,
+      "learner_dp": 4,
+      "rollout_replicas": 4,
+      "total_gpus": 16
+    },
+    {
+      "phase": "main",
+      "learner_gpus": 16,
+      "learner_dp": 8,
+      "rollout_replicas": 8,
+      "total_gpus": 32
+    }
+  ],
+  "example_main_gpu_hours": 512,
+  "global_cli_names_found": [
+    "--actor-num-nodes",
+    "--actor-num-gpus-per-node",
+    "--rollout-num-gpus",
+    "--rollout-num-gpus-per-engine",
+    "--update-weight-transfer-mode",
+    "--update-weight-buffer-size",
+    "--update-weights-interval",
+    "--rollout-batch-size",
+    "--n-samples-per-prompt",
+    "--global-batch-size",
+    "--rollout-max-response-len",
+    "--rollout-temperature",
+    "--advantage-estimator",
+    "--rm-type",
+    "--prompt-data",
+    "--hf-checkpoint",
+    "--check-weight-update-equal"
+  ],
+  "files": {
+    "train_async.py": {
+      "sha256": "6b8698acb5201443d2bd3aca4af8990a8ca3650e5b47b6a6035189440718b497",
+      "bytes": 7822,
+      "symbols": [
+        {
+          "name": "train",
+          "line": 23,
+          "end_line": 164
+        },
+        {
+          "name": "save_training_model",
+          "line": 64,
+          "end_line": 69
+        },
+        {
+          "name": "offload_train",
+          "line": 71,
+          "end_line": 77
+        },
+        {
+          "name": "prepare_and_generate",
+          "line": 79,
+          "end_line": 81
+        }
+      ]
+    },
+    "miles/utils/arguments.py": {
+      "sha256": "1c300e32ab5e48f0d0b43c21c787b7e3b707a940e7a06c987a48600ead2b00f5",
+      "bytes": 214332,
+      "symbols": [
+        {
+          "name": "resolve_rollout_function_paths",
+          "line": 62,
+          "end_line": 73
+        },
+        {
+          "name": "driver_owns_generation_pause",
+          "line": 76,
+          "end_line": 77
+        },
+        {
+          "name": "supports_partial_target_weight_update",
+          "line": 80,
+          "end_line": 81
+        },
+        {
+          "name": "_resolve_rollout_functions",
+          "line": 84,
+          "end_line": 157
+        },
+        {
+          "name": "reset_arg",
+          "line": 160,
+          "end_line": 173
+        },
+        {
+          "name": "get_miles_extra_args_provider",
+          "line": 180,
+          "end_line": 2916
+        },
+        {
+          "name": "parse_args",
+          "line": 2919,
+          "end_line": 3013
+        },
+        {
+          "name": "parse_args_train_backend",
+          "line": 3016,
+          "end_line": 3023
+        },
+        {
+          "name": "_resolve_eval_datasets",
+          "line": 3026,
+          "end_line": 3066
+        },
+        {
+          "name": "_compute_rollout_external",
+          "line": 3069,
+          "end_line": 3070
+        },
+        {
+          "name": "_compute_custom_inference_engine_provider_path",
+          "line": 3077,
+          "end_line": 3082
+        },
+        {
+          "name": "_validate_deploy_component",
+          "line": 3088,
+          "end_line": 3127
+        },
+        {
+          "name": "_validate_deploy_instance_id",
+          "line": 3130,
+          "end_line": 3151
+        },
+        {
+          "name": "_validate_single_deployed_trainer",
+          "line": 3154,
+          "end_line": 3174
+        },
+        {
+          "name": "_validate_static_addrs_external_launch",
+          "line": 3177,
+          "end_line": 3185
+        },
+        {
+          "name": "_validate_registration",
+          "line": 3188,
+          "end_line": 3212
+        },
+        {
+          "name": "_validate_single_engine_source",
+          "line": 3215,
+          "end_line": 3226
+        },
+        {
+          "name": "_validate_watched_cells_deployed_locally",
+          "line": 3229,
+          "end_line": 3241
+        },
+        {
+          "name": "_validate_trainer_controller_addrs",
+          "line": 3244,
+          "end_line": 3245
+        },
+        {
+          "name": "_validate_shared_object_store",
+          "line": 3248,
+          "end_line": 3262
+        },
+        {
+          "name": "_resolve_ft_components",
+          "line": 3268,
+          "end_line": 3275
+        },
+        {
+          "name": "_validate_rematerialize_param_from_master_weight",
+          "line": 3278,
+          "end_line": 3318
+        },
+        {
+          "name": "_resolve_api_server_port",
+          "line": 3321,
+          "end_line": 3324
+        },
+        {
+          "name": "_resolve_mini_ft_controller_enable",
+          "line": 3327,
+          "end_line": 3330
+        },
+        {
+          "name": "_resolve_run_uuid",
+          "line": 3333,
+          "end_line": 3343
+        },
+        {
+          "name": "validate_log_probs_backend_args",
+          "line": 3346,
+          "end_line": 3366
+        },
+        {
+          "name": "_resolve_event_logging",
+          "line": 3369,
+          "end_line": 3383
+        },
+        {
+          "name": "_resolve_sample_ownership_check",
+          "line": 3386,
+          "end_line": 3427
+        },
+        {
+          "name": "miles_validate_args",
+          "line": 3430,
+          "end_line": 4230
+        },
+        {
+          "name": "validate_skip_actor_forward_only",
+          "line": 4233,
+          "end_line": 4289
+        },
+        {
+          "name": "validate_async_off_policy_correction",
+          "line": 4292,
+          "end_line": 4310
+        },
+        {
+          "name": "_maybe_apply_dumper_overrides",
+          "line": 4313,
+          "end_line": 4337
+        },
+        {
+          "name": "resolve_fsdp_num_layers",
+          "line": 4340,
+          "end_line": 4354
+        },
+        {
+          "name": "hf_validate_args",
+          "line": 4357,
+          "end_line": 4411
+        },
+        {
+          "name": "_resolve_data_source_path",
+          "line": 4414,
+          "end_line": 4417
+        },
+        {
+          "name": "add_miles_arguments",
+          "line": 181,
+          "end_line": 2914
+        },
+        {
+          "name": "equal",
+          "line": 4358,
+          "end_line": 4359
+        },
+        {
+          "name": "add_run_uuid_arguments",
+          "line": 184,
+          "end_line": 196
+        },
+        {
+          "name": "add_cluster_arguments",
+          "line": 199,
+          "end_line": 464
+        },
+        {
+          "name": "add_train_arguments",
+          "line": 466,
+          "end_line": 667
+        },
+        {
+          "name": "add_rollout_arguments",
+          "line": 670,
+          "end_line": 1207
+        },
+        {
+          "name": "add_fault_tolerance_arguments",
+          "line": 1209,
+          "end_line": 1268
+        },
+        {
+          "name": "add_data_arguments",
+          "line": 1271,
+          "end_line": 1456
+        },
+        {
+          "name": "add_eval_arguments",
+          "line": 1458,
+          "end_line": 1579
+        },
+        {
+          "name": "add_algo_arguments",
+          "line": 1581,
+          "end_line": 1902
+        },
+        {
+          "name": "add_on_policy_distillation_arguments",
+          "line": 1904,
+          "end_line": 2004
+        },
+        {
+          "name": "add_router_arguments",
+          "line": 2006,
+          "end_line": 2032
+        },
+        {
+          "name": "add_wandb_arguments",
+          "line": 2035,
+          "end_line": 2104
+        },
+        {
+          "name": "add_mlflow_arguments",
+          "line": 2107,
+          "end_line": 2128
+        },
+        {
+          "name": "add_tensorboard_arguments",
+          "line": 2131,
+          "end_line": 2142
+        },
+        {
+          "name": "add_prometheus_arguments",
+          "line": 2145,
+          "end_line": 2163
+        },
+        {
+          "name": "add_debug_arguments",
+          "line": 2166,
+          "end_line": 2472
+        },
+        {
+          "name": "add_network_arguments",
+          "line": 2474,
+          "end_line": 2477
+        },
+        {
+          "name": "add_reward_model_arguments",
+          "line": 2479,
+          "end_line": 2538
+        },
+        {
+          "name": "add_rollout_buffer_arguments",
+          "line": 2540,
+          "end_line": 2612
+        },
+        {
+          "name": "add_custom_megatron_plugins_arguments",
+          "line": 2614,
+          "end_line": 2639
+        },
+        {
+          "name": "add_mtp_training_arguments",
+          "line": 2641,
+          "end_line": 2663
+        },
+        {
+          "name": "add_prefill_decode_disaggregation_arguments",
+          "line": 2665,
+          "end_line": 2672
+        },
+        {
+          "name": "add_ci_arguments",
+          "line": 2674,
+          "end_line": 2742
+        },
+        {
+          "name": "add_session_arguments",
+          "line": 2744,
+          "end_line": 2831
+        },
+        {
+          "name": "add_user_provided_function_arguments",
+          "line": 2833,
+          "end_line": 2853
+        }
+      ]
+    },
+    "miles/backends/training_utils/weight_update/updater.py": {
+      "sha256": "8784c7e390e0541945a4318f97b6d91cc0f4c6681ebc2fa72b469da7003ba75e",
+      "bytes": 9811,
+      "symbols": [
+        {
+          "name": "WeightUpdater",
+          "line": 46,
+          "end_line": 207
+        },
+        {
+          "name": "_mark_cells_errored_on_any_rank",
+          "line": 210,
+          "end_line": 221
+        },
+        {
+          "name": "__init__",
+          "line": 47,
+          "end_line": 80
+        },
+        {
+          "name": "receiver_pool",
+          "line": 82,
+          "end_line": 83
+        },
+        {
+          "name": "mark_trainer_stale",
+          "line": 85,
+          "end_line": 86
+        },
+        {
+          "name": "connect_rollout_engines",
+          "line": 88,
+          "end_line": 105
+        },
+        {
+          "name": "reconnect_if_needed",
+          "line": 107,
+          "end_line": 111
+        },
+        {
+          "name": "reconnect",
+          "line": 113,
+          "end_line": 121
+        },
+        {
+          "name": "verify_engine_version",
+          "line": 123,
+          "end_line": 129
+        },
+        {
+          "name": "pop_metrics",
+          "line": 131,
+          "end_line": 133
+        },
+        {
+          "name": "update_weights",
+          "line": 136,
+          "end_line": 185
+        },
+        {
+          "name": "_iter_base_buckets",
+          "line": 187,
+          "end_line": 188
+        },
+        {
+          "name": "_get_updated_adapters",
+          "line": 190,
+          "end_line": 195
+        },
+        {
+          "name": "_register_new_lora_adapters",
+          "line": 197,
+          "end_line": 207
+        }
+      ]
+    },
+    "miles/backends/training_utils/weight_update/session.py": {
+      "sha256": "3620ee7eb2afcc3307cda2f4991e95df34c6b82b75f06ee2775377119bdd660a",
+      "bytes": 4817,
+      "symbols": [
+        {
+          "name": "maybe_pause_engines",
+          "line": 16,
+          "end_line": 27
+        },
+        {
+          "name": "maybe_resume_engines",
+          "line": 30,
+          "end_line": 33
+        },
+        {
+          "name": "weight_update_selector",
+          "line": 36,
+          "end_line": 41
+        },
+        {
+          "name": "begin_weight_update",
+          "line": 44,
+          "end_line": 54
+        },
+        {
+          "name": "end_weight_update",
+          "line": 57,
+          "end_line": 72
+        },
+        {
+          "name": "register_lora_adapter",
+          "line": 75,
+          "end_line": 86
+        },
+        {
+          "name": "set_weight_version",
+          "line": 89,
+          "end_line": 95
+        },
+        {
+          "name": "check_weight_sync_results",
+          "line": 98,
+          "end_line": 115
+        }
+      ]
+    },
+    "miles/backends/training_utils/weight_update/protocol.py": {
+      "sha256": "9f7d0ce4f439ca27d14bd7834dabce41d1bda4695f37c372c71df5a18622d534",
+      "bytes": 4412,
+      "symbols": [
+        {
+          "name": "WeightTransferProtocol",
+          "line": 18,
+          "end_line": 77
+        },
+        {
+          "name": "get_weight_transfer_protocol",
+          "line": 80,
+          "end_line": 102
+        },
+        {
+          "name": "__init__",
+          "line": 34,
+          "end_line": 40
+        },
+        {
+          "name": "connect",
+          "line": 43,
+          "end_line": 52
+        },
+        {
+          "name": "begin_sync",
+          "line": 54,
+          "end_line": 61
+        },
+        {
+          "name": "send_bucket",
+          "line": 64,
+          "end_line": 64
+        },
+        {
+          "name": "after_base_weights",
+          "line": 66,
+          "end_line": 67
+        },
+        {
+          "name": "finalize",
+          "line": 69,
+          "end_line": 70
+        },
+        {
+          "name": "after_engines_resumed",
+          "line": 72,
+          "end_line": 73
+        },
+        {
+          "name": "pop_metrics",
+          "line": 75,
+          "end_line": 77
+        }
+      ]
+    },
+    "miles/backends/training_utils/weight_update/protocols/broadcast.py": {
+      "sha256": "c9349f1e3ff8405b1736458bab3029487c0dd18bd2424fb21730e65abf2f483e",
+      "bytes": 8596,
+      "symbols": [
+        {
+          "name": "UpdateWeightFromDistributed",
+          "line": 22,
+          "end_line": 86
+        },
+        {
+          "name": "connect_rollout_engines_from_distributed",
+          "line": 89,
+          "end_line": 134
+        },
+        {
+          "name": "disconnect_rollout_engines_from_distributed",
+          "line": 137,
+          "end_line": 146
+        },
+        {
+          "name": "update_weights_from_distributed",
+          "line": 149,
+          "end_line": 191
+        },
+        {
+          "name": "_flatten_weight_bucket",
+          "line": 194,
+          "end_line": 211
+        },
+        {
+          "name": "__init__",
+          "line": 30,
+          "end_line": 41
+        },
+        {
+          "name": "connect",
+          "line": 43,
+          "end_line": 72
+        },
+        {
+          "name": "send_bucket",
+          "line": 74,
+          "end_line": 86
+        }
+      ]
+    },
+    "miles/backends/training_utils/weight_update/protocols/p2p.py": {
+      "sha256": "c507925a65e656c649fefd253ef1053a53498e245e667761ae6ec147cd4438b1",
+      "bytes": 14067,
+      "symbols": [
+        {
+          "name": "_ReplicaTarget",
+          "line": 41,
+          "end_line": 43
+        },
+        {
+          "name": "_RunnerSender",
+          "line": 47,
+          "end_line": 55
+        },
+        {
+          "name": "UpdateWeightP2P",
+          "line": 61,
+          "end_line": 290
+        },
+        {
+          "name": "loads_hf_tensor",
+          "line": 54,
+          "end_line": 55
+        },
+        {
+          "name": "__init__",
+          "line": 64,
+          "end_line": 73
+        },
+        {
+          "name": "begin_sync",
+          "line": 75,
+          "end_line": 97
+        },
+        {
+          "name": "after_base_weights",
+          "line": 99,
+          "end_line": 105
+        },
+        {
+          "name": "send_bucket",
+          "line": 107,
+          "end_line": 125
+        },
+        {
+          "name": "_send_runner_bucket",
+          "line": 127,
+          "end_line": 172
+        },
+        {
+          "name": "connect",
+          "line": 174,
+          "end_line": 226
+        },
+        {
+          "name": "_connect_runner",
+          "line": 228,
+          "end_line": 260
+        },
+        {
+          "name": "_log_hf_names_no_runner_loads",
+          "line": 262,
+          "end_line": 272
+        },
+        {
+          "name": "_compute_transfer_buffer_nbytes",
+          "line": 274,
+          "end_line": 280
+        },
+        {
+          "name": "_create_transfer_buffers",
+          "line": 282,
+          "end_line": 290
+        }
+      ]
+    },
+    "miles/backends/training_utils/weight_update/protocols/delta.py": {
+      "sha256": "bce0f3e91b24006bbba1246600b3bcf0ee6f4c0f1a2b1bcec1ac23f45ae42d89",
+      "bytes": 20919,
+      "symbols": [
+        {
+          "name": "_safetensors_dtype",
+          "line": 63,
+          "end_line": 67
+        },
+        {
+          "name": "UpdateWeightFromDiskDelta",
+          "line": 70,
+          "end_line": 425
+        },
+        {
+          "name": "_atomic_write",
+          "line": 428,
+          "end_line": 434
+        },
+        {
+          "name": "__init__",
+          "line": 84,
+          "end_line": 101
+        },
+        {
+          "name": "connect",
+          "line": 103,
+          "end_line": 120
+        },
+        {
+          "name": "begin_sync",
+          "line": 122,
+          "end_line": 129
+        },
+        {
+          "name": "send_bucket",
+          "line": 131,
+          "end_line": 146
+        },
+        {
+          "name": "after_base_weights",
+          "line": 148,
+          "end_line": 153
+        },
+        {
+          "name": "finalize",
+          "line": 155,
+          "end_line": 159
+        },
+        {
+          "name": "_capture_baseline",
+          "line": 161,
+          "end_line": 244
+        },
+        {
+          "name": "_begin_encode",
+          "line": 246,
+          "end_line": 271
+        },
+        {
+          "name": "_diff_and_compress",
+          "line": 273,
+          "end_line": 293
+        },
+        {
+          "name": "_collect",
+          "line": 295,
+          "end_line": 301
+        },
+        {
+          "name": "_drop_duplicate_names",
+          "line": 303,
+          "end_line": 320
+        },
+        {
+          "name": "_write_delta_files",
+          "line": 322,
+          "end_line": 359
+        },
+        {
+          "name": "_reload_engines",
+          "line": 361,
+          "end_line": 403
+        },
+        {
+          "name": "_record_metrics",
+          "line": 405,
+          "end_line": 425
+        }
+      ]
+    },
+    "miles/backends/training_utils/weight_update/protocols/transports/mooncake.py": {
+      "sha256": "92d7100b5f6eca7b0fd5883fd3a05e2372b1772d4da211b60980cfdc0b21c78d",
+      "bytes": 10397,
+      "symbols": [
+        {
+          "name": "RemoteWeightLocation",
+          "line": 27,
+          "end_line": 30
+        },
+        {
+          "name": "RemoteShard",
+          "line": 34,
+          "end_line": 48
+        },
+        {
+          "name": "MooncakeTransport",
+          "line": 51,
+          "end_line": 187
+        },
+        {
+          "name": "_query_remote_shard",
+          "line": 190,
+          "end_line": 209
+        },
+        {
+          "name": "_create_transfer_engine",
+          "line": 212,
+          "end_line": 223
+        },
+        {
+          "name": "_assert_tensors_fit",
+          "line": 226,
+          "end_line": 238
+        },
+        {
+          "name": "_nbytes",
+          "line": 241,
+          "end_line": 242
+        },
+        {
+          "name": "published_nbytes_by_name",
+          "line": 45,
+          "end_line": 48
+        },
+        {
+          "name": "__init__",
+          "line": 62,
+          "end_line": 66
+        },
+        {
+          "name": "connect",
+          "line": 68,
+          "end_line": 101
+        },
+        {
+          "name": "register_memory",
+          "line": 103,
+          "end_line": 110
+        },
+        {
+          "name": "unregister_memory",
+          "line": 112,
+          "end_line": 120
+        },
+        {
+          "name": "write",
+          "line": 122,
+          "end_line": 143
+        },
+        {
+          "name": "_write_executor",
+          "line": 145,
+          "end_line": 150
+        },
+        {
+          "name": "_write_shard",
+          "line": 152,
+          "end_line": 187
+        }
+      ]
+    },
+    "miles/backends/training_utils/weight_update/protocols/utils/transfer_buffers.py": {
+      "sha256": "38b693260092e8c7c7e75d2332e43efb0f00c2db33497fbf3ed54d3bdf5eb185",
+      "bytes": 4471,
+      "symbols": [
+        {
+          "name": "PendingWrite",
+          "line": 13,
+          "end_line": 15
+        },
+        {
+          "name": "TransferBuffers",
+          "line": 18,
+          "end_line": 79
+        },
+        {
+          "name": "_wait_for_healthy_cells",
+          "line": 82,
+          "end_line": 90
+        },
+        {
+          "name": "_allocate_transfer_buffer",
+          "line": 93,
+          "end_line": 95
+        },
+        {
+          "name": "__init__",
+          "line": 27,
+          "end_line": 44
+        },
+        {
+          "name": "acquire",
+          "line": 46,
+          "end_line": 51
+        },
+        {
+          "name": "release_after",
+          "line": 53,
+          "end_line": 56
+        },
+        {
+          "name": "wait_for_all_writes",
+          "line": 58,
+          "end_line": 60
+        },
+        {
+          "name": "release",
+          "line": 62,
+          "end_line": 69
+        },
+        {
+          "name": "_wait_for_writes_reading",
+          "line": 71,
+          "end_line": 79
+        }
+      ]
+    },
+    "miles/backends/fsdp_utils/hf_weight_iterator.py": {
+      "sha256": "adf99e3962b204d25298cb79be26f2c9ab989002a3504756a36315a5157dac99",
+      "bytes": 2748,
+      "symbols": [
+        {
+          "name": "FSDPHfWeightIterator",
+          "line": 13,
+          "end_line": 59
+        },
+        {
+          "name": "__init__",
+          "line": 16,
+          "end_line": 19
+        },
+        {
+          "name": "_iter_hf_param_units",
+          "line": 21,
+          "end_line": 30
+        },
+        {
+          "name": "_drain",
+          "line": 32,
+          "end_line": 47
+        },
+        {
+          "name": "_to_sync_dtype",
+          "line": 49,
+          "end_line": 51
+        },
+        {
+          "name": "_hf_atomic_update_groups",
+          "line": 53,
+          "end_line": 56
+        },
+        {
+          "name": "_iter_hf_adapter_units",
+          "line": 58,
+          "end_line": 59
+        }
+      ]
+    },
+    "miles/rollout/fully_async_data_buffer.py": {
+      "sha256": "7f45548c75becad62cdaf357136e2aaadff95f0718053686920686acb3636cac",
+      "bytes": 18202,
+      "symbols": [
+        {
+          "name": "UnusedReason",
+          "line": 44,
+          "end_line": 46
+        },
+        {
+          "name": "add_data_buffer_arguments",
+          "line": 49,
+          "end_line": 63
+        },
+        {
+          "name": "first_sample",
+          "line": 69,
+          "end_line": 70
+        },
+        {
+          "name": "DataBufferConstructorInput",
+          "line": 77,
+          "end_line": 81
+        },
+        {
+          "name": "DataBufferInput",
+          "line": 85,
+          "end_line": 87
+        },
+        {
+          "name": "DataBuffer",
+          "line": 93,
+          "end_line": 122
+        },
+        {
+          "name": "DefaultDataBuffer",
+          "line": 128,
+          "end_line": 328
+        },
+        {
+          "name": "DefaultMultiDataBuffer",
+          "line": 334,
+          "end_line": 375
+        },
+        {
+          "name": "_parse_data_buffer_paths",
+          "line": 379,
+          "end_line": 389
+        },
+        {
+          "name": "_split_by_trainer_model_id",
+          "line": 392,
+          "end_line": 403
+        },
+        {
+          "name": "_filter_group",
+          "line": 406,
+          "end_line": 415
+        },
+        {
+          "name": "put",
+          "line": 103,
+          "end_line": 104
+        },
+        {
+          "name": "get",
+          "line": 107,
+          "end_line": 112
+        },
+        {
+          "name": "get_metrics",
+          "line": 115,
+          "end_line": 116
+        },
+        {
+          "name": "state_dict",
+          "line": 118,
+          "end_line": 119
+        },
+        {
+          "name": "load_state_dict",
+          "line": 121,
+          "end_line": 122
+        },
+        {
+          "name": "__init__",
+          "line": 152,
+          "end_line": 178
+        },
+        {
+          "name": "put",
+          "line": 180,
+          "end_line": 188
+        },
+        {
+          "name": "_preput_filter",
+          "line": 190,
+          "end_line": 213
+        },
+        {
+          "name": "get",
+          "line": 215,
+          "end_line": 242
+        },
+        {
+          "name": "_drop_stale",
+          "line": 244,
+          "end_line": 258
+        },
+        {
+          "name": "_record_selected_version_stats",
+          "line": 260,
+          "end_line": 278
+        },
+        {
+          "name": "state_dict",
+          "line": 280,
+          "end_line": 281
+        },
+        {
+          "name": "load_state_dict",
+          "line": 283,
+          "end_line": 285
+        },
+        {
+          "name": "get_metrics",
+          "line": 287,
+          "end_line": 328
+        },
+        {
+          "name": "__init__",
+          "line": 341,
+          "end_line": 350
+        },
+        {
+          "name": "put",
+          "line": 352,
+          "end_line": 355
+        },
+        {
+          "name": "get",
+          "line": 357,
+          "end_line": 358
+        },
+        {
+          "name": "get_metrics",
+          "line": 360,
+          "end_line": 361
+        },
+        {
+          "name": "state_dict",
+          "line": 363,
+          "end_line": 365
+        },
+        {
+          "name": "load_state_dict",
+          "line": 367,
+          "end_line": 368
+        },
+        {
+          "name": "_inner_of",
+          "line": 370,
+          "end_line": 375
+        }
+      ]
+    },
+    "miles/rollout/fully_async_rollout.py": {
+      "sha256": "f61f70cd50d33d735932f5ada49d3000c9ae5e0c68c5adb5fbd0a8c3fc06d2cb",
+      "bytes": 13150,
+      "symbols": [
+        {
+          "name": "FullyAsyncRolloutFn",
+          "line": 63,
+          "end_line": 279
+        },
+        {
+          "name": "_RunningTask",
+          "line": 283,
+          "end_line": 285
+        },
+        {
+          "name": "_FullyAsyncRolloutState",
+          "line": 289,
+          "end_line": 292
+        },
+        {
+          "name": "_copy_and_reset_for_retry",
+          "line": 295,
+          "end_line": 299
+        },
+        {
+          "name": "_end_worker",
+          "line": 302,
+          "end_line": 304
+        },
+        {
+          "name": "__init__",
+          "line": 74,
+          "end_line": 102
+        },
+        {
+          "name": "__call__",
+          "line": 104,
+          "end_line": 118
+        },
+        {
+          "name": "dispose",
+          "line": 120,
+          "end_line": 123
+        },
+        {
+          "name": "_call_eval",
+          "line": 125,
+          "end_line": 145
+        },
+        {
+          "name": "_max_in_flight_groups",
+          "line": 149,
+          "end_line": 153
+        },
+        {
+          "name": "_submit_one_group",
+          "line": 155,
+          "end_line": 162
+        },
+        {
+          "name": "_generate_group",
+          "line": 164,
+          "end_line": 172
+        },
+        {
+          "name": "_worker_loop",
+          "line": 174,
+          "end_line": 185
+        },
+        {
+          "name": "_collect_group_result",
+          "line": 187,
+          "end_line": 198
+        },
+        {
+          "name": "_on_worker_error",
+          "line": 202,
+          "end_line": 206
+        },
+        {
+          "name": "_drain",
+          "line": 208,
+          "end_line": 256
+        },
+        {
+          "name": "_recycle",
+          "line": 258,
+          "end_line": 261
+        },
+        {
+          "name": "_drop_unused",
+          "line": 263,
+          "end_line": 264
+        },
+        {
+          "name": "save",
+          "line": 266,
+          "end_line": 272
+        },
+        {
+          "name": "load",
+          "line": 274,
+          "end_line": 279
+        }
+      ]
+    },
+    "miles/rollout/submission_scheduler.py": {
+      "sha256": "83250d57697dfd0ff92ab9aafdd0430fc87a1866cb7871a466e6cbe9de17f6fa",
+      "bytes": 2908,
+      "symbols": [
+        {
+          "name": "GroupLevelSubmission",
+          "line": 16,
+          "end_line": 28
+        },
+        {
+          "name": "SampleBackfillSubmission",
+          "line": 31,
+          "end_line": 63
+        },
+        {
+          "name": "make_submission_scheduler",
+          "line": 66,
+          "end_line": 71
+        },
+        {
+          "name": "has_capacity",
+          "line": 21,
+          "end_line": 22
+        },
+        {
+          "name": "on_submit",
+          "line": 24,
+          "end_line": 25
+        },
+        {
+          "name": "wait_for_progress",
+          "line": 27,
+          "end_line": 28
+        },
+        {
+          "name": "__init__",
+          "line": 34,
+          "end_line": 37
+        },
+        {
+          "name": "sample_done_callback",
+          "line": 39,
+          "end_line": 41
+        },
+        {
+          "name": "has_capacity",
+          "line": 43,
+          "end_line": 52
+        },
+        {
+          "name": "on_submit",
+          "line": 54,
+          "end_line": 55
+        },
+        {
+          "name": "wait_for_progress",
+          "line": 57,
+          "end_line": 63
+        }
+      ]
+    },
+    "tests/e2e/fsdp/test_qwen3_0.6B_fsdp_disk_delta.py": {
+      "sha256": "48385eda59fc42fdf0c7aeef4437c76ef16cfce227e518c3d23ea0b2deddc340",
+      "bytes": 3145,
+      "symbols": [
+        {
+          "name": "prepare",
+          "line": 18,
+          "end_line": 21
+        },
+        {
+          "name": "execute",
+          "line": 24,
+          "end_line": 94
+        }
+      ]
+    },
+    "tests/e2e/torchtitan/test_qwen3_5_4B_disk_delta.py": {
+      "sha256": "473e75f84b9f94a91aa78f3ac8a07a06c3b6fd8ebbb634e2edd969be01c1d889",
+      "bytes": 1282,
+      "symbols": []
+    },
+    "tests/e2e/megatron/test_qwen3_4B_disk_delta.py": {
+      "sha256": "359f4c66a8008dd272eb8e61743ddd31d43ddb38a2f26ff839d5fb06631e5373",
+      "bytes": 4102,
+      "symbols": [
+        {
+          "name": "prepare",
+          "line": 30,
+          "end_line": 35
+        },
+        {
+          "name": "execute",
+          "line": 38,
+          "end_line": 128
+        }
+      ]
+    },
+    "docs/advanced/disaggregated-rollout.md": {
+      "sha256": "da92dcbcff8ca3cc1a9bfc1ed886ba69f20e5a0412a7e5b93226a62409e3df01",
+      "bytes": 17652
+    },
+    "docs/advanced/p2p-weight-transfer.md": {
+      "sha256": "cfa215938dbdf6c6003323d5ddddece3aaa5318bcfcf4c5e6c5464fa474696b4",
+      "bytes": 13162
+    },
+    "docs/getting-started/installation.md": {
+      "sha256": "99efbc716c937b752141c244604c7e8b333d0fc2f7cf1327c2d057929b44aede",
+      "bytes": 2945
+    }
+  },
+  "unverified": [
+    "resource count and walltime cap",
+    "container digest, SGLang and Megatron commit hashes",
+    "model and dataset revisions with content hashes",
+    "resolved arguments and reward audit",
+    "H20 driver, CUDA, kernels and cross-node network preflight",
+    "snapshot conversion and same-version probability check",
+    "actual engine placement and trainer rank topology"
+  ]
+}

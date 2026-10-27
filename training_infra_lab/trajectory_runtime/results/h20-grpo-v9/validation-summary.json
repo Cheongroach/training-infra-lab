@@ -1,0 +1,27 @@
+{
+  "worker_cpu_tests": 28,
+  "local_audit_tests": 4,
+  "note": "One strict-audit test was added after the worker bundle; local count overlaps three worker tests.",
+  "device_tests_per_rank": 18,
+  "device_ranks": 4,
+  "device_gate_limits_rechecked": true,
+  "archive_source_verified": true,
+  "data_sha256_verified": true,
+  "completed_updates": 4,
+  "trajectories": 64,
+  "response_tokens": 32215,
+  "reward_outcomes": {
+    "correct": 62,
+    "incorrect": 2,
+    "missing_final_answer": 0,
+    "truncated": 0
+  },
+  "rewards_independently_recomputed": true,
+  "nonzero_gradient_updates": [
+    3
+  ],
+  "direct_adam_evidence_saved": true,
+  "actor_replay_performed": false,
+  "residency_benchmark_performed": false,
+  "scope": "Synchronous execution and reward audit; no learning or convergence measurement"
+}

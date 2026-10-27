@@ -1,0 +1,149 @@
+{
+  "raw_event_rows": 119,
+  "unique_event_rows": 77,
+  "updates": [
+    {
+      "rollout_id": 0,
+      "ranks": [
+        {
+          "rank": 0,
+          "model_tensors": 290,
+          "changed_model_tensors": 207,
+          "adam_moments_changed": true
+        },
+        {
+          "rank": 1,
+          "model_tensors": 290,
+          "changed_model_tensors": 207,
+          "adam_moments_changed": true
+        }
+      ]
+    },
+    {
+      "rollout_id": 1,
+      "ranks": [
+        {
+          "rank": 0,
+          "model_tensors": 290,
+          "changed_model_tensors": 200,
+          "adam_moments_changed": true
+        },
+        {
+          "rank": 1,
+          "model_tensors": 290,
+          "changed_model_tensors": 200,
+          "adam_moments_changed": true
+        }
+      ]
+    },
+    {
+      "rollout_id": 2,
+      "ranks": [
+        {
+          "rank": 0,
+          "model_tensors": 290,
+          "changed_model_tensors": 202,
+          "adam_moments_changed": true
+        },
+        {
+          "rank": 1,
+          "model_tensors": 290,
+          "changed_model_tensors": 202,
+          "adam_moments_changed": true
+        }
+      ]
+    }
+  ],
+  "engine_publications": [
+    {
+      "rollout_id": -1,
+      "weight_version": 0,
+      "timestamp": "2026-10-24T04:26:07.597911Z",
+      "transfer_id": "f0bea5e45bf54f0892a7658a40ac2aef",
+      "replicas": 2,
+      "raw_tensors_per_replica": 290,
+      "changed_since_previous": null
+    },
+    {
+      "rollout_id": 0,
+      "weight_version": 1,
+      "timestamp": "2026-10-24T04:27:45.437638Z",
+      "transfer_id": "d44e8c3ee9a1447d9962b9739e5a8be6",
+      "replicas": 2,
+      "raw_tensors_per_replica": 290,
+      "changed_since_previous": 207
+    },
+    {
+      "rollout_id": 1,
+      "weight_version": 2,
+      "timestamp": "2026-10-24T04:30:43.433303Z",
+      "transfer_id": "f7c18d56f9bf4abaa5e1bf5207aa66ff",
+      "replicas": 2,
+      "raw_tensors_per_replica": 290,
+      "changed_since_previous": 200
+    },
+    {
+      "rollout_id": 1,
+      "weight_version": 2,
+      "timestamp": "2026-10-24T04:38:19.143005Z",
+      "transfer_id": "1b29731cf6d840c68a5233e565ae3daa",
+      "replicas": 2,
+      "raw_tensors_per_replica": 290,
+      "changed_since_previous": 0
+    },
+    {
+      "rollout_id": 2,
+      "weight_version": 3,
+      "timestamp": "2026-10-24T04:40:30.967723Z",
+      "transfer_id": "3d51f1fca040463db3fa143b7534a82d",
+      "replicas": 2,
+      "raw_tensors_per_replica": 290,
+      "changed_since_previous": 202
+    }
+  ],
+  "publication_probe": [
+    {
+      "index": 0,
+      "response_length": 512,
+      "status": "truncated",
+      "reward": {
+        "score": -1.0,
+        "acc": false,
+        "pred": "[INVALID]"
+      }
+    },
+    {
+      "index": 1,
+      "response_length": 512,
+      "status": "truncated",
+      "reward": {
+        "score": -1.0,
+        "acc": false,
+        "pred": "[INVALID]"
+      }
+    },
+    {
+      "index": 2,
+      "response_length": 512,
+      "status": "truncated",
+      "reward": {
+        "score": -1.0,
+        "acc": false,
+        "pred": "[INVALID]"
+      }
+    },
+    {
+      "index": 3,
+      "response_length": 512,
+      "status": "truncated",
+      "reward": {
+        "score": -1.0,
+        "acc": false,
+        "pred": "[INVALID]"
+      }
+    }
+  ],
+  "probe_response_tokens": 2048,
+  "probe_truncated": 4,
+  "runtime_model_parameter_contract": "pre-update hook vs post-update local checksum; companion/witness excluded"
+}

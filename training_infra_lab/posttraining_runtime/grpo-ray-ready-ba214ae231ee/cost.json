@@ -1,0 +1,19 @@
+{
+  "run_sid": "70d36e11e929c5c3",
+  "gpu_count": 4,
+  "pod_start_at": "2026-10-24T07:07:51.000Z",
+  "pod_stop_at": "2026-10-24T07:29:39.000Z",
+  "pod_resident_seconds": 1308.0,
+  "resident_gpu_hours": 1.4533333333333334,
+  "job_created_at": "2026-10-24T07:06:52.918Z",
+  "platform_start_at": "2026-10-24T07:12:03.995Z",
+  "job_success_at": "2026-10-24T07:29:38.944Z",
+  "creation_to_platform_start_seconds": 311.077,
+  "platform_running_seconds": 1054.949,
+  "gpu_compute_active_hours": null,
+  "basis": "terminal Pod start_at/stop_at; includes startup and does not measure GPU kernel activity",
+  "prior_failure_run": "585440c23b867d70",
+  "prior_failure_resident_gpu_hours": 0.6711111111111111,
+  "cancelled_before_entry_run": "53bfe898ac2210b3",
+  "cancelled_before_entry_cost": null
+}

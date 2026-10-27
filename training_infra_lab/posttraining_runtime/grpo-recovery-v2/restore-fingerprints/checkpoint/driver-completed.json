@@ -1,0 +1,11 @@
+{
+  "driver_returned": true,
+  "requested_updates": 3,
+  "semantic_audit_pending": true,
+  "phase": "checkpoint",
+  "expected_rollout_ids": [
+    0,
+    1
+  ],
+  "performance_claim": false
+}

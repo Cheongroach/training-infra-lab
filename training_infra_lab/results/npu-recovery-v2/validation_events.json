@@ -1,0 +1,261 @@
+[
+  {
+    "pod_sid": "5368788913",
+    "event": "qwen_hf_padding_recompute_gate_passed",
+    "device": "npu",
+    "mode": "full",
+    "padding": "fixed",
+    "activation_checkpoint": false,
+    "loss": 4.5998616218566895,
+    "shape": [
+      2,
+      256
+    ]
+  },
+  {
+    "pod_sid": "5368788913",
+    "event": "qwen_hf_padding_recompute_gate_passed",
+    "device": "npu",
+    "mode": "chunk",
+    "padding": "fixed",
+    "activation_checkpoint": false,
+    "loss": 4.5998616218566895,
+    "shape": [
+      2,
+      256
+    ]
+  },
+  {
+    "pod_sid": "5368788913",
+    "event": "qwen_hf_padding_recompute_gate_passed",
+    "device": "npu",
+    "mode": "full",
+    "padding": "dynamic",
+    "activation_checkpoint": false,
+    "loss": 4.5998616218566895,
+    "shape": [
+      2,
+      128
+    ]
+  },
+  {
+    "pod_sid": "5368788913",
+    "event": "qwen_hf_padding_recompute_gate_passed",
+    "device": "npu",
+    "mode": "selected",
+    "padding": "dynamic",
+    "activation_checkpoint": false,
+    "loss": 4.599862098693848,
+    "shape": [
+      2,
+      128
+    ]
+  },
+  {
+    "pod_sid": "5368788913",
+    "event": "qwen_hf_padding_recompute_gate_passed",
+    "device": "npu",
+    "mode": "chunk",
+    "padding": "dynamic",
+    "activation_checkpoint": true,
+    "loss": 4.5998616218566895,
+    "shape": [
+      2,
+      128
+    ]
+  },
+  {
+    "pod_sid": "5368788913",
+    "event": "loss_gradient_gate_passed",
+    "rank": 1,
+    "loss": 5.908727645874023,
+    "tokens": 42
+  },
+  {
+    "pod_sid": "5368788913",
+    "event": "loss_gradient_gate_passed",
+    "rank": 0,
+    "loss": 5.908727169036865,
+    "tokens": 42
+  },
+  {
+    "pod_sid": "5368788913",
+    "event": "bf16_loss_gate_passed",
+    "rank": 1,
+    "max_relative_l2_grad_error": 0.00244792178273201
+  },
+  {
+    "pod_sid": "5368788913",
+    "event": "bf16_loss_gate_passed",
+    "rank": 0,
+    "max_relative_l2_grad_error": 0.00244792178273201
+  },
+  {
+    "pod_sid": "5368788913",
+    "event": "fsdp2_global_token_update_gate_passed",
+    "rank": 0,
+    "world_size": 2
+  },
+  {
+    "pod_sid": "5368788913",
+    "event": "fsdp2_global_token_update_gate_passed",
+    "rank": 1,
+    "world_size": 2
+  },
+  {
+    "pod_sid": "5368788913",
+    "event": "training_environment",
+    "rank": 0,
+    "host": "g340-cd60-1100-54e8-b10f-f452-5973",
+    "world_size": 2,
+    "device": "npu",
+    "device_name": "Ascend910B4-1",
+    "torch": "2.7.1+cpu",
+    "transformers": "4.57.1",
+    "parameters": 1543714304,
+    "trainable_parameters": 1543714304,
+    "load_seconds": 8.740688784047961,
+    "args": {
+      "assets": "/tmp/training_lab/assets",
+      "output": "/tmp/training_lab/results/continuous",
+      "mode": "chunk",
+      "activation_checkpoint": false,
+      "seq_length": 1024,
+      "padding": "dynamic",
+      "micro_batch": 1,
+      "global_batch": 8,
+      "steps": 6,
+      "warmup": 1,
+      "chunk_tokens": 256,
+      "lr": 1e-05,
+      "seed": 20261019,
+      "eval_examples": 16,
+      "save_checkpoint": false,
+      "require_hosts": 1,
+      "checkpoint_dir": null,
+      "resume": null,
+      "stop_after": null,
+      "fingerprint": true,
+      "deterministic": true,
+      "profile_step": -1
+    },
+    "assets_manifest_sha256": "7b090baee1f35c36a7486e0f126e40c5be2d4834157506e2c6cb8016a12b5a12"
+  },
+  {
+    "pod_sid": "5368788913",
+    "event": "training_environment",
+    "rank": 1,
+    "host": "g340-cd60-1100-54e8-b10f-f452-5973",
+    "world_size": 2,
+    "device": "npu",
+    "device_name": "Ascend910B4-1",
+    "torch": "2.7.1+cpu",
+    "transformers": "4.57.1",
+    "parameters": 1543714304,
+    "trainable_parameters": 1543714304,
+    "load_seconds": 8.766167300753295,
+    "args": {
+      "assets": "/tmp/training_lab/assets",
+      "output": "/tmp/training_lab/results/continuous",
+      "mode": "chunk",
+      "activation_checkpoint": false,
+      "seq_length": 1024,
+      "padding": "dynamic",
+      "micro_batch": 1,
+      "global_batch": 8,
+      "steps": 6,
+      "warmup": 1,
+      "chunk_tokens": 256,
+      "lr": 1e-05,
+      "seed": 20261019,
+      "eval_examples": 16,
+      "save_checkpoint": false,
+      "require_hosts": 1,
+      "checkpoint_dir": null,
+      "resume": null,
+      "stop_after": null,
+      "fingerprint": true,
+      "deterministic": true,
+      "profile_step": -1
+    },
+    "assets_manifest_sha256": "7b090baee1f35c36a7486e0f126e40c5be2d4834157506e2c6cb8016a12b5a12"
+  },
+  {
+    "pod_sid": "5368788913",
+    "event": "training_environment",
+    "rank": 0,
+    "host": "g340-cd60-1100-54e8-b10f-f452-5973",
+    "world_size": 2,
+    "device": "npu",
+    "device_name": "Ascend910B4-1",
+    "torch": "2.7.1+cpu",
+    "transformers": "4.57.1",
+    "parameters": 1543714304,
+    "trainable_parameters": 1543714304,
+    "load_seconds": 8.214751220308244,
+    "args": {
+      "assets": "/tmp/training_lab/assets",
+      "output": "/tmp/training_lab/results/split",
+      "mode": "chunk",
+      "activation_checkpoint": false,
+      "seq_length": 1024,
+      "padding": "dynamic",
+      "micro_batch": 1,
+      "global_batch": 8,
+      "steps": 6,
+      "warmup": 1,
+      "chunk_tokens": 256,
+      "lr": 1e-05,
+      "seed": 20261019,
+      "eval_examples": 16,
+      "save_checkpoint": true,
+      "require_hosts": 1,
+      "checkpoint_dir": "/tmp/training_lab/checkpoint",
+      "resume": null,
+      "stop_after": 3,
+      "fingerprint": true,
+      "deterministic": true,
+      "profile_step": -1
+    },
+    "assets_manifest_sha256": "7b090baee1f35c36a7486e0f126e40c5be2d4834157506e2c6cb8016a12b5a12"
+  },
+  {
+    "pod_sid": "5368788913",
+    "event": "training_environment",
+    "rank": 1,
+    "host": "g340-cd60-1100-54e8-b10f-f452-5973",
+    "world_size": 2,
+    "device": "npu",
+    "device_name": "Ascend910B4-1",
+    "torch": "2.7.1+cpu",
+    "transformers": "4.57.1",
+    "parameters": 1543714304,
+    "trainable_parameters": 1543714304,
+    "load_seconds": 8.40848640166223,
+    "args": {
+      "assets": "/tmp/training_lab/assets",
+      "output": "/tmp/training_lab/results/split",
+      "mode": "chunk",
+      "activation_checkpoint": false,
+      "seq_length": 1024,
+      "padding": "dynamic",
+      "micro_batch": 1,
+      "global_batch": 8,
+      "steps": 6,
+      "warmup": 1,
+      "chunk_tokens": 256,
+      "lr": 1e-05,
+      "seed": 20261019,
+      "eval_examples": 16,
+      "save_checkpoint": true,
+      "require_hosts": 1,
+      "checkpoint_dir": "/tmp/training_lab/checkpoint",
+      "resume": null,
+      "stop_after": 3,
+      "fingerprint": true,
+      "deterministic": true,
+      "profile_step": -1
+    },
+    "assets_manifest_sha256": "7b090baee1f35c36a7486e0f126e40c5be2d4834157506e2c6cb8016a12b5a12"
+  }
+]

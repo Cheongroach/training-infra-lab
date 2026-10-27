@@ -1,0 +1,57 @@
+{
+  "batch_sha256": "72a551d1ceeeba3f271a8ac4293a2a2c7d7dd61be6f0219436c69f05b55f0547",
+  "world": 4,
+  "signal_groups": 2,
+  "groups": 4,
+  "mean_reward": 0.625,
+  "numerical_gate_passed": true,
+  "useful_gradient_test": true,
+  "configurations": [
+    {
+      "strategy": "slot_sorted",
+      "micro_batch": 1,
+      "seconds_per_repeat": [
+        4.335140705108643,
+        4.392107963562012,
+        4.419220924377441
+      ],
+      "median_seconds": 4.392107963562012,
+      "min_seconds": 4.335140705108643,
+      "max_seconds": 4.419220924377441,
+      "median_input_tokens_per_second": 2672.748506500655,
+      "median_response_tokens_per_second": 2393.1561080013958,
+      "peak_allocated_gib": 47.438507080078125
+    },
+    {
+      "strategy": "verl",
+      "micro_batch": 1,
+      "seconds_per_repeat": [
+        5.868752479553223,
+        4.301375389099121,
+        4.367736339569092
+      ],
+      "median_seconds": 4.367736339569092,
+      "min_seconds": 4.301375389099121,
+      "max_seconds": 5.868752479553223,
+      "median_input_tokens_per_second": 2687.6622321845866,
+      "median_response_tokens_per_second": 2406.509730172262,
+      "peak_allocated_gib": 47.4385027885437
+    }
+  ],
+  "paired_comparisons": [
+    {
+      "micro_batch": 1,
+      "baseline": "verl",
+      "candidate": "slot_sorted",
+      "speedups_per_repeat": [
+        1.3537628600237432,
+        0.9793419070715861,
+        0.9883498504172198
+      ]
+    }
+  ],
+  "scope": "one real batch, 3 randomized repeats in one process group; not independent job trials",
+  "timing": "planning, plan agreement, collation, forward/backward/clip/Adam, slot synchronization",
+  "excluded": "rollout, setup, scratch copies/restoration, numerical verification, checkpoints",
+  "limitations": "no packing, no full verl comparison, short responses, no convergence claim"
+}

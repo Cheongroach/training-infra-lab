@@ -1,0 +1,22 @@
+{
+  "job_sid": "172e5c51a339edef",
+  "trial_sid": "438495582",
+  "pod_sid": "5390798511",
+  "control_plane": "cn",
+  "precheck_sid": "3d163f32-25ac-4bd3-9b21-1bbaaaa1e9c8",
+  "precheck_checked_at": "2026-10-24T04:09:30.884074+00:00",
+  "submitted_entry_sha256": "dff3e3677ecd58246dc49dd9980f1699e5d4cfef7c3fcb83d33f2a7a001e6451",
+  "submitted_entry_matches_preserved": true,
+  "source_files": 14,
+  "temporary_record_collision": {
+    "other_job_sid": "a0f976754ea54fc4",
+    "same_entry_sha256": true,
+    "other_submit_record_excluded": true
+  },
+  "rules": {
+    "error": "stop",
+    "warn_hint": "display then continue",
+    "merge_precheck": "preserve request_context",
+    "validity_minutes": 30
+  }
+}

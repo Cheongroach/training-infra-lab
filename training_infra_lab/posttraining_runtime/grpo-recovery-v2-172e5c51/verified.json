@@ -1,0 +1,80 @@
+{
+  "passed": true,
+  "performance_claim": false,
+  "errors": [],
+  "restored_ranks": [
+    {
+      "rank": 0,
+      "passed": true
+    },
+    {
+      "rank": 1,
+      "passed": true
+    }
+  ],
+  "sampler_restored_samples": 32,
+  "checkpoint_bytes": 56331517391,
+  "resumed_initial_publication": {
+    "debug_weight_update_id": "1b29731cf6d840c68a5233e565ae3daa",
+    "published_version": 2,
+    "replayed_events": 42,
+    "fresh_publication_verified": true
+  },
+  "inherited_events_verified": 42,
+  "raw_restored_engine_tensors": 290,
+  "semantic_audit": {
+    "passed": true,
+    "performance_claim": false,
+    "updates": [
+      {
+        "rollout_id": 0,
+        "candidate_batches": 1,
+        "rejected_batches": 0,
+        "nonzero_advantage_tokens": 9441,
+        "reward_mean": -0.75,
+        "mixed_reward_groups": 1,
+        "truncated_samples": 2,
+        "grad_norm": [
+          0.29018548130989075
+        ]
+      },
+      {
+        "rollout_id": 1,
+        "candidate_batches": 1,
+        "rejected_batches": 0,
+        "nonzero_advantage_tokens": 6202,
+        "reward_mean": -0.875,
+        "mixed_reward_groups": 1,
+        "truncated_samples": 0,
+        "grad_norm": [
+          0.2565576136112213
+        ]
+      },
+      {
+        "rollout_id": 2,
+        "candidate_batches": 2,
+        "rejected_batches": 1,
+        "nonzero_advantage_tokens": 15033,
+        "reward_mean": -0.75,
+        "mixed_reward_groups": 2,
+        "truncated_samples": 1,
+        "grad_norm": [
+          0.43184712529182434
+        ]
+      }
+    ],
+    "final_update_published": true,
+    "rollout_gate_required": true,
+    "event_types": {
+      "env_report": 41,
+      "metric": 13,
+      "train_engine_local_weight_checksum": 6,
+      "engine_env_report": 4,
+      "inference_engine_weight_checksum": 4,
+      "weight_update_result": 4,
+      "train_group_step_end": 3
+    },
+    "errors": []
+  },
+  "publication_probe_samples": 4
+}

@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "run_sid": "585440c23b867d70",
+  "precheck_sid": "67f80f55-3490-41a2-a5a4-9bf4a7e4de05",
+  "success_checks": 14,
+  "warn_hint": [],
+  "precheck_to_create_seconds": 26.424,
+  "precheck_payload_identity": true,
+  "request_context_merged": true,
+  "entry_sha256": "c2621e26174d2ed9390c9816533c521e031d2b34f33fe2b5612b4f8cd512fccc",
+  "auditor_files_verified": 13,
+  "cpu_tests": 109,
+  "tokenizer_prompts": 64
+}

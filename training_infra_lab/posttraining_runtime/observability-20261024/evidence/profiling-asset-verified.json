@@ -1,0 +1,16 @@
+{
+  "sid": "79c375329e81e2bd79a2f8d435d1ae1adabf3e271b159ca5bc9026e8bc463df7",
+  "name": "grpo-rank0-rollout1.1792849897435034236.nsys-rep",
+  "description": "GRPO rank0 rollout1; diagnostic only\n\nuploaded using merlin-cli",
+  "asset_type": "nsys",
+  "storage_type": "tos",
+  "storage_path": "merlin/asset/cn/zhangyang.exp/BEPV3PQE6adcb7e9",
+  "created_at": "2026-10-24T13:51:38Z",
+  "updated_at": "2026-10-24T13:51:38Z",
+  "owner": "zhangyang.exp",
+  "outer_type": "arnold_trial",
+  "outer_id": "438689893",
+  "upload_method": "manual",
+  "tos_bucket": "data-aml-reckon-mlx",
+  "file_size": 11276409
+}

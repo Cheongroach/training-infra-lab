@@ -1,0 +1,414 @@
+{
+  "passed": true,
+  "scope": "single_node_environment_and_nccl_correctness",
+  "errors": [],
+  "ranks": [
+    {
+      "rank": 0,
+      "device": "NVIDIA H20",
+      "cuda": "13.0",
+      "nccl": [
+        2,
+        30,
+        7
+      ],
+      "python": "3.12.15 (main, Oct 14 2026, 01:05:27) [Clang 23.1.3 ]",
+      "uid": 1000,
+      "modules": {
+        "torch": {
+          "path": "/opt/sglang/lib/python3.12/site-packages/torch/__init__.py",
+          "version": "2.14.1+cu130",
+          "git": {
+            "returncode": 128,
+            "stdout": "",
+            "stderr": "fatal: not a git repository (or any of the parent directories): .git\n"
+          }
+        },
+        "transformers": {
+          "path": "/opt/sglang/lib/python3.12/site-packages/transformers/__init__.py",
+          "version": "5.19.0",
+          "git": {
+            "returncode": 128,
+            "stdout": "",
+            "stderr": "fatal: not a git repository (or any of the parent directories): .git\n"
+          }
+        },
+        "sglang": {
+          "path": "/sgl-workspace/sglang/python/sglang/__init__.py",
+          "version": "0.5.23.dev51+g3a93821",
+          "git": {
+            "returncode": 0,
+            "stdout": "3a938213c1b349e1a8df0b5fdc57ef36a41c743b\n",
+            "stderr": ""
+          }
+        },
+        "ray": {
+          "path": "/opt/sglang/lib/python3.12/site-packages/ray/__init__.py",
+          "version": "2.58.1",
+          "git": {
+            "returncode": 128,
+            "stdout": "",
+            "stderr": "fatal: not a git repository (or any of the parent directories): .git\n"
+          }
+        },
+        "megatron.core": {
+          "path": "/root/Megatron-LM/megatron/core/__init__.py",
+          "version": "0.19.0+2fbe25a44",
+          "git": {
+            "returncode": 0,
+            "stdout": "2fbe25a442a539b2796cdf40e77dfb2c90782529\n",
+            "stderr": ""
+          }
+        },
+        "transformer_engine.pytorch": {
+          "path": "/opt/sglang/lib/python3.12/site-packages/transformer_engine/pytorch/__init__.py",
+          "version": "2.17.0+miles",
+          "git": {
+            "returncode": 128,
+            "stdout": "",
+            "stderr": "fatal: not a git repository (or any of the parent directories): .git\n"
+          }
+        },
+        "flash_attn": {
+          "path": "/opt/sglang/lib/python3.12/site-packages/flash_attn/__init__.py",
+          "version": "2.7.4.post1",
+          "git": {
+            "returncode": 128,
+            "stdout": "",
+            "stderr": "fatal: not a git repository (or any of the parent directories): .git\n"
+          }
+        },
+        "flash_attn_interface": {
+          "path": "/opt/sglang/lib/python3.12/site-packages/flash_attn_interface.py",
+          "version": "None",
+          "git": {
+            "returncode": 128,
+            "stdout": "",
+            "stderr": "fatal: not a git repository (or any of the parent directories): .git\n"
+          }
+        },
+        "miles": {
+          "path": "/root/miles/miles/__init__.py",
+          "version": "0.1.2",
+          "git": {
+            "returncode": 0,
+            "stdout": "2233d795dcf167be489d1859971c9233393f04c3\n",
+            "stderr": ""
+          }
+        }
+      },
+      "gpu_checks": {
+        "nccl_sum": 10.0,
+        "world_size": 4,
+        "bf16_loss": 128.0,
+        "gradient_matches_expected": true
+      }
+    },
+    {
+      "rank": 1,
+      "device": "NVIDIA H20",
+      "cuda": "13.0",
+      "nccl": [
+        2,
+        30,
+        7
+      ],
+      "python": "3.12.15 (main, Oct 14 2026, 01:05:27) [Clang 23.1.3 ]",
+      "uid": 1000,
+      "modules": {
+        "torch": {
+          "path": "/opt/sglang/lib/python3.12/site-packages/torch/__init__.py",
+          "version": "2.14.1+cu130",
+          "git": {
+            "returncode": 128,
+            "stdout": "",
+            "stderr": "fatal: not a git repository (or any of the parent directories): .git\n"
+          }
+        },
+        "transformers": {
+          "path": "/opt/sglang/lib/python3.12/site-packages/transformers/__init__.py",
+          "version": "5.19.0",
+          "git": {
+            "returncode": 128,
+            "stdout": "",
+            "stderr": "fatal: not a git repository (or any of the parent directories): .git\n"
+          }
+        },
+        "sglang": {
+          "path": "/sgl-workspace/sglang/python/sglang/__init__.py",
+          "version": "0.5.23.dev51+g3a93821",
+          "git": {
+            "returncode": 0,
+            "stdout": "3a938213c1b349e1a8df0b5fdc57ef36a41c743b\n",
+            "stderr": ""
+          }
+        },
+        "ray": {
+          "path": "/opt/sglang/lib/python3.12/site-packages/ray/__init__.py",
+          "version": "2.58.1",
+          "git": {
+            "returncode": 128,
+            "stdout": "",
+            "stderr": "fatal: not a git repository (or any of the parent directories): .git\n"
+          }
+        },
+        "megatron.core": {
+          "path": "/root/Megatron-LM/megatron/core/__init__.py",
+          "version": "0.19.0+2fbe25a44",
+          "git": {
+            "returncode": 0,
+            "stdout": "2fbe25a442a539b2796cdf40e77dfb2c90782529\n",
+            "stderr": ""
+          }
+        },
+        "transformer_engine.pytorch": {
+          "path": "/opt/sglang/lib/python3.12/site-packages/transformer_engine/pytorch/__init__.py",
+          "version": "2.17.0+miles",
+          "git": {
+            "returncode": 128,
+            "stdout": "",
+            "stderr": "fatal: not a git repository (or any of the parent directories): .git\n"
+          }
+        },
+        "flash_attn": {
+          "path": "/opt/sglang/lib/python3.12/site-packages/flash_attn/__init__.py",
+          "version": "2.7.4.post1",
+          "git": {
+            "returncode": 128,
+            "stdout": "",
+            "stderr": "fatal: not a git repository (or any of the parent directories): .git\n"
+          }
+        },
+        "flash_attn_interface": {
+          "path": "/opt/sglang/lib/python3.12/site-packages/flash_attn_interface.py",
+          "version": "None",
+          "git": {
+            "returncode": 128,
+            "stdout": "",
+            "stderr": "fatal: not a git repository (or any of the parent directories): .git\n"
+          }
+        },
+        "miles": {
+          "path": "/root/miles/miles/__init__.py",
+          "version": "0.1.2",
+          "git": {
+            "returncode": 0,
+            "stdout": "2233d795dcf167be489d1859971c9233393f04c3\n",
+            "stderr": ""
+          }
+        }
+      },
+      "gpu_checks": {
+        "nccl_sum": 10.0,
+        "world_size": 4,
+        "bf16_loss": 128.0,
+        "gradient_matches_expected": true
+      }
+    },
+    {
+      "rank": 2,
+      "device": "NVIDIA H20",
+      "cuda": "13.0",
+      "nccl": [
+        2,
+        30,
+        7
+      ],
+      "python": "3.12.15 (main, Oct 14 2026, 01:05:27) [Clang 23.1.3 ]",
+      "uid": 1000,
+      "modules": {
+        "torch": {
+          "path": "/opt/sglang/lib/python3.12/site-packages/torch/__init__.py",
+          "version": "2.14.1+cu130",
+          "git": {
+            "returncode": 128,
+            "stdout": "",
+            "stderr": "fatal: not a git repository (or any of the parent directories): .git\n"
+          }
+        },
+        "transformers": {
+          "path": "/opt/sglang/lib/python3.12/site-packages/transformers/__init__.py",
+          "version": "5.19.0",
+          "git": {
+            "returncode": 128,
+            "stdout": "",
+            "stderr": "fatal: not a git repository (or any of the parent directories): .git\n"
+          }
+        },
+        "sglang": {
+          "path": "/sgl-workspace/sglang/python/sglang/__init__.py",
+          "version": "0.5.23.dev51+g3a93821",
+          "git": {
+            "returncode": 0,
+            "stdout": "3a938213c1b349e1a8df0b5fdc57ef36a41c743b\n",
+            "stderr": ""
+          }
+        },
+        "ray": {
+          "path": "/opt/sglang/lib/python3.12/site-packages/ray/__init__.py",
+          "version": "2.58.1",
+          "git": {
+            "returncode": 128,
+            "stdout": "",
+            "stderr": "fatal: not a git repository (or any of the parent directories): .git\n"
+          }
+        },
+        "megatron.core": {
+          "path": "/root/Megatron-LM/megatron/core/__init__.py",
+          "version": "0.19.0+2fbe25a44",
+          "git": {
+            "returncode": 0,
+            "stdout": "2fbe25a442a539b2796cdf40e77dfb2c90782529\n",
+            "stderr": ""
+          }
+        },
+        "transformer_engine.pytorch": {
+          "path": "/opt/sglang/lib/python3.12/site-packages/transformer_engine/pytorch/__init__.py",
+          "version": "2.17.0+miles",
+          "git": {
+            "returncode": 128,
+            "stdout": "",
+            "stderr": "fatal: not a git repository (or any of the parent directories): .git\n"
+          }
+        },
+        "flash_attn": {
+          "path": "/opt/sglang/lib/python3.12/site-packages/flash_attn/__init__.py",
+          "version": "2.7.4.post1",
+          "git": {
+            "returncode": 128,
+            "stdout": "",
+            "stderr": "fatal: not a git repository (or any of the parent directories): .git\n"
+          }
+        },
+        "flash_attn_interface": {
+          "path": "/opt/sglang/lib/python3.12/site-packages/flash_attn_interface.py",
+          "version": "None",
+          "git": {
+            "returncode": 128,
+            "stdout": "",
+            "stderr": "fatal: not a git repository (or any of the parent directories): .git\n"
+          }
+        },
+        "miles": {
+          "path": "/root/miles/miles/__init__.py",
+          "version": "0.1.2",
+          "git": {
+            "returncode": 0,
+            "stdout": "2233d795dcf167be489d1859971c9233393f04c3\n",
+            "stderr": ""
+          }
+        }
+      },
+      "gpu_checks": {
+        "nccl_sum": 10.0,
+        "world_size": 4,
+        "bf16_loss": 128.0,
+        "gradient_matches_expected": true
+      }
+    },
+    {
+      "rank": 3,
+      "device": "NVIDIA H20",
+      "cuda": "13.0",
+      "nccl": [
+        2,
+        30,
+        7
+      ],
+      "python": "3.12.15 (main, Oct 14 2026, 01:05:27) [Clang 23.1.3 ]",
+      "uid": 1000,
+      "modules": {
+        "torch": {
+          "path": "/opt/sglang/lib/python3.12/site-packages/torch/__init__.py",
+          "version": "2.14.1+cu130",
+          "git": {
+            "returncode": 128,
+            "stdout": "",
+            "stderr": "fatal: not a git repository (or any of the parent directories): .git\n"
+          }
+        },
+        "transformers": {
+          "path": "/opt/sglang/lib/python3.12/site-packages/transformers/__init__.py",
+          "version": "5.19.0",
+          "git": {
+            "returncode": 128,
+            "stdout": "",
+            "stderr": "fatal: not a git repository (or any of the parent directories): .git\n"
+          }
+        },
+        "sglang": {
+          "path": "/sgl-workspace/sglang/python/sglang/__init__.py",
+          "version": "0.5.23.dev51+g3a93821",
+          "git": {
+            "returncode": 0,
+            "stdout": "3a938213c1b349e1a8df0b5fdc57ef36a41c743b\n",
+            "stderr": ""
+          }
+        },
+        "ray": {
+          "path": "/opt/sglang/lib/python3.12/site-packages/ray/__init__.py",
+          "version": "2.58.1",
+          "git": {
+            "returncode": 128,
+            "stdout": "",
+            "stderr": "fatal: not a git repository (or any of the parent directories): .git\n"
+          }
+        },
+        "megatron.core": {
+          "path": "/root/Megatron-LM/megatron/core/__init__.py",
+          "version": "0.19.0+2fbe25a44",
+          "git": {
+            "returncode": 0,
+            "stdout": "2fbe25a442a539b2796cdf40e77dfb2c90782529\n",
+            "stderr": ""
+          }
+        },
+        "transformer_engine.pytorch": {
+          "path": "/opt/sglang/lib/python3.12/site-packages/transformer_engine/pytorch/__init__.py",
+          "version": "2.17.0+miles",
+          "git": {
+            "returncode": 128,
+            "stdout": "",
+            "stderr": "fatal: not a git repository (or any of the parent directories): .git\n"
+          }
+        },
+        "flash_attn": {
+          "path": "/opt/sglang/lib/python3.12/site-packages/flash_attn/__init__.py",
+          "version": "2.7.4.post1",
+          "git": {
+            "returncode": 128,
+            "stdout": "",
+            "stderr": "fatal: not a git repository (or any of the parent directories): .git\n"
+          }
+        },
+        "flash_attn_interface": {
+          "path": "/opt/sglang/lib/python3.12/site-packages/flash_attn_interface.py",
+          "version": "None",
+          "git": {
+            "returncode": 128,
+            "stdout": "",
+            "stderr": "fatal: not a git repository (or any of the parent directories): .git\n"
+          }
+        },
+        "miles": {
+          "path": "/root/miles/miles/__init__.py",
+          "version": "0.1.2",
+          "git": {
+            "returncode": 0,
+            "stdout": "2233d795dcf167be489d1859971c9233393f04c3\n",
+            "stderr": ""
+          }
+        }
+      },
+      "gpu_checks": {
+        "nccl_sum": 10.0,
+        "world_size": 4,
+        "bf16_loss": 128.0,
+        "gradient_matches_expected": true
+      }
+    }
+  ],
+  "rdma_validated": false,
+  "real_grpo_validated": false,
+  "archive_sha256": "13186f85a38e5ba0164b0cec541ac3bf8499157ae31b39b6b436d3230eff2854"
+}

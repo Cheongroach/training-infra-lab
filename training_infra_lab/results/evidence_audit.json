@@ -1,0 +1,20 @@
+{
+  "status": "passed",
+  "checks": [
+    "h20-benchmark-v1: terminal success, full parameters, assets, source hashes",
+    "npu-benchmark-v1: terminal success, full parameters, assets, source hashes",
+    "h20-scale2-v1: terminal success, full parameters, assets, source hashes",
+    "h20-scale8-v1: terminal success, full parameters, assets, source hashes",
+    "h20-scale16-v2: terminal success, full parameters, assets, source hashes",
+    "h20-recovery-v2: terminal success, full parameters, assets, source hashes",
+    "npu-recovery-v3: terminal success, full parameters, assets, source hashes",
+    "h20-sync-v1: terminal success, full parameters, assets, source hashes",
+    "npu-sync-v1: terminal success, full parameters, assets, source hashes",
+    "52 result records: finite losses, timing and throughput recomputed",
+    "['h20-benchmark-v1', 'npu-benchmark-v1', 'h20-sync-v1', 'npu-sync-v1']: identical step/token budgets",
+    "['h20-scale2-v1', 'h20-scale8-v1', 'h20-scale16-v2']: identical step/token budgets",
+    "h20-recovery-v2: loaded/final parameter+Adam bytes and all step losses equal",
+    "npu-recovery-v3: loaded/final parameter+Adam bytes and all step losses equal",
+    "16 H20: two physical hosts; GDRDMA channel evidence present"
+  ]
+}

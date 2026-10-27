@@ -1,0 +1,23 @@
+{
+  "safe_archive": true,
+  "source_hashes_verified": 13,
+  "patches_verified": {
+    "patch_broadcast_ipv6": {
+      "base_commit": "2233d795dcf167be489d1859971c9233393f04c3",
+      "path": "miles/backends/training_utils/weight_update/protocols/broadcast.py",
+      "before_sha256": "c9349f1e3ff8405b1736458bab3029487c0dd18bd2424fb21730e65abf2f483e",
+      "after_sha256": "88601bd8f9ed1dd81c10cc30925c3a565053b9106e926586c3855e3de65d622f",
+      "patch": "IPv6 TCP rendezvous URL and socket family",
+      "gpu_verified": false
+    },
+    "patch_recovery_probe": {
+      "base_commit": "2233d795dcf167be489d1859971c9233393f04c3",
+      "path": "miles/backends/megatron_utils/actor.py",
+      "before_sha256": "f9cf84fb407a83a3ca277e03a8668b4848eaf110b99f7916d790cc4dcede0bd6",
+      "after_sha256": "c6a13b4413c52b15bd5b698bc30a9de4cb8cdddd7a4bf3d8c2778c8f2f099727",
+      "purpose": "Run only our rank-safe post-save checksum hook on both TP ranks",
+      "gpu_verified": false
+    }
+  },
+  "archive_sha256": "50395950446de3bf0057cb04189110ecb3c012c6236155555b998b322c2d4220"
+}

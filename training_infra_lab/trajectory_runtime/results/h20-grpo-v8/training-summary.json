@@ -1,0 +1,115 @@
+{
+  "world": 4,
+  "completed_updates": 4,
+  "updates": [
+    {
+      "update": 0,
+      "policy_version": 0,
+      "batch_sha256": "72c2e9d17bb577ad500f19b7ac561086247240c3a329e471e68800b7178fe240",
+      "trajectories": 16,
+      "groups": 4,
+      "response_tokens": 11019,
+      "mean_reward": 0.5,
+      "signal_groups": 2,
+      "signal_groups_with_completed_wrong_answer": 0,
+      "termination_and_reward": {
+        "eos_correct": 7,
+        "eos_wrong": 0,
+        "length_correct": 1,
+        "length_wrong": 8
+      },
+      "gradient_norm_range": [
+        1.291807770729065,
+        1.291807770729065
+      ],
+      "nonzero_live_gradient_all_ranks": true,
+      "generation_phase_seconds_max_rank": 74.68234157934785,
+      "optimizer_update_seconds_max_rank": 70.76417541503906,
+      "peak_update_allocated_gib": 35.31275129318237
+    },
+    {
+      "update": 1,
+      "policy_version": 1,
+      "batch_sha256": "72a551d1ceeeba3f271a8ac4293a2a2c7d7dd61be6f0219436c69f05b55f0547",
+      "trajectories": 16,
+      "groups": 4,
+      "response_tokens": 10511,
+      "mean_reward": 0.625,
+      "signal_groups": 2,
+      "signal_groups_with_completed_wrong_answer": 0,
+      "termination_and_reward": {
+        "eos_correct": 9,
+        "eos_wrong": 0,
+        "length_correct": 1,
+        "length_wrong": 6
+      },
+      "gradient_norm_range": [
+        1.3762531280517578,
+        1.3762531280517578
+      ],
+      "nonzero_live_gradient_all_ranks": true,
+      "generation_phase_seconds_max_rank": 49.12455769442022,
+      "optimizer_update_seconds_max_rank": 4.068683624267578,
+      "peak_update_allocated_gib": 47.43850231170654
+    },
+    {
+      "update": 2,
+      "policy_version": 2,
+      "batch_sha256": "be0fbefd6fc3c2a60c4f56bd1ea7581938e440b0fc534176b4649e25f734d07e",
+      "trajectories": 16,
+      "groups": 4,
+      "response_tokens": 10353,
+      "mean_reward": 0.5625,
+      "signal_groups": 2,
+      "signal_groups_with_completed_wrong_answer": 0,
+      "termination_and_reward": {
+        "eos_correct": 9,
+        "eos_wrong": 0,
+        "length_correct": 0,
+        "length_wrong": 7
+      },
+      "gradient_norm_range": [
+        1.2851570844650269,
+        1.2851570844650269
+      ],
+      "nonzero_live_gradient_all_ranks": true,
+      "generation_phase_seconds_max_rank": 51.018417002633214,
+      "optimizer_update_seconds_max_rank": 4.624528408050537,
+      "peak_update_allocated_gib": 47.4360556602478
+    },
+    {
+      "update": 3,
+      "policy_version": 3,
+      "batch_sha256": "2e38a23b06fbfad6667eed3b08180e5a02c9c0560ce0bebd648c2cd7d1d1a8dd",
+      "trajectories": 16,
+      "groups": 4,
+      "response_tokens": 10717,
+      "mean_reward": 0.4375,
+      "signal_groups": 2,
+      "signal_groups_with_completed_wrong_answer": 0,
+      "termination_and_reward": {
+        "eos_correct": 5,
+        "eos_wrong": 0,
+        "length_correct": 2,
+        "length_wrong": 9
+      },
+      "gradient_norm_range": [
+        1.2921180725097656,
+        1.2921180725097656
+      ],
+      "nonzero_live_gradient_all_ranks": true,
+      "generation_phase_seconds_max_rank": 50.908723993226886,
+      "optimizer_update_seconds_max_rank": 4.638650894165039,
+      "peak_update_allocated_gib": 47.43630313873291
+    }
+  ],
+  "all_updates_have_nonzero_gradients": true,
+  "all_updates_have_completed_wrong_signal": false,
+  "scope": "Short synchronous execution audit; different prompts at each update",
+  "limitations": [
+    "Reward is the versioned last-decimal rule, not full mathematical equivalence",
+    "Reported phases exclude probability replay and diagnostic experiments; not full RL throughput",
+    "Gradient norms are recorded; absolute Adam moment norms were not saved",
+    "No held-out evaluation or convergence claim"
+  ]
+}

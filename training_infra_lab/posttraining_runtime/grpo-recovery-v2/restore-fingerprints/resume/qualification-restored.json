@@ -1,0 +1,14 @@
+{
+  "restored": true,
+  "completed_rollout_id": 1,
+  "next_rollout_id": 2,
+  "cursor": {
+    "epoch_id": 0,
+    "sample_offset": 8,
+    "sample_index": 32,
+    "sample_group_index": 8
+  },
+  "seen_samples": 32,
+  "checkpoint_sha256": "09d71d4e30d2da7f490834bdc77bda718eff7bb3046f7d9745a948bbbff03e75",
+  "preserved_previous_journal": null
+}

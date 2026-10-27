@@ -1,0 +1,173 @@
+{
+  "passed": false,
+  "errors": [
+    "probe 2: parseable final boxed answer",
+    "probe 0: boxed/pred mismatch",
+    "probe 2: boxed/pred mismatch",
+    "probe 3: boxed/pred mismatch"
+  ],
+  "performance_claim": false,
+  "capability_claim": false,
+  "semantic_audit": {
+    "passed": true,
+    "performance_claim": false,
+    "updates": [
+      {
+        "rollout_id": 0,
+        "candidate_batches": 2,
+        "rejected_batches": 1,
+        "nonzero_advantage_tokens": 10757,
+        "reward_mean": -0.5,
+        "mixed_reward_groups": 2,
+        "truncated_samples": 1,
+        "grad_norm": [
+          0.6713921427726746
+        ]
+      },
+      {
+        "rollout_id": 1,
+        "candidate_batches": 1,
+        "rejected_batches": 0,
+        "nonzero_advantage_tokens": 8802,
+        "reward_mean": -0.75,
+        "mixed_reward_groups": 1,
+        "truncated_samples": 3,
+        "grad_norm": [
+          0.3623121976852417
+        ]
+      },
+      {
+        "rollout_id": 2,
+        "candidate_batches": 2,
+        "rejected_batches": 1,
+        "nonzero_advantage_tokens": 6907,
+        "reward_mean": -0.875,
+        "mixed_reward_groups": 1,
+        "truncated_samples": 2,
+        "grad_norm": [
+          0.20721755921840668
+        ]
+      }
+    ],
+    "final_update_published": true,
+    "rollout_gate_required": true,
+    "event_types": {
+      "env_report": 22,
+      "metric": 13,
+      "train_engine_local_weight_checksum": 6,
+      "engine_env_report": 2,
+      "inference_engine_weight_checksum": 4,
+      "weight_update_result": 4,
+      "train_group_step_end": 3
+    },
+    "errors": []
+  },
+  "ray_readiness": {
+    "passed": true,
+    "submission_id": "miles-readiness-1d343fab233a43929b29fdff3292d7da",
+    "nonce": "RAY_READINESS_6439a88ee8bb4de195d8ecf2ed664a63",
+    "budget_seconds": 120,
+    "num_cpus": 1,
+    "num_gpus": 0,
+    "attempts": [
+      {
+        "kind": "submitted"
+      }
+    ],
+    "training_submitted_by_gate": false,
+    "elapsed_seconds": 2.837,
+    "version": {
+      "version": "4",
+      "ray_version": "2.58.1",
+      "ray_commit": "4c7892ef427b19e7585ee28f548a60ab241929e8",
+      "session_name": "session_2026-10-24_13-27-37_636745_2742"
+    },
+    "last_status": "SUCCEEDED",
+    "logs": "2026-10-24 13:27:44,247\tINFO job_manager.py:583 -- Runtime env is setting up.\nRunning entrypoint for job miles-readiness-1d343fab233a43929b29fdff3292d7da: python3 -c 'print('\"'\"'RAY_READINESS_6439a88ee8bb4de195d8ecf2ed664a63'\"'\"', flush=True)'\nRAY_READINESS_6439a88ee8bb4de195d8ecf2ed664a63\n"
+  },
+  "publication_probe": {
+    "passed": false,
+    "errors": [
+      "probe 2: parseable final boxed answer"
+    ],
+    "samples": [
+      {
+        "index": 0,
+        "response_tokens": 1688,
+        "status": "completed",
+        "finish_reason": {
+          "type": "stop",
+          "matched": 151645
+        },
+        "boxed_answer": "54",
+        "pred": "**54",
+        "score": -1.0,
+        "passed": true,
+        "errors": []
+      },
+      {
+        "index": 1,
+        "response_tokens": 1242,
+        "status": "completed",
+        "finish_reason": {
+          "type": "stop",
+          "matched": 151645
+        },
+        "boxed_answer": "9",
+        "pred": "9",
+        "score": -1.0,
+        "passed": true,
+        "errors": []
+      },
+      {
+        "index": 2,
+        "response_tokens": 1772,
+        "status": "completed",
+        "finish_reason": {
+          "type": "stop",
+          "matched": 151645
+        },
+        "boxed_answer": "-3",
+        "pred": "",
+        "score": -1.0,
+        "passed": false,
+        "errors": [
+          "parseable final boxed answer"
+        ]
+      },
+      {
+        "index": 3,
+        "response_tokens": 903,
+        "status": "completed",
+        "finish_reason": {
+          "type": "stop",
+          "matched": 151645
+        },
+        "boxed_answer": "3",
+        "pred": "}3",
+        "score": -1.0,
+        "passed": true,
+        "errors": []
+      }
+    ],
+    "correct_answers": 0,
+    "capability_claim": false
+  },
+  "scoring_source_sha256": "3d6b61357e2ee8f1704ba0eb1726ea2dd65dbf9c76e963f20d5ff6598b8f7b23",
+  "generation_contract": {
+    "samples": 4,
+    "max_response_tokens": 4096,
+    "temperature": 0,
+    "weight_version": 3,
+    "natural_eos_required": true,
+    "parseable_boxed_answer_required": true,
+    "capability_claim": false,
+    "data_sha256": "7b7416744e9eb68b992147dba19f97336a235940e3ffd92345d2169d180fb1ac",
+    "eos_token_ids": [
+      151645,
+      151643
+    ],
+    "tokenizer_eos_token_id": 151645,
+    "model_revision": "1cfa9a7208912126459214e8b04321603b3df60c"
+  }
+}

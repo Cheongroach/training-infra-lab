@@ -1,0 +1,4628 @@
+{
+  "counts": {
+    "series": 230,
+    "points": 27064,
+    "nsys_tables": 63,
+    "nsys_rows": 827115,
+    "datasets": 71,
+    "events": {
+      "历史基线": 54,
+      "诊断任务": 54
+    },
+    "samples": {
+      "历史基线": 52,
+      "诊断任务": 52
+    },
+    "redactions": 224
+  },
+  "history_run": "70d36e11e929c5c3",
+  "diagnostic_run": "49b6f8781696e68e",
+  "precision": "SQLite 整数超过 JavaScript 安全范围时保留为十进制字符串；新增时间/时长列为派生字段。",
+  "datasets": [
+    {
+      "id": "d000",
+      "name": "历史基线 · 全部事件",
+      "group": "训练事件",
+      "columns": [
+        "timestamp",
+        "type",
+        "rollout_id",
+        "source",
+        "payload",
+        "file",
+        "line"
+      ],
+      "rows": 54,
+      "chunks": 1,
+      "chunk_size": 2500,
+      "source": "/mlx_devbox/users/zhangyang.exp/vllm-omni/vllm-omni/training_infra_lab/posttraining_runtime/grpo-ray-ready-ba214ae231ee/artifacts/results/events",
+      "run": "历史基线",
+      "preferred": [
+        "timestamp",
+        "type",
+        "rollout_id",
+        "source",
+        "file",
+        "payload"
+      ],
+      "types": [],
+      "original_columns": [
+        "timestamp",
+        "type",
+        "rollout_id",
+        "source",
+        "payload",
+        "file",
+        "line"
+      ],
+      "row_sha256": "abbb7b315439ed3005900baadcdc16bef199a3de06b9ed6b328c51860f3ac008"
+    },
+    {
+      "id": "d001",
+      "name": "历史基线 · 全部 rollout / eval 样本",
+      "group": "样本",
+      "columns": [
+        "file",
+        "rollout_id",
+        "index",
+        "group_index",
+        "response_tokens",
+        "status",
+        "reward",
+        "prompt",
+        "response",
+        "label",
+        "payload"
+      ],
+      "rows": 52,
+      "chunks": 1,
+      "chunk_size": 2500,
+      "source": "/mlx_devbox/users/zhangyang.exp/vllm-omni/vllm-omni/training_infra_lab/posttraining_runtime/grpo-ray-ready-ba214ae231ee/artifacts/results/rollout*.pt",
+      "run": "历史基线",
+      "preferred": [
+        "file",
+        "index",
+        "response_tokens",
+        "status",
+        "reward",
+        "prompt",
+        "response"
+      ],
+      "types": [],
+      "original_columns": [
+        "file",
+        "rollout_id",
+        "index",
+        "group_index",
+        "response_tokens",
+        "status",
+        "reward",
+        "prompt",
+        "response",
+        "label",
+        "payload"
+      ],
+      "row_sha256": "71de1daa6bf233b7da390710adc6b006c08529bb76b97f79b3ae3b50ce015a0a"
+    },
+    {
+      "id": "d002",
+      "name": "历史基线 · 全部训练张量字段",
+      "group": "训练数据",
+      "columns": [
+        "file",
+        "rollout_id",
+        "rank",
+        "field",
+        "value"
+      ],
+      "rows": 57,
+      "chunks": 1,
+      "chunk_size": 2500,
+      "source": "/mlx_devbox/users/zhangyang.exp/vllm-omni/vllm-omni/training_infra_lab/posttraining_runtime/grpo-ray-ready-ba214ae231ee/artifacts/results/train*.pt",
+      "run": "历史基线",
+      "preferred": [
+        "file",
+        "rollout_id",
+        "rank",
+        "field",
+        "value"
+      ],
+      "types": [],
+      "original_columns": [
+        "file",
+        "rollout_id",
+        "rank",
+        "field",
+        "value"
+      ],
+      "row_sha256": "9c72c9390c90f6e6400cf50c636e2f49282e3ade92711d376947aa947e5cb25c"
+    },
+    {
+      "id": "d003",
+      "name": "诊断任务 · 全部事件",
+      "group": "训练事件",
+      "columns": [
+        "timestamp",
+        "type",
+        "rollout_id",
+        "source",
+        "payload",
+        "file",
+        "line"
+      ],
+      "rows": 54,
+      "chunks": 1,
+      "chunk_size": 2500,
+      "source": "/mlx_devbox/users/zhangyang.exp/vllm-omni/vllm-omni/training_infra_lab/posttraining_runtime/observability-20261024/evidence/artifacts/results/events",
+      "run": "诊断任务",
+      "preferred": [
+        "timestamp",
+        "type",
+        "rollout_id",
+        "source",
+        "file",
+        "payload"
+      ],
+      "types": [],
+      "original_columns": [
+        "timestamp",
+        "type",
+        "rollout_id",
+        "source",
+        "payload",
+        "file",
+        "line"
+      ],
+      "row_sha256": "bb7a0e491f9036a2b737b8553ae9352db9cec610e9b6230cc4285433c425bd58"
+    },
+    {
+      "id": "d004",
+      "name": "诊断任务 · 全部 rollout / eval 样本",
+      "group": "样本",
+      "columns": [
+        "file",
+        "rollout_id",
+        "index",
+        "group_index",
+        "response_tokens",
+        "status",
+        "reward",
+        "prompt",
+        "response",
+        "label",
+        "payload"
+      ],
+      "rows": 52,
+      "chunks": 1,
+      "chunk_size": 2500,
+      "source": "/mlx_devbox/users/zhangyang.exp/vllm-omni/vllm-omni/training_infra_lab/posttraining_runtime/observability-20261024/evidence/artifacts/results/rollout*.pt",
+      "run": "诊断任务",
+      "preferred": [
+        "file",
+        "index",
+        "response_tokens",
+        "status",
+        "reward",
+        "prompt",
+        "response"
+      ],
+      "types": [],
+      "original_columns": [
+        "file",
+        "rollout_id",
+        "index",
+        "group_index",
+        "response_tokens",
+        "status",
+        "reward",
+        "prompt",
+        "response",
+        "label",
+        "payload"
+      ],
+      "row_sha256": "fb2443d844e1bc20a1376b6445c7c12d0354b991a8f322916cf2f109a238c4d8"
+    },
+    {
+      "id": "d005",
+      "name": "诊断任务 · 全部训练张量字段",
+      "group": "训练数据",
+      "columns": [
+        "file",
+        "rollout_id",
+        "rank",
+        "field",
+        "value"
+      ],
+      "rows": 57,
+      "chunks": 1,
+      "chunk_size": 2500,
+      "source": "/mlx_devbox/users/zhangyang.exp/vllm-omni/vllm-omni/training_infra_lab/posttraining_runtime/observability-20261024/evidence/artifacts/results/train*.pt",
+      "run": "诊断任务",
+      "preferred": [
+        "file",
+        "rollout_id",
+        "rank",
+        "field",
+        "value"
+      ],
+      "types": [],
+      "original_columns": [
+        "file",
+        "rollout_id",
+        "rank",
+        "field",
+        "value"
+      ],
+      "row_sha256": "7b94af926896643ee4beba3c00efd01b66b1d4b2868714ebfe0da1a0463463d8"
+    },
+    {
+      "id": "d006",
+      "name": "ANALYSIS_DETAILS",
+      "group": "NSYS",
+      "columns": [
+        "globalVid",
+        "duration",
+        "startTime",
+        "stopTime"
+      ],
+      "rows": 1,
+      "chunks": 1,
+      "chunk_size": 2500,
+      "source": "learner-rank0-6626.sqlite",
+      "run": "诊断任务",
+      "preferred": [
+        "globalVid",
+        "duration",
+        "startTime",
+        "stopTime"
+      ],
+      "types": [
+        {
+          "name": "globalVid",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "duration",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "startTime",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "stopTime",
+          "type": "INTEGER",
+          "primary_key": false
+        }
+      ],
+      "original_columns": [
+        "globalVid",
+        "duration",
+        "startTime",
+        "stopTime"
+      ],
+      "row_sha256": "b289da9ca7f16e4bacb0c86e96a784365cc4dc06ed04e565eb155c77922ff872"
+    },
+    {
+      "id": "d007",
+      "name": "ANALYSIS_FILE",
+      "group": "NSYS",
+      "columns": [
+        "id",
+        "filename",
+        "contentId",
+        "globalPid"
+      ],
+      "rows": 2,
+      "chunks": 1,
+      "chunk_size": 2500,
+      "source": "learner-rank0-6626.sqlite",
+      "run": "诊断任务",
+      "preferred": [
+        "id",
+        "filename",
+        "contentId",
+        "globalPid"
+      ],
+      "types": [
+        {
+          "name": "id",
+          "type": "INTEGER",
+          "primary_key": true
+        },
+        {
+          "name": "filename",
+          "type": "TEXT",
+          "primary_key": false
+        },
+        {
+          "name": "contentId",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "globalPid",
+          "type": "INTEGER",
+          "primary_key": false
+        }
+      ],
+      "original_columns": [
+        "id",
+        "filename",
+        "contentId",
+        "globalPid"
+      ],
+      "row_sha256": "ba1709b1b1ac403109268fda3a4d01548118e529873fbb1b82e872565b31c190"
+    },
+    {
+      "id": "d008",
+      "name": "CUPTI_ACTIVITY_KIND_CUDA_EVENT",
+      "group": "NSYS",
+      "columns": [
+        "timestamp",
+        "deviceId",
+        "contextId",
+        "greenContextId",
+        "streamId",
+        "correlationId",
+        "globalPid",
+        "eventId",
+        "eventSyncId"
+      ],
+      "rows": 29360,
+      "chunks": 12,
+      "chunk_size": 2500,
+      "source": "learner-rank0-6626.sqlite",
+      "run": "诊断任务",
+      "preferred": [
+        "deviceId",
+        "streamId",
+        "correlationId"
+      ],
+      "types": [
+        {
+          "name": "timestamp",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "deviceId",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "contextId",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "greenContextId",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "streamId",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "correlationId",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "globalPid",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "eventId",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "eventSyncId",
+          "type": "INTEGER",
+          "primary_key": false
+        }
+      ],
+      "original_columns": [
+        "timestamp",
+        "deviceId",
+        "contextId",
+        "greenContextId",
+        "streamId",
+        "correlationId",
+        "globalPid",
+        "eventId",
+        "eventSyncId"
+      ],
+      "row_sha256": "f7ebdc5fe362a16d4434f71a4f82cb65c8658703720749ffd4b8137d0175fbaf"
+    },
+    {
+      "id": "d009",
+      "name": "CUPTI_ACTIVITY_KIND_KERNEL",
+      "group": "NSYS",
+      "columns": [
+        "start",
+        "end",
+        "deviceId",
+        "contextId",
+        "greenContextId",
+        "streamId",
+        "correlationId",
+        "globalPid",
+        "demangledName",
+        "shortName",
+        "mangledName",
+        "launchType",
+        "cacheConfig",
+        "registersPerThread",
+        "gridX",
+        "gridY",
+        "gridZ",
+        "blockX",
+        "blockY",
+        "blockZ",
+        "staticSharedMemory",
+        "dynamicSharedMemory",
+        "localMemoryPerThread",
+        "localMemoryTotal",
+        "gridId",
+        "sharedMemoryExecuted",
+        "graphNodeId",
+        "sharedMemoryLimitConfig",
+        "qmdBulkReleaseDone",
+        "qmdPreexitDone",
+        "qmdLastCtaDone",
+        "graphId",
+        "clusterX",
+        "clusterY",
+        "clusterZ",
+        "clusterSchedulingPolicy",
+        "maxPotentialClusterSize",
+        "maxActiveClusters",
+        "sharedMemoryRequestedPercentage",
+        "tensorSizeMinusOneElements",
+        "resolved_name",
+        "relative_start_s",
+        "duration_us"
+      ],
+      "rows": 35559,
+      "chunks": 15,
+      "chunk_size": 2500,
+      "source": "learner-rank0-6626.sqlite",
+      "run": "诊断任务",
+      "preferred": [
+        "relative_start_s",
+        "duration_us",
+        "resolved_name",
+        "deviceId",
+        "streamId",
+        "correlationId"
+      ],
+      "types": [
+        {
+          "name": "start",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "end",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "deviceId",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "contextId",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "greenContextId",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "streamId",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "correlationId",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "globalPid",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "demangledName",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "shortName",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "mangledName",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "launchType",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "cacheConfig",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "registersPerThread",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "gridX",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "gridY",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "gridZ",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "blockX",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "blockY",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "blockZ",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "staticSharedMemory",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "dynamicSharedMemory",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "localMemoryPerThread",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "localMemoryTotal",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "gridId",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "sharedMemoryExecuted",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "graphNodeId",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "sharedMemoryLimitConfig",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "qmdBulkReleaseDone",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "qmdPreexitDone",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "qmdLastCtaDone",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "graphId",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "clusterX",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "clusterY",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "clusterZ",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "clusterSchedulingPolicy",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "maxPotentialClusterSize",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "maxActiveClusters",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "sharedMemoryRequestedPercentage",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "tensorSizeMinusOneElements",
+          "type": "TEXT",
+          "primary_key": false
+        }
+      ],
+      "original_columns": [
+        "start",
+        "end",
+        "deviceId",
+        "contextId",
+        "greenContextId",
+        "streamId",
+        "correlationId",
+        "globalPid",
+        "demangledName",
+        "shortName",
+        "mangledName",
+        "launchType",
+        "cacheConfig",
+        "registersPerThread",
+        "gridX",
+        "gridY",
+        "gridZ",
+        "blockX",
+        "blockY",
+        "blockZ",
+        "staticSharedMemory",
+        "dynamicSharedMemory",
+        "localMemoryPerThread",
+        "localMemoryTotal",
+        "gridId",
+        "sharedMemoryExecuted",
+        "graphNodeId",
+        "sharedMemoryLimitConfig",
+        "qmdBulkReleaseDone",
+        "qmdPreexitDone",
+        "qmdLastCtaDone",
+        "graphId",
+        "clusterX",
+        "clusterY",
+        "clusterZ",
+        "clusterSchedulingPolicy",
+        "maxPotentialClusterSize",
+        "maxActiveClusters",
+        "sharedMemoryRequestedPercentage",
+        "tensorSizeMinusOneElements"
+      ],
+      "row_sha256": "873cc73b694f67342d3cf5d501188092af4b84a8b8d7aec528b9630624977c3a"
+    },
+    {
+      "id": "d010",
+      "name": "CUPTI_ACTIVITY_KIND_MEMCPY",
+      "group": "NSYS",
+      "columns": [
+        "start",
+        "end",
+        "deviceId",
+        "contextId",
+        "greenContextId",
+        "streamId",
+        "correlationId",
+        "globalPid",
+        "bytes",
+        "copyKind",
+        "deprecatedSrcId",
+        "srcKind",
+        "dstKind",
+        "srcDeviceId",
+        "srcContextId",
+        "dstDeviceId",
+        "dstContextId",
+        "migrationCause",
+        "graphNodeId",
+        "virtualAddress",
+        "copyCount",
+        "relative_start_s",
+        "duration_us"
+      ],
+      "rows": 1402,
+      "chunks": 1,
+      "chunk_size": 2500,
+      "source": "learner-rank0-6626.sqlite",
+      "run": "诊断任务",
+      "preferred": [
+        "relative_start_s",
+        "duration_us",
+        "deviceId",
+        "streamId",
+        "correlationId",
+        "bytes",
+        "copyKind"
+      ],
+      "types": [
+        {
+          "name": "start",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "end",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "deviceId",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "contextId",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "greenContextId",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "streamId",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "correlationId",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "globalPid",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "bytes",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "copyKind",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "deprecatedSrcId",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "srcKind",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "dstKind",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "srcDeviceId",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "srcContextId",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "dstDeviceId",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "dstContextId",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "migrationCause",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "graphNodeId",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "virtualAddress",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "copyCount",
+          "type": "INTEGER",
+          "primary_key": false
+        }
+      ],
+      "original_columns": [
+        "start",
+        "end",
+        "deviceId",
+        "contextId",
+        "greenContextId",
+        "streamId",
+        "correlationId",
+        "globalPid",
+        "bytes",
+        "copyKind",
+        "deprecatedSrcId",
+        "srcKind",
+        "dstKind",
+        "srcDeviceId",
+        "srcContextId",
+        "dstDeviceId",
+        "dstContextId",
+        "migrationCause",
+        "graphNodeId",
+        "virtualAddress",
+        "copyCount"
+      ],
+      "row_sha256": "1dfc4686b25cb8ba492c267d968b8f05e356ffa622f5a7c80ffb94c3092f0bef"
+    },
+    {
+      "id": "d011",
+      "name": "CUPTI_ACTIVITY_KIND_MEMSET",
+      "group": "NSYS",
+      "columns": [
+        "start",
+        "end",
+        "deviceId",
+        "contextId",
+        "greenContextId",
+        "streamId",
+        "correlationId",
+        "globalPid",
+        "value",
+        "bytes",
+        "graphNodeId",
+        "memKind",
+        "relative_start_s",
+        "duration_us"
+      ],
+      "rows": 6027,
+      "chunks": 3,
+      "chunk_size": 2500,
+      "source": "learner-rank0-6626.sqlite",
+      "run": "诊断任务",
+      "preferred": [
+        "relative_start_s",
+        "duration_us",
+        "deviceId",
+        "streamId",
+        "correlationId",
+        "bytes"
+      ],
+      "types": [
+        {
+          "name": "start",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "end",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "deviceId",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "contextId",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "greenContextId",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "streamId",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "correlationId",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "globalPid",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "value",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "bytes",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "graphNodeId",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "memKind",
+          "type": "INTEGER",
+          "primary_key": false
+        }
+      ],
+      "original_columns": [
+        "start",
+        "end",
+        "deviceId",
+        "contextId",
+        "greenContextId",
+        "streamId",
+        "correlationId",
+        "globalPid",
+        "value",
+        "bytes",
+        "graphNodeId",
+        "memKind"
+      ],
+      "row_sha256": "01efc50e0cfcf167cad1573881e568fd832be0c06d454233eb56394b1048d52d"
+    },
+    {
+      "id": "d012",
+      "name": "CUPTI_ACTIVITY_KIND_OVERHEAD",
+      "group": "NSYS",
+      "columns": [
+        "start",
+        "end",
+        "eventClass",
+        "globalTid",
+        "correlationId",
+        "nameId",
+        "overheadType",
+        "resolved_name",
+        "relative_start_s",
+        "duration_us"
+      ],
+      "rows": 297,
+      "chunks": 1,
+      "chunk_size": 2500,
+      "source": "learner-rank0-6626.sqlite",
+      "run": "诊断任务",
+      "preferred": [
+        "relative_start_s",
+        "duration_us",
+        "resolved_name",
+        "correlationId",
+        "globalTid"
+      ],
+      "types": [
+        {
+          "name": "start",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "end",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "eventClass",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "globalTid",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "correlationId",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "nameId",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "overheadType",
+          "type": "INTEGER",
+          "primary_key": false
+        }
+      ],
+      "original_columns": [
+        "start",
+        "end",
+        "eventClass",
+        "globalTid",
+        "correlationId",
+        "nameId",
+        "overheadType"
+      ],
+      "row_sha256": "982df4625c7689e9df87df8e8e5b8c639614c94f13ee20216696022a65701fca"
+    },
+    {
+      "id": "d013",
+      "name": "CUPTI_ACTIVITY_KIND_RUNTIME",
+      "group": "NSYS",
+      "columns": [
+        "start",
+        "end",
+        "eventClass",
+        "globalTid",
+        "correlationId",
+        "nameId",
+        "returnValue",
+        "callchainId",
+        "resolved_name",
+        "relative_start_s",
+        "duration_us"
+      ],
+      "rows": 264679,
+      "chunks": 106,
+      "chunk_size": 2500,
+      "source": "learner-rank0-6626.sqlite",
+      "run": "诊断任务",
+      "preferred": [
+        "relative_start_s",
+        "duration_us",
+        "resolved_name",
+        "correlationId",
+        "globalTid"
+      ],
+      "types": [
+        {
+          "name": "start",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "end",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "eventClass",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "globalTid",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "correlationId",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "nameId",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "returnValue",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "callchainId",
+          "type": "INTEGER",
+          "primary_key": false
+        }
+      ],
+      "original_columns": [
+        "start",
+        "end",
+        "eventClass",
+        "globalTid",
+        "correlationId",
+        "nameId",
+        "returnValue",
+        "callchainId"
+      ],
+      "row_sha256": "fe1233465011ac17045eb34534007053c31fdedfb1b0ca1234f1430f6f1cbf5c"
+    },
+    {
+      "id": "d014",
+      "name": "CUPTI_ACTIVITY_KIND_SYNCHRONIZATION",
+      "group": "NSYS",
+      "columns": [
+        "start",
+        "end",
+        "deviceId",
+        "contextId",
+        "greenContextId",
+        "streamId",
+        "correlationId",
+        "globalPid",
+        "deprecatedSyncType",
+        "syncType",
+        "eventId",
+        "eventSyncId",
+        "relative_start_s",
+        "duration_us"
+      ],
+      "rows": 68022,
+      "chunks": 28,
+      "chunk_size": 2500,
+      "source": "learner-rank0-6626.sqlite",
+      "run": "诊断任务",
+      "preferred": [
+        "relative_start_s",
+        "duration_us",
+        "deviceId",
+        "streamId",
+        "correlationId"
+      ],
+      "types": [
+        {
+          "name": "start",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "end",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "deviceId",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "contextId",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "greenContextId",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "streamId",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "correlationId",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "globalPid",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "deprecatedSyncType",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "syncType",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "eventId",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "eventSyncId",
+          "type": "INTEGER",
+          "primary_key": false
+        }
+      ],
+      "original_columns": [
+        "start",
+        "end",
+        "deviceId",
+        "contextId",
+        "greenContextId",
+        "streamId",
+        "correlationId",
+        "globalPid",
+        "deprecatedSyncType",
+        "syncType",
+        "eventId",
+        "eventSyncId"
+      ],
+      "row_sha256": "58e26f333eeb0cbf04d020a6354230ae6c04565aad4538390126321b26d2c759"
+    },
+    {
+      "id": "d015",
+      "name": "DIAGNOSTIC_EVENT",
+      "group": "NSYS",
+      "columns": [
+        "timestamp",
+        "timestampType",
+        "source",
+        "severity",
+        "text",
+        "globalPid"
+      ],
+      "rows": 153,
+      "chunks": 1,
+      "chunk_size": 2500,
+      "source": "learner-rank0-6626.sqlite",
+      "run": "诊断任务",
+      "preferred": [
+        "timestamp",
+        "timestampType",
+        "source",
+        "severity",
+        "text",
+        "globalPid"
+      ],
+      "types": [
+        {
+          "name": "timestamp",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "timestampType",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "source",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "severity",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "text",
+          "type": "TEXT",
+          "primary_key": false
+        },
+        {
+          "name": "globalPid",
+          "type": "INTEGER",
+          "primary_key": false
+        }
+      ],
+      "original_columns": [
+        "timestamp",
+        "timestampType",
+        "source",
+        "severity",
+        "text",
+        "globalPid"
+      ],
+      "row_sha256": "ba45ca36254c3ae7cd1f32d901dfb4a7ccefd8c919ac0d363b6cf2c88da04634"
+    },
+    {
+      "id": "d016",
+      "name": "ENUM_CUDA_DEV_MEM_EVENT_OPER",
+      "group": "NSYS",
+      "columns": [
+        "id",
+        "name",
+        "label"
+      ],
+      "rows": 2,
+      "chunks": 1,
+      "chunk_size": 2500,
+      "source": "learner-rank0-6626.sqlite",
+      "run": "诊断任务",
+      "preferred": [
+        "id",
+        "name",
+        "label"
+      ],
+      "types": [
+        {
+          "name": "id",
+          "type": "INTEGER",
+          "primary_key": true
+        },
+        {
+          "name": "name",
+          "type": "TEXT",
+          "primary_key": false
+        },
+        {
+          "name": "label",
+          "type": "TEXT",
+          "primary_key": false
+        }
+      ],
+      "original_columns": [
+        "id",
+        "name",
+        "label"
+      ],
+      "row_sha256": "84963bb16fd513156642d6d6bf033b3a9852a37e639a1cb742c64867d9ba320d"
+    },
+    {
+      "id": "d017",
+      "name": "ENUM_CUDA_FUNC_CACHE_CONFIG",
+      "group": "NSYS",
+      "columns": [
+        "id",
+        "name",
+        "label"
+      ],
+      "rows": 4,
+      "chunks": 1,
+      "chunk_size": 2500,
+      "source": "learner-rank0-6626.sqlite",
+      "run": "诊断任务",
+      "preferred": [
+        "id",
+        "name",
+        "label"
+      ],
+      "types": [
+        {
+          "name": "id",
+          "type": "INTEGER",
+          "primary_key": true
+        },
+        {
+          "name": "name",
+          "type": "TEXT",
+          "primary_key": false
+        },
+        {
+          "name": "label",
+          "type": "TEXT",
+          "primary_key": false
+        }
+      ],
+      "original_columns": [
+        "id",
+        "name",
+        "label"
+      ],
+      "row_sha256": "0a8296b4956ed887cacaa3bd8e32b1c8ad8b55d148a6d7585ee3615e7398e289"
+    },
+    {
+      "id": "d018",
+      "name": "ENUM_CUDA_KERNEL_LAUNCH_TYPE",
+      "group": "NSYS",
+      "columns": [
+        "id",
+        "name",
+        "label"
+      ],
+      "rows": 4,
+      "chunks": 1,
+      "chunk_size": 2500,
+      "source": "learner-rank0-6626.sqlite",
+      "run": "诊断任务",
+      "preferred": [
+        "id",
+        "name",
+        "label"
+      ],
+      "types": [
+        {
+          "name": "id",
+          "type": "INTEGER",
+          "primary_key": true
+        },
+        {
+          "name": "name",
+          "type": "TEXT",
+          "primary_key": false
+        },
+        {
+          "name": "label",
+          "type": "TEXT",
+          "primary_key": false
+        }
+      ],
+      "original_columns": [
+        "id",
+        "name",
+        "label"
+      ],
+      "row_sha256": "34b35fd4fed661919385d855309a0ecd0d7b152b428d7eb41b7cecc94542f45a"
+    },
+    {
+      "id": "d019",
+      "name": "ENUM_CUDA_MEMCPY_OPER",
+      "group": "NSYS",
+      "columns": [
+        "id",
+        "name",
+        "label"
+      ],
+      "rows": 14,
+      "chunks": 1,
+      "chunk_size": 2500,
+      "source": "learner-rank0-6626.sqlite",
+      "run": "诊断任务",
+      "preferred": [
+        "id",
+        "name",
+        "label"
+      ],
+      "types": [
+        {
+          "name": "id",
+          "type": "INTEGER",
+          "primary_key": true
+        },
+        {
+          "name": "name",
+          "type": "TEXT",
+          "primary_key": false
+        },
+        {
+          "name": "label",
+          "type": "TEXT",
+          "primary_key": false
+        }
+      ],
+      "original_columns": [
+        "id",
+        "name",
+        "label"
+      ],
+      "row_sha256": "437dd4cfa57c96897cbbe7bc16adf299f84a7078c81464ad8f982c12d4cc0b9f"
+    },
+    {
+      "id": "d020",
+      "name": "ENUM_CUDA_MEMPOOL_OPER",
+      "group": "NSYS",
+      "columns": [
+        "id",
+        "name",
+        "label"
+      ],
+      "rows": 4,
+      "chunks": 1,
+      "chunk_size": 2500,
+      "source": "learner-rank0-6626.sqlite",
+      "run": "诊断任务",
+      "preferred": [
+        "id",
+        "name",
+        "label"
+      ],
+      "types": [
+        {
+          "name": "id",
+          "type": "INTEGER",
+          "primary_key": true
+        },
+        {
+          "name": "name",
+          "type": "TEXT",
+          "primary_key": false
+        },
+        {
+          "name": "label",
+          "type": "TEXT",
+          "primary_key": false
+        }
+      ],
+      "original_columns": [
+        "id",
+        "name",
+        "label"
+      ],
+      "row_sha256": "68af7e2fe3a58e4929e4c73c6134ae546093a3a1a7b5dbe48f5df9c43490d7e3"
+    },
+    {
+      "id": "d021",
+      "name": "ENUM_CUDA_MEMPOOL_TYPE",
+      "group": "NSYS",
+      "columns": [
+        "id",
+        "name",
+        "label"
+      ],
+      "rows": 3,
+      "chunks": 1,
+      "chunk_size": 2500,
+      "source": "learner-rank0-6626.sqlite",
+      "run": "诊断任务",
+      "preferred": [
+        "id",
+        "name",
+        "label"
+      ],
+      "types": [
+        {
+          "name": "id",
+          "type": "INTEGER",
+          "primary_key": true
+        },
+        {
+          "name": "name",
+          "type": "TEXT",
+          "primary_key": false
+        },
+        {
+          "name": "label",
+          "type": "TEXT",
+          "primary_key": false
+        }
+      ],
+      "original_columns": [
+        "id",
+        "name",
+        "label"
+      ],
+      "row_sha256": "83dbec6a48bdb1b8053bf7d57530209d7b056216ca4702bda659dc43e3537283"
+    },
+    {
+      "id": "d022",
+      "name": "ENUM_CUDA_MEM_KIND",
+      "group": "NSYS",
+      "columns": [
+        "id",
+        "name",
+        "label"
+      ],
+      "rows": 8,
+      "chunks": 1,
+      "chunk_size": 2500,
+      "source": "learner-rank0-6626.sqlite",
+      "run": "诊断任务",
+      "preferred": [
+        "id",
+        "name",
+        "label"
+      ],
+      "types": [
+        {
+          "name": "id",
+          "type": "INTEGER",
+          "primary_key": true
+        },
+        {
+          "name": "name",
+          "type": "TEXT",
+          "primary_key": false
+        },
+        {
+          "name": "label",
+          "type": "TEXT",
+          "primary_key": false
+        }
+      ],
+      "original_columns": [
+        "id",
+        "name",
+        "label"
+      ],
+      "row_sha256": "4d7f4e53af01abff5d56a55145c74f5089dce92b5c340ba4cd4f8d5da7bff96b"
+    },
+    {
+      "id": "d023",
+      "name": "ENUM_CUDA_SHARED_MEM_LIMIT_CONFIG",
+      "group": "NSYS",
+      "columns": [
+        "id",
+        "name",
+        "label"
+      ],
+      "rows": 2,
+      "chunks": 1,
+      "chunk_size": 2500,
+      "source": "learner-rank0-6626.sqlite",
+      "run": "诊断任务",
+      "preferred": [
+        "id",
+        "name",
+        "label"
+      ],
+      "types": [
+        {
+          "name": "id",
+          "type": "INTEGER",
+          "primary_key": true
+        },
+        {
+          "name": "name",
+          "type": "TEXT",
+          "primary_key": false
+        },
+        {
+          "name": "label",
+          "type": "TEXT",
+          "primary_key": false
+        }
+      ],
+      "original_columns": [
+        "id",
+        "name",
+        "label"
+      ],
+      "row_sha256": "0bd8dd0211b79b3f0f735444887cee09a7bdba406cb8b32806d30ded8918784e"
+    },
+    {
+      "id": "d024",
+      "name": "ENUM_CUDA_UNIF_MEM_ACCESS_TYPE",
+      "group": "NSYS",
+      "columns": [
+        "id",
+        "name",
+        "label"
+      ],
+      "rows": 5,
+      "chunks": 1,
+      "chunk_size": 2500,
+      "source": "learner-rank0-6626.sqlite",
+      "run": "诊断任务",
+      "preferred": [
+        "id",
+        "name",
+        "label"
+      ],
+      "types": [
+        {
+          "name": "id",
+          "type": "INTEGER",
+          "primary_key": true
+        },
+        {
+          "name": "name",
+          "type": "TEXT",
+          "primary_key": false
+        },
+        {
+          "name": "label",
+          "type": "TEXT",
+          "primary_key": false
+        }
+      ],
+      "original_columns": [
+        "id",
+        "name",
+        "label"
+      ],
+      "row_sha256": "6508f9bbddf9001a205d5fb899dc78d8c466a5270c0937f31bd595d160293d82"
+    },
+    {
+      "id": "d025",
+      "name": "ENUM_CUDA_UNIF_MEM_MIGRATION",
+      "group": "NSYS",
+      "columns": [
+        "id",
+        "name",
+        "label"
+      ],
+      "rows": 6,
+      "chunks": 1,
+      "chunk_size": 2500,
+      "source": "learner-rank0-6626.sqlite",
+      "run": "诊断任务",
+      "preferred": [
+        "id",
+        "name",
+        "label"
+      ],
+      "types": [
+        {
+          "name": "id",
+          "type": "INTEGER",
+          "primary_key": true
+        },
+        {
+          "name": "name",
+          "type": "TEXT",
+          "primary_key": false
+        },
+        {
+          "name": "label",
+          "type": "TEXT",
+          "primary_key": false
+        }
+      ],
+      "original_columns": [
+        "id",
+        "name",
+        "label"
+      ],
+      "row_sha256": "fec98d20ecf436ce4706744b4de6cb3e14a910bba66b91058290e0099837e8c0"
+    },
+    {
+      "id": "d026",
+      "name": "ENUM_CUPTI_JIT_ENTRY_TYPE",
+      "group": "NSYS",
+      "columns": [
+        "id",
+        "name",
+        "label"
+      ],
+      "rows": 3,
+      "chunks": 1,
+      "chunk_size": 2500,
+      "source": "learner-rank0-6626.sqlite",
+      "run": "诊断任务",
+      "preferred": [
+        "id",
+        "name",
+        "label"
+      ],
+      "types": [
+        {
+          "name": "id",
+          "type": "INTEGER",
+          "primary_key": true
+        },
+        {
+          "name": "name",
+          "type": "TEXT",
+          "primary_key": false
+        },
+        {
+          "name": "label",
+          "type": "TEXT",
+          "primary_key": false
+        }
+      ],
+      "original_columns": [
+        "id",
+        "name",
+        "label"
+      ],
+      "row_sha256": "e6ea0d73d082b31030eca0bf0a5fe84b3edd3cb5be4e1c632744031d6ea083b8"
+    },
+    {
+      "id": "d027",
+      "name": "ENUM_CUPTI_JIT_OPERATION_TYPE",
+      "group": "NSYS",
+      "columns": [
+        "id",
+        "name",
+        "label"
+      ],
+      "rows": 4,
+      "chunks": 1,
+      "chunk_size": 2500,
+      "source": "learner-rank0-6626.sqlite",
+      "run": "诊断任务",
+      "preferred": [
+        "id",
+        "name",
+        "label"
+      ],
+      "types": [
+        {
+          "name": "id",
+          "type": "INTEGER",
+          "primary_key": true
+        },
+        {
+          "name": "name",
+          "type": "TEXT",
+          "primary_key": false
+        },
+        {
+          "name": "label",
+          "type": "TEXT",
+          "primary_key": false
+        }
+      ],
+      "original_columns": [
+        "id",
+        "name",
+        "label"
+      ],
+      "row_sha256": "749cfab38c0601948d01d52d832e5eb870039ed5062f79c0908b371cf6542a9c"
+    },
+    {
+      "id": "d028",
+      "name": "ENUM_CUPTI_OVERHEAD_TYPE",
+      "group": "NSYS",
+      "columns": [
+        "id",
+        "name",
+        "label"
+      ],
+      "rows": 9,
+      "chunks": 1,
+      "chunk_size": 2500,
+      "source": "learner-rank0-6626.sqlite",
+      "run": "诊断任务",
+      "preferred": [
+        "id",
+        "name",
+        "label"
+      ],
+      "types": [
+        {
+          "name": "id",
+          "type": "INTEGER",
+          "primary_key": true
+        },
+        {
+          "name": "name",
+          "type": "TEXT",
+          "primary_key": false
+        },
+        {
+          "name": "label",
+          "type": "TEXT",
+          "primary_key": false
+        }
+      ],
+      "original_columns": [
+        "id",
+        "name",
+        "label"
+      ],
+      "row_sha256": "0c674dd3c1296e6e77fe2900afc38d958158469151f24db41def2a50fb5776a8"
+    },
+    {
+      "id": "d029",
+      "name": "ENUM_CUPTI_STREAM_TYPE",
+      "group": "NSYS",
+      "columns": [
+        "id",
+        "name",
+        "label"
+      ],
+      "rows": 4,
+      "chunks": 1,
+      "chunk_size": 2500,
+      "source": "learner-rank0-6626.sqlite",
+      "run": "诊断任务",
+      "preferred": [
+        "id",
+        "name",
+        "label"
+      ],
+      "types": [
+        {
+          "name": "id",
+          "type": "INTEGER",
+          "primary_key": true
+        },
+        {
+          "name": "name",
+          "type": "TEXT",
+          "primary_key": false
+        },
+        {
+          "name": "label",
+          "type": "TEXT",
+          "primary_key": false
+        }
+      ],
+      "original_columns": [
+        "id",
+        "name",
+        "label"
+      ],
+      "row_sha256": "1dfee8aa40a2bdead0f1e1507a09daeaa8f8e875727f2a91291aca913f2195c2"
+    },
+    {
+      "id": "d030",
+      "name": "ENUM_CUPTI_SYNC_TYPE",
+      "group": "NSYS",
+      "columns": [
+        "id",
+        "name",
+        "label"
+      ],
+      "rows": 5,
+      "chunks": 1,
+      "chunk_size": 2500,
+      "source": "learner-rank0-6626.sqlite",
+      "run": "诊断任务",
+      "preferred": [
+        "id",
+        "name",
+        "label"
+      ],
+      "types": [
+        {
+          "name": "id",
+          "type": "INTEGER",
+          "primary_key": true
+        },
+        {
+          "name": "name",
+          "type": "TEXT",
+          "primary_key": false
+        },
+        {
+          "name": "label",
+          "type": "TEXT",
+          "primary_key": false
+        }
+      ],
+      "original_columns": [
+        "id",
+        "name",
+        "label"
+      ],
+      "row_sha256": "c9fd54268fadf81dafec8fc9caed37673cf6058d11ae3e5bf4958b7ce9496c30"
+    },
+    {
+      "id": "d031",
+      "name": "ENUM_DIAGNOSTIC_SEVERITY_LEVEL",
+      "group": "NSYS",
+      "columns": [
+        "id",
+        "name",
+        "label"
+      ],
+      "rows": 5,
+      "chunks": 1,
+      "chunk_size": 2500,
+      "source": "learner-rank0-6626.sqlite",
+      "run": "诊断任务",
+      "preferred": [
+        "id",
+        "name",
+        "label"
+      ],
+      "types": [
+        {
+          "name": "id",
+          "type": "INTEGER",
+          "primary_key": true
+        },
+        {
+          "name": "name",
+          "type": "TEXT",
+          "primary_key": false
+        },
+        {
+          "name": "label",
+          "type": "TEXT",
+          "primary_key": false
+        }
+      ],
+      "original_columns": [
+        "id",
+        "name",
+        "label"
+      ],
+      "row_sha256": "1c771de138eb6b685c95c9d772ceec81f9a2c7bfd6b4f68c18c1024a6e46e92c"
+    },
+    {
+      "id": "d032",
+      "name": "ENUM_DIAGNOSTIC_SOURCE_TYPE",
+      "group": "NSYS",
+      "columns": [
+        "id",
+        "name",
+        "label"
+      ],
+      "rows": 4,
+      "chunks": 1,
+      "chunk_size": 2500,
+      "source": "learner-rank0-6626.sqlite",
+      "run": "诊断任务",
+      "preferred": [
+        "id",
+        "name",
+        "label"
+      ],
+      "types": [
+        {
+          "name": "id",
+          "type": "INTEGER",
+          "primary_key": true
+        },
+        {
+          "name": "name",
+          "type": "TEXT",
+          "primary_key": false
+        },
+        {
+          "name": "label",
+          "type": "TEXT",
+          "primary_key": false
+        }
+      ],
+      "original_columns": [
+        "id",
+        "name",
+        "label"
+      ],
+      "row_sha256": "dc2d1244a18301fe2b8deff5e93bf4842e286fb5f1d793a383c9c2e3ba062022"
+    },
+    {
+      "id": "d033",
+      "name": "ENUM_DIAGNOSTIC_TIMESTAMP_SOURCE",
+      "group": "NSYS",
+      "columns": [
+        "id",
+        "name",
+        "label"
+      ],
+      "rows": 3,
+      "chunks": 1,
+      "chunk_size": 2500,
+      "source": "learner-rank0-6626.sqlite",
+      "run": "诊断任务",
+      "preferred": [
+        "id",
+        "name",
+        "label"
+      ],
+      "types": [
+        {
+          "name": "id",
+          "type": "INTEGER",
+          "primary_key": true
+        },
+        {
+          "name": "name",
+          "type": "TEXT",
+          "primary_key": false
+        },
+        {
+          "name": "label",
+          "type": "TEXT",
+          "primary_key": false
+        }
+      ],
+      "original_columns": [
+        "id",
+        "name",
+        "label"
+      ],
+      "row_sha256": "4486044138bb8a95118097d5b80d5d5f1d488651b59b00808f7726f479ec2730"
+    },
+    {
+      "id": "d034",
+      "name": "ENUM_NSYS_EVENT_CLASS",
+      "group": "NSYS",
+      "columns": [
+        "id",
+        "name",
+        "label"
+      ],
+      "rows": 100,
+      "chunks": 1,
+      "chunk_size": 2500,
+      "source": "learner-rank0-6626.sqlite",
+      "run": "诊断任务",
+      "preferred": [
+        "id",
+        "name",
+        "label"
+      ],
+      "types": [
+        {
+          "name": "id",
+          "type": "INTEGER",
+          "primary_key": true
+        },
+        {
+          "name": "name",
+          "type": "TEXT",
+          "primary_key": false
+        },
+        {
+          "name": "label",
+          "type": "TEXT",
+          "primary_key": false
+        }
+      ],
+      "original_columns": [
+        "id",
+        "name",
+        "label"
+      ],
+      "row_sha256": "64c3b27034b1419947d419979e46911fcdf7bf67787e96b3b7c2a03b965d0b3d"
+    },
+    {
+      "id": "d035",
+      "name": "ENUM_NSYS_EVENT_TYPE",
+      "group": "NSYS",
+      "columns": [
+        "id",
+        "name",
+        "label"
+      ],
+      "rows": 157,
+      "chunks": 1,
+      "chunk_size": 2500,
+      "source": "learner-rank0-6626.sqlite",
+      "run": "诊断任务",
+      "preferred": [
+        "id",
+        "name",
+        "label"
+      ],
+      "types": [
+        {
+          "name": "id",
+          "type": "INTEGER",
+          "primary_key": true
+        },
+        {
+          "name": "name",
+          "type": "TEXT",
+          "primary_key": false
+        },
+        {
+          "name": "label",
+          "type": "TEXT",
+          "primary_key": false
+        }
+      ],
+      "original_columns": [
+        "id",
+        "name",
+        "label"
+      ],
+      "row_sha256": "e9d37a9dcff20f2203926c43df8f7111045cab360e9317d4ad37c7d3c00cac10"
+    },
+    {
+      "id": "d036",
+      "name": "ENUM_NSYS_GENERIC_EVENT_FIELD_ETW_FLAGS",
+      "group": "NSYS",
+      "columns": [
+        "id",
+        "name",
+        "label"
+      ],
+      "rows": 7,
+      "chunks": 1,
+      "chunk_size": 2500,
+      "source": "learner-rank0-6626.sqlite",
+      "run": "诊断任务",
+      "preferred": [
+        "id",
+        "name",
+        "label"
+      ],
+      "types": [
+        {
+          "name": "id",
+          "type": "INTEGER",
+          "primary_key": true
+        },
+        {
+          "name": "name",
+          "type": "TEXT",
+          "primary_key": false
+        },
+        {
+          "name": "label",
+          "type": "TEXT",
+          "primary_key": false
+        }
+      ],
+      "original_columns": [
+        "id",
+        "name",
+        "label"
+      ],
+      "row_sha256": "398ce7e9cfce149ef7d9d7b15f671b96a48fbcce0b714a3ce1564c9568f4e26b"
+    },
+    {
+      "id": "d037",
+      "name": "ENUM_NSYS_GENERIC_EVENT_FIELD_ETW_PROPERTY",
+      "group": "NSYS",
+      "columns": [
+        "id",
+        "name",
+        "label"
+      ],
+      "rows": 8,
+      "chunks": 1,
+      "chunk_size": 2500,
+      "source": "learner-rank0-6626.sqlite",
+      "run": "诊断任务",
+      "preferred": [
+        "id",
+        "name",
+        "label"
+      ],
+      "types": [
+        {
+          "name": "id",
+          "type": "INTEGER",
+          "primary_key": true
+        },
+        {
+          "name": "name",
+          "type": "TEXT",
+          "primary_key": false
+        },
+        {
+          "name": "label",
+          "type": "TEXT",
+          "primary_key": false
+        }
+      ],
+      "original_columns": [
+        "id",
+        "name",
+        "label"
+      ],
+      "row_sha256": "5d95f84922aac78e2baf14f95ac1774c620dc92767be520f2a750caa072c73c6"
+    },
+    {
+      "id": "d038",
+      "name": "ENUM_NSYS_GENERIC_EVENT_FIELD_ETW_TYPE",
+      "group": "NSYS",
+      "columns": [
+        "id",
+        "name",
+        "label"
+      ],
+      "rows": 22,
+      "chunks": 1,
+      "chunk_size": 2500,
+      "source": "learner-rank0-6626.sqlite",
+      "run": "诊断任务",
+      "preferred": [
+        "id",
+        "name",
+        "label"
+      ],
+      "types": [
+        {
+          "name": "id",
+          "type": "INTEGER",
+          "primary_key": true
+        },
+        {
+          "name": "name",
+          "type": "TEXT",
+          "primary_key": false
+        },
+        {
+          "name": "label",
+          "type": "TEXT",
+          "primary_key": false
+        }
+      ],
+      "original_columns": [
+        "id",
+        "name",
+        "label"
+      ],
+      "row_sha256": "9569943dc12340db09810f6176b90ccc809d9f28f901d65d4629e669507d5579"
+    },
+    {
+      "id": "d039",
+      "name": "ENUM_NSYS_GENERIC_EVENT_FIELD_TYPE",
+      "group": "NSYS",
+      "columns": [
+        "id",
+        "name",
+        "label"
+      ],
+      "rows": 4,
+      "chunks": 1,
+      "chunk_size": 2500,
+      "source": "learner-rank0-6626.sqlite",
+      "run": "诊断任务",
+      "preferred": [
+        "id",
+        "name",
+        "label"
+      ],
+      "types": [
+        {
+          "name": "id",
+          "type": "INTEGER",
+          "primary_key": true
+        },
+        {
+          "name": "name",
+          "type": "TEXT",
+          "primary_key": false
+        },
+        {
+          "name": "label",
+          "type": "TEXT",
+          "primary_key": false
+        }
+      ],
+      "original_columns": [
+        "id",
+        "name",
+        "label"
+      ],
+      "row_sha256": "ba6eb0a7960cf105d62454a62496549eb1997eab9da03d99f7c1da5ebfb37541"
+    },
+    {
+      "id": "d040",
+      "name": "ENUM_NSYS_GENERIC_EVENT_GROUP",
+      "group": "NSYS",
+      "columns": [
+        "id",
+        "name",
+        "label"
+      ],
+      "rows": 5,
+      "chunks": 1,
+      "chunk_size": 2500,
+      "source": "learner-rank0-6626.sqlite",
+      "run": "诊断任务",
+      "preferred": [
+        "id",
+        "name",
+        "label"
+      ],
+      "types": [
+        {
+          "name": "id",
+          "type": "INTEGER",
+          "primary_key": true
+        },
+        {
+          "name": "name",
+          "type": "TEXT",
+          "primary_key": false
+        },
+        {
+          "name": "label",
+          "type": "TEXT",
+          "primary_key": false
+        }
+      ],
+      "original_columns": [
+        "id",
+        "name",
+        "label"
+      ],
+      "row_sha256": "5229c3062686a7f8cf6588a5fc015efcd0ce6cec9656bd8060e679597f7a5226"
+    },
+    {
+      "id": "d041",
+      "name": "ENUM_NSYS_GENERIC_EVENT_SOURCE",
+      "group": "NSYS",
+      "columns": [
+        "id",
+        "name",
+        "label"
+      ],
+      "rows": 4,
+      "chunks": 1,
+      "chunk_size": 2500,
+      "source": "learner-rank0-6626.sqlite",
+      "run": "诊断任务",
+      "preferred": [
+        "id",
+        "name",
+        "label"
+      ],
+      "types": [
+        {
+          "name": "id",
+          "type": "INTEGER",
+          "primary_key": true
+        },
+        {
+          "name": "name",
+          "type": "TEXT",
+          "primary_key": false
+        },
+        {
+          "name": "label",
+          "type": "TEXT",
+          "primary_key": false
+        }
+      ],
+      "original_columns": [
+        "id",
+        "name",
+        "label"
+      ],
+      "row_sha256": "20690eb64c800ae121610533fecfcaa7b67a8dacce2fbd5641f0136b70cfad86"
+    },
+    {
+      "id": "d042",
+      "name": "ENUM_OSRT_FILE_ACCESS_EVENT_TYPE",
+      "group": "NSYS",
+      "columns": [
+        "id",
+        "name",
+        "label"
+      ],
+      "rows": 6,
+      "chunks": 1,
+      "chunk_size": 2500,
+      "source": "learner-rank0-6626.sqlite",
+      "run": "诊断任务",
+      "preferred": [
+        "id",
+        "name",
+        "label"
+      ],
+      "types": [
+        {
+          "name": "id",
+          "type": "INTEGER",
+          "primary_key": true
+        },
+        {
+          "name": "name",
+          "type": "TEXT",
+          "primary_key": false
+        },
+        {
+          "name": "label",
+          "type": "TEXT",
+          "primary_key": false
+        }
+      ],
+      "original_columns": [
+        "id",
+        "name",
+        "label"
+      ],
+      "row_sha256": "4f5d47f1de7d5fb4dc5caa56f3dedf42e79c59bf3987715f485e1d429439fb97"
+    },
+    {
+      "id": "d043",
+      "name": "ENUM_SAMPLING_THREAD_STATE",
+      "group": "NSYS",
+      "columns": [
+        "id",
+        "name",
+        "label"
+      ],
+      "rows": 11,
+      "chunks": 1,
+      "chunk_size": 2500,
+      "source": "learner-rank0-6626.sqlite",
+      "run": "诊断任务",
+      "preferred": [
+        "id",
+        "name",
+        "label"
+      ],
+      "types": [
+        {
+          "name": "id",
+          "type": "INTEGER",
+          "primary_key": true
+        },
+        {
+          "name": "name",
+          "type": "TEXT",
+          "primary_key": false
+        },
+        {
+          "name": "label",
+          "type": "TEXT",
+          "primary_key": false
+        }
+      ],
+      "original_columns": [
+        "id",
+        "name",
+        "label"
+      ],
+      "row_sha256": "8d2d2f20b3e2416bc8f995fd0ad0b20381a2b647ba085e08d494d62ca9520c51"
+    },
+    {
+      "id": "d044",
+      "name": "ENUM_SCHEDULING_THREAD_BLOCK",
+      "group": "NSYS",
+      "columns": [
+        "id",
+        "name",
+        "label"
+      ],
+      "rows": 62,
+      "chunks": 1,
+      "chunk_size": 2500,
+      "source": "learner-rank0-6626.sqlite",
+      "run": "诊断任务",
+      "preferred": [
+        "id",
+        "name",
+        "label"
+      ],
+      "types": [
+        {
+          "name": "id",
+          "type": "INTEGER",
+          "primary_key": true
+        },
+        {
+          "name": "name",
+          "type": "TEXT",
+          "primary_key": false
+        },
+        {
+          "name": "label",
+          "type": "TEXT",
+          "primary_key": false
+        }
+      ],
+      "original_columns": [
+        "id",
+        "name",
+        "label"
+      ],
+      "row_sha256": "9064ebc8a9210ca2b41d748e2a5e04eb195ad76241af9e37235c19be1699d4b6"
+    },
+    {
+      "id": "d045",
+      "name": "ENUM_STACK_UNWIND_METHOD",
+      "group": "NSYS",
+      "columns": [
+        "id",
+        "name",
+        "label"
+      ],
+      "rows": 10,
+      "chunks": 1,
+      "chunk_size": 2500,
+      "source": "learner-rank0-6626.sqlite",
+      "run": "诊断任务",
+      "preferred": [
+        "id",
+        "name",
+        "label"
+      ],
+      "types": [
+        {
+          "name": "id",
+          "type": "INTEGER",
+          "primary_key": true
+        },
+        {
+          "name": "name",
+          "type": "TEXT",
+          "primary_key": false
+        },
+        {
+          "name": "label",
+          "type": "TEXT",
+          "primary_key": false
+        }
+      ],
+      "original_columns": [
+        "id",
+        "name",
+        "label"
+      ],
+      "row_sha256": "3fb28ce4ed5a885f5e33a685826703d31bbb84bcd49dded01515463b66e3559b"
+    },
+    {
+      "id": "d046",
+      "name": "META_DATA_CAPTURE",
+      "group": "NSYS",
+      "columns": [
+        "name",
+        "value"
+      ],
+      "rows": 560,
+      "chunks": 1,
+      "chunk_size": 2500,
+      "source": "learner-rank0-6626.sqlite",
+      "run": "诊断任务",
+      "preferred": [
+        "name",
+        "value"
+      ],
+      "types": [
+        {
+          "name": "name",
+          "type": "TEXT",
+          "primary_key": false
+        },
+        {
+          "name": "value",
+          "type": "TEXT",
+          "primary_key": false
+        }
+      ],
+      "original_columns": [
+        "name",
+        "value"
+      ],
+      "row_sha256": "53e4adefb429c1f3af6cae5ded5d066f090b0c60c9fe84790fefe1849e054036"
+    },
+    {
+      "id": "d047",
+      "name": "META_DATA_EXPORT",
+      "group": "NSYS",
+      "columns": [
+        "name",
+        "value"
+      ],
+      "rows": 35,
+      "chunks": 1,
+      "chunk_size": 2500,
+      "source": "learner-rank0-6626.sqlite",
+      "run": "诊断任务",
+      "preferred": [
+        "name",
+        "value"
+      ],
+      "types": [
+        {
+          "name": "name",
+          "type": "TEXT",
+          "primary_key": false
+        },
+        {
+          "name": "value",
+          "type": "TEXT",
+          "primary_key": false
+        }
+      ],
+      "original_columns": [
+        "name",
+        "value"
+      ],
+      "row_sha256": "015ad6d259f86fc5673aa7f511a45e2057a17ecdffcee9211c08829cd62c46d9"
+    },
+    {
+      "id": "d048",
+      "name": "NVTX_EVENTS",
+      "group": "NSYS",
+      "columns": [
+        "start",
+        "end",
+        "eventType",
+        "rangeId",
+        "category",
+        "color",
+        "text",
+        "globalTid",
+        "endGlobalTid",
+        "textId",
+        "domainId",
+        "uint64Value",
+        "int64Value",
+        "doubleValue",
+        "uint32Value",
+        "int32Value",
+        "floatValue",
+        "jsonTextId",
+        "jsonText",
+        "binaryData",
+        "eventId",
+        "resolved_name",
+        "relative_start_s",
+        "duration_us"
+      ],
+      "rows": 23942,
+      "chunks": 10,
+      "chunk_size": 2500,
+      "source": "learner-rank0-6626.sqlite",
+      "run": "诊断任务",
+      "preferred": [
+        "relative_start_s",
+        "duration_us",
+        "resolved_name",
+        "globalTid",
+        "text"
+      ],
+      "types": [
+        {
+          "name": "start",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "end",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "eventType",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "rangeId",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "category",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "color",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "text",
+          "type": "TEXT",
+          "primary_key": false
+        },
+        {
+          "name": "globalTid",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "endGlobalTid",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "textId",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "domainId",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "uint64Value",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "int64Value",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "doubleValue",
+          "type": "REAL",
+          "primary_key": false
+        },
+        {
+          "name": "uint32Value",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "int32Value",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "floatValue",
+          "type": "REAL",
+          "primary_key": false
+        },
+        {
+          "name": "jsonTextId",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "jsonText",
+          "type": "TEXT",
+          "primary_key": false
+        },
+        {
+          "name": "binaryData",
+          "type": "TEXT",
+          "primary_key": false
+        },
+        {
+          "name": "eventId",
+          "type": "INTEGER",
+          "primary_key": true
+        }
+      ],
+      "original_columns": [
+        "start",
+        "end",
+        "eventType",
+        "rangeId",
+        "category",
+        "color",
+        "text",
+        "globalTid",
+        "endGlobalTid",
+        "textId",
+        "domainId",
+        "uint64Value",
+        "int64Value",
+        "doubleValue",
+        "uint32Value",
+        "int32Value",
+        "floatValue",
+        "jsonTextId",
+        "jsonText",
+        "binaryData",
+        "eventId"
+      ],
+      "row_sha256": "3b8fa5f2bbdbbc17f7e25edebfa3270a70af743fd34da8ca42f906c9d84ed3c6"
+    },
+    {
+      "id": "d049",
+      "name": "NVTX_PAYLOAD_ENUMS",
+      "group": "NSYS",
+      "columns": [
+        "domainId",
+        "schemaId",
+        "name",
+        "numEntries",
+        "size"
+      ],
+      "rows": 1,
+      "chunks": 1,
+      "chunk_size": 2500,
+      "source": "learner-rank0-6626.sqlite",
+      "run": "诊断任务",
+      "preferred": [
+        "domainId",
+        "schemaId",
+        "name",
+        "numEntries",
+        "size"
+      ],
+      "types": [
+        {
+          "name": "domainId",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "schemaId",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "name",
+          "type": "TEXT",
+          "primary_key": false
+        },
+        {
+          "name": "numEntries",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "size",
+          "type": "INTEGER",
+          "primary_key": false
+        }
+      ],
+      "original_columns": [
+        "domainId",
+        "schemaId",
+        "name",
+        "numEntries",
+        "size"
+      ],
+      "row_sha256": "370af97cf077c1dfae20a0697ed65218fe921df1ae94c4753ef9889b9e6b99d5"
+    },
+    {
+      "id": "d050",
+      "name": "NVTX_PAYLOAD_ENUM_ENTRIES",
+      "group": "NSYS",
+      "columns": [
+        "domainId",
+        "schemaId",
+        "idx",
+        "name",
+        "value",
+        "isFlag"
+      ],
+      "rows": 5,
+      "chunks": 1,
+      "chunk_size": 2500,
+      "source": "learner-rank0-6626.sqlite",
+      "run": "诊断任务",
+      "preferred": [
+        "domainId",
+        "schemaId",
+        "idx",
+        "name",
+        "value",
+        "isFlag"
+      ],
+      "types": [
+        {
+          "name": "domainId",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "schemaId",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "idx",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "name",
+          "type": "TEXT",
+          "primary_key": false
+        },
+        {
+          "name": "value",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "isFlag",
+          "type": "INTEGER",
+          "primary_key": false
+        }
+      ],
+      "original_columns": [
+        "domainId",
+        "schemaId",
+        "idx",
+        "name",
+        "value",
+        "isFlag"
+      ],
+      "row_sha256": "ce84770b4792750ffac5fd2800310ad626910d5c4d761cb178bbac379a0aedd7"
+    },
+    {
+      "id": "d051",
+      "name": "NVTX_PAYLOAD_SCHEMAS",
+      "group": "NSYS",
+      "columns": [
+        "domainId",
+        "schemaId",
+        "name",
+        "type",
+        "flags",
+        "numEntries",
+        "payloadSize",
+        "alignTo"
+      ],
+      "rows": 6,
+      "chunks": 1,
+      "chunk_size": 2500,
+      "source": "learner-rank0-6626.sqlite",
+      "run": "诊断任务",
+      "preferred": [
+        "domainId",
+        "schemaId",
+        "name",
+        "type",
+        "flags",
+        "numEntries",
+        "payloadSize",
+        "alignTo"
+      ],
+      "types": [
+        {
+          "name": "domainId",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "schemaId",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "name",
+          "type": "TEXT",
+          "primary_key": false
+        },
+        {
+          "name": "type",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "flags",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "numEntries",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "payloadSize",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "alignTo",
+          "type": "INTEGER",
+          "primary_key": false
+        }
+      ],
+      "original_columns": [
+        "domainId",
+        "schemaId",
+        "name",
+        "type",
+        "flags",
+        "numEntries",
+        "payloadSize",
+        "alignTo"
+      ],
+      "row_sha256": "e5752afb6fb55170c063392716da61858c1b46383d869dc5f7cbb179461c9377"
+    },
+    {
+      "id": "d052",
+      "name": "NVTX_PAYLOAD_SCHEMA_ENTRIES",
+      "group": "NSYS",
+      "columns": [
+        "domainId",
+        "schemaId",
+        "idx",
+        "flags",
+        "type",
+        "name",
+        "description",
+        "arrayOrUnionDetail",
+        "offset"
+      ],
+      "rows": 19,
+      "chunks": 1,
+      "chunk_size": 2500,
+      "source": "learner-rank0-6626.sqlite",
+      "run": "诊断任务",
+      "preferred": [
+        "domainId",
+        "schemaId",
+        "idx",
+        "flags",
+        "type",
+        "name",
+        "description",
+        "arrayOrUnionDetail"
+      ],
+      "types": [
+        {
+          "name": "domainId",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "schemaId",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "idx",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "flags",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "type",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "name",
+          "type": "TEXT",
+          "primary_key": false
+        },
+        {
+          "name": "description",
+          "type": "TEXT",
+          "primary_key": false
+        },
+        {
+          "name": "arrayOrUnionDetail",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "offset",
+          "type": "INTEGER",
+          "primary_key": false
+        }
+      ],
+      "original_columns": [
+        "domainId",
+        "schemaId",
+        "idx",
+        "flags",
+        "type",
+        "name",
+        "description",
+        "arrayOrUnionDetail",
+        "offset"
+      ],
+      "row_sha256": "ac5c862022fb2fffb34ea46c842b320183d302ac025b4f68724e7cff847c6bc4"
+    },
+    {
+      "id": "d053",
+      "name": "OSRT_API",
+      "group": "NSYS",
+      "columns": [
+        "start",
+        "end",
+        "eventClass",
+        "globalTid",
+        "nameId",
+        "returnValue",
+        "nestingLevel",
+        "callchainId",
+        "argumentsId",
+        "resolved_name",
+        "relative_start_s",
+        "duration_us"
+      ],
+      "rows": 125047,
+      "chunks": 51,
+      "chunk_size": 2500,
+      "source": "learner-rank0-6626.sqlite",
+      "run": "诊断任务",
+      "preferred": [
+        "relative_start_s",
+        "duration_us",
+        "resolved_name",
+        "globalTid"
+      ],
+      "types": [
+        {
+          "name": "start",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "end",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "eventClass",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "globalTid",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "nameId",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "returnValue",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "nestingLevel",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "callchainId",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "argumentsId",
+          "type": "INTEGER",
+          "primary_key": false
+        }
+      ],
+      "original_columns": [
+        "start",
+        "end",
+        "eventClass",
+        "globalTid",
+        "nameId",
+        "returnValue",
+        "nestingLevel",
+        "callchainId",
+        "argumentsId"
+      ],
+      "row_sha256": "830c5a195748cc671ffd23521ca23eea4d0ed2945f9c726d3aac35fcf228746d"
+    },
+    {
+      "id": "d054",
+      "name": "OSRT_CALLCHAINS",
+      "group": "NSYS",
+      "columns": [
+        "id",
+        "symbol",
+        "module",
+        "kernelMode",
+        "thumbCode",
+        "unresolved",
+        "specialEntry",
+        "originalIP",
+        "unwindMethod",
+        "stackDepth"
+      ],
+      "rows": 217241,
+      "chunks": 87,
+      "chunk_size": 2500,
+      "source": "learner-rank0-6626.sqlite",
+      "run": "诊断任务",
+      "preferred": [
+        "id",
+        "symbol",
+        "module",
+        "kernelMode",
+        "thumbCode",
+        "unresolved",
+        "specialEntry",
+        "originalIP"
+      ],
+      "types": [
+        {
+          "name": "id",
+          "type": "INTEGER",
+          "primary_key": true
+        },
+        {
+          "name": "symbol",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "module",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "kernelMode",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "thumbCode",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "unresolved",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "specialEntry",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "originalIP",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "unwindMethod",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "stackDepth",
+          "type": "INTEGER",
+          "primary_key": true
+        }
+      ],
+      "original_columns": [
+        "id",
+        "symbol",
+        "module",
+        "kernelMode",
+        "thumbCode",
+        "unresolved",
+        "specialEntry",
+        "originalIP",
+        "unwindMethod",
+        "stackDepth"
+      ],
+      "row_sha256": "cfbd408a4e31ffd14e7a2bc62aaba6247e240760c49b1c1e21277c465afe17b7"
+    },
+    {
+      "id": "d055",
+      "name": "OSRT_FILE_ACCESS_DESCRIPTORS",
+      "group": "NSYS",
+      "columns": [
+        "fileAccessId",
+        "processId",
+        "openedAt",
+        "closedAt",
+        "filePath"
+      ],
+      "rows": 23992,
+      "chunks": 10,
+      "chunk_size": 2500,
+      "source": "learner-rank0-6626.sqlite",
+      "run": "诊断任务",
+      "preferred": [
+        "fileAccessId",
+        "processId",
+        "openedAt",
+        "closedAt",
+        "filePath"
+      ],
+      "types": [
+        {
+          "name": "fileAccessId",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "processId",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "openedAt",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "closedAt",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "filePath",
+          "type": "TEXT",
+          "primary_key": false
+        }
+      ],
+      "original_columns": [
+        "fileAccessId",
+        "processId",
+        "openedAt",
+        "closedAt",
+        "filePath"
+      ],
+      "row_sha256": "0f6e537384c680afc3cf64e1fa3ab43bbc41290f6f5886fc2eac90f3412d16d6"
+    },
+    {
+      "id": "d056",
+      "name": "OSRT_FILE_ACCESS_EVENTS",
+      "group": "NSYS",
+      "columns": [
+        "fileAccessId",
+        "threadId",
+        "startedAt",
+        "endedAt",
+        "eventType",
+        "apiCallId",
+        "bytesProcessed",
+        "context"
+      ],
+      "rows": 23992,
+      "chunks": 10,
+      "chunk_size": 2500,
+      "source": "learner-rank0-6626.sqlite",
+      "run": "诊断任务",
+      "preferred": [
+        "fileAccessId",
+        "threadId",
+        "startedAt",
+        "endedAt",
+        "eventType",
+        "apiCallId",
+        "bytesProcessed",
+        "context"
+      ],
+      "types": [
+        {
+          "name": "fileAccessId",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "threadId",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "startedAt",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "endedAt",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "eventType",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "apiCallId",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "bytesProcessed",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "context",
+          "type": "TEXT",
+          "primary_key": false
+        }
+      ],
+      "original_columns": [
+        "fileAccessId",
+        "threadId",
+        "startedAt",
+        "endedAt",
+        "eventType",
+        "apiCallId",
+        "bytesProcessed",
+        "context"
+      ],
+      "row_sha256": "5e335d640adb9927f46b6233c35cfb30dccf22b6ca68a66f0b31a11c1630745d"
+    },
+    {
+      "id": "d057",
+      "name": "PROCESSES",
+      "group": "NSYS",
+      "columns": [
+        "globalPid",
+        "pid",
+        "name"
+      ],
+      "rows": 207,
+      "chunks": 1,
+      "chunk_size": 2500,
+      "source": "learner-rank0-6626.sqlite",
+      "run": "诊断任务",
+      "preferred": [
+        "globalPid",
+        "pid",
+        "name"
+      ],
+      "types": [
+        {
+          "name": "globalPid",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "pid",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "name",
+          "type": "TEXT",
+          "primary_key": false
+        }
+      ],
+      "original_columns": [
+        "globalPid",
+        "pid",
+        "name"
+      ],
+      "row_sha256": "ea8600d4d8f3405effcec05a0000098be5cd64ca15aa300f39c9d91d71ca4092"
+    },
+    {
+      "id": "d058",
+      "name": "PROFILER_OVERHEAD",
+      "group": "NSYS",
+      "columns": [
+        "start",
+        "end",
+        "globalTid",
+        "nameId",
+        "overheadType",
+        "resolved_name",
+        "relative_start_s",
+        "duration_us"
+      ],
+      "rows": 448,
+      "chunks": 1,
+      "chunk_size": 2500,
+      "source": "learner-rank0-6626.sqlite",
+      "run": "诊断任务",
+      "preferred": [
+        "relative_start_s",
+        "duration_us",
+        "resolved_name",
+        "globalTid"
+      ],
+      "types": [
+        {
+          "name": "start",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "end",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "globalTid",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "nameId",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "overheadType",
+          "type": "INTEGER",
+          "primary_key": false
+        }
+      ],
+      "original_columns": [
+        "start",
+        "end",
+        "globalTid",
+        "nameId",
+        "overheadType"
+      ],
+      "row_sha256": "37c08a178846a4d1e7bd82f1f16cb7d8f65c20b0106203e6e8f366f2e3850c50"
+    },
+    {
+      "id": "d059",
+      "name": "ProcessStreams",
+      "group": "NSYS",
+      "columns": [
+        "globalPid",
+        "filenameId",
+        "contentId"
+      ],
+      "rows": 2,
+      "chunks": 1,
+      "chunk_size": 2500,
+      "source": "learner-rank0-6626.sqlite",
+      "run": "诊断任务",
+      "preferred": [
+        "globalPid",
+        "filenameId",
+        "contentId"
+      ],
+      "types": [
+        {
+          "name": "globalPid",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "filenameId",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "contentId",
+          "type": "INTEGER",
+          "primary_key": false
+        }
+      ],
+      "original_columns": [
+        "globalPid",
+        "filenameId",
+        "contentId"
+      ],
+      "row_sha256": "9f7a99d19f12534c74c6a4f2aa1678f721a787ca6a864dc9bd3c0ad84b49e60e"
+    },
+    {
+      "id": "d060",
+      "name": "StringIds",
+      "group": "NSYS",
+      "columns": [
+        "id",
+        "value"
+      ],
+      "rows": 1599,
+      "chunks": 1,
+      "chunk_size": 2500,
+      "source": "learner-rank0-6626.sqlite",
+      "run": "诊断任务",
+      "preferred": [
+        "id",
+        "value"
+      ],
+      "types": [
+        {
+          "name": "id",
+          "type": "INTEGER",
+          "primary_key": true
+        },
+        {
+          "name": "value",
+          "type": "TEXT",
+          "primary_key": false
+        }
+      ],
+      "original_columns": [
+        "id",
+        "value"
+      ],
+      "row_sha256": "45c2aca9b63cd615802aeadad1d1e83680d2fafe9dc92935fbfe32f0aa866a92"
+    },
+    {
+      "id": "d061",
+      "name": "TARGET_INFO_CUDA_CONTEXT_INFO",
+      "group": "NSYS",
+      "columns": [
+        "nullStreamId",
+        "hwId",
+        "vmId",
+        "processId",
+        "deviceId",
+        "contextId",
+        "parentContextId",
+        "isGreenContext",
+        "numMultiprocessors",
+        "numTpcs",
+        "tpcMask",
+        "workqueueResourceId",
+        "workqueueConcurrencyLimit",
+        "workqueueSharingScope",
+        "workqueueChannelCount",
+        "workqueueChannelIds"
+      ],
+      "rows": 1,
+      "chunks": 1,
+      "chunk_size": 2500,
+      "source": "learner-rank0-6626.sqlite",
+      "run": "诊断任务",
+      "preferred": [
+        "nullStreamId",
+        "hwId",
+        "vmId",
+        "processId",
+        "deviceId",
+        "contextId",
+        "parentContextId",
+        "isGreenContext"
+      ],
+      "types": [
+        {
+          "name": "nullStreamId",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "hwId",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "vmId",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "processId",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "deviceId",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "contextId",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "parentContextId",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "isGreenContext",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "numMultiprocessors",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "numTpcs",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "tpcMask",
+          "type": "TEXT",
+          "primary_key": false
+        },
+        {
+          "name": "workqueueResourceId",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "workqueueConcurrencyLimit",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "workqueueSharingScope",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "workqueueChannelCount",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "workqueueChannelIds",
+          "type": "TEXT",
+          "primary_key": false
+        }
+      ],
+      "original_columns": [
+        "nullStreamId",
+        "hwId",
+        "vmId",
+        "processId",
+        "deviceId",
+        "contextId",
+        "parentContextId",
+        "isGreenContext",
+        "numMultiprocessors",
+        "numTpcs",
+        "tpcMask",
+        "workqueueResourceId",
+        "workqueueConcurrencyLimit",
+        "workqueueSharingScope",
+        "workqueueChannelCount",
+        "workqueueChannelIds"
+      ],
+      "row_sha256": "faf0ade9831f42c6207608b84c21804e06053c2b1c1434432054aeb0c1c0b86d"
+    },
+    {
+      "id": "d062",
+      "name": "TARGET_INFO_CUDA_DEVICE",
+      "group": "NSYS",
+      "columns": [
+        "gpuId",
+        "cudaId",
+        "pid",
+        "uuid",
+        "numMultiprocessors"
+      ],
+      "rows": 8,
+      "chunks": 1,
+      "chunk_size": 2500,
+      "source": "learner-rank0-6626.sqlite",
+      "run": "诊断任务",
+      "preferred": [
+        "gpuId",
+        "cudaId",
+        "pid",
+        "uuid",
+        "numMultiprocessors"
+      ],
+      "types": [
+        {
+          "name": "gpuId",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "cudaId",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "pid",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "uuid",
+          "type": "TEXT",
+          "primary_key": false
+        },
+        {
+          "name": "numMultiprocessors",
+          "type": "INTEGER",
+          "primary_key": false
+        }
+      ],
+      "original_columns": [
+        "gpuId",
+        "cudaId",
+        "pid",
+        "uuid",
+        "numMultiprocessors"
+      ],
+      "row_sha256": "a3acc39065b2f0a208ddb278871f432294d2e67bacf70c80310d9fb77ddc2e1c"
+    },
+    {
+      "id": "d063",
+      "name": "TARGET_INFO_CUDA_STREAM",
+      "group": "NSYS",
+      "columns": [
+        "streamId",
+        "hwId",
+        "vmId",
+        "processId",
+        "contextId",
+        "priority",
+        "flag"
+      ],
+      "rows": 376,
+      "chunks": 1,
+      "chunk_size": 2500,
+      "source": "learner-rank0-6626.sqlite",
+      "run": "诊断任务",
+      "preferred": [
+        "streamId",
+        "hwId",
+        "vmId",
+        "processId",
+        "contextId",
+        "priority",
+        "flag"
+      ],
+      "types": [
+        {
+          "name": "streamId",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "hwId",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "vmId",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "processId",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "contextId",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "priority",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "flag",
+          "type": "INTEGER",
+          "primary_key": false
+        }
+      ],
+      "original_columns": [
+        "streamId",
+        "hwId",
+        "vmId",
+        "processId",
+        "contextId",
+        "priority",
+        "flag"
+      ],
+      "row_sha256": "aba331e22e5bb63d79e115ab8e598668d511606bf8faa517b5386e8bb94e8ffe"
+    },
+    {
+      "id": "d064",
+      "name": "TARGET_INFO_GPU",
+      "group": "NSYS",
+      "columns": [
+        "vmId",
+        "id",
+        "name",
+        "busLocation",
+        "isDiscrete",
+        "l2CacheSize",
+        "totalMemory",
+        "memoryBandwidth",
+        "clockRate",
+        "smCount",
+        "pwGpuId",
+        "uuid",
+        "luid",
+        "chipName",
+        "cuDevice",
+        "ctxswDevPath",
+        "ctrlDevPath",
+        "revision",
+        "nodeMask",
+        "constantMemory",
+        "maxIPC",
+        "maxRegistersPerBlock",
+        "maxShmemPerBlock",
+        "maxShmemPerBlockOptin",
+        "maxShmemPerSm",
+        "maxRegistersPerSm",
+        "threadsPerWarp",
+        "asyncEngines",
+        "maxWarpsPerSm",
+        "maxBlocksPerSm",
+        "maxThreadsPerBlock",
+        "maxBlockDimX",
+        "maxBlockDimY",
+        "maxBlockDimZ",
+        "maxGridDimX",
+        "maxGridDimY",
+        "maxGridDimZ",
+        "computeMajor",
+        "computeMinor",
+        "smMajor",
+        "smMinor",
+        "numaNodeId"
+      ],
+      "rows": 4,
+      "chunks": 1,
+      "chunk_size": 2500,
+      "source": "learner-rank0-6626.sqlite",
+      "run": "诊断任务",
+      "preferred": [
+        "vmId",
+        "id",
+        "name",
+        "busLocation",
+        "isDiscrete",
+        "l2CacheSize",
+        "totalMemory",
+        "memoryBandwidth"
+      ],
+      "types": [
+        {
+          "name": "vmId",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "id",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "name",
+          "type": "TEXT",
+          "primary_key": false
+        },
+        {
+          "name": "busLocation",
+          "type": "TEXT",
+          "primary_key": false
+        },
+        {
+          "name": "isDiscrete",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "l2CacheSize",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "totalMemory",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "memoryBandwidth",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "clockRate",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "smCount",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "pwGpuId",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "uuid",
+          "type": "TEXT",
+          "primary_key": false
+        },
+        {
+          "name": "luid",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "chipName",
+          "type": "TEXT",
+          "primary_key": false
+        },
+        {
+          "name": "cuDevice",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "ctxswDevPath",
+          "type": "TEXT",
+          "primary_key": false
+        },
+        {
+          "name": "ctrlDevPath",
+          "type": "TEXT",
+          "primary_key": false
+        },
+        {
+          "name": "revision",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "nodeMask",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "constantMemory",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "maxIPC",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "maxRegistersPerBlock",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "maxShmemPerBlock",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "maxShmemPerBlockOptin",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "maxShmemPerSm",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "maxRegistersPerSm",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "threadsPerWarp",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "asyncEngines",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "maxWarpsPerSm",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "maxBlocksPerSm",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "maxThreadsPerBlock",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "maxBlockDimX",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "maxBlockDimY",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "maxBlockDimZ",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "maxGridDimX",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "maxGridDimY",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "maxGridDimZ",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "computeMajor",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "computeMinor",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "smMajor",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "smMinor",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "numaNodeId",
+          "type": "INTEGER",
+          "primary_key": false
+        }
+      ],
+      "original_columns": [
+        "vmId",
+        "id",
+        "name",
+        "busLocation",
+        "isDiscrete",
+        "l2CacheSize",
+        "totalMemory",
+        "memoryBandwidth",
+        "clockRate",
+        "smCount",
+        "pwGpuId",
+        "uuid",
+        "luid",
+        "chipName",
+        "cuDevice",
+        "ctxswDevPath",
+        "ctrlDevPath",
+        "revision",
+        "nodeMask",
+        "constantMemory",
+        "maxIPC",
+        "maxRegistersPerBlock",
+        "maxShmemPerBlock",
+        "maxShmemPerBlockOptin",
+        "maxShmemPerSm",
+        "maxRegistersPerSm",
+        "threadsPerWarp",
+        "asyncEngines",
+        "maxWarpsPerSm",
+        "maxBlocksPerSm",
+        "maxThreadsPerBlock",
+        "maxBlockDimX",
+        "maxBlockDimY",
+        "maxBlockDimZ",
+        "maxGridDimX",
+        "maxGridDimY",
+        "maxGridDimZ",
+        "computeMajor",
+        "computeMinor",
+        "smMajor",
+        "smMinor",
+        "numaNodeId"
+      ],
+      "row_sha256": "bd8ef943160bdb892cb42a0989d6de9bda6f3a80bfcab3cbe4058242a62e5e29"
+    },
+    {
+      "id": "d065",
+      "name": "TARGET_INFO_NIC_INFO",
+      "group": "NSYS",
+      "columns": [
+        "GUID",
+        "stateName",
+        "nicId",
+        "name",
+        "deviceId",
+        "vendorId",
+        "linkLayer"
+      ],
+      "rows": 5,
+      "chunks": 1,
+      "chunk_size": 2500,
+      "source": "learner-rank0-6626.sqlite",
+      "run": "诊断任务",
+      "preferred": [
+        "GUID",
+        "stateName",
+        "nicId",
+        "name",
+        "deviceId",
+        "vendorId",
+        "linkLayer"
+      ],
+      "types": [
+        {
+          "name": "GUID",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "stateName",
+          "type": "TEXT",
+          "primary_key": false
+        },
+        {
+          "name": "nicId",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "name",
+          "type": "TEXT",
+          "primary_key": false
+        },
+        {
+          "name": "deviceId",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "vendorId",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "linkLayer",
+          "type": "INTEGER",
+          "primary_key": false
+        }
+      ],
+      "original_columns": [
+        "GUID",
+        "stateName",
+        "nicId",
+        "name",
+        "deviceId",
+        "vendorId",
+        "linkLayer"
+      ],
+      "row_sha256": "52108415b0543f2368a9fa7d490a5c0f54fa81950484e68a575a7533d2c9b3a1"
+    },
+    {
+      "id": "d066",
+      "name": "TARGET_INFO_SESSION_START_TIME",
+      "group": "NSYS",
+      "columns": [
+        "utcEpochNs",
+        "utcTime",
+        "localTime",
+        "systemClockNs",
+        "sessionStartCntVctNs"
+      ],
+      "rows": 1,
+      "chunks": 1,
+      "chunk_size": 2500,
+      "source": "learner-rank0-6626.sqlite",
+      "run": "诊断任务",
+      "preferred": [
+        "utcEpochNs",
+        "utcTime",
+        "localTime",
+        "systemClockNs",
+        "sessionStartCntVctNs"
+      ],
+      "types": [
+        {
+          "name": "utcEpochNs",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "utcTime",
+          "type": "TEXT",
+          "primary_key": false
+        },
+        {
+          "name": "localTime",
+          "type": "TEXT",
+          "primary_key": false
+        },
+        {
+          "name": "systemClockNs",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "sessionStartCntVctNs",
+          "type": "INTEGER",
+          "primary_key": false
+        }
+      ],
+      "original_columns": [
+        "utcEpochNs",
+        "utcTime",
+        "localTime",
+        "systemClockNs",
+        "sessionStartCntVctNs"
+      ],
+      "row_sha256": "fd97cf8bfb2c2e2e045d023696f698a938dd35a6858432fddd607a1b19f5fd64"
+    },
+    {
+      "id": "d067",
+      "name": "TARGET_INFO_SYSTEM_ENV",
+      "group": "NSYS",
+      "columns": [
+        "globalVid",
+        "devStateName",
+        "name",
+        "nameEnum",
+        "value"
+      ],
+      "rows": 73,
+      "chunks": 1,
+      "chunk_size": 2500,
+      "source": "learner-rank0-6626.sqlite",
+      "run": "诊断任务",
+      "preferred": [
+        "globalVid",
+        "devStateName",
+        "name",
+        "nameEnum",
+        "value"
+      ],
+      "types": [
+        {
+          "name": "globalVid",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "devStateName",
+          "type": "TEXT",
+          "primary_key": false
+        },
+        {
+          "name": "name",
+          "type": "TEXT",
+          "primary_key": false
+        },
+        {
+          "name": "nameEnum",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "value",
+          "type": "TEXT",
+          "primary_key": false
+        }
+      ],
+      "original_columns": [
+        "globalVid",
+        "devStateName",
+        "name",
+        "nameEnum",
+        "value"
+      ],
+      "row_sha256": "c9f66b2d6c715bf4bd8b048c5a2b103ffea21fa97424c04ba0c6d2dfd912b8f1"
+    },
+    {
+      "id": "d068",
+      "name": "ThreadNames",
+      "group": "NSYS",
+      "columns": [
+        "nameId",
+        "priority",
+        "globalTid",
+        "resolved_name"
+      ],
+      "rows": 3564,
+      "chunks": 2,
+      "chunk_size": 2500,
+      "source": "learner-rank0-6626.sqlite",
+      "run": "诊断任务",
+      "preferred": [
+        "nameId",
+        "priority",
+        "globalTid",
+        "resolved_name"
+      ],
+      "types": [
+        {
+          "name": "nameId",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "priority",
+          "type": "INTEGER",
+          "primary_key": false
+        },
+        {
+          "name": "globalTid",
+          "type": "INTEGER",
+          "primary_key": false
+        }
+      ],
+      "original_columns": [
+        "nameId",
+        "priority",
+        "globalTid"
+      ],
+      "row_sha256": "c61062fef02eb13aff1a6c5cf69217a3b0553f6c1549ec096c3128bf71a91880"
+    },
+    {
+      "id": "d069",
+      "name": "全部配置 / 验收 / 原始面板 / 工具日志",
+      "group": "原始文档",
+      "columns": [
+        "name",
+        "format",
+        "payload",
+        "source"
+      ],
+      "rows": 64,
+      "chunks": 1,
+      "chunk_size": 2500,
+      "source": "已归档诊断证据",
+      "run": "",
+      "preferred": [
+        "name",
+        "format",
+        "payload"
+      ],
+      "types": [],
+      "original_columns": [
+        "name",
+        "format",
+        "payload",
+        "source"
+      ],
+      "row_sha256": "67aed69bdc896d4726d822b8a459445c92b92ba593cd8a54eb72f15e4435ec55"
+    },
+    {
+      "id": "d070",
+      "name": "全部指标 · 逐点数值",
+      "group": "指标数据",
+      "columns": [
+        "metric_id",
+        "name",
+        "run",
+        "group",
+        "rank",
+        "timestamp_ms",
+        "value",
+        "unit"
+      ],
+      "rows": 27064,
+      "chunks": 11,
+      "chunk_size": 2500,
+      "source": "原始事件 / Grafana / GPU CSV",
+      "run": "",
+      "preferred": [
+        "metric_id",
+        "name",
+        "run",
+        "group",
+        "rank",
+        "timestamp_ms",
+        "value",
+        "unit"
+      ],
+      "types": [],
+      "original_columns": [
+        "metric_id",
+        "name",
+        "run",
+        "group",
+        "rank",
+        "timestamp_ms",
+        "value",
+        "unit"
+      ],
+      "row_sha256": "3202e307befee17ec9fca995a412e1cd162822217f236a4bbf0830e001af7e3b"
+    }
+  ],
+  "source_sqlite_sha256": "5fd07170c7d23e3b2220f80adb73853c8f5c06ece153edfcfad419ae9b8570e7",
+  "binary_sha256": {
+    "gpu-1s.csv": "4e8284cb91a36953f03d60bc095058814ceb37f0a14d37ed1465411dd18ede8f",
+    "learner-rank0-6626.nsys-rep": "6c44977be86778d100846741bea4810eb3639296bd6cb12ea030de71ee812d0d",
+    "learner-rank0-6626.sqlite": "5fd07170c7d23e3b2220f80adb73853c8f5c06ece153edfcfad419ae9b8570e7"
+  }
+}

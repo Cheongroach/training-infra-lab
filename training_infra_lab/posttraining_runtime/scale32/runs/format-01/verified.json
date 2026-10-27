@@ -1,0 +1,14 @@
+{
+  "observed_at": "2026-10-25T04:36:01.273212+00:00",
+  "run": "64bf39daf0b766d2",
+  "status": "failed",
+  "trial": "439161981",
+  "terminal": true,
+  "summary": null,
+  "audit_complete": false,
+  "protocol_passed": false,
+  "errors": [
+    "Entrypoint exited 126 before generation; inspect stdout and stderr"
+  ],
+  "gpu_hours": 0.39555555555555555
+}

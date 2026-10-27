@@ -1,0 +1,1107 @@
+[
+  {
+    "configuration": [
+      "h20-benchmark-v1",
+      "cuda",
+      2,
+      8,
+      4096,
+      "dynamic",
+      "chunk",
+      false,
+      false,
+      false,
+      [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ]
+    ],
+    "repeats": 2,
+    "median_nonpad_tokens_per_second": 2836.092905143813,
+    "min_nonpad_tokens_per_second": 2808.6720027037936,
+    "max_nonpad_tokens_per_second": 2863.513807583832,
+    "max_peak_allocated_gib": 15.283238887786865
+  },
+  {
+    "configuration": [
+      "h20-benchmark-v1",
+      "cuda",
+      2,
+      8,
+      4096,
+      "dynamic",
+      "chunk",
+      true,
+      false,
+      false,
+      [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ]
+    ],
+    "repeats": 2,
+    "median_nonpad_tokens_per_second": 2035.887938252104,
+    "min_nonpad_tokens_per_second": 1997.443296399599,
+    "max_nonpad_tokens_per_second": 2074.3325801046094,
+    "max_peak_allocated_gib": 13.509440422058105
+  },
+  {
+    "configuration": [
+      "h20-benchmark-v1",
+      "cuda",
+      2,
+      8,
+      4096,
+      "fixed",
+      "chunk",
+      false,
+      false,
+      false,
+      [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ]
+    ],
+    "repeats": 1,
+    "median_nonpad_tokens_per_second": 1438.9712177173535,
+    "min_nonpad_tokens_per_second": 1438.9712177173535,
+    "max_nonpad_tokens_per_second": 1438.9712177173535,
+    "max_peak_allocated_gib": 25.929948806762695
+  },
+  {
+    "configuration": [
+      "h20-benchmark-v1",
+      "cuda",
+      2,
+      8,
+      4096,
+      "dynamic",
+      "full",
+      false,
+      false,
+      false,
+      [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ]
+    ],
+    "repeats": 2,
+    "median_nonpad_tokens_per_second": 2758.4891475977765,
+    "min_nonpad_tokens_per_second": 2591.8398025268316,
+    "max_nonpad_tokens_per_second": 2925.138492668722,
+    "max_peak_allocated_gib": 16.31460428237915
+  },
+  {
+    "configuration": [
+      "h20-benchmark-v1",
+      "cuda",
+      2,
+      8,
+      4096,
+      "fixed",
+      "full",
+      false,
+      false,
+      false,
+      [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ]
+    ],
+    "repeats": 1,
+    "median_nonpad_tokens_per_second": 1317.7296959171024,
+    "min_nonpad_tokens_per_second": 1317.7296959171024,
+    "max_nonpad_tokens_per_second": 1317.7296959171024,
+    "max_peak_allocated_gib": 31.58888053894043
+  },
+  {
+    "configuration": [
+      "h20-benchmark-v1",
+      "cuda",
+      2,
+      8,
+      4096,
+      "dynamic",
+      "selected",
+      false,
+      false,
+      false,
+      [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ]
+    ],
+    "repeats": 2,
+    "median_nonpad_tokens_per_second": 2877.568409740571,
+    "min_nonpad_tokens_per_second": 2805.043461452476,
+    "max_nonpad_tokens_per_second": 2950.093358028666,
+    "max_peak_allocated_gib": 14.746957778930664
+  },
+  {
+    "configuration": [
+      "h20-profile-v1",
+      "cuda",
+      2,
+      8,
+      1024,
+      "dynamic",
+      "chunk",
+      false,
+      false,
+      false,
+      [
+        2,
+        3,
+        4,
+        6,
+        7
+      ]
+    ],
+    "repeats": 1,
+    "median_nonpad_tokens_per_second": 2668.15602223095,
+    "min_nonpad_tokens_per_second": 2668.15602223095,
+    "max_nonpad_tokens_per_second": 2668.15602223095,
+    "max_peak_allocated_gib": 16.197928428649902
+  },
+  {
+    "configuration": [
+      "h20-profile-v1",
+      "cuda",
+      2,
+      8,
+      1024,
+      "dynamic",
+      "full",
+      false,
+      false,
+      false,
+      [
+        2,
+        3,
+        4,
+        6,
+        7
+      ]
+    ],
+    "repeats": 1,
+    "median_nonpad_tokens_per_second": 2176.205288655528,
+    "min_nonpad_tokens_per_second": 2176.205288655528,
+    "max_nonpad_tokens_per_second": 2176.205288655528,
+    "max_peak_allocated_gib": 16.627888202667236
+  },
+  {
+    "configuration": [
+      "h20-recovery-lf-v1",
+      "cuda",
+      2,
+      8,
+      1024,
+      "dynamic",
+      "chunk",
+      false,
+      false,
+      false,
+      [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    ],
+    "repeats": 1,
+    "median_nonpad_tokens_per_second": 2028.1690857043882,
+    "min_nonpad_tokens_per_second": 2028.1690857043882,
+    "max_nonpad_tokens_per_second": 2028.1690857043882,
+    "max_peak_allocated_gib": 16.197928428649902
+  },
+  {
+    "configuration": [
+      "h20-recovery-lf-v1",
+      "cuda",
+      2,
+      8,
+      1024,
+      "dynamic",
+      "chunk",
+      false,
+      false,
+      false,
+      [
+        4,
+        5
+      ]
+    ],
+    "repeats": 1,
+    "median_nonpad_tokens_per_second": 2531.9327475006553,
+    "min_nonpad_tokens_per_second": 2531.9327475006553,
+    "max_nonpad_tokens_per_second": 2531.9327475006553,
+    "max_peak_allocated_gib": 14.933026790618896
+  },
+  {
+    "configuration": [
+      "h20-recovery-lf-v1",
+      "cuda",
+      2,
+      8,
+      1024,
+      "dynamic",
+      "chunk",
+      false,
+      false,
+      false,
+      [
+        1,
+        2
+      ]
+    ],
+    "repeats": 1,
+    "median_nonpad_tokens_per_second": 1885.9404205612138,
+    "min_nonpad_tokens_per_second": 1885.9404205612138,
+    "max_nonpad_tokens_per_second": 1885.9404205612138,
+    "max_peak_allocated_gib": 14.915690898895264
+  },
+  {
+    "configuration": [
+      "h20-recovery-v2",
+      "cuda",
+      2,
+      8,
+      1024,
+      "dynamic",
+      "chunk",
+      false,
+      false,
+      true,
+      [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    ],
+    "repeats": 1,
+    "median_nonpad_tokens_per_second": 2175.093695724193,
+    "min_nonpad_tokens_per_second": 2175.093695724193,
+    "max_nonpad_tokens_per_second": 2175.093695724193,
+    "max_peak_allocated_gib": 16.197928428649902
+  },
+  {
+    "configuration": [
+      "h20-recovery-v2",
+      "cuda",
+      2,
+      8,
+      1024,
+      "dynamic",
+      "chunk",
+      false,
+      false,
+      true,
+      [
+        4,
+        5
+      ]
+    ],
+    "repeats": 1,
+    "median_nonpad_tokens_per_second": 2772.0198500066467,
+    "min_nonpad_tokens_per_second": 2772.0198500066467,
+    "max_nonpad_tokens_per_second": 2772.0198500066467,
+    "max_peak_allocated_gib": 14.933000087738037
+  },
+  {
+    "configuration": [
+      "h20-recovery-v2",
+      "cuda",
+      2,
+      8,
+      1024,
+      "dynamic",
+      "chunk",
+      false,
+      false,
+      true,
+      [
+        1,
+        2
+      ]
+    ],
+    "repeats": 1,
+    "median_nonpad_tokens_per_second": 1907.3380151449396,
+    "min_nonpad_tokens_per_second": 1907.3380151449396,
+    "max_nonpad_tokens_per_second": 1907.3380151449396,
+    "max_peak_allocated_gib": 14.915664196014404
+  },
+  {
+    "configuration": [
+      "h20-scale16-v2",
+      "cuda",
+      16,
+      16,
+      4096,
+      "dynamic",
+      "chunk",
+      false,
+      false,
+      false,
+      [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ]
+    ],
+    "repeats": 2,
+    "median_nonpad_tokens_per_second": 12987.111874718568,
+    "min_nonpad_tokens_per_second": 12910.911566054023,
+    "max_nonpad_tokens_per_second": 13063.312183383114,
+    "max_peak_allocated_gib": 9.417786121368408
+  },
+  {
+    "configuration": [
+      "h20-scale2-v1",
+      "cuda",
+      2,
+      16,
+      4096,
+      "dynamic",
+      "chunk",
+      false,
+      false,
+      false,
+      [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ]
+    ],
+    "repeats": 2,
+    "median_nonpad_tokens_per_second": 3163.4335179777404,
+    "min_nonpad_tokens_per_second": 3149.0438187988916,
+    "max_nonpad_tokens_per_second": 3177.823217156589,
+    "max_peak_allocated_gib": 19.87883949279785
+  },
+  {
+    "configuration": [
+      "h20-scale8-v1",
+      "cuda",
+      8,
+      16,
+      4096,
+      "dynamic",
+      "chunk",
+      false,
+      false,
+      false,
+      [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ]
+    ],
+    "repeats": 2,
+    "median_nonpad_tokens_per_second": 9094.677372578346,
+    "min_nonpad_tokens_per_second": 9073.765539892238,
+    "max_nonpad_tokens_per_second": 9115.589205264456,
+    "max_peak_allocated_gib": 11.253401756286621
+  },
+  {
+    "configuration": [
+      "h20-smoke-v5",
+      "cuda",
+      2,
+      8,
+      1024,
+      "fixed",
+      "chunk",
+      false,
+      false,
+      false,
+      [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    ],
+    "repeats": 1,
+    "median_nonpad_tokens_per_second": 2994.9242064256578,
+    "min_nonpad_tokens_per_second": 2994.9242064256578,
+    "max_nonpad_tokens_per_second": 2994.9242064256578,
+    "max_peak_allocated_gib": 16.41858196258545
+  },
+  {
+    "configuration": [
+      "h20-smoke-v5",
+      "cuda",
+      2,
+      8,
+      1024,
+      "fixed",
+      "full",
+      false,
+      false,
+      false,
+      [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    ],
+    "repeats": 1,
+    "median_nonpad_tokens_per_second": 2430.617784620349,
+    "min_nonpad_tokens_per_second": 2430.617784620349,
+    "max_nonpad_tokens_per_second": 2430.617784620349,
+    "max_peak_allocated_gib": 16.84205389022827
+  },
+  {
+    "configuration": [
+      "h20-sync-v1",
+      "cuda",
+      2,
+      8,
+      4096,
+      "dynamic",
+      "selected",
+      false,
+      false,
+      false,
+      [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ]
+    ],
+    "repeats": 2,
+    "median_nonpad_tokens_per_second": 2880.069792355349,
+    "min_nonpad_tokens_per_second": 2593.822093076647,
+    "max_nonpad_tokens_per_second": 3166.3174916340513,
+    "max_peak_allocated_gib": 14.746957778930664
+  },
+  {
+    "configuration": [
+      "h20-sync-v1",
+      "cuda",
+      2,
+      8,
+      4096,
+      "dynamic",
+      "selected",
+      false,
+      false,
+      false,
+      [
+        4,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ]
+    ],
+    "repeats": 1,
+    "median_nonpad_tokens_per_second": 2815.5803644104762,
+    "min_nonpad_tokens_per_second": 2815.5803644104762,
+    "max_nonpad_tokens_per_second": 2815.5803644104762,
+    "max_peak_allocated_gib": 14.748908042907715
+  },
+  {
+    "configuration": [
+      "h20-sync-v1",
+      "cuda",
+      2,
+      8,
+      4096,
+      "dynamic",
+      "selected",
+      false,
+      true,
+      false,
+      [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ]
+    ],
+    "repeats": 2,
+    "median_nonpad_tokens_per_second": 3256.1573687289756,
+    "min_nonpad_tokens_per_second": 3191.389304095096,
+    "max_nonpad_tokens_per_second": 3320.9254333628546,
+    "max_peak_allocated_gib": 17.62567138671875
+  },
+  {
+    "configuration": [
+      "h20-sync-v1",
+      "cuda",
+      2,
+      8,
+      4096,
+      "dynamic",
+      "selected",
+      false,
+      true,
+      false,
+      [
+        4,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ]
+    ],
+    "repeats": 1,
+    "median_nonpad_tokens_per_second": 3024.609369075744,
+    "min_nonpad_tokens_per_second": 3024.609369075744,
+    "max_nonpad_tokens_per_second": 3024.609369075744,
+    "max_peak_allocated_gib": 17.6276216506958
+  },
+  {
+    "configuration": [
+      "npu-benchmark-v1",
+      "npu",
+      2,
+      8,
+      4096,
+      "dynamic",
+      "chunk",
+      false,
+      false,
+      false,
+      [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ]
+    ],
+    "repeats": 2,
+    "median_nonpad_tokens_per_second": 1698.506623349879,
+    "min_nonpad_tokens_per_second": 1697.5280962843099,
+    "max_nonpad_tokens_per_second": 1699.485150415448,
+    "max_peak_allocated_gib": 16.13430643081665
+  },
+  {
+    "configuration": [
+      "npu-benchmark-v1",
+      "npu",
+      2,
+      8,
+      4096,
+      "dynamic",
+      "chunk",
+      true,
+      false,
+      false,
+      [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ]
+    ],
+    "repeats": 2,
+    "median_nonpad_tokens_per_second": 1678.7692123819663,
+    "min_nonpad_tokens_per_second": 1678.0663548232405,
+    "max_nonpad_tokens_per_second": 1679.472069940692,
+    "max_peak_allocated_gib": 14.286692142486572
+  },
+  {
+    "configuration": [
+      "npu-benchmark-v1",
+      "npu",
+      2,
+      8,
+      4096,
+      "fixed",
+      "chunk",
+      false,
+      false,
+      false,
+      [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ]
+    ],
+    "repeats": 1,
+    "median_nonpad_tokens_per_second": 1188.4976414731557,
+    "min_nonpad_tokens_per_second": 1188.4976414731557,
+    "max_nonpad_tokens_per_second": 1188.4976414731557,
+    "max_peak_allocated_gib": 26.745856285095215
+  },
+  {
+    "configuration": [
+      "npu-benchmark-v1",
+      "npu",
+      2,
+      8,
+      4096,
+      "dynamic",
+      "full",
+      false,
+      false,
+      false,
+      [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ]
+    ],
+    "repeats": 2,
+    "median_nonpad_tokens_per_second": 1723.7875698168573,
+    "min_nonpad_tokens_per_second": 1722.8511010327456,
+    "max_nonpad_tokens_per_second": 1724.7240386009692,
+    "max_peak_allocated_gib": 16.344321727752686
+  },
+  {
+    "configuration": [
+      "npu-benchmark-v1",
+      "npu",
+      2,
+      8,
+      4096,
+      "fixed",
+      "full",
+      false,
+      false,
+      false,
+      [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ]
+    ],
+    "repeats": 1,
+    "median_nonpad_tokens_per_second": 1089.480990779277,
+    "min_nonpad_tokens_per_second": 1089.480990779277,
+    "max_nonpad_tokens_per_second": 1089.480990779277,
+    "max_peak_allocated_gib": 31.533175468444824
+  },
+  {
+    "configuration": [
+      "npu-benchmark-v1",
+      "npu",
+      2,
+      8,
+      4096,
+      "dynamic",
+      "selected",
+      false,
+      false,
+      false,
+      [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ]
+    ],
+    "repeats": 2,
+    "median_nonpad_tokens_per_second": 1718.6340435130955,
+    "min_nonpad_tokens_per_second": 1716.1030368646736,
+    "max_nonpad_tokens_per_second": 1721.1650501615177,
+    "max_peak_allocated_gib": 15.090933799743652
+  },
+  {
+    "configuration": [
+      "npu-recovery-v2",
+      "npu",
+      2,
+      8,
+      1024,
+      "dynamic",
+      "chunk",
+      false,
+      false,
+      true,
+      [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    ],
+    "repeats": 1,
+    "median_nonpad_tokens_per_second": 1549.166004221364,
+    "min_nonpad_tokens_per_second": 1549.166004221364,
+    "max_nonpad_tokens_per_second": 1549.166004221364,
+    "max_peak_allocated_gib": 17.373358726501465
+  },
+  {
+    "configuration": [
+      "npu-recovery-v3",
+      "npu",
+      2,
+      8,
+      1024,
+      "dynamic",
+      "chunk",
+      false,
+      false,
+      true,
+      [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    ],
+    "repeats": 1,
+    "median_nonpad_tokens_per_second": 1551.040315787995,
+    "min_nonpad_tokens_per_second": 1551.040315787995,
+    "max_nonpad_tokens_per_second": 1551.040315787995,
+    "max_peak_allocated_gib": 17.37421464920044
+  },
+  {
+    "configuration": [
+      "npu-recovery-v3",
+      "npu",
+      2,
+      8,
+      1024,
+      "dynamic",
+      "chunk",
+      false,
+      false,
+      true,
+      [
+        4,
+        5
+      ]
+    ],
+    "repeats": 1,
+    "median_nonpad_tokens_per_second": 1869.6784117223667,
+    "min_nonpad_tokens_per_second": 1869.6784117223667,
+    "max_nonpad_tokens_per_second": 1869.6784117223667,
+    "max_peak_allocated_gib": 15.814887046813965
+  },
+  {
+    "configuration": [
+      "npu-recovery-v3",
+      "npu",
+      2,
+      8,
+      1024,
+      "dynamic",
+      "chunk",
+      false,
+      false,
+      true,
+      [
+        1,
+        2
+      ]
+    ],
+    "repeats": 1,
+    "median_nonpad_tokens_per_second": 1308.209009480369,
+    "min_nonpad_tokens_per_second": 1308.209009480369,
+    "max_nonpad_tokens_per_second": 1308.209009480369,
+    "max_peak_allocated_gib": 15.755888938903809
+  },
+  {
+    "configuration": [
+      "npu-smoke-v5",
+      "npu",
+      2,
+      8,
+      1024,
+      "fixed",
+      "chunk",
+      false,
+      false,
+      false,
+      [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    ],
+    "repeats": 1,
+    "median_nonpad_tokens_per_second": 1579.4506184508336,
+    "min_nonpad_tokens_per_second": 1579.4506184508336,
+    "max_nonpad_tokens_per_second": 1579.4506184508336,
+    "max_peak_allocated_gib": 17.378260612487793
+  },
+  {
+    "configuration": [
+      "npu-smoke-v5",
+      "npu",
+      2,
+      8,
+      1024,
+      "fixed",
+      "full",
+      false,
+      false,
+      false,
+      [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    ],
+    "repeats": 1,
+    "median_nonpad_tokens_per_second": 1569.629838237926,
+    "min_nonpad_tokens_per_second": 1569.629838237926,
+    "max_nonpad_tokens_per_second": 1569.629838237926,
+    "max_peak_allocated_gib": 16.938832759857178
+  },
+  {
+    "configuration": [
+      "npu-sync-v1",
+      "npu",
+      2,
+      8,
+      4096,
+      "dynamic",
+      "selected",
+      false,
+      false,
+      false,
+      [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ]
+    ],
+    "repeats": 2,
+    "median_nonpad_tokens_per_second": 1727.0682752060811,
+    "min_nonpad_tokens_per_second": 1724.2081093198478,
+    "max_nonpad_tokens_per_second": 1729.9284410923144,
+    "max_peak_allocated_gib": 15.090766429901123
+  },
+  {
+    "configuration": [
+      "npu-sync-v1",
+      "npu",
+      2,
+      8,
+      4096,
+      "dynamic",
+      "selected",
+      false,
+      true,
+      false,
+      [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ]
+    ],
+    "repeats": 2,
+    "median_nonpad_tokens_per_second": 2475.791463943298,
+    "min_nonpad_tokens_per_second": 2474.071070885634,
+    "max_nonpad_tokens_per_second": 2477.5118570009618,
+    "max_peak_allocated_gib": 17.974796295166016
+  }
+]

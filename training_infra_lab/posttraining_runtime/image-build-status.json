@@ -1,0 +1,5 @@
+{
+  "returncode": 0,
+  "stdout": "{\"ResponseBase\":{\"code\":0,\"code_name\":\"\",\"message\":\"\",\"meta\":{\"latency_ms\":9,\"request_id\":\"20261023024552D56D48CF0B572BF8ADE9\"}},\"data\":[{\"build_id\":\"170427\",\"build_method\":\"DOCKERFILE\",\"created_at\":\"2026-10-23T02:41:12.000Z\",\"deleted_at\":\"\",\"description\":\"H20 Miles source-pinned candidate, official base digest locked; GPU validation pending\",\"icm_url\":\"https://cloud.bytedance.net/icm/detail/2412297\",\"icm_version\":\"1.0.0.1\",\"image_name\":\"v1\",\"image_sid\":\"dbd5h7f1enl62v3c94hg\",\"object\":\"image_version\",\"owner\":\"zhangyang.exp\",\"regions\":[{\"image_url\":\"hub.byted.org/reckon/data.reckon.mlx.image_20030:bfe0941cc716866c32abb08232988b1b\",\"region\":\"China-North-LF\",\"status\":\"BUILDING\",\"status_desc\":\"https://cloud.bytedance.net/bytebuild/log/182393037\"}],\"sid\":\"dbd5hi71enlcujgf99j0\",\"updated_at\":\"2026-10-23T02:44:47.000Z\"}],\"pagination\":{\"page_token\":\"1\",\"total\":1}}\n",
+  "stderr": ""
+}
